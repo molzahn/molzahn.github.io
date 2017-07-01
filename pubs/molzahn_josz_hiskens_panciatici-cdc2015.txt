@@ -1,0 +1,1 @@
+D.K. Molzahn, C. Josz, I.A. Hiskens, and P. Panciatici, "Solution of Optimal Power Flow Problems using Moment Relaxations Augmented with Objective Function Penalization," IEEE 54th Annual Conference on Decision and Control (CDC), 15-18 December 2015.

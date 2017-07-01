@@ -1,0 +1,1 @@
+K. Dvijotham and D.K. Molzahn, "Error Bounds on the DC Power Flow Approximations: A Convex Relaxation Approach," IEEE 55th Conference on Decision and Control (CDC), December 2016.

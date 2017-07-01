@@ -1,0 +1,1 @@
+D.K. Molzahn, "Incorporating Induction Machine Models in Convex Relaxations of Optimal Power Flow Problems," to appear in IEEE Transactions on Power Systems (Letters), 2017.

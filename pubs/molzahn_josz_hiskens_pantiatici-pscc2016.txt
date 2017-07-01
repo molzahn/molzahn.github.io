@@ -1,0 +1,1 @@
+D.K. Molzahn, C. Josz, I.A. Hiskens, and P. Panciatici, "Computational Analysis of Sparsity-Exploiting Moment Relaxations of the OPF Problem," 19th Power Systems Computation Conference (PSCC), June 20-24, 2016.

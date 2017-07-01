@@ -1,0 +1,1 @@
+D.K. Molzahn and I.A. Hiskens, "Convex Relaxations of Optimal Power Flow Problems: An Illustrative Example," IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 63, no. 5, pp. 650-660, May 2016.

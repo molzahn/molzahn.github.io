@@ -1,0 +1,1 @@
+D.K. Molzahn, M. Niemerg, D. Mehta, and J.D. Hauenstein, "Investigating the Maximum Number of Real Solutions to the Power Flow Equations: Analysis of Lossless Four-Bus Systems," arXiv:1603.05908, March 2016.

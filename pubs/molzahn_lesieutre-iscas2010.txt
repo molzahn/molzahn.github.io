@@ -1,0 +1,1 @@
+D.K. Molzahn and B.C. Lesieutre, "An Eigenvalue Formulation for Determining Initial Conditions of Induction Machines in Dynamic Power System Simulations," IEEE International Symposium on Circuits and Systems (ISCAS), pp. 2311-2313, May 30 - June 2 2010.

@@ -1,0 +1,1 @@
+A.R. Borden, D.K. Molzahn, B.C. Lesieutre, and P. Ramanathan, "Power System Structure and Confidentiality Preserving Transformation of Optimal Power Flow Problem," 51st Annual Allerton Conference on Communication, Control, and Computing (Allerton), 2-4 October 2013.

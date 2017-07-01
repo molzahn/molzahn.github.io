@@ -1,0 +1,1 @@
+D.K. Molzahn, B.C. Lesieutre, and C.L. DeMarco, "A Sufficient Condition for Power Flow Insolvability with Applications to Voltage Stability Margins," University of Wisconsin-Madison Department of Electrical and Computer Engineering, Tech. Rep. ECE-12-01, 2012, [Online]. Available: http://arxiv.org/abs/1204.6285

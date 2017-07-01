@@ -1,0 +1,1 @@
+D.K. Molzahn, D. Mehta, and M. Niemerg, "Toward Topologically Based Upper Bounds on the Number of Power Flow Solutions," American Control Conference (ACC), 6-8 July 2016.

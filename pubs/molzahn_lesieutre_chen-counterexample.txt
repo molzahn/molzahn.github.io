@@ -1,0 +1,1 @@
+D.K. Molzahn, B.C. Lesieutre, and H. Chen, "Counterexample to a Continuation-Based Algorithm for Finding All Power Flow Solutions," IEEE Transactions on Power Systems, vol. 28, no. 1, pp. 564-565, February 2013.

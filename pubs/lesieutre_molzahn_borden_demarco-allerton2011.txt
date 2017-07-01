@@ -1,0 +1,1 @@
+B.C. Lesieutre, D.K. Molzahn, A.R. Borden, and C.L. DeMarco, "Examining the Limits of the Application of Semidefinite Programming to Power Flow Problems," 49th Annual Allerton Conference on Communication, Control, and Computing (Allerton), 2011, pp. 1492-1499, 28-30 September 2011.

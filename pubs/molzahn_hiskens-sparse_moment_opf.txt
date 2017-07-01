@@ -1,0 +1,1 @@
+D.K. Molzahn and I.A. Hiskens, "Sparsity-Exploiting Moment-Based Relaxation of the Optimal Power Flow Problem," IEEE Transactions on Power Systems, vol. 30, no. 6, pp. 3168-3180, Nov. 2015.

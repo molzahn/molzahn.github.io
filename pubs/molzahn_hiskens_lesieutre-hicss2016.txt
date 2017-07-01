@@ -1,0 +1,1 @@
+D.K. Molzahn, I.A. Hiskens, and B.C. Lesieutre, "Calculation of Voltage Stability Margins and Certification of Power Flow Insolvability using Second-Order Cone Programming," 49th Hawaii International Conference on System Sciences (HICSS), 5-8 January 2016.

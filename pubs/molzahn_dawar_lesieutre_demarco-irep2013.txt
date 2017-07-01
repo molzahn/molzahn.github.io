@@ -1,0 +1,1 @@
+D.K. Molzahn, V. Dawar, B.C. Lesieutre, and C.L. DeMarco, "Sufficient Conditions for Power Flow Insolvability Considering Reactive Power Limited Generators with Applications to Voltage Stability Margins," IREP Symposium on Bulk Power System Dynamics and Control - IX. Optimization, Security and Control of the Emerging Power Grid, 25-30 August 2013.

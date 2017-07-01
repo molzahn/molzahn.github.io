@@ -1,0 +1,1 @@
+D.K. Molzahn, S.S. Baghsorkhi, and I.A. Hiskens, "Semidefinite Relaxations of Equivalent Optimal Power Flow Problems: An Illustrative Example," IEEE International Symposium on Circuits and Systems (ISCAS), 24-27 May, 2015.

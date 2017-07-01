@@ -1,0 +1,1 @@
+D.K. Molzahn, B.C. Lesieutre, and C.L. DeMarco, "Approximate Representaton of ZIP Loads in a Semidefinite Relaxation of the OPF Problem," IEEE Transactions on Power Systems (Letters), vol. 29, no. 4, pp. 1864-1865, July 2014.

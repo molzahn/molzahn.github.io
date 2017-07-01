@@ -1,0 +1,1 @@
+D.K. Molzahn and B.C. Lesieutre, "Initializing Dynamic Power System Simulations Using Eigenvalue Formulations of the Induction Machine and Power Flow Models," IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 60, no. 3, pp.690-702, March 2013.

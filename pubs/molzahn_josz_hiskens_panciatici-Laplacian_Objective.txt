@@ -1,0 +1,1 @@
+D.K. Molzahn, C. Josz, I.A. Hiskens, and P. Panciatici, "A Laplacian-Based Approach for Finding Near Globally Optimal Solutions to OPF Problems," IEEE Transactions on Power Systems, vol. 32, no. 1, pp. 305-315, January 2017.

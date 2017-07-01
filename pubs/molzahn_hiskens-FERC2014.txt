@@ -1,0 +1,1 @@
+D.K. Molzahn and I.A. Hiskens, "Moment-Based Relaxations of the Optimal Power Flow Problem," Staff Technical Conference on Increasing Real-Time and Day-Ahead Market Efficiency through Improved Software (Docket No. AD10-12-005), Federal Energy Regulatory Commission, Washington, DC, 23-25 June 2014, [Online] Available: http://www.ferc.gov/software/presentations/t1b-3.pdf

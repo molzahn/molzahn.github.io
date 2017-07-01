@@ -1,0 +1,1 @@
+A.R. Borden, D.K. Molzahn, P. Ramanathan, and B.C. Lesieutre, "Confidentiality-Preserving Optimal Power Flow for Cloud Computing," 50th Annual Allerton Conference on Communication, Control, and Computing (Allerton), pp. 1300-1307, 1-5 October 2012.

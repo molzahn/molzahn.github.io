@@ -1,0 +1,1 @@
+D.K. Molzahn, B.C. Lesieutre, and C.L. DeMarco, "Investigation of Non-Zero Duality Gap Solutions to a Semidefinite Relaxation of the Optimal Power Flow Problem," 47th Hawaii International Conference on System Sciences (HICSS), 6-9 January 2014.
