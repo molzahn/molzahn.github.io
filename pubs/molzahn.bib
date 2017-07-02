@@ -65,7 +65,7 @@
 	year={2017},
 	note={In press},
 	doi={10.1109/TPWRS.2017.2682058}, 
-	keywords={Optimal power flow,Continuation Methods},
+	keywords={Optimal Power Flow,Continuation Methods},
 	abstract={The solution to an optimal power flow (OPF) problem provides a minimum cost operating point for an electric power system. The performance of OPF solution techniques strongly depends on the problem's feasible space. This paper presents an algorithm that is guaranteed to compute the entire feasible spaces of small OPF problems to within a specified discretization tolerance. Specifically, the feasible space is computed by discretizing certain of the OPF problem's inequality constraints to obtain a set of power flow equations. All solutions to the power flow equations at each discretization point are obtained using the Numerical Polynomial Homotopy Continuation (NPHC) algorithm. To improve computational tractability, ``bound tightening'' and ``grid pruning'' algorithms use convex relaxations to preclude consideration of many discretization points that are infeasible for the OPF problem. The proposed algorithm is used to generate the feasible spaces of two small test cases.},
 	url_Paper={molzahn-opf_spaces.pdf},
 	url_Link={http://ieeexplore.ieee.org/document/7879340},
@@ -83,6 +83,35 @@
 	abstract={The optimal power flow (OPF) problem determines a minimum cost operating point for an electric power system. Recently developed convex relaxations are capable of globally solving certain OPF problems. Using a semidefinite relaxation of the OPF problem as an illustrative example, this letter presents a method for extending convex relaxations of the OPF problem to include steady-state squirrel-cage induction machine models.},
 	url_Paper={molzahn-convex_im.pdf},
 	url_Link={http://ieeexplore.ieee.org/document/7849198},
+}
+
+@article{marley_molzahn_hiskens-acqp_socp,
+	author={J. F. Marley and D. K. Molzahn and I. A. Hiskens},
+	journal={IEEE Transactions on Power Systems},
+	title={{Solving Multiperiod OPF Problems using an AC-QP Algorithm Initialized with an SOCP Relaxation}},
+	year={2017},
+	note={In press},
+	doi={10.1109/TPWRS.2016.2636132},
+	keywords={Optimal Power Flow},
+	abstract={Renewable generation and energy storage are playing an ever increasing role in power systems. Hence, there is a growing need for integrating these resources into the optimal power flow (OPF) problem. While storage devices are important for mitigating renewable variability, they introduce temporal coupling in the OPF constraints, resulting in a multiperiod OPF formulation. This paper explores a solution method for multiperiod AC OPF that combines a successive quadratic programming approach (AC-QP) with a second-order cone programming (SOCP) relaxation of the OPF problem. The SOCP relaxation’s solution is used to initialize the AC-QP OPF algorithm. Additionally, the lower bound on the objective value obtained from the SOCP relaxation provides a measure of solution quality. This combined method is demonstrated on several test cases with up to 4259 nodes and a time horizon of 8 time steps. A comparison of initialization schemes indicates that the SOCP-based approach offers improved convergence rate, execution time and solution quality.},
+	url_Paper={marley_molzahn_hiskens-acqp_socp.pdf},
+	url_Link={http://ieeexplore.ieee.org/document/7774978},
+}
+
+@article{molzahn_josz_hiskens_panciatici-Laplacian_Objective,
+	author={D. K. Molzahn and C. Josz and I. A. Hiskens and P. Panciatici},
+	journal={IEEE Transactions on Power Systems},
+title={{A Laplacian-Based Approach for Finding Near Globally Optimal Solutions to OPF Problems}},
+	year={2017},
+	month={January},
+	volume={32},
+	number={1},
+	pages={305-315},
+	doi={10.1109/TPWRS.2016.2550520},
+	keywords={Optimal Power Flow},
+	abstract={A semidefinite programming (SDP) relaxation globally solves many optimal power flow (OPF) problems. For other OPF problems where the SDP relaxation only provides a lower bound on the objective value rather than the globally optimal decision variables, recent literature has proposed a penalization approach to find feasible points that are often nearly globally optimal. A disadvantage of this penalization approach is the need to specify penalty parameters. This paper presents an alternative approach that algorithmically determines a penalization appropriate for many OPF problems. The proposed approach constrains the generation cost to be close to the lower bound from the SDP relaxation. The objective function is specified using iteratively determined weights for a Laplacian matrix. This approach yields feasible points to the OPF problem that are guaranteed to have objective values near the global optimum due to the constraint on generation cost. The proposed approach is demonstrated on both small OPF problems and a variety of large test cases representing portions of European power systems.},
+	url_Paper={molzahn_josz_hiskens_panciatici-Laplacian_Objective.pdf},
+	url_Link={http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7447798}
 }
 
 %%%%%% Conference papers
