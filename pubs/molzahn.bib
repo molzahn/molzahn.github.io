@@ -204,7 +204,7 @@ title={{A Laplacian-Based Approach for Finding Near Globally Optimal Solutions t
 	pages={2592-2601},
 	month={August},
 	doi={10.1109/TPWRS.2012.2233765},
-	keywords={Power Flow},
+	keywords={Power Flow,Voltage Stability},
 	abstract={For the nonlinear power flow problem specified with standard PQ, PV, and slack bus equality constraints, we present a sufficient condition under which the specified set of nonlinear algebraic equations has no solution. This sufficient condition is constructed in a framework of an associated feasible, convex optimization problem. The objective employed in this optimization problem yields a measure of distance (in a parameter set) to the power flow solution boundary. In practical terms, this distance is closely related to quantities that previous authors have proposed as voltage stability margins. A typical margin is expressed in terms of the parameters of system loading (injected powers); here we additionally introduce a new margin in terms of the parameters of regulated bus voltages.},
 	url_Paper={molzahn_lesieutre_demarco-pfcondition.pdf},
 	url_Link={http://ieeexplore.ieee.org/document/6403907/},
@@ -259,6 +259,28 @@ title={{A Laplacian-Based Approach for Finding Near Globally Optimal Solutions t
 }
 
 %%%%%% Conference papers
+@inproceedings{roald_molzahn_tobler-irep2017,
+	author={L. A. Roald and D. K. Molzahn and A. Tobler},
+	booktitle={10th Bulk Power Systems Dynamics and Control Symposium (IREP'2017)}, 
+	title={{Power System Optimization with Uncertainty and AC Power Flow: Analysis of an Iterative Algorithm}},
+	year={2017},
+	month={August},
+	keywords={Stochastic Optimization,Optimal Power Flow},
+	abstract={Many power system optimization problems are inherently affected by uncertainty, as it is generally impossible to exactly forecast load or renewable generation. Finding solutions that lead to low-cost, yet secure operation for a range of conditions is an important concern to system operators. This paper considers an iterative algorithm for solving power system optimization problems that include models of uncertainty and AC power flow physics. This algorithm iterates between solving deterministic nonlinear optimization problems with the AC power flow model and updating constraint tightenings that adjust the constraints to facilitate secure operation. Decoupling the uncertainty and the nonlinear optimization steps provides several advantages, such as tractability for large-scale problems and the ability to separately apply state-of-the-art techniques for handling the uncertainty and the nonlinearity. Using numerical examples and theoretical analyses, this paper discusses the benefits and limitations of the iterative algorithm in solving general power system optimization problems. This paper further characterizes the behavior of the iterative algorithm with respect to convergence, optimality, and infeasibility, and suggests several modifications to improve performance.},
+	url_Paper={roald_molzahn_tobler-irep2017.pdf},
+}
+
+@inproceedings{yao_mathieu_molzahn-powertech2017,
+	author={M. Yao and J. L. Mathieu and D. K. Molzahn},
+	booktitle={IEEE PowerTech Manchester},
+	title={{Using Demand Response to Improve Power System Voltage Stability Margins}},
+	year={2017},
+	month={June},
+	keywords={Voltage Stability,Demand Response},
+	abstract={Electric power systems with high penetrations of fluctuating renewable generation may operate close to their stability limits. Demand response can be used to improve power system stability. For example, it is already used to provide frequency control, improving frequency stability. This paper presents a new demand response strategy that uses fast-acting flexible loads to change the loading pattern while keeping the total load constant, improving steady-state voltage stability without affecting the system frequency. The new loading pattern is maintained only for a short period of time until the generators can be re-dispatched. Our goal is to find a permissible loading pattern that maximizes the smallest singular value of the power flow Jacobian matrix, which serves as a measure of voltage stability. The corresponding non-convex optimization problem is solved with an iterative linear programming approach that uses eigenvalue sensitivities and a linearization of the AC power flow equations. Using two IEEE test cases as illustrative examples, we show that the loading patterns resulting from the proposed approach give smallest singular values that are very close to those obtained from a brute force search. The results are also compared to another voltage stability measure given by the maximum loading margin for uniformly varying power injections.},
+	url_Paper={yao_mathieu_molzahn-powertech2017.pdf},
+}
+
 @inproceedings{borden_molzahn_ramanathan_lesieutre-allerton2012,
 	author={A. R. Borden and D. K. Molzahn and P. Ramanathan and B. C. Lesieutre},
 	booktitle={50th Annual Allerton Conference on Communication, Control, and Computing (Allerton)}, 
