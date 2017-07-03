@@ -189,3 +189,17 @@ h2 {
 	color: #FFF;
 	text-decoration: underline;
 }
+
+
+
+.bibbase_group span {
+   display: none;
+}
+
+#group_article div i:after {
+  content: " Journal Articles"
+}
+
+#group_inproceedings div i:after {
+  content: " Conference Publications"
+}
