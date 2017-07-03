@@ -60,35 +60,6 @@
 <div class="footer">Last Updated June 2013. Template design by <a href="http://arcsin.se">Arcsin</a>
 </div>
 
-    <script>
-        var lastname = "molzahn";
-        $('.bibbase_group_body').each(function() {
-            // Get the current element via jQuery
-            var context = $(this); 
-            // Extract and remove list of all children div
-            var listitems = context.children('div').get();
-            // Sort items by year
-            listitems.sort(function(a, b) {
-                var a_year = parseInt(a.id.substr(a.id.length - 4));
-                var a_pos = parseInt(a.id.indexOf(lastname));
-                var b_year = parseInt(b.id.substr(b.id.length - 4));
-                var b_pos = parseInt(b.id.indexOf(lastname));
-                // Compare the 2 keys, reverse the result to descend
-                if (a_year < b_year) return 1;
-                if (a_year > b_year) return -1;
-                // Equal year, compare position of lastname index
-                if (a_pos < b_pos) return -1;
-                if (a_pos > b_pos) return 1;
-                // All else equal, compare id strings
-                return b.id.toUpperCase().localeCompare(a.id.toUpperCase());
-            });
-            // Add back list of sorted children
-            $.each(listitems, function(index, item) {
-               context.append(item); 
-            });
-        });
-    </script>
-
 </body>
 
 </html>
