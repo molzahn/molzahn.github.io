@@ -192,14 +192,3 @@ h2 {
 
 
 
-.bibbase_group span {
-   display: none;
-}
-
-#group_article div i:after {
-  content: " Journal Articles"
-}
-
-#group_inproceedings div i:after {
-  content: " Conference Publications"
-}
