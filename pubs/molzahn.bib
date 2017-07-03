@@ -537,13 +537,13 @@ title={{A Laplacian-Based Approach for Finding Near Globally Optimal Solutions t
 	pages={1-10},
 	month={January},
 	doi={10.1109/HICSS.2011.443},
-	keywords={Power Flow},
+	keywords={Reliability},
 		abstract={The Electricity Modernization Act of the Energy Policy Act of 2005 requires the creation of enforceable reliability standards for users, owners, and operators of the "Bulk-Power System" (BPS). This paper introduces an algorithm based on electrical properties of an electric power network that yields a numeric ranking of its branch elements as a step towards identifying which elements should be considered part of the BPS. This ranking depends solely on network topology and element electrical characteristics, and is wholly independent of generator cost functions and system operating point. Two perspectives for deriving and justifying this ranking algorithm are described: one based on the sensitivity of bus-to-branch Lagrange multipliers and another based on generation shift factors. Summary results obtained from applying the algorithm to a detailed model of the US Eastern Interconnection are reported (with suitable anonymity for any facility specific data, in keeping with Critical Energy Infrastructure Information (CEII) protections).},
 	url_Paper={schwarting_molzahn_demarco_lesieutre-hicss2011.pdf},
 	url_Link={http://ieeexplore.ieee.org/document/5718671/},
 }
 
-@INPROCEEDINGS{molzahn_lesieutre-iscas2010,
+@inproceedings{molzahn_lesieutre-iscas2010,
 	author={D. K. Molzahn and B. C. Lesieutre},
 	booktitle={IEEE International Symposium on Circuits and Systems (ISCAS)},
 	title={{An Eigenvalue Formulation for Determining Initial Conditions of Induction Machines in Dynamic Power System Simulations}},
@@ -566,15 +566,8 @@ title={{A Laplacian-Based Approach for Finding Near Globally Optimal Solutions t
 	month={August},
 	year={2013},
 	note={2014 Harold A. Peterson Best Dissertation Award, Second Place in the UW-Madison ECE Department},
-	abstract={Motivated by the potential for improvements in electric power system economics and reliability, this dissertation investigates applications of a semidefinite programming relaxation of the power flow equations, which model the steady-state relationship between power injections and voltages in a power system. In contrast to other optimal power flow solution techniques, semidefinite program solvers can reliably find a global optimum in polynomial time when the semidefinite relaxation is ``tight'' (i.e., the solution has zero relaxation gap). Semidefinite relaxations have been applied to a variety of computationally difficult problems in many fields. The power systems literature details limited success in applying semidefinite programming to the optimal power flow (OPF) problem, which minimizes operating cost under engineering and network constraints. Semidefinite programming holds significant promise for application to other power systems problems.
-
-This dissertation first investigates power system economics using a semidefinite relaxation of the OPF problem. In contrast to claims in the literature, this dissertation shows that the semidefinite relaxation may fail to give a physically meaningful solution (i.e., the solution has non-zero relaxation gap) for some practical problems. This dissertation also provides computational and modeling advances required for solving large-scale, realistic OPF problems. Modeling advances include allowing multiple generators at the same bus; parallel transmission lines and transformers; and an approximate method for modeling constant impedance, constant current, constant power (ZIP) loads. Existing methods exploit system sparsity to speed computation using matrix completion techniques that decompose the large positive semidefinite matrix constraint into constraints on many smaller matrices. Computational advances include modifying the matrix decomposition techniques for further reductions in solver times, extending the applicability of an existing decomposition, and a method for obtaining an optimal voltage profile from a solution to a decomposed semidefinite program. This dissertation also provides a sufficient condition test for global optimality of a candidate OPF solution obtained by any method.
-
-This dissertation next provides techniques for improving power system reliability. The first reliability-related research develops a sufficient condition under which the power flow equations have no solution. This sufficient condition is evaluated using a feasible semidefinite optimization problem. The objective employed in this optimization problem yields a measure of distance (in a parameter set) to the power flow solvability boundary. This distance is closely related to quantities that previous authors have proposed as voltage stability margins. A typical margin is expressed in terms of the parameters of system loading (injected powers); this dissertation additionally introduces a new margin in terms of the parameters of regulated bus voltages. This dissertation considers generators modeled as ideal voltage sources and generators with reactive power limits, which require either mixed-integer semidefinite programming or sum of squares programming formulations.
-
-Also related to power system reliability is the problem of finding multiple solutions to the power flow equations. Power systems typically operate at a high-voltage, stable power flow solution; however, other solutions are used for stability calculations. Existing literature claims that a continuation-based algorithm can reliably find all power flow solutions. This claim is demonstrated to be incorrect with a small counterexample system. Thus, no computationally tractable algorithms exist for reliably finding all power flow solutions. Methods for calculating multiple power flow solutions therefore deserve further research. This dissertation describes a method for finding multiple power flow solutions using semidefinite programming. Results suggest the method's promise for identifying large numbers of power flow solutions.
-
-Although the semidefinite relaxation of the power flow equations is often ``tight,'' non-zero relaxation gap solutions can occur. This dissertation investigates examples of non-zero relaxation gap solutions to semidefinite formulations for the optimal power flow problem, for the power flow insolvability condition, and for determining multiple solutions to the power flow equations.},
+	keywords={Power Flow,Optimal Power Flow,Voltage Stability,Load Modeling},
+		abstract={Motivated by the potential for improvements in electric power system economics and reliability, this dissertation investigates applications of a semidefinite programming relaxation of the power flow equations, which model the steady-state relationship between power injections and voltages in a power system. In contrast to other optimal power flow solution techniques, semidefinite program solvers can reliably find a global optimum in polynomial time when the semidefinite relaxation is ``tight'' (i.e., the solution has zero relaxation gap). Semidefinite relaxations have been applied to a variety of computationally difficult problems in many fields. The power systems literature details limited success in applying semidefinite programming to the optimal power flow (OPF) problem, which minimizes operating cost under engineering and network constraints. Semidefinite programming holds significant promise for application to other power systems problems. This dissertation first investigates power system economics using a semidefinite relaxation of the OPF problem. In contrast to claims in the literature, this dissertation shows that the semidefinite relaxation may fail to give a physically meaningful solution (i.e., the solution has non-zero relaxation gap) for some practical problems. This dissertation also provides computational and modeling advances required for solving large-scale, realistic OPF problems. Modeling advances include allowing multiple generators at the same bus; parallel transmission lines and transformers; and an approximate method for modeling constant impedance, constant current, constant power (ZIP) loads. Existing methods exploit system sparsity to speed computation using matrix completion techniques that decompose the large positive semidefinite matrix constraint into constraints on many smaller matrices. Computational advances include modifying the matrix decomposition techniques for further reductions in solver times, extending the applicability of an existing decomposition, and a method for obtaining an optimal voltage profile from a solution to a decomposed semidefinite program. This dissertation also provides a sufficient condition test for global optimality of a candidate OPF solution obtained by any method. This dissertation next provides techniques for improving power system reliability. The first reliability-related research develops a sufficient condition under which the power flow equations have no solution. This sufficient condition is evaluated using a feasible semidefinite optimization problem. The objective employed in this optimization problem yields a measure of distance (in a parameter set) to the power flow solvability boundary. This distance is closely related to quantities that previous authors have proposed as voltage stability margins. A typical margin is expressed in terms of the parameters of system loading (injected powers); this dissertation additionally introduces a new margin in terms of the parameters of regulated bus voltages. This dissertation considers generators modeled as ideal voltage sources and generators with reactive power limits, which require either mixed-integer semidefinite programming or sum of squares programming formulations. Also related to power system reliability is the problem of finding multiple solutions to the power flow equations. Power systems typically operate at a high-voltage, stable power flow solution; however, other solutions are used for stability calculations. Existing literature claims that a continuation-based algorithm can reliably find all power flow solutions. This claim is demonstrated to be incorrect with a small counterexample system. Thus, no computationally tractable algorithms exist for reliably finding all power flow solutions. Methods for calculating multiple power flow solutions therefore deserve further research. This dissertation describes a method for finding multiple power flow solutions using semidefinite programming. Results suggest the method's promise for identifying large numbers of power flow solutions. Although the semidefinite relaxation of the power flow equations is often "tight," non-zero relaxation gap solutions can occur. This dissertation investigates examples of non-zero relaxation gap solutions to semidefinite formulations for the optimal power flow problem, for the power flow insolvability condition, and for determining multiple solutions to the power flow equations.},
 	url_Paper={molzahn-dissertation.pdf},
 	url_Errata={molzahn-dissertation_errata.pdf},
 	url_Link={http://search.library.wisc.edu/catalog/ocn856529046},
@@ -587,10 +580,47 @@ Although the semidefinite relaxation of the power flow equations is often ``tigh
 	school={University of Wisconsin-Madison Department of Electrical and Computer Engineering},
 	month={December},
 	year={2010},
-	abstract={},
+	keywords={Power Flow,Load Modeling,Electric Machines},
+		abstract={Eigenvalue problems incorporate multiplicative nonlinearities in otherwise linear equations. Two power systems problems with multiplicative nonlinearities are reformulated as eigenvalue problems. Reformulation allows for the application of eigenvalue theory and solution techniques to these problems. The first problem involves determination of the initial conditions for induction machine internal variables in a non-linear dynamic power system analysis. The internal variables of stator and rotor currents, rotor speed, and mechanical torque must be determined from the given values of input real power, stator voltage magnitude, and stator voltage angle. This problem is posed in an eigenvalue formulation that can be solved using standard linear algebra techniques. The eigenvalue formulation allows for determination of all possible solutions for the internal variables rather than the single solution obtained from traditional iterative methods. Additionally, the absence of non-zero real eigenvalues indicates that the problem has no solution. Both single-cage and double-cage induction machine models are considered, and numeric examples are presented. The second problem involves reformulation of the power flow equations as a multiparameter eigenvalue problem. In this formulation, both the eigenvalues and the eigenvectors are composed of the $d$ and $q$ orthogonal components of the bus voltages. The two parameter formulation of the power flow equations for two bus systems can be solved directly by decomposing the problem into two generalized eigenvalue problems that must be simultaneously satisfied. Since $n$ bus systems require $2\left(n-1\right)$ parameter eigenvalue problems, which do not yet have a general solution method for $n > 2$, systems with more than two buses are not yet directly solvable from the multiparameter eigenvalue formulation. In addition to direct solution, two other research avenues for the multiparameter eigenvalue formulation of the power flow equations are pursued. First, motivated by eigenvalue problem structure, a reformulation of the multiparameter eigenvalue form of the power flow equations is presented. Although it is without known practical applications, this reformulation and the intermediate results in its derivation are interesting from a theoretical standpoint. Second, an eigenvalue sensitivity analysis is performed on the multiparameter eigenvalue formulation of the power flow equations. The linearization obtained from the eigenvalue sensitivity analysis is equivalent to the linearization obtained from the power flow Jacobian. Future developments in multiparameter eigenvalue theory may provide additional insights into solutions of the power flow equations. General solution techniques for multiparameter eigenvalue problems with more than two parameters may enable direct solution of the power flow equations. A method for determining the number of solutions to multiparameter eigenvalue problems would be useful as a stopping condition for continuation power flows. Conditions for the existence of any solutions to multiparameter eigenvalue problems would be useful for finding the point of voltage collapse and for analyzing power systems in heavily loaded conditions.},
 	url_Paper={molzahn-msthesis.pdf},
 	url_Link={http://minds.wisconsin.edu/bitstream/handle/1793/46255/molzahn_ms_thesis.pdf},
 }
 
-
 %%%%%% Technical reports
+@TechReport{molzahn_niemerg_mehta_hauenstein-2016,
+	author={D. K. Molzahn and M. Niemerg and D. Mehta and J. D. Hauenstein},
+	title={{Investigating the Maximum Number of Real Solutions to the Power Flow Equations: Analysis of Lossless Four-Bus Systems}},
+	year={2016},
+	month={March},
+	url_Paper={molzahn_niemerg_mehta_hauenstein-2016.pdf},
+	url_Link={https://arxiv.org/abs/1603.05908},
+}
+
+@TechReport{lesieutre_demarco_molzahn-ferc2012a,
+	author={B. C. Lesieutre and C. L. DeMarco and D. K. Molzahn},
+	title={{Power System Deliverability Ranking of Critical Elements to Support Select Facilities}},
+	institution={Report to the Federal Energy Regulatory Commission},
+	year={2012},
+	month={January},
+	note={Not publicly available}
+}
+
+@TechReport{lesieutre_demarco_molzahn-ferc2012b,
+	author={B. C. Lesieutre and C. L. DeMarco and D. K. Molzahn},
+	title={{Power System Ranking of Nodal Locations}},
+	institution={Report to the Federal Energy Regulatory Commission},
+	year={2012},
+	month={January},
+	note={Not publicly available},
+	keywords={Reliability},
+}
+
+@TechReport{molzahn_williams_srinivasan-mge2010,
+	author={D. K. Molzahn and S. P. Williams and R. Srinivasan},
+	title={{Plug-In Vehicles in Madison, WI: Consumer Preferences, Charging Stations, and Distribution System Impacts}},
+	institution={Energy Analysis and Policy Capstone Project Report to Madison Gas and Electric},
+	year={2010},
+	month={May},
+	note={Not publicly available},
+	keywords={Electric Vehicles},
+}
