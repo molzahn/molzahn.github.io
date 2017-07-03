@@ -192,6 +192,6 @@ h2 {
 
 
 /* Bold my name in the author list */
-a.bibbase.author.link[href="http://molzahn.github.io"] {
+a.bibbase.author.link[href="https://molzahn.github.io"] {
   font-weight: bold;
 }
