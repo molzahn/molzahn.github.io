@@ -195,3 +195,24 @@ h2 {
 a.bibbase.author.link[href="https://molzahn.github.io/publications2.html"] {
   font-weight: bold;
 }
+
+/* Remove group by downloads */
+  #bibbase_header a[onclick="groupby('downloads')"] { display: none; }
+
+/* Play with background colors */
+.bibbase_group {
+    /* background-color: #D0D0E0; */
+    background-color: #C1DEF0;
+    font-style: normal;
+    font-size: larger;
+    text-shadow: 0px 0px 3px #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px;
+    padding: 5px 40px 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    word-spacing: 3px;
+}
+
