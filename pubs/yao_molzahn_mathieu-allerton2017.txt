@@ -1,0 +1,1 @@
+M. Yao, D.K. Molzahn, and J.L. Mathieu, "The Impact of Load Models in an Algorithm for Improving Power System Voltage Stability via Demand Response," 55th Annual Allerton Conference on Communication, Control, and Computing, October 4-6, 2017.
