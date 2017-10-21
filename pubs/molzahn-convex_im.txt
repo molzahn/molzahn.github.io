@@ -1,1 +1,1 @@
-D.K. Molzahn, "Incorporating Induction Machine Models in Convex Relaxations of Optimal Power Flow Problems," to appear in IEEE Transactions on Power Systems (Letters), 2017.
+D.K. Molzahn, "Incorporating Squirrel-Cage Induction Machine Models in Convex Relaxations of OPF Problems," IEEE Transactions on Power Systems (Letters), vol. 32, no. 6, pp. 4972-4974, November 2017.

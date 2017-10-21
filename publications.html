@@ -142,39 +142,54 @@
 			&emsp;[ <span onclick="showDiv('nonconvexity_search2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn-nonconvexity_search2017.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn-nonconvexity_search2017.bib">bib</a>   <a href="pubs/molzahn-nonconvexity_search2017.txt">txt</a> ] </p></li>
 		</span>
   </div>
+-->
+<!--
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p><b>D.K. Molzahn</b> and L.A. Roald, "AC Optimal Power Flow with Robust Feasibility Guarantees," <i>Submitted.</i><br />
+			<li><p><b>D.K. Molzahn</b> and L.A. Roald, "Towards an AC Optimal Power Flow Algorithm with Robust Feasibility Guarantees," <i>Submitted.</i><br />
 				<span id="acopf_robust2017_year" class="abstract" style="display:none">
-					With growing penetrations of stochastic renewable generation and the need to accurately model the network physics, optimization problems that explicitly consider uncertainty and the AC power flow equations are becoming increasingly important to the operation of electric power systems. This paper proposes an AC Optimal Power Flow (AC OPF) algorithm which yields an operating point that is guaranteed to be robust to all realizations of stochastic generation within a specified uncertainty set. The algorithm tightens the constraints in the original AC OPF problem in order to determine an operating point that accommodates fluctuations due to uncertain generation by iterating between two steps: 1) solving a deterministic AC OPF problem with tightened constraint limits, and 2) using convex relaxation techniques to obtain conservative bounds on updated constraint tightenings which ensure that any realization within the uncertainty set will not result in violation of the operational constraints. Additionally, satisfaction of a sufficient condition for power flow solvability related to the static transfer stability limits completes the algorithm's robust feasibility guarantee. The algorithm is demonstrated using a small illustrative example and applied to several IEEE test cases.
+					With growing penetrations of stochastic renewable generation and the need to accurately model the network physics, optimization problems that explicitly consider uncertainty and the AC power flow equations are becoming increasingly important to the operation of electric power systems. This paper describes initial steps towards a AC Optimal Power Flow (AC OPF) algorithm which yields an operating point that is guaranteed to be robust to all realizations of stochastic generation within a specified uncertainty set. Ensuring robust feasibility requires overcoming two challenges: 1) ensuring solvability of the power flow equations for all uncertainty realizations and 2) guaranteeing feasibility of the engineering constraints for all uncertainty realizations. This paper primarily focuses on the latter challenge. Specifically, this paper poses the robust AC OPF problem as a bi-level program that maximizes (or minimizes) the constraint values over the uncertainty set, where a convex relaxation of the AC power flow constraints is used to ensure conservativeness. The resulting optimization program is solved using an alternating solution algorithm. The algorithm is illustrated via detailed analyses of two small test cases.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('acopf_robust2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_roald-acopf_robust2017.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn_roald-acopf_robust2017.bib">bib</a>   <a href="pubs/molzahn_roald-acopf_robust2017.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('acopf_robust2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_roald-acopf_robust2018.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn_roald-acopf_robust2018.bib">bib</a>   <a href="pubs/molzahn_roald-acopf_robust2018.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+-->
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>S. Misra, <b>D.K. Molzahn</b>, and K. Dvijotham, "Optimal Adaptive Approximations of the AC Power Flow Equations," <i>Submitted.</i><br />
+				<span id="adaptive_linearizations2018_year" class="abstract" style="display:none">
+					The power flow equations are at the heart of many optimization and control problems relevant to power systems. The non-linearity of these equations leads to computational challenges in solving power flow and optimal power flow problems (non-convergence, local optima, etc.). Accordingly, various linearization techniques, such as the DC power flow, are often used to approximate the power flow equations. In contrast to a wide variety of general linearization techniques in the power systems literature, this paper computes a linear approximation that is specific to a given power system and operating range of interest. An "adaptive linearization" developed using this approach minimizes the worst-case error between the output of the approximation and the actual non-linear power flow equations over the operating range of interest. To compute an adaptive linearization, this paper proposes a constraint generation algorithm that iterates between 1) using an optimization algorithm to identify a point that maximizes the error of the linearization at that iteration and 2) updating the linearization to minimize the worst-case error among all points identified thus far. This approach is tested on several IEEE test cases, with the results demonstrating up to a factor of four improvement in approximation error over linearizations based on a first-order Taylor approximation.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('adaptive_linearizations2018_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.pdf">pdf</a> ] [ Ref: <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.bib">bib</a>   <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>S. Misra, <b>D.K. Molzahn</b>, and K. Dvijotham "Optimal Adaptive Approximations of the AC Power Flow Equations," <i>Submitted.</i><br />
-				<span id="adaptive_linearizations2017_year" class="abstract" style="display:none">
-					The power flow equations are at the heart of many optimization and control problems relevant to electric power systems. The nonlinearity of these equations leads to computational challenges, such as non-convexity. Accordingly, various linearization techniques are often used to approximate the power flow equations. In contrast to the wide variety of general linearization techniques in the power systems literature, this paper computes a linear approximation that is specific to a given power system and operating range of interest. This "adaptive linearization" approach minimizes the worst-case error between the outputs of the approximation and the actual nonlinear power flow equations over the operating range of interest. To compute the adaptive linearizations, this paper proposes a constraint generation algorithm that iterates between 1) using a local optimization algorithm to identify a scenario that maximizes the error for the linearization at that iteration and 2) updating the linearization to minimize the worst-case error among all scenarios identified thus far. This approach is tested on several IEEE test cases.
+			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Improving QC Relaxations of OPF Problems via Voltage Magnitude Difference Constraints and Envelopes for Trilinear Monomials," <i>Submitted.</i><br />
+				<span id="qc_voltage_difference2018_year" class="abstract" style="display:none">
+					AC optimal power flow (AC OPF) is a challenging non-convex optimization problem that plays a crucial role in power system operation and control. Recently developed convex relaxation techniques provide new insights regarding the global optimality of AC OPF solutions. The quadratic convex (QC) relaxation is one promising approach that constructs convex envelopes around the trigonometric and product terms in the polar representation of the power flow equations. This paper proposes two methods for tightening the QC relaxation. The first method introduces new variables that represent the voltage magnitude differences between connected buses. Using "bound tightening" techniques, the bounds on the voltage magnitude difference variables can be significantly smaller than the bounds on the voltage magnitudes themselves, so constraints based on voltage magnitude differences can tighten the relaxation. Second, rather than a potentially weaker "nested McCormick" formulation, this paper applies "Meyer and Floudas" envelopes that yield the convex hull of the trilinear monomials formed by the product of the voltage magnitudes and trignometric terms in the polar form of the power flow equations. Comparison to a state-of-the-art QC implementation demonstrates the advantages of these improvements via smaller optimality gaps.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('adaptive_linearizations2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2017.pdf">pdf</a> ] [ Ref: <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2017.bib">bib</a>   <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2017.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('qc_voltage_difference2018_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-qc_improvements2018.pdf">pdf</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-qc_improvements2018.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-qc_improvements2018.txt">txt</a> ] </p></li>
 		</span>
   </div>
+	<!--
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Strengthening QC Relaxations of OPF Problems via Constraints on Voltage Magnitude Differences," <i>Submitted.</i><br />
-				<span id="qc_voltage_difference2017_year" class="abstract" style="display:none">
-					AC optimal power flow (AC OPF) is a challenging non-convex optimization problem that plays a crucial role in power system operation and control. Recent applications of convex relaxation methods yield new insights regarding the global optimality of AC OPF solutions. The quadratic convex (QC) relaxation is one promising approach that constructs convex envelopes around the trigonometric and product terms in the polar representation of the power flow equations. Since the tightness of these envelopes (and thus the quality of the overall QC relaxation) depends on the range of the specified bounds on voltage magnitudes and angle differences, bound tightening techniques have been proposed to strengthen the QC relaxation. Leveraging similar bound tightening techniques, this abstract studies an approach for further strengthening the QC relaxation. Specifically, the QC relaxation is augmented with new variables that represent the voltage magnitude differences between neighboring buses. For many OPF problems, applying bound tightening techniques yields bounds on the voltage magnitude differences between neighboring buses that are significantly tighter than the best-achievable bounds on the voltage magnitudes themselves. Constraints based on the voltage magnitude differences are thus capable of strengthening the QC relaxation.
+			<li><p>J.A. Kersulis, I.A. Hiskens, C. Coffrin, and <b>D.K. Molzahn</b>, "Topological Graph Metrics for Detecting Grid Anomalies and Improving Algorithms," <i>Submitted.</i><br />
+				<span id="graph_metrics2017_year" class="abstract" style="display:none">
+					Power grids are naturally represented as graphs, with buses as nodes and power lines as edges. Graph theory provides many ways to measure power grid graphs, allowing researchers to characterize system structure and optimize algorithms. We apply several topological graph metrics to 33 publiclyavailable power grids. Results show that a straightforward, computationally inexpensive set of checks can quickly identify structural anomalies, especially when a broad set of test networks is available to establish norms. Another application of graph metrics is the characterization of computational behavior. We conclude by illustrating one compelling example: the close connection between clique analysis and semidefinite programming solver performance. These two applications demonstrate the power of purely topological graph metrics when utilized in the right settings.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('qc_voltage_difference2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-qc_voltage_difference2017.pdf">pdf</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-qc_voltage_difference2017.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-qc_voltage_difference2017.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('graph_metrics2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/kersulis_hiskens_coffrin_molzahn-graph_metrics2018.pdf">pdf</a> ] [ Ref: <a href="pubs/kersulis_hiskens_coffrin_molzahn-graph_metrics2018.bib">bib</a>   <a href="pubs/kersulis_hiskens_coffrin_molzahn-graph_metrics2018.txt">txt</a> ] </p></li>
 		</span>
-  </div>
+	</div>
 -->
 	<div class="tile scale-anm Year">
 		<span>
@@ -197,17 +212,6 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p><b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," to appear in <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, 2017.<br />
-				<span id="distributed_optimization_survey2017_year" class="abstract" style="display:none">
-					Historically, centrally computed algorithms have been the primary means of power system optimization and control. With increasing penetrations of distributed energy resources requiring optimization and control of power systems with many controllable devices, distributed algorithms have been the subject of significant research interest. This paper surveys the literature of distributed algorithms with applications to optimization and control of power systems. In particular, this paper reviews distributed algorithms for offline solution of optimal power flow (OPF) problems as well as online algorithms for real-time solution of OPF, optimal frequency control, optimal voltage control, and optimal wide-area control problems.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('distributed_optimization_survey2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.bib">bib</a>   <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
 			<li><p>D. Wu, <b>D.K. Molzahn</b>, B.C. Lesieutre, and K. Dvijotham, "A Deterministic Method to Identify Multiple Local Extrema for the AC Optimal Power Flow Problem," to appear in <i>IEEE Transactions on Power Systems,</i> 2017.<br />
 				<span id="acopf_tracing2017_year" class="abstract" style="display:none">
 					This paper presents a deterministic approach to compute multiple local extrema for AC Optimal Power Flow (ACOPF) problems. An elliptical representation of the sphereconfined Fritz John conditions is constructed from a quadratic formulation of the ACOPF problem. Application of a branch tracing method to the elliptical formulation enables the calculation of multiple solutions. Further, a monotone search strategy enhances the computational efficiency of finding multiple local solutions with improved objective values. The proposed approach is first illustrated using two small examples with known feasible spaces. Then, four additional local solutions to a 39-bus system are found using the proposed approach.
@@ -219,7 +223,26 @@
   </div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p><b>D.K. Molzahn</b>, "Computing the Feasible Spaces of Optimal Power Flow Problems," to appear in <i>IEEE Transactions on Power Systems</i>, 2017.<br />
+			<li><p>J. Lavaei, S.H. Low, R. Baldick, B. Zhang, <b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, "Guest Editorial: Distributed Control and Efficient Optimization Methods for Smart Grid," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2939-2940, November 2017.<br />
+		</span>
+		<span style="cursor:auto;">
+			&emsp; [ <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.pdf">pdf</a> ] [ Ref: <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.bib">bib</a>   <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p><b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2941-2962, November 2017.<br />
+				<span id="distributed_optimization_survey2017_year" class="abstract" style="display:none">
+					Historically, centrally computed algorithms have been the primary means of power system optimization and control. With increasing penetrations of distributed energy resources requiring optimization and control of power systems with many controllable devices, distributed algorithms have been the subject of significant research interest. This paper surveys the literature of distributed algorithms with applications to optimization and control of power systems. In particular, this paper reviews distributed algorithms for offline solution of optimal power flow (OPF) problems as well as online algorithms for real-time solution of OPF, optimal frequency control, optimal voltage control, and optimal wide-area control problems.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('distributed_optimization_survey2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.bib">bib</a>   <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p><b>D.K. Molzahn</b>, "Computing the Feasible Spaces of Optimal Power Flow Problems," <i>IEEE Transactions on Power Systems</i>, vol. 32, no. 6, pp. 4752-4763, November 2017.<br />
 				<span id="opf_spaces2017_year" class="abstract" style="display:none">
 					The solution to an optimal power flow (OPF) problem provides a minimum cost operating point for an electric power system. The performance of OPF solution techniques strongly depends on the problem's feasible space. This paper presents an algorithm that is guaranteed to compute the entire feasible spaces of small OPF problems to within a specified discretization tolerance. Specifically, the feasible space is computed by discretizing certain of the OPF problem's inequality constraints to obtain a set of power flow equations. All solutions to the power flow equations at each discretization point are obtained using the Numerical Polynomial Homotopy Continuation (NPHC) algorithm. To improve computational tractability, "bound tightening" and "grid pruning" algorithms use convex relaxations to preclude consideration of many discretization points that are infeasible for the OPF problem. The proposed algorithm is used to generate the feasible spaces of two small test cases.
 				</span>
@@ -230,7 +253,7 @@
   </div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p><b>D.K. Molzahn</b>, "Incorporating Squirrel-Cage Induction Machine Models in Convex Relaxations of OPF Problems," to appear in <i>IEEE Transactions on Power Systems (Letters)</i>, 2017.<br />
+			<li><p><b>D.K. Molzahn</b>, "Incorporating Squirrel-Cage Induction Machine Models in Convex Relaxations of OPF Problems," <i>IEEE Transactions on Power Systems (Letters)</i>, vol. 32, no. 6, pp. 4972-4974, November 2017.<br />
 				<span id="convex_im2017_year" class="abstract" style="display:none">
 					The optimal power flow (OPF) problem determines a minimum cost operating point for an electric power system. Recently developed convex relaxations are capable of globally solving certain OPF problems. Using a semidefinite relaxation of the OPF problem as an illustrative example, this letter presents a method for extending convex relaxations of the OPF problem to include steady-state squirrel-cage induction machine models.
 				</span>
@@ -858,17 +881,6 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p><b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," to appear in <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, 2017.<br />
-				<span id="distributed_optimization_survey2017_type" class="abstract" style="display:none">
-					Historically, centrally computed algorithms have been the primary means of power system optimization and control. With increasing penetrations of distributed energy resources requiring optimization and control of power systems with many controllable devices, distributed algorithms have been the subject of significant research interest. This paper surveys the literature of distributed algorithms with applications to optimization and control of power systems. In particular, this paper reviews distributed algorithms for offline solution of optimal power flow (OPF) problems as well as online algorithms for real-time solution of OPF, optimal frequency control, optimal voltage control, and optimal wide-area control problems.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('distributed_optimization_survey2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.bib">bib</a>   <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>D. Wu, <b>D.K. Molzahn</b>, B.C. Lesieutre, and K. Dvijotham, "A Deterministic Method to Identify Multiple Local Extrema for the AC Optimal Power Flow Problem," to appear in <i>IEEE Transactions on Power Systems,</i> 2017.<br />
 				<span id="acopf_tracing2017_type" class="abstract" style="display:none">
 					This paper presents a deterministic approach to compute multiple local extrema for AC Optimal Power Flow (ACOPF) problems. An elliptical representation of the sphereconfined Fritz John conditions is constructed from a quadratic formulation of the ACOPF problem. Application of a branch tracing method to the elliptical formulation enables the calculation of multiple solutions. Further, a monotone search strategy enhances the computational efficiency of finding multiple local solutions with improved objective values. The proposed approach is first illustrated using two small examples with known feasible spaces. Then, four additional local solutions to a 39-bus system are found using the proposed approach.
@@ -880,7 +892,26 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p><b>D.K. Molzahn</b>, "Computing the Feasible Spaces of Optimal Power Flow Problems," to appear in <i>IEEE Transactions on Power Systems</i>, 2017.<br />
+			<li><p>J. Lavaei, S.H. Low, R. Baldick, B. Zhang, <b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, "Guest Editorial: Distributed Control and Efficient Optimization Methods for Smart Grid," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2939-2940, November 2017.<br />
+		</span>
+		<span style="cursor:auto;">
+			&emsp; [ <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.pdf">pdf</a> ] [ Ref: <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.bib">bib</a>   <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p><b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2941-2962, November 2017.<br />
+				<span id="distributed_optimization_survey2017_type" class="abstract" style="display:none">
+					Historically, centrally computed algorithms have been the primary means of power system optimization and control. With increasing penetrations of distributed energy resources requiring optimization and control of power systems with many controllable devices, distributed algorithms have been the subject of significant research interest. This paper surveys the literature of distributed algorithms with applications to optimization and control of power systems. In particular, this paper reviews distributed algorithms for offline solution of optimal power flow (OPF) problems as well as online algorithms for real-time solution of OPF, optimal frequency control, optimal voltage control, and optimal wide-area control problems.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('distributed_optimization_survey2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.bib">bib</a>   <a href="pubs/molzahn_dorfler_sandberg_low_chakrabarti_baldick_lavaei-distributed_optimization_control.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p><b>D.K. Molzahn</b>, "Computing the Feasible Spaces of Optimal Power Flow Problems," <i>IEEE Transactions on Power Systems</i>, vol. 32, no. 6, pp. 4752-4763, November 2017.<br />
 				<span id="opf_spaces2017_type" class="abstract" style="display:none">
 					The solution to an optimal power flow (OPF) problem provides a minimum cost operating point for an electric power system. The performance of OPF solution techniques strongly depends on the problem's feasible space. This paper presents an algorithm that is guaranteed to compute the entire feasible spaces of small OPF problems to within a specified discretization tolerance. Specifically, the feasible space is computed by discretizing certain of the OPF problem's inequality constraints to obtain a set of power flow equations. All solutions to the power flow equations at each discretization point are obtained using the Numerical Polynomial Homotopy Continuation (NPHC) algorithm. To improve computational tractability, "bound tightening" and "grid pruning" algorithms use convex relaxations to preclude consideration of many discretization points that are infeasible for the OPF problem. The proposed algorithm is used to generate the feasible spaces of two small test cases.
 				</span>
@@ -891,7 +922,7 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p><b>D.K. Molzahn</b>, "Incorporating Squirrel-Cage Induction Machine Models in Convex Relaxations of OPF Problems," to appear in <i>IEEE Transactions on Power Systems (Letters)</i>, 2017.<br />
+			<li><p><b>D.K. Molzahn</b>, "Incorporating Squirrel-Cage Induction Machine Models in Convex Relaxations of OPF Problems," <i>IEEE Transactions on Power Systems (Letters)</i>, vol. 32, no. 6, pp. 4972-4974, November 2017.<br />
 				<span id="convex_im2017_type" class="abstract" style="display:none">
 					The optimal power flow (OPF) problem determines a minimum cost operating point for an electric power system. Recently developed convex relaxations are capable of globally solving certain OPF problems. Using a semidefinite relaxation of the OPF problem as an illustrative example, this letter presents a method for extending convex relaxations of the OPF problem to include steady-state squirrel-cage induction machine models.
 				</span>
@@ -1056,39 +1087,54 @@
 			&emsp;[ <span onclick="showDiv('nonconvexity_search2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn-nonconvexity_search2017.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn-nonconvexity_search2017.bib">bib</a>   <a href="pubs/molzahn-nonconvexity_search2017.txt">txt</a> ] </p></li>
 		</span>
   </div>
+	-->
+	<!--
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p><b>D.K. Molzahn</b> and L.A. Roald, "AC Optimal Power Flow with Robust Feasibility Guarantees," <i>Submitted.</i><br />
+			<li><p><b>D.K. Molzahn</b> and L.A. Roald, "Towards an AC Optimal Power Flow Algorithm with Robust Feasibility Guarantees," <i>Submitted.</i><br />
 				<span id="acopf_robust2017_type" class="abstract" style="display:none">
-					With growing penetrations of stochastic renewable generation and the need to accurately model the network physics, optimization problems that explicitly consider uncertainty and the AC power flow equations are becoming increasingly important to the operation of electric power systems. This paper proposes an AC Optimal Power Flow (AC OPF) algorithm which yields an operating point that is guaranteed to be robust to all realizations of stochastic generation within a specified uncertainty set. The algorithm tightens the constraints in the original AC OPF problem in order to determine an operating point that accommodates fluctuations due to uncertain generation by iterating between two steps: 1) solving a deterministic AC OPF problem with tightened constraint limits, and 2) using convex relaxation techniques to obtain conservative bounds on updated constraint tightenings which ensure that any realization within the uncertainty set will not result in violation of the operational constraints. Additionally, satisfaction of a sufficient condition for power flow solvability related to the static transfer stability limits completes the algorithm's robust feasibility guarantee. The algorithm is demonstrated using a small illustrative example and applied to several IEEE test cases.
+					With growing penetrations of stochastic renewable generation and the need to accurately model the network physics, optimization problems that explicitly consider uncertainty and the AC power flow equations are becoming increasingly important to the operation of electric power systems. This paper describes initial steps towards a AC Optimal Power Flow (AC OPF) algorithm which yields an operating point that is guaranteed to be robust to all realizations of stochastic generation within a specified uncertainty set. Ensuring robust feasibility requires overcoming two challenges: 1) ensuring solvability of the power flow equations for all uncertainty realizations and 2) guaranteeing feasibility of the engineering constraints for all uncertainty realizations. This paper primarily focuses on the latter challenge. Specifically, this paper poses the robust AC OPF problem as a bi-level program that maximizes (or minimizes) the constraint values over the uncertainty set, where a convex relaxation of the AC power flow constraints is used to ensure conservativeness. The resulting optimization program is solved using an alternating solution algorithm. The algorithm is illustrated via detailed analyses of two small test cases.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('acopf_robust2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_roald-acopf_robust2017.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn_roald-acopf_robust2017.bib">bib</a>   <a href="pubs/molzahn_roald-acopf_robust2017.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('acopf_robust2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_roald-acopf_robust2018.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn_roald-acopf_robust2018.bib">bib</a>   <a href="pubs/molzahn_roald-acopf_robust2018.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+-->
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>S. Misra, <b>D.K. Molzahn</b>, and K. Dvijotham, "Optimal Adaptive Approximations of the AC Power Flow Equations," <i>Submitted.</i><br />
+				<span id="adaptive_linearizations2018_type" class="abstract" style="display:none">
+					The power flow equations are at the heart of many optimization and control problems relevant to power systems. The non-linearity of these equations leads to computational challenges in solving power flow and optimal power flow problems (non-convergence, local optima, etc.). Accordingly, various linearization techniques, such as the DC power flow, are often used to approximate the power flow equations. In contrast to a wide variety of general linearization techniques in the power systems literature, this paper computes a linear approximation that is specific to a given power system and operating range of interest. An "adaptive linearization" developed using this approach minimizes the worst-case error between the output of the approximation and the actual non-linear power flow equations over the operating range of interest. To compute an adaptive linearization, this paper proposes a constraint generation algorithm that iterates between 1) using an optimization algorithm to identify a point that maximizes the error of the linearization at that iteration and 2) updating the linearization to minimize the worst-case error among all points identified thus far. This approach is tested on several IEEE test cases, with the results demonstrating up to a factor of four improvement in approximation error over linearizations based on a first-order Taylor approximation.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('adaptive_linearizations2018_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.pdf">pdf</a> ] [ Ref: <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.bib">bib</a>   <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>S. Misra, <b>D.K. Molzahn</b>, and K. Dvijotham "Optimal Adaptive Approximations of he AC Power Flow Equations," <i>Submitted.</i><br />
-				<span id="adaptive_linearizations2017_type" class="abstract" style="display:none">
-					The power flow equations are at the heart of many optimization and control problems relevant to electric power systems. The nonlinearity of these equations leads to computational challenges, such as non-convexity. Accordingly, various linearization techniques are often used to approximate the power flow equations. In contrast to the wide variety of general linearization techniques in the power systems literature, this paper computes a linear approximation that is specific to a given power system and operating range of interest. This "adaptive linearization" approach minimizes the worst-case error between the outputs of the approximation and the actual nonlinear power flow equations over the operating range of interest. To compute the adaptive linearizations, this paper proposes a constraint generation algorithm that iterates between 1) using a local optimization algorithm to identify a scenario that maximizes the error for the linearization at that iteration and 2) updating the linearization to minimize the worst-case error among all scenarios identified thus far. This approach is tested on several IEEE test cases.
+			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Improving QC Relaxations of OPF Problems via Voltage Magnitude Difference Constraints and Envelopes for Trilinear Monomials," <i>Submitted.</i><br />
+				<span id="qc_voltage_difference2018_type" class="abstract" style="display:none">
+					AC optimal power flow (AC OPF) is a challenging non-convex optimization problem that plays a crucial role in power system operation and control. Recently developed convex relaxation techniques provide new insights regarding the global optimality of AC OPF solutions. The quadratic convex (QC) relaxation is one promising approach that constructs convex envelopes around the trigonometric and product terms in the polar representation of the power flow equations. This paper proposes two methods for tightening the QC relaxation. The first method introduces new variables that represent the voltage magnitude differences between connected buses. Using "bound tightening" techniques, the bounds on the voltage magnitude difference variables can be significantly smaller than the bounds on the voltage magnitudes themselves, so constraints based on voltage magnitude differences can tighten the relaxation. Second, rather than a potentially weaker "nested McCormick" formulation, this paper applies "Meyer and Floudas" envelopes that yield the convex hull of the trilinear monomials formed by the product of the voltage magnitudes and trignometric terms in the polar form of the power flow equations. Comparison to a state-of-the-art QC implementation demonstrates the advantages of these improvements via smaller optimality gaps.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('adaptive_linearizations2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2017.pdf">pdf</a> ] [ Ref: <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2017.bib">bib</a>   <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2017.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('qc_voltage_difference2018_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-qc_improvements2018.pdf">pdf</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-qc_improvements2018.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-qc_improvements2018.txt">txt</a> ] </p></li>
 		</span>
   </div>
+	<!--
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Strengthening QC Relaxations of OPF Problems via Constraints on Voltage Magnitude Differences," <i>Submitted.</i><br />
-				<span id="qc_voltage_difference2017_type" class="abstract" style="display:none">
-					AC optimal power flow (AC OPF) is a challenging non-convex optimization problem that plays a crucial role in power system operation and control. Recent applications of convex relaxation methods yield new insights regarding the global optimality of AC OPF solutions. The quadratic convex (QC) relaxation is one promising approach that constructs convex envelopes around the trigonometric and product terms in the polar representation of the power flow equations. Since the tightness of these envelopes (and thus the quality of the overall QC relaxation) depends on the range of the specified bounds on voltage magnitudes and angle differences, bound tightening techniques have been proposed to strengthen the QC relaxation. Leveraging similar bound tightening techniques, this abstract studies an approach for further strengthening the QC relaxation. Specifically, the QC relaxation is augmented with new variables that represent the voltage magnitude differences between neighboring buses. For many OPF problems, applying bound tightening techniques yields bounds on the voltage magnitude differences between neighboring buses that are significantly tighter than the best-achievable bounds on the voltage magnitudes themselves. Constraints based on the voltage magnitude differences are thus capable of strengthening the QC relaxation.
+			<li><p>J.A. Kersulis, I.A. Hiskens, C. Coffrin, and <b>D.K. Molzahn</b>, "Topological Graph Metrics for Detecting Grid Anomalies and Improving Algorithms," <i>Submitted.</i><br />
+				<span id="graph_metrics2017_type" class="abstract" style="display:none">
+					Power grids are naturally represented as graphs, with buses as nodes and power lines as edges. Graph theory provides many ways to measure power grid graphs, allowing researchers to characterize system structure and optimize algorithms. We apply several topological graph metrics to 33 publiclyavailable power grids. Results show that a straightforward, computationally inexpensive set of checks can quickly identify structural anomalies, especially when a broad set of test networks is available to establish norms. Another application of graph metrics is the characterization of computational behavior. We conclude by illustrating one compelling example: the close connection between clique analysis and semidefinite programming solver performance. These two applications demonstrate the power of purely topological graph metrics when utilized in the right settings.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('qc_voltage_difference2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-qc_voltage_difference2017.pdf">pdf</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-qc_voltage_difference2017.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-qc_voltage_difference2017.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('graph_metrics2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/kersulis_hiskens_coffrin_molzahn-graph_metrics2018.pdf">pdf</a> ] [ Ref: <a href="pubs/kersulis_hiskens_coffrin_molzahn-graph_metrics2018.bib">bib</a>   <a href="pubs/kersulis_hiskens_coffrin_molzahn-graph_metrics2018.txt">txt</a> ] </p></li>
 		</span>
-  </div>
+	</div>
 -->
 	<div class="tile scale-anm Type" style="display:none">
 		<span>

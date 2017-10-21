@@ -1,1 +1,1 @@
-D.K. Molzahn, "Computing the Feasible Spaces of OPF Problems," to appear in IEEE Transactions on Power Systems, 2017. arXiv:1608.00598
+D.K. Molzahn, "Computing the Feasible Spaces of OPF Problems," IEEE Transactions on Power Systems, vol. 32, no. 6, 4752-4763, November 2017.

@@ -1,1 +1,1 @@
-D.K. Molzahn, F. Dorfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," to appear in IEEE Transactions on Smart Grid, 2017.
+D.K. Molzahn, F. Dorfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," IEEE Transactions on Smart Grid, vol. 8, no. 6, pp. 2939-2940, November 2017.
