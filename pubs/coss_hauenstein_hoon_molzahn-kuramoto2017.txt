@@ -1,1 +1,1 @@
-O. Coss, J.D. Hauenstein, H. Hoon, and D.K. Molzahn, "Locating and Counting Equilibria of the Kuramoto Model with Rank One Coupling," Submitted, April 2017.
+O. Coss, J.D. Hauenstein, H. Hoon, and D.K. Molzahn, "Locating and Counting Equilibria of the Kuramoto Model with Rank One Coupling," to appear in SIAM Journal on Applied Algebra and Geometry, 2017.
