@@ -1,1 +1,1 @@
-C. Josz and D.K. Molzahn, "Moment/Sum-of-Squares Hierarchy for Complex Polynomial Optimization," Submitted. Preprint available: http://arxiv.org/abs/1508.02068
+C. Josz and D.K. Molzahn, "Moment/Sum-of-Squares Hierarchy for Complex Polynomial Optimization," to appear in SIAM Journal on Optimization, 2018.
