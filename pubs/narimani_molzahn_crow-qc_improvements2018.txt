@@ -1,1 +1,1 @@
-M.R. Narimani, D.K. Molzahn, and M.L. Crow, "Improving QC Relaxations of OPF Problems via Voltage Magnitude Difference Constraints and Envelopes for Trilinear Monomials," submitted.
+M.R. Narimani, D.K. Molzahn, and M.L. Crow, "Improving QC Relaxations of OPF Problems via Voltage Magnitude Difference Constraints and Envelopes for Trilinear Monomials," to appear in 20th Power Systems Computation Conference (PSCC), June 2018.

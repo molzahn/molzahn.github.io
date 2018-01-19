@@ -1,1 +1,1 @@
-J.A. Kersulis, I.A. Hiskens, C. Coffrin, and D.K. Molzahn, "Topological Graph Metrics for Detecting Grid Anomalies and Improving Algorithms," Submitted.
+J.A. Kersulis, I.A. Hiskens, C. Coffrin, and D.K. Molzahn, "Topological Graph Metrics for Detecting Grid Anomalies and Improving Algorithms," to appear in 20th Power Systems Computation Conference (PSCC), June 2018.

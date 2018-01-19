@@ -1,1 +1,1 @@
-S. Misra, D.K. Molzahn, and K. Dvijotham, "Optimal Adaptive Approximations of the AC Power Flow Equations," submitted.
+S. Misra, D.K. Molzahn, and K. Dvijotham, "Optimal Adaptive Approximations of the AC Power Flow Equations," to appear in 20th Power Systems Computation Conference (PSCC), June 2018.
