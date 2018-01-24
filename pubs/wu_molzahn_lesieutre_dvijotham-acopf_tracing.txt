@@ -1,1 +1,1 @@
-D. Wu, D.K. Molzahn, B.C. Lesieutre, and K. Dvijotham, "A Deterministic Method to Identify Multiple Local Extrema for the AC Optimal Power Flow Problem," to appear in IEEE Transactions on Power Systems, 2017.
+D. Wu, D.K. Molzahn, B.C. Lesieutre, and K. Dvijotham, "A Deterministic Method to Identify Multiple Local Extrema for the AC Optimal Power Flow Problem," IEEE Transactions on Power Systems, vol. 33, no. 1, pp. 654-668, January 2018.

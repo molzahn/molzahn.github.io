@@ -1,1 +1,1 @@
-D.K. Molzahn, "Identifying and Characterizing Non-Convexities in the Feasible Spaces of Optimal Power Flow Problems," submitted, 2017.
+D.K. Molzahn, "Identifying and Characterizing Non-Convexities in the Feasible Spaces of Optimal Power Flow Problems," to appear in IEEE International Symposium on Circuits and Systems (ISCAS), May 2018.
