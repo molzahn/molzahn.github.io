@@ -1,1 +1,0 @@
-M.R. Narimani, D.K. Molzahn, D. Wu, and M.L. Crow, "Empirical Investigation of Non-Convexities in Optimal Power Flow Problems," submitted, 2017.

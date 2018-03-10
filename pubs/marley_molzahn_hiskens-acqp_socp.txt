@@ -1,1 +1,1 @@
-J.F. Marley, D.K. Molzahn, and I.A. Hiskens, "Solving Multiperiod OPF Problems using an AC-QP Algorithm Initialized with an SOCP Relaxation," to appear in IEEE Transactions on Power Systems, 2016.
+J.F. Marley, D.K. Molzahn, and I.A. Hiskens, "Solving Multiperiod OPF Problems using an AC-QP Algorithm Initialized with an SOCP Relaxation," IEEE Transactions on Power Systems, vol. 32, no. 5, pp. 3538-3548, September 2017.
