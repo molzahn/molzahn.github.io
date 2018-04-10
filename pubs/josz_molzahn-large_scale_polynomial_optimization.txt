@@ -1,1 +1,1 @@
-C. Josz and D.K. Molzahn, "Multi-Ordered Lasserre Hierarchy for Large Scale Polynomial Optimization in Real and Complex Variables," Submitted, September 2017.
+C. Josz and D.K. Molzahn, "Lasserre Hierarchy for Large Scale Polynomial Optimization in Real and Complex Variables," SIAM Journal on Optimization, vol. 28, no. 2, pp. 1017-1048, 2018.
