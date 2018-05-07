@@ -1,1 +1,1 @@
-D.K. Molzahn, "Identifying Redundant Flow Limits on Parallel Lines," IEEE Transactions on Power Systems (Letters), vol. 33, no. 3, pp. 1-3, May 2018.
+D.K. Molzahn, "Identifying Redundant Flow Limits on Parallel Lines," IEEE Transactions on Power Systems (Letters), vol. 33, no. 3, pp. 3210-3212, May 2018.
