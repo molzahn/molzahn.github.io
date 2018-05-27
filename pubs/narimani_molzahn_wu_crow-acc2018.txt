@@ -1,1 +1,1 @@
-M.R. Narimani, D.K. Molzahn, D. Wu, and M.L. Crow, "Empirical Investigation of Non-Convexities in Optimal Power Flow Problems," to appear in American Control Conference (ACC), June 2018.
+M.R. Narimani, D.K. Molzahn, D. Wu, and M.L. Crow, "Empirical Investigation of Non-Convexities in Optimal Power Flow Problems," American Control Conference (ACC), June 2018.

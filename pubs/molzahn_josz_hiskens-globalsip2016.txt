@@ -1,1 +1,1 @@
-D.K. Molzahn, C. Josz, and I.A. Hiskens, "Moment Relaxations of Optimal Power Flow Problems: Beyond the Convex Hull," to appear in IEEE Global Conference on Signal and Information Processing (GlobalSIP), 7-9 December 2016.
+D.K. Molzahn, C. Josz, and I.A. Hiskens, "Moment Relaxations of Optimal Power Flow Problems: Beyond the Convex Hull," IEEE Global Conference on Signal and Information Processing (GlobalSIP), 7-9 December 2016.

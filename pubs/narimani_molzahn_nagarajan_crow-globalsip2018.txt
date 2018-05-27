@@ -1,0 +1,1 @@
+M.R. Narimani, D.K. Molzahn, H. Nagarajan, and M.L. Crow, "Comparison of Various Trilinear Monomial Envelopes for Convex Relaxations of Optimal Power Flow Problems," IEEE Global Conference on Signal and Information Processing (GlobalSIP), 26-28 November 2018.
