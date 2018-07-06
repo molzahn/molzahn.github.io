@@ -1,0 +1,1 @@
+A. Barzegar, D.K. Molzahn, and R. Su, "A Method for Quickly Bounding the Optimal Objective Value of an OPF Problem Using a Semidefinite Relaxation and a Local Solution," submitted, 2018.
