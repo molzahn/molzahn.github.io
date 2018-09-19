@@ -1,1 +1,1 @@
-D.K. Molzahn and L.A. Roald, "Grid-Aware versus Grid-Agnostic Distribution System Control: A Method for Certifying Engineering Constraint Satisfaction," submitted to 52nd Hawaii International Conference on System Sciences (HICSS), 8-11 January 2019.
+D.K. Molzahn and L.A. Roald, "Grid-Aware versus Grid-Agnostic Distribution System Control: A Method for Certifying Engineering Constraint Satisfaction," to appear in 52nd Hawaii International Conference on System Sciences (HICSS), 8-11 January 2019.
