@@ -1,0 +1,1 @@
+T. Muhlpfordt, D.K. Molzahn, V. Hagenmeyer, and S. Misra, "Optimal Adaptive Power Flow Linearizations: Expected Error Minimization using Polynomial Chaos Expansion," submitted to IEEE Milan PowerTech, June 23-27, 2019.
