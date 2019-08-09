@@ -82,6 +82,17 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
+			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," <i>Submitted</i>.<br />
+				<span id="feasible_path_year" class="abstract" style="display:none">
+					Nonconvexity induced by the nonlinear AC power flow equations challenges solution algorithms for AC optimal power flow (OPF) problems. While significant research efforts have focused on reliably computing high-quality OPF solutions, identifying a feasible path from an initial operating point to a desired operating point is a topic that has received much less attention. However, since the feasible space of the OFP problem is nonconvex and potentially disconnected, it can be challenging to transition between operating points while avoiding constraint violations. To address this problem, we propose an algorithm which computes a provably feasible path from an initial operating point to a desired operating point. The algorithm solves a sequence of quadratic optimization problems over conservative convex inner approximations of the OPF feasible space, each representing a so-called convex restriction. In each iteration, we obtain a new, improved operating point and a feasible transition from the operating point in the previous iteration. In addition to computing a feasible path to a known desired operating point, this algorithm can also be used to locally improve the operating point. Extensive numerical studies on a variety of test cases demonstrate the algorithm and the ability to arrive at a high-quality solution in few iterations.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('feasible_path_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Year">
+		<span>
 			<li><p>J. Liu, B. Cui, <b>D.K. Molzahn</b>, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," <i>Submitted</i>.<br />
 				<span id="robust_dc_network_year" class="abstract" style="display:none">
 					With high penetrations of renewable generation and variable loads, there is significant uncertainty associated with power flows in DC networks such that stability and constraint satisfaction are important concerns. Most existing DC network optimal power flow (DN-OPF) formulations assume exact knowledge about loading conditions and do not provide stability guarantees. In contrast, this paper studies a DN-OPF formulation which considers both stability and constraint satisfaction under uncertainty. The need to account for a range of uncertainty realizations in this paper’s robust optimization formulation results in a challenging semi-infinite program (SIP). The proposed solution algorithm reformulates this SIP into a computationally amenable problem whose solution provides a feasible operating point for the SIP. This algorithm constructs a convex stability set using sufficient conditions for the existence of a feasible and stable power flow solution. Solving an optimization problem based on this convex stability set provides generator set points which ensure that the DC network has a stable operating point for any considered uncertainty realization. This optimization problem takes a form similar to a deterministic DN-OPF problem and is therefore tractable. The proposed algorithm is demonstrated using various DC networks adapted from IEEE test cases.
@@ -103,17 +114,6 @@
 		</span>
   </div>
 	<div class="tile scale-anm Year">
-		<span>
-			<li><p>A. Barzegar, <b>D.K. Molzahn</b>, and R. Su, "A Method for Quickly Bounding the Optimal Objective Value of an OPF Problem Using a Semidefinite Relaxation and a Local Solution," <i>Submitted</i>.<br />
-				<span id="SDP_plus_local_solution_for_OPF_year" class="abstract" style="display:none">
-					Optimal power flow (OPF) is an important problem in the operation of electric power systems. Due to the OPF problem's non-convexity, there may exist multiple local optima. Certifiably obtaining the global solution is important for certain applications of OPF problems. Many global optimization techniques compute an optimality gap that compares the achievable objective value corresponding to the feasible point from a local solution algorithm with the objective value bound from a convex relaxation technique. Rather than the traditional practice of completely separating the local solution and convex relaxation computations, this paper proposes a method that exploits information from a local solution to speed the computation of an objective value bound using a semidefinite programming (SDP) relaxation. The improvement in computational tractability comes with the trade-off of reduced tightness for the resulting objective value bound. Numerical experiments illustrate this trade-off, with the proposed method being faster but weaker than the SDP relaxation and slower but tighter than second-order cone programming (SOCP) and quadratic convex (QC) relaxations for many large test cases.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('SDP_plus_local_solution_for_OPF_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/barzegar_molzahn_su-SDP_plus_local_solution_for_OPF.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1808.04557">link</a> ] [ Ref: <a href="pubs/barzegar_molzahn_su-SDP_plus_local_solution_for_OPF.bib">bib</a>   <a href="pubs/barzegar_molzahn_su-SDP_plus_local_solution_for_OPF.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
 	</div>
 	<div class="tile scale-anm Year">
@@ -125,17 +125,6 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('redundant2019_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/roald_molzahn-redundant2019.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1904.01757">link</a> ] [ Ref: <a href="pubs/roald_molzahn-redundant2019.bib">bib</a>   <a href="pubs/roald_molzahn-redundant2019.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>K. Girigoudar, <b>D.K. Molzahn</b>, and L.A. Roald, "Analytical and Empirical Comparisons of Voltage Unbalance Definitions," <i>Submitted</i>.<br />
-				<span id="unbalance_year" class="abstract" style="display:none">
-					Growing penetrations of distributed energy resources (DERs) increase the power injection variability in distribution systems, which can result in power quality issues such as voltage unbalance. Realistic distribution systems typically have some degree of unbalance, with voltage magnitudes and angle offsets differing between the three phases. To measure unbalance, organizations such as IEC, NEMA, and IEEE define phase unbalance in their power quality standards. However, the definitions in the different standards are not consistent, and voltages that are considered acceptable by one standard may violate good practices defined by another standard. Furthermore, the definitions are based on availability of different measurements and have differing mathematical characteristics. To address this issue, this paper provides analytical comparisons of the most common voltage unbalance definitions. The analytical relationships suggest that it is possible to approximately bound the true voltage unbalance (which depends on the magnitude and relative phase angle) by measuring line-to-line voltage magnitudes, whereas line-to-ground voltages neglect all information about phase angle offsets. The relationships are validated using empirical experiments.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('unbalance_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/girigoudar_molzahn_roald-2019.pdf">pdf</a> ] [ Ref: <a href="pubs/girigoudar_molzahn_roald-2019.bib">bib</a>   <a href="pubs/girigoudar_molzahn_roald-2019.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	</ul>
@@ -154,12 +143,23 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('fnt2019_year');" class="abstractLink">abstract</span> ] [ pdf available upon request ] [ <a href="https://www.nowpublishers.com/article/Details/EES-012">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-fnt2019.bib">bib</a>   <a href="pubs/molzahn_hiskens-fnt2019.txt">txt</a> ] [ <a href="pubs/Molzahn-Power_Flow_Relaxation_Tutorial.ppt">Tutorial Slides on Power Flow Relaxations</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('fnt2019_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-fnt2019.pdf">pdf</a> ] [ <a href="https://www.nowpublishers.com/article/Details/EES-012">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-fnt2019.bib">bib</a>   <a href="pubs/molzahn_hiskens-fnt2019.txt">txt</a> ] [ <a href="pubs/Molzahn-Power_Flow_Relaxation_Tutorial.ppt">Tutorial Slides on Power Flow Relaxations</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
 		<h2>Journal Papers</h2>
 	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>A. Barzegar, <b>D.K. Molzahn</b>, and R. Su, "A Method for Quickly Bounding the Optimal Objective Value of an OPF Problem Using a Semidefinite Relaxation and a Local Solution," to appear in <i>Electric Power Systems Research</i>, 2019.<br />
+				<span id="SDP_plus_local_solution_for_OPF_year" class="abstract" style="display:none">
+					Optimal power flow (OPF) is an important problem in the operation of electric power systems. Due to the OPF problem's non-convexity, there may exist multiple local optima. Certifiably obtaining the global solution is important for certain applications of OPF problems. Many global optimization techniques compute an optimality gap that compares the achievable objective value corresponding to the feasible point from a local solution algorithm with the objective value bound from a convex relaxation technique. Rather than the traditional practice of completely separating the local solution and convex relaxation computations, this paper proposes a method that exploits information from a local solution to speed the computation of an objective value bound using a semidefinite programming (SDP) relaxation. The improvement in computational tractability comes with the trade-off of reduced tightness for the resulting objective value bound. Numerical experiments illustrate this trade-off, with the proposed method being faster but weaker than the SDP relaxation and slower but tighter than second-order cone programming (SOCP) and quadratic convex (QC) relaxations for many large test cases.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('SDP_plus_local_solution_for_OPF_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/barzegar_molzahn_su-SDP_plus_local_solution_for_OPF.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1808.04557">link</a> ] [ Ref: <a href="pubs/barzegar_molzahn_su-SDP_plus_local_solution_for_OPF.bib">bib</a>   <a href="pubs/barzegar_molzahn_su-SDP_plus_local_solution_for_OPF.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 	<div class="tile scale-anm Year">
 		<span>
 			<li><p>M. Yao, <b>D.K. Molzahn</b>, and J.L. Mathieu, "A Multiperiod Optimal Power Flow Approach to Improve Power System Voltage Stability Using Demand Response," to appear in <i>IEEE Transactions on Control of Network Systems, Special Issue on Analysis, Control, and Optimization of Energy System Networks</i>, 2019.<br />
@@ -173,7 +173,7 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p><b>D.K. Molzahn</b> and J. Wang, "Detection and Characterization of Intrusions to Network Parameter Data in Electric Power System Operations," to appear in <i>IEEE Transactions on Smart Grid,</i> 2019.<br />
+			<li><p><b>D.K. Molzahn</b> and J. Wang, "Detection and Characterization of Intrusions to Network Parameter Data in Electric Power System Operations," <i>IEEE Transactions on Smart Grid,</i> vol. 10, no. 4, pp. 3919-3928, July 2019.<br />
 				<span id="cyber2017_year" class="abstract" style="display:none">
 					Combating cyberattacks is an emerging challenge in maintaining the reliable and economic operation of electric power systems. Possible cyberattacks include intrusions to the parameter data at a control center. In this class of attacks, algorithms at the control center are correctly executed, but the attacker's modification of the associated parameter data yields improper results. This paper proposes an algorithm for detecting and characterizing cyberattacks to network parameter data, with specific application to optimal power flow problems. The proposed algorithm evaluates whether historical operating point data are consistent with the network parameters. Inconsistencies indicating potential cyberattacks are characterized using historical operational data (power injections and voltage phasors) along with network parameter data. Simulated test cases illustrate the  proposed algorithm's detection and characterization capabilities.
 				</span>
@@ -187,7 +187,18 @@
 		</div>
 		<div class="tile scale-anm Year">
 			<span>
-				<li><p>T. M&uuml;hlpfordt, <b>D.K. Molzahn</b>, V. Hagenmeyer, and S. Misra, "Optimal Adaptive Power Flow Linearizations: Expected Error Minimization using Polynomial Chaos Expansion," to appear in <i>IEEE Milan PowerTech</i>, June 23-27, 2019.<br />
+				<li><p>K. Girigoudar, <b>D.K. Molzahn</b>, and L.A. Roald, "On the Relationships Among Different Voltage Unbalance Definitions," to appear in <i>North American Power Symposium (NAPS)</i>, October 13-14, 2019.<br />
+					<span id="unbalance_year" class="abstract" style="display:none">
+						Growing penetrations of distributed energy resources (DERs) increase the power injection variability in distribution systems, which can result in power quality issues such as voltage unbalance. To measure unbalance, organizations such as IEC, NEMA and IEEE define phase unbalance in their power quality standards. However, the definitions in these different standards are not consistent, and voltages that are considered acceptable by one standard may violate good practices defined by another standard. To address this issue, this paper provides analytical comparisons of the most common voltage unbalance definitions, which are supplemented with numerical simulations. The analytical relationships suggest that it is possible to approximately bound the symmetrical-component-based voltage unbalance factor (which depends on the magnitude and relative phase angle) by limiting the line-to-line voltage unbalance, whereas applying line-to-ground voltage unbalance definitions neglects all information about phase angle offsets.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('unbalance_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/girigoudar_molzahn_roald-2019.pdf">pdf</a> ] [ Ref: <a href="pubs/girigoudar_molzahn_roald-2019.bib">bib</a>   <a href="pubs/girigoudar_molzahn_roald-2019.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>T. M&uuml;hlpfordt, <b>D.K. Molzahn</b>, V. Hagenmeyer, and S. Misra, "Optimal Adaptive Power Flow Linearizations: Expected Error Minimization using Polynomial Chaos Expansion," <i>IEEE Milan PowerTech</i>, June 23-27, 2019.<br />
 					<span id="powertech2019_year" class="abstract" style="display:none">
 						The nonlinearity of the power flow equations leads to algorithmic and theoretical challenges for a wide variety of optimization and control problems relevant to electric power systems. Solution algorithms for these problems often use linearization techniques to obtain more tractable power flow formulations. Many existing linearizations lack specialization to a given system and operating range of interest, leading to unnecessarily large linearization errors. In contrast, recently proposed "optimal adaptive" linearizations are 1) tailored to specific systems and operating ranges of interest and 2) optimal in the sense that they minimize a selected error metric relative to the nonlinear power flow equations. Previous work proposes optimal adaptive linearizations that minimize the <i>worst-case</i> linearization error. Building on previous work, this paper uses an uncertainty quantifiation method called Polynomial Chaos Expansion to minimize the <i>expected</i> linearization error for a given probability distribution of the power injections. As validated using Monte Carlo analyses, the capabilities of the expected-error-minimizing linearizations are shown to be superior to first-order Taylor approximations computed at a nominal operating point.
 					</span>
@@ -216,6 +227,20 @@
 			</span>
 			<span style="cursor:auto;">
 				&emsp;[ <span onclick="showDiv('hicss2019_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_roald-hicss2019.pdf">pdf</a> ] [ Ref: <a href="pubs/molzahn_roald-hicss2019.bib">bib</a>   <a href="pubs/molzahn_roald-hicss2019.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
+		<div class="tile scale-anm Year">
+			<a name="reports"><h2>Technical Reports</h2></a>
+		</div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>S. Babaeinejadsarookolaee, A. Birchfield, R.D. Christie, C. Coffrin, C.L. DeMarco, R. Diao, M. Ferris, S. Fliscounakis, S. Greene, R. Huang, C. Josz, R. Korab, B.C. Lesieutre, J. Maeght, <b>D.K. Molzahn</b>, T.J. Overbye, P. Panciatici, B. Park, J. Snodgrass, and R.D. Zimmerman, "The Power Grid Library for Benchmarking AC Optimal Power Flow Algorithms," <i>IEEE PES PGLib-OPF Task Force Report</i>, August 2019.<br />
+					<span id="pglibopf2019_year" class="abstract" style="display:none">
+						In recent years, the power systems research community has seen an explosion of novel methods for formulating the AC power flow equations. Consequently, benchmarking studies using the seminal AC Optimal Power Flow (AC-OPF) problem have emerged as the primary method for evaluating these emerging methods. However, it is often difficult to directly compare these studies due to subtle differences in the AC-OPF problem formulation as well as the network, generation, and loading data that are used for evaluation. To help address these challenges, this IEEE PES Task Force report proposes a standardized AC-OPF mathematical formulation and the PGLib-OPF networks for benchmarking AC-OPF algorithms. A motivating study demonstrates some limitations of the established network datasets in the context of benchmarking AC-OPF algorithms and a validation study demonstrates the efficacy of using the PGLib-OPF networks for this purpose. In the interest of scientific discourse and future additions, the PGLib-OPF benchmark library is open-access and all the of network data is provided under a creative commons license.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('pglibopf2019_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/PGLib_OPF_Task_Force_Report.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1908.02788">link</a> ] [ Ref: <a href="pubs/PGLib_OPF_Task_Force_Report.bib">bib</a>   <a href="pubs/PGLib_OPF_Task_Force_Report.txt">txt</a> ] [ <a href="https://github.com/power-grid-lib/pglib-opf">link to PGLib-OPF datasets</a> ]</p></li>
 			</span>
 	  </div>
 	<div class="tile scale-anm Year">
@@ -288,7 +313,7 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, H. Nagarajan, and M.L. Crow, "Comparison of Various Trilinear Monomial Envelopes for Convex Relaxations of Optimal Power Flow Problems," to appear in <i>IEEE Global Conference on Signal and Information Processing (GlobalSIP),</i> November 26-29, 2018.<br />
+			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, H. Nagarajan, and M.L. Crow, "Comparison of Various Trilinear Monomial Envelopes for Convex Relaxations of Optimal Power Flow Problems," <i>IEEE Global Conference on Signal and Information Processing (GlobalSIP),</i> November 26-29, 2018.<br />
 				<span id="globalsip2018_year" class="abstract" style="display:none">
 					Solutions to optimal power flow (OPF) problems provide operating points for electric power systems that minimize operational costs while satisfying both engineering limits and the power flow equations. OPF problems are non-convex and may have multiple local optima. To search for global optima, recent research has developed a variety of convex relaxations to bound the optimal objective values of OPF problems. Certain relaxations, such as the quadratic convex (QC) relaxation, are derived from OPF representations that contain trilinear monomials. Previous work has considered three techniques for relaxing these trilinear monomials: <i>recursive McCormick</i> (RMC) envelopes, <i>Meyer and Floudas</i> (MF) envelopes, and <i>extreme-point</i> (EP) envelopes. This paper compares the tightness and computational speed of relaxations that employ each of these techniques. Forming the convex hull of a single trilinear monomial, MF and EP envelopes are equivalently tight. Empirical results show that QC formulations using MF and EP envelopes give tighter bounds than those using RMC envelopes. Empirical results also indicate that the EP envelopes have advantages over MF envelopes with respect to computational speed and numerical stability when used with state-of-the-art second-order cone programming solvers.
 				</span>
@@ -971,7 +996,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('fnt2019_type');" class="abstractLink">abstract</span> ] [ pdf available upon request ] [ <a href="https://www.nowpublishers.com/article/Details/EES-012">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-fnt2019.bib">bib</a>   <a href="pubs/molzahn_hiskens-fnt2019.txt">txt</a> ] [ <a href="pubs/Molzahn-Power_Flow_Relaxation_Tutorial.ppt">Tutorial Slides on Power Flow Relaxations</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('fnt2019_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-fnt2019.pdf">pdf</a> ] [ <a href="https://www.nowpublishers.com/article/Details/EES-012">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-fnt2019.bib">bib</a>   <a href="pubs/molzahn_hiskens-fnt2019.txt">txt</a> ] [ <a href="pubs/Molzahn-Power_Flow_Relaxation_Tutorial.ppt">Tutorial Slides on Power Flow Relaxations</a> ]</p></li>
 		</span>
   </div>
 	</ul>
@@ -982,7 +1007,18 @@
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
-	<div class="tile scale-anm Type"  style="display:none">
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," <i>Submitted</i>.<br />
+				<span id="feasible_path_type" class="abstract" style="display:none">
+					Nonconvexity induced by the nonlinear AC power flow equations challenges solution algorithms for AC optimal power flow (OPF) problems. While significant research efforts have focused on reliably computing high-quality OPF solutions, identifying a feasible path from an initial operating point to a desired operating point is a topic that has received much less attention. However, since the feasible space of the OFP problem is nonconvex and potentially disconnected, it can be challenging to transition between operating points while avoiding constraint violations. To address this problem, we propose an algorithm which computes a provably feasible path from an initial operating point to a desired operating point. The algorithm solves a sequence of quadratic optimization problems over conservative convex inner approximations of the OPF feasible space, each representing a so-called convex restriction. In each iteration, we obtain a new, improved operating point and a feasible transition from the operating point in the previous iteration. In addition to computing a feasible path to a known desired operating point, this algorithm can also be used to locally improve the operating point. Extensive numerical studies on a variety of test cases demonstrate the algorithm and the ability to arrive at a high-quality solution in few iterations.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('feasible_path_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>J. Liu, B. Cui, <b>D.K. Molzahn</b>, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," <i>Submitted</i>.<br />
 				<span id="robust_dc_network_type" class="abstract" style="display:none">
@@ -1005,8 +1041,11 @@
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
+		<h2>2019</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>A. Barzegar, <b>D.K. Molzahn</b>, and R. Su, "A Method for Quickly Bounding the Optimal Objective Value of an OPF Problem Using a Semidefinite Relaxation and a Local Solution," <i>Submitted</i>.<br />
+			<li><p>A. Barzegar, <b>D.K. Molzahn</b>, and R. Su, "A Method for Quickly Bounding the Optimal Objective Value of an OPF Problem Using a Semidefinite Relaxation and a Local Solution," to appear in <i>Electric Power Systems Research</i>, 2019.<br />
 				<span id="SDP_plus_local_solution_for_OPF_type" class="abstract" style="display:none">
 					Optimal power flow (OPF) is an important problem in the operation of electric power systems. Due to the OPF problem's non-convexity, there may exist multiple local optima. Certifiably obtaining the global solution is important for certain applications of OPF problems. Many global optimization techniques compute an optimality gap that compares the achievable objective value corresponding to the feasible point from a local solution algorithm with the objective value bound from a convex relaxation technique. Rather than the traditional practice of completely separating the local solution and convex relaxation computations, this paper proposes a method that exploits information from a local solution to speed the computation of an objective value bound using a semidefinite programming (SDP) relaxation. The improvement in computational tractability comes with the trade-off of reduced tightness for the resulting objective value bound. Numerical experiments illustrate this trade-off, with the proposed method being faster but weaker than the SDP relaxation and slower but tighter than second-order cone programming (SOCP) and quadratic convex (QC) relaxations for many large test cases.
 				</span>
@@ -1015,9 +1054,6 @@
 			&emsp;[ <span onclick="showDiv('SDP_plus_local_solution_for_OPF_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/barzegar_molzahn_su-SDP_plus_local_solution_for_OPF.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1808.04557">link</a> ] [ Ref: <a href="pubs/barzegar_molzahn_su-SDP_plus_local_solution_for_OPF.bib">bib</a>   <a href="pubs/barzegar_molzahn_su-SDP_plus_local_solution_for_OPF.txt">txt</a> ] </p></li>
 		</span>
   </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<h2>2019</h2>
-	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>M. Yao, <b>D.K. Molzahn</b>, and J.L. Mathieu, "A Multiperiod Optimal Power Flow Approach to Improve Power System Voltage Stability Using Demand Response," to appear in <i>IEEE Transactions on Control of Network Systems, Special Issue on Analysis, Control, and Optimization of Energy System Networks</i>, 2019.<br />
@@ -1031,7 +1067,7 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p><b>D.K. Molzahn</b> and J. Wang, "Detection and Characterization of Intrusions to Network Parameter Data in Electric Power System Operations," to appear in <i>IEEE Transactions on Smart Grid,</i> 2019.<br />
+			<li><p><b>D.K. Molzahn</b> and J. Wang, "Detection and Characterization of Intrusions to Network Parameter Data in Electric Power System Operations," <i>IEEE Transactions on Smart Grid,</i> vol. 10, no. 4, pp. 3919-3928, July 2019.<br />
 				<span id="cyber2017_type" class="abstract" style="display:none">
 					Combating cyberattacks is an emerging challenge in maintaining the reliable and economic operation of electric power systems. Possible cyberattacks include intrusions to the parameter data at a control center. In this class of attacks, algorithms at the control center are correctly executed, but the attacker's modification of the associated parameter data yields improper results. This paper proposes an algorithm for detecting and characterizing cyberattacks to network parameter data, with specific application to optimal power flow problems. The proposed algorithm evaluates whether historical operating point data are consistent with the network parameters. Inconsistencies indicating potential cyberattacks are characterized using historical operational data (power injections and voltage phasors) along with network parameter data. Simulated test cases illustrate the  proposed algorithm's detection and characterization capabilities.
 				</span>
@@ -1302,10 +1338,13 @@
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
+		<h2>2019</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>K. Girigoudar, <b>D.K. Molzahn</b>, and L.A. Roald, "Analytical and Empirical Comparisons of Voltage Unbalance Definitions," <i>Submitted</i>.<br />
+			<li><p>K. Girigoudar, <b>D.K. Molzahn</b>, and L.A. Roald, "On the Relationships Among Different Voltage Unbalance Definitions," to appear in <i>North American Power Symposium (NAPS)</i>, October 13-14, 2019.<br />
 				<span id="unbalance_type" class="abstract" style="display:none">
-					Growing penetrations of distributed energy resources (DERs) increase the power injection variability in distribution systems, which can result in power quality issues such as voltage unbalance. Realistic distribution systems typically have some degree of unbalance, with voltage magnitudes and angle offsets differing between the three phases. To measure unbalance, organizations such as IEC, NEMA, and IEEE define phase unbalance in their power quality standards. However, the definitions in the different standards are not consistent, and voltages that are considered acceptable by one standard may violate good practices defined by another standard. Furthermore, the definitions are based on availability of different measurements and have differing mathematical characteristics. To address this issue, this paper provides analytical comparisons of the most common voltage unbalance definitions. The analytical relationships suggest that it is possible to approximately bound the true voltage unbalance (which depends on the magnitude and relative phase angle) by measuring line-to-line voltage magnitudes, whereas line-to-ground voltages neglect all information about phase angle offsets. The relationships are validated using empirical experiments.
+					Growing penetrations of distributed energy resources (DERs) increase the power injection variability in distribution systems, which can result in power quality issues such as voltage unbalance. To measure unbalance, organizations such as IEC, NEMA and IEEE define phase unbalance in their power quality standards. However, the definitions in these different standards are not consistent, and voltages that are considered acceptable by one standard may violate good practices defined by another standard. To address this issue, this paper provides analytical comparisons of the most common voltage unbalance definitions, which are supplemented with numerical simulations. The analytical relationships suggest that it is possible to approximately bound the symmetrical-component-based voltage unbalance factor (which depends on the magnitude and relative phase angle) by limiting the line-to-line voltage unbalance, whereas applying line-to-ground voltage unbalance definitions neglects all information about phase angle offsets.
 				</span>
 		</span>
 		<span style="cursor:auto;">
@@ -1313,11 +1352,8 @@
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
-		<h2>2019</h2>
-	</div>
-	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>T. M&uuml;hlpfordt, <b>D.K. Molzahn</b>, V. Hagenmeyer, and S. Misra, "Optimal Adaptive Power Flow Linearizations: Expected Error Minimization using Polynomial Chaos Expansion," to appear in <i>IEEE Milan PowerTech</i>, June 23-27, 2019.<br />
+			<li><p>T. M&uuml;hlpfordt, <b>D.K. Molzahn</b>, V. Hagenmeyer, and S. Misra, "Optimal Adaptive Power Flow Linearizations: Expected Error Minimization using Polynomial Chaos Expansion," <i>IEEE Milan PowerTech</i>, June 23-27, 2019.<br />
 				<span id="powertech2019_type" class="abstract" style="display:none">
 					The nonlinearity of the power flow equations leads to algorithmic and theoretical challenges for a wide variety of optimization and control problems relevant to electric power systems. Solution algorithms for these problems often use linearization techniques to obtain more tractable power flow formulations. Many existing linearizations lack specialization to a given system and operating range of interest, leading to unnecessarily large linearization errors. In contrast, recently proposed "optimal adaptive" linearizations are 1) tailored to specific systems and operating ranges of interest and 2) optimal in the sense that they minimize a selected error metric relative to the nonlinear power flow equations. Previous work proposes optimal adaptive linearizations that minimize the <i>worst-case</i> linearization error. Building on previous work, this paper uses an uncertainty quantifiation method called Polynomial Chaos Expansion to minimize the <i>expected</i> linearization error for a given probability distribution of the power injections. As validated using Monte Carlo analyses, the capabilities of the expected-error-minimizing linearizations are shown to be superior to first-order Taylor approximations computed at a nominal operating point.
 				</span>
@@ -1353,7 +1389,7 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, H. Nagarajan, and M.L. Crow, "Comparison of Various Trilinear Monomial Envelopes for Convex Relaxations of Optimal Power Flow Problems," to appear in <i>IEEE Global Conference on Signal and Information Processing (GlobalSIP),</i> November 26-29, 2018.<br />
+			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, H. Nagarajan, and M.L. Crow, "Comparison of Various Trilinear Monomial Envelopes for Convex Relaxations of Optimal Power Flow Problems," <i>IEEE Global Conference on Signal and Information Processing (GlobalSIP),</i> November 26-29, 2018.<br />
 				<span id="globalsip2018_type" class="abstract" style="display:none">
 					Solutions to optimal power flow (OPF) problems provide operating points for electric power systems that minimize operational costs while satisfying both engineering limits and the power flow equations. OPF problems are non-convex and may have multiple local optima. To search for global optima, recent research has developed a variety of convex relaxations to bound the optimal objective values of OPF problems. Certain relaxations, such as the quadratic convex (QC) relaxation, are derived from OPF representations that contain trilinear monomials. Previous work has considered three techniques for relaxing these trilinear monomials: <i>recursive McCormick</i> (RMC) envelopes, <i>Meyer and Floudas</i> (MF) envelopes, and <i>extreme-point</i> (EP) envelopes. This paper compares the tightness and computational speed of relaxations that employ each of these techniques. Forming the convex hull of a single trilinear monomial, MF and EP envelopes are equivalently tight. Empirical results show that QC formulations using MF and EP envelopes give tighter bounds than those using RMC envelopes. Empirical results also indicate that the EP envelopes have advantages over MF envelopes with respect to computational speed and numerical stability when used with state-of-the-art second-order cone programming solvers.
 				</span>
@@ -1729,6 +1765,20 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<a name="reports"><h1>Technical Reports</h1></a>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<h2>2019</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>S. Babaeinejadsarookolaee, A. Birchfield, R.D. Christie, C. Coffrin, C.L. DeMarco, R. Diao, M. Ferris, S. Fliscounakis, S. Greene, R. Huang, C. Josz, R. Korab, B.C. Lesieutre, J. Maeght, <b>D.K. Molzahn</b>, T.J. Overbye, P. Panciatici, B. Park, J. Snodgrass, and R.D. Zimmerman, "The Power Grid Library for Benchmarking AC Optimal Power Flow Algorithms," <i>IEEE PES PGLib-OPF Task Force Report</i>, August 2019.<br />
+				<span id="pglibopf2019_type" class="abstract" style="display:none">
+					In recent years, the power systems research community has seen an explosion of novel methods for formulating the AC power flow equations. Consequently, benchmarking studies using the seminal AC Optimal Power Flow (AC-OPF) problem have emerged as the primary method for evaluating these emerging methods. However, it is often difficult to directly compare these studies due to subtle differences in the AC-OPF problem formulation as well as the network, generation, and loading data that are used for evaluation. To help address these challenges, this IEEE PES Task Force report proposes a standardized AC-OPF mathematical formulation and the PGLib-OPF networks for benchmarking AC-OPF algorithms. A motivating study demonstrates some limitations of the established network datasets in the context of benchmarking AC-OPF algorithms and a validation study demonstrates the efficacy of using the PGLib-OPF networks for this purpose. In the interest of scientific discourse and future additions, the PGLib-OPF benchmark library is open-access and all the of network data is provided under a creative commons license.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('pglibopf2019_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/PGLib_OPF_Task_Force_Report.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1908.02788">link</a> ] [ Ref: <a href="pubs/PGLib_OPF_Task_Force_Report.bib">bib</a>   <a href="pubs/PGLib_OPF_Task_Force_Report.txt">txt</a> ] [ <a href="https://github.com/power-grid-lib/pglib-opf">link to PGLib-OPF datasets</a> ]</p></li>
+		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>2016</h2>

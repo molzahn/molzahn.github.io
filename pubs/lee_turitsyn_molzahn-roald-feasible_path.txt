@@ -1,0 +1,1 @@
+D. Lee, K. Turitsyn, D.K. Molzahn, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," submitted.

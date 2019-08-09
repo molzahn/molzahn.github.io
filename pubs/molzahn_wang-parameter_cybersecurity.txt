@@ -1,1 +1,1 @@
-D.K. Molzahn and J. Wang, "Detection and Characterization of Intrusions to Network Parameter Data in Electric Power Systems," to appear in IEEE Transactions on Smart Grid, 2018.
+D.K. Molzahn and J. Wang, "Detection and Characterization of Intrusions to Network Parameter Data in Electric Power Systems," tIEEE Transactions on Smart Grid, vol. 10, no. 4, pp. 3919-3928, July 2019.
