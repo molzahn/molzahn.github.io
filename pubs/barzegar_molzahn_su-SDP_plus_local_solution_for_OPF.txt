@@ -1,1 +1,1 @@
-A. Barzegar, D.K. Molzahn, and R. Su, "A Method for Quickly Bounding the Optimal Objective Value of an OPF Problem Using a Semidefinite Relaxation and a Local Solution," to appear in Electric Power Systems Research, 2019.
+A. Barzegar, D.K. Molzahn, and R. Su, "A Method for Quickly Bounding the Optimal Objective Value of an OPF Problem Using a Semidefinite Relaxation and a Local Solution," Electric Power Systems Research, vol. 177, December 2019.
