@@ -1,1 +1,1 @@
-C. Josz, D.K. Molzahn, M. Tacchi, and S. Sojoudi, "Transient Stability Analysis of Power Systems via Occupation Measures," to appear in Innovative Smart Grid Technologies (ISGT), February 17-20, 2019.
+C. Josz, D.K. Molzahn, M. Tacchi, and S. Sojoudi, "Transient Stability Analysis of Power Systems via Occupation Measures," Innovative Smart Grid Technologies (ISGT), February 17-20, 2019.
