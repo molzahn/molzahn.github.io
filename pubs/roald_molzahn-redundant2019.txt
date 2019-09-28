@@ -1,1 +1,1 @@
-L.A. Roald and D.K. Molzahn, "Implied Constraint Satisfaction in Power System Optimization: The Impacts of Load Variations," submitted.
+L.A. Roald and D.K. Molzahn, "Implied Constraint Satisfaction in Power System Optimization: The Impacts of Load Variations," 57th Annual Allerton Conference on Communication, Control, and Computing, September 25-27, 2019.
