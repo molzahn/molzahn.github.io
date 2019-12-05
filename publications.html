@@ -82,6 +82,17 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
+			<li><p>A. Pe&ntilde;a Ordieres, <b>D.K. Molzahn</b>, L.A. Roald, and A. W&auml;chter "DC Optimal Power Flow with Joint Chance Constraints," <i>Submitted</i>.<br />
+				<span id="jcc_dcopf_year" class="abstract" style="display:none">
+					Managing uncertainty and variability in power injections has become a major concern for power system operators due to the increasing levels of fluctuating renewable energy connected to the grid. This work addresses this uncertainty via a joint chance-constrained formulation of the DC optimal power flow (OPF) problem, which satisfies <i>all</i> the constraints <i>jointly</i> with a pre-determined probability. The few existing approaches for solving joint chance-constrained OPF problems are typically either computationally intractable for large-scale problems or give overly conservative solutions that satisfy the constraints far more often than required, resulting in excessively costly operation. This paper proposes an algorithm for solving joint chance-constrained DC OPF problems by adopting an S&#8467;<sub>1</sub>QP-type trust-region algorithm. This algorithm uses a sample-based approach that avoids making strong assumptions on the distribution of the uncertainties, scales favorably to large problems, and can be tuned to obtain less conservative results. We illustrate the performance of our method using several IEEE test cases. The results demonstrate the proposed algorithm's advantages in computational times and limited conservativeness of the solutions relative to other joint chance-constrained DC OPF algorithms.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('jcc_dcopf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1911.12439">link</a> ] [ Ref: <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.bib">bib</a>   <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
 			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," <i>Submitted</i>.<br />
 				<span id="feasible_path_year" class="abstract" style="display:none">
 					Nonconvexity induced by the nonlinear AC power flow equations challenges solution algorithms for AC optimal power flow (OPF) problems. While significant research efforts have focused on reliably computing high-quality OPF solutions, identifying a feasible path from an initial operating point to a desired operating point is a topic that has received much less attention. However, since the feasible space of the OFP problem is nonconvex and potentially disconnected, it can be challenging to transition between operating points while avoiding constraint violations. To address this problem, we propose an algorithm which computes a provably feasible path from an initial operating point to a desired operating point. The algorithm solves a sequence of quadratic optimization problems over conservative convex inner approximations of the OPF feasible space, each representing a so-called convex restriction. In each iteration, we obtain a new, improved operating point and a feasible transition from the operating point in the previous iteration. In addition to computing a feasible path to a known desired operating point, this algorithm can also be used to locally improve the operating point. Extensive numerical studies on a variety of test cases demonstrate the algorithm and the ability to arrive at a high-quality solution in few iterations.
@@ -113,11 +124,31 @@
 			&emsp;[ <span onclick="showDiv('inexact_relaxations_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1902.04815">link</a> ] [ Ref: <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.bib">bib</a>   <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.txt">txt</a> ] </p></li>
 		</span>
   </div>
-	<!--
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
 	</div>
-	-->
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>A. Venzke, <b>D.K. Molzahn</b>, and S. Chatzivasileiadis, "Efficient Creation of Datasets for Data-Driven Power System Applications," <i>Submitted</i>.<br />
+				<span id="dataset_creation_year" class="abstract" style="display:none">
+					Advances in data-driven methods have sparked renewed interest for applications in power systems. Creating datasets for successful application of these methods has proven to be very challenging, especially when considering power system security. This paper proposes a computationally efficient method to create datasets of secure and insecure operating points. We propose an infeasibility certificate based on separating hyperplanes that can a-priori characterize large parts of the input space as insecure, thus significantly reducing both computation time and problem size. Our method can handle an order of magnitude more control variables and creates balanced datasets of secure and insecure operating points, which is essential for data-driven applications. While we focus on N-1 security and uncertainty, our method can extend to dynamic security. For PGLib-OPF networks up to 500 buses and up to 125 control variables, we demonstrate drastic reductions in unclassified input space volumes and computation time, create balanced datasets, and evaluate an illustrative data-driven application.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dataset_creation_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/venzke_molzahn_chatzivasileiadis-dataset_creation.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1910.01794">link</a> ] [ Ref: <a href="pubs/venzke_molzahn_chatzivasileiadis-dataset_creation.bib">bib</a>   <a href="pubs/venzke_molzahn_chatzivasileiadis-dataset_creation.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>B. Li, B. Cui, F. Qiu, and <b>D.K. Molzahn</b>, "Balancibility: Existence and Uniqueness of Power Flow Solutions under Voltage Balance Requirements," <i>Submitted</i>.<br />
+				<span id="balancibility_year" class="abstract" style="display:none">
+					In distribution systems, power injection variability due to growing penetrations of distributed energy resources (DERs) and dispatchable loads can lead to power quality issues such as severe voltage unbalance. To ensure safe operation of	phase-balance-sensitive components such as transformers and	induction motor loads, the amount of voltage unbalance must be maintained within specified limits for a range of uncertain loading conditions. This paper builds on existing "solvability conditions" that characterize operating regions for which the power flow equations are guaranteed to have a unique high-voltage solution.	We extend these existing solvability conditions to be applicable to distribution systems and augment them with a “balancibility” condition which quantifies an operating region within which a unique, adequately balanced power flow solution exists. To	build this condition, we consider different unbalance definitions	and derive closed-form representations through reformulations or	safe approximations. Using case studies, we evaluate these closed-form representations and compare the balancibility conditions	associated with different unbalance definitions.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('balancibility_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/li_cui_qiu_molzahn-balancibility.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1912.02152">link</a> ] [ Ref: <a href="pubs/li_cui_qiu_molzahn-balancibility.bib">bib</a>   <a href="pubs/li_cui_qiu_molzahn-balancibility.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	</ul>
 	<ul class="tile scale-anm Year">
 	<div class="tile scale-anm Year">
@@ -389,7 +420,7 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>J. Lavaei, S.H. Low, R. Baldick, B. Zhang, <b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, "Guest Editorial: Distributed Control and Efficient Optimization Methods for Smart Grid," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2939-2940, November 2017.<br />
+			<li><p>J. Lavaei, S.H. Low, R. Baldick, B. Zhang, <b>D.K. Molzahn</b>, F. D&ouml;rfler, H. Sandberg, "Guest Editorial: Distributed Control and Efficient Optimization Methods for Smart Grid," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2939-2940, November 2017.<br />
 		</span>
 		<span style="cursor:auto;">
 			&emsp; [ <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/8075192/">link</a> ] [ Ref: <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.bib">bib</a>   <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.txt">txt</a> ] </p></li>
@@ -397,7 +428,7 @@
   </div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p><b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2941-2962, November 2017.<br />
+			<li><p><b>D.K. Molzahn</b>, F. D&ouml;rfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2941-2962, November 2017.<br />
 				<span id="distributed_optimization_survey2017_year" class="abstract" style="display:none">
 					Historically, centrally computed algorithms have been the primary means of power system optimization and control. With increasing penetrations of distributed energy resources requiring optimization and control of power systems with many controllable devices, distributed algorithms have been the subject of significant research interest. This paper surveys the literature of distributed algorithms with applications to optimization and control of power systems. In particular, this paper reviews distributed algorithms for offline solution of optimal power flow (OPF) problems as well as online algorithms for real-time solution of OPF, optimal frequency control, optimal voltage control, and optimal wide-area control problems.
 				</span>
@@ -1011,6 +1042,17 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>A. Pe&ntilde;a Ordieres, <b>D.K. Molzahn</b>, L.A. Roald, and A. W&auml;chter "DC Optimal Power Flow with Joint Chance Constraints," <i>Submitted</i>.<br />
+				<span id="jcc_dcopf_type" class="abstract" style="display:none">
+					Managing uncertainty and variability in power injections has become a major concern for power system operators due to the increasing levels of fluctuating renewable energy connected to the grid. This work addresses this uncertainty via a joint chance-constrained formulation of the DC optimal power flow (OPF) problem, which satisfies <i>all</i> the constraints <i>jointly</i> with a pre-determined probability. The few existing approaches for solving joint chance-constrained OPF problems are typically either computationally intractable for large-scale problems or give overly conservative solutions that satisfy the constraints far more often than required, resulting in excessively costly operation. This paper proposes an algorithm for solving joint chance-constrained DC OPF problems by adopting an S&#8467;<sub>1</sub>QP-type trust-region algorithm. This algorithm uses a sample-based approach that avoids making strong assumptions on the distribution of the uncertainties, scales favorably to large problems, and can be tuned to obtain less conservative results. We illustrate the performance of our method using several IEEE test cases. The results demonstrate the proposed algorithm's advantages in computational times and limited conservativeness of the solutions relative to other joint chance-constrained DC OPF algorithms.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('jcc_dcopf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1911.12439">link</a> ] [ Ref: <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.bib">bib</a>   <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," <i>Submitted</i>.<br />
 				<span id="feasible_path_type" class="abstract" style="display:none">
 					Nonconvexity induced by the nonlinear AC power flow equations challenges solution algorithms for AC optimal power flow (OPF) problems. While significant research efforts have focused on reliably computing high-quality OPF solutions, identifying a feasible path from an initial operating point to a desired operating point is a topic that has received much less attention. However, since the feasible space of the OFP problem is nonconvex and potentially disconnected, it can be challenging to transition between operating points while avoiding constraint violations. To address this problem, we propose an algorithm which computes a provably feasible path from an initial operating point to a desired operating point. The algorithm solves a sequence of quadratic optimization problems over conservative convex inner approximations of the OPF feasible space, each representing a so-called convex restriction. In each iteration, we obtain a new, improved operating point and a feasible transition from the operating point in the previous iteration. In addition to computing a feasible path to a known desired operating point, this algorithm can also be used to locally improve the operating point. Extensive numerical studies on a variety of test cases demonstrate the algorithm and the ability to arrive at a high-quality solution in few iterations.
@@ -1145,7 +1187,7 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>J. Lavaei, S.H. Low, R. Baldick, B. Zhang, <b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, "Guest Editorial: Distributed Control and Efficient Optimization Methods for Smart Grid," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2939-2940, November 2017.<br />
+			<li><p>J. Lavaei, S.H. Low, R. Baldick, B. Zhang, <b>D.K. Molzahn</b>, F. D&ouml;rfler, H. Sandberg, "Guest Editorial: Distributed Control and Efficient Optimization Methods for Smart Grid," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2939-2940, November 2017.<br />
 		</span>
 		<span style="cursor:auto;">
 			&emsp; [ <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/8075192/">link</a> ] [ Ref: <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.bib">bib</a>   <a href="pubs/lavaei_low_baldick_zhang_molzahn_dorfler_sandberg-guest_editorial.txt">txt</a> ] </p></li>
@@ -1153,7 +1195,7 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p><b>D.K. Molzahn</b>, F. Dorfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2941-2962, November 2017.<br />
+			<li><p><b>D.K. Molzahn</b>, F. D&ouml;rfler, H. Sandberg, S.H. Low, S. Chakrabarti, R. Baldick, and J. Lavaei, "A Survey of Distributed Optimization and Control Algorithms for Electric Power Systems," <i>IEEE Transactions on Smart Grid, Special issue on Distributed Control and Efficient Optimization Methods for Smart Grid</i>, vol. 8, no. 6, pp. 2941-2962, November 2017.<br />
 				<span id="distributed_optimization_survey2017_type" class="abstract" style="display:none">
 					Historically, centrally computed algorithms have been the primary means of power system optimization and control. With increasing penetrations of distributed energy resources requiring optimization and control of power systems with many controllable devices, distributed algorithms have been the subject of significant research interest. This paper surveys the literature of distributed algorithms with applications to optimization and control of power systems. In particular, this paper reviews distributed algorithms for offline solution of optimal power flow (OPF) problems as well as online algorithms for real-time solution of OPF, optimal frequency control, optimal voltage control, and optimal wide-area control problems.
 				</span>
@@ -1325,11 +1367,31 @@
 	<div class="tile scale-anm Type" style="display:none">
     <a name="conferences"><h1>Conference Proceedings</h1></a>
   </div>
-	<!--
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
-	-->
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>A. Venzke, <b>D.K. Molzahn</b>, and S. Chatzivasileiadis, "Efficient Creation of Datasets for Data-Driven Power System Applications," <i>Submitted</i>.<br />
+				<span id="dataset_creation_type" class="abstract" style="display:none">
+					Advances in data-driven methods have sparked renewed interest for applications in power systems. Creating datasets for successful application of these methods has proven to be very challenging, especially when considering power system security. This paper proposes a computationally efficient method to create datasets of secure and insecure operating points. We propose an infeasibility certificate based on separating hyperplanes that can a-priori characterize large parts of the input space as insecure, thus significantly reducing both computation time and problem size. Our method can handle an order of magnitude more control variables and creates balanced datasets of secure and insecure operating points, which is essential for data-driven applications. While we focus on N-1 security and uncertainty, our method can extend to dynamic security. For PGLib-OPF networks up to 500 buses and up to 125 control variables, we demonstrate drastic reductions in unclassified input space volumes and computation time, create balanced datasets, and evaluate an illustrative data-driven application.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dataset_creation_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/venzke_molzahn_chatzivasileiadis-dataset_creation.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1910.01794">link</a> ] [ Ref: <a href="pubs/venzke_molzahn_chatzivasileiadis-dataset_creation.bib">bib</a>   <a href="pubs/venzke_molzahn_chatzivasileiadis-dataset_creation.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Li, B. Cui, F. Qiu, and <b>D.K. Molzahn</b>, "Balancibility: Existence and Uniqueness of Power Flow Solutions under Voltage Balance Requirements," <i>Submitted</i>.<br />
+				<span id="balancibility_type" class="abstract" style="display:none">
+					In distribution systems, power injection variability due to growing penetrations of distributed energy resources (DERs) and dispatchable loads can lead to power quality issues such as severe voltage unbalance. To ensure safe operation of	phase-balance-sensitive components such as transformers and	induction motor loads, the amount of voltage unbalance must be maintained within specified limits for a range of uncertain loading conditions. This paper builds on existing "solvability conditions" that characterize operating regions for which the power flow equations are guaranteed to have a unique high-voltage solution.	We extend these existing solvability conditions to be applicable to distribution systems and augment them with a “balancibility” condition which quantifies an operating region within which a unique, adequately balanced power flow solution exists. To	build this condition, we consider different unbalance definitions	and derive closed-form representations through reformulations or	safe approximations. Using case studies, we evaluate these closed-form representations and compare the balancibility conditions	associated with different unbalance definitions.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('balancibility_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/li_cui_qiu_molzahn-balancibility.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1912.02152">link</a> ] [ Ref: <a href="pubs/li_cui_qiu_molzahn-balancibility.bib">bib</a>   <a href="pubs/li_cui_qiu_molzahn-balancibility.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>2019</h2>
 	</div>
