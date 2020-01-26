@@ -1,1 +1,1 @@
-A. Venzke, D.K. Molzahn, and S. Chatzivasileiadis, "Efficient Creation of Datasets for Data-Driven Power System Applications," submitted.
+A. Venzke, D.K. Molzahn, and S. Chatzivasileiadis, "Efficient Creation of Datasets for Data-Driven Power System Applications," to appear in Electric Power Systems Research, to be presented at 21st Power Systems Computation Conference (PSCC), June 29 - July 3, 2020.

@@ -1,1 +1,1 @@
-B. Li, B. Cui, F. Qiu, and D.K. Molzahn, "Balancibility: Existence and Uniqueness of Power Flow Solutions under Voltage Balance Requirements," submitted.
+B. Li, B. Cui, F. Qiu, and D.K. Molzahn, "Balancibility: Existence and Uniqueness of Power Flow Solutions under Voltage Balance Requirements," to appear in Electric Power Systems Research, to be presented at 21st Power Systems Computation Conference (PSCC), June 29 - July 3, 2020.
