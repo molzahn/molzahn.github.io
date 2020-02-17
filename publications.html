@@ -104,17 +104,6 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," <i>Submitted</i>.<br />
-				<span id="feasible_path_year" class="abstract" style="display:none">
-					Nonconvexity induced by the nonlinear AC power flow equations challenges solution algorithms for AC optimal power flow (OPF) problems. While significant research efforts have focused on reliably computing high-quality OPF solutions, identifying a feasible path from an initial operating point to a desired operating point is a topic that has received much less attention. However, since the feasible space of the OFP problem is nonconvex and potentially disconnected, it can be challenging to transition between operating points while avoiding constraint violations. To address this problem, we propose an algorithm which computes a provably feasible path from an initial operating point to a desired operating point. The algorithm solves a sequence of quadratic optimization problems over conservative convex inner approximations of the OPF feasible space, each representing a so-called convex restriction. In each iteration, we obtain a new, improved operating point and a feasible transition from the operating point in the previous iteration. In addition to computing a feasible path to a known desired operating point, this algorithm can also be used to locally improve the operating point. Extensive numerical studies on a variety of test cases demonstrate the algorithm and the ability to arrive at a high-quality solution in few iterations.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('feasible_path_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1906.09483">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
 			<li><p>J. Liu, B. Cui, <b>D.K. Molzahn</b>, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," <i>Submitted</i>.<br />
 				<span id="robust_dc_network_year" class="abstract" style="display:none">
 					With high penetrations of renewable generation and variable loads, there is significant uncertainty associated with power flows in DC networks such that stability and constraint satisfaction are important concerns. Most existing DC network optimal power flow (DN-OPF) formulations assume exact knowledge about loading conditions and do not provide stability guarantees. In contrast, this paper studies a DN-OPF formulation which considers both stability and constraint satisfaction under uncertainty. The need to account for a range of uncertainty realizations in this paper’s robust optimization formulation results in a challenging semi-infinite program (SIP). The proposed solution algorithm reformulates this SIP into a computationally amenable problem whose solution provides a feasible operating point for the SIP. This algorithm constructs a convex stability set using sufficient conditions for the existence of a feasible and stable power flow solution. Solving an optimization problem based on this convex stability set provides generator set points which ensure that the DC network has a stable operating point for any considered uncertainty realization. This optimization problem takes a form similar to a deterministic DN-OPF problem and is therefore tractable. The proposed algorithm is demonstrated using various DC networks adapted from IEEE test cases.
@@ -146,6 +135,17 @@
 		<div class="tile scale-anm Year">
 			<h2>Journal Papers</h2>
 		</div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+					<span id="feasible_path_year" class="abstract" style="display:none">
+						Nonconvexity induced by the nonlinear AC power flow equations challenges solution algorithms for AC optimal power flow (OPF) problems. While significant research efforts have focused on reliably computing high-quality OPF solutions, it is not always clear that there exists a feasible path to reach the desired operating point. Transitioning between operating points while avoiding constraint violations can be challenging since the feasible space of the OPF problem is nonconvex and potentially disconnected. To address this problem, we propose an algorithm that computes a provably feasible path from an initial operating point to a desired operating point. Given an initial feasible point, the algorithm solves a sequence of convex quadratically constrained optimization problems over conservative convex inner approximations of the OPF feasible space. In each iteration, we obtain a new, improved operating point and a feasible transition from the operating point in the previous iteration. In addition to computing a feasible path to a known desired operating point, this algorithm can also be used to improve the operating point locally. Extensive numerical studies on a variety of test cases demonstrate the algorithm and the ability to arrive at a high-quality solution in few iterations.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('feasible_path_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1906.09483">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
 		<div class="tile scale-anm Year">
 			<span>
 				<li><p>A. Venzke, <b>D.K. Molzahn</b>, and S. Chatzivasileiadis, "Efficient Creation of Datasets for Data-Driven Power System Applications," to appear in <i>Electric Power Systems Research</i>, to be presented at <i>21st Power Systems Computation Conference (PSCC)</i>, June 29 - July 3, 2020.<br />
@@ -1095,17 +1095,6 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," <i>Submitted</i>.<br />
-				<span id="feasible_path_type" class="abstract" style="display:none">
-					Nonconvexity induced by the nonlinear AC power flow equations challenges solution algorithms for AC optimal power flow (OPF) problems. While significant research efforts have focused on reliably computing high-quality OPF solutions, identifying a feasible path from an initial operating point to a desired operating point is a topic that has received much less attention. However, since the feasible space of the OFP problem is nonconvex and potentially disconnected, it can be challenging to transition between operating points while avoiding constraint violations. To address this problem, we propose an algorithm which computes a provably feasible path from an initial operating point to a desired operating point. The algorithm solves a sequence of quadratic optimization problems over conservative convex inner approximations of the OPF feasible space, each representing a so-called convex restriction. In each iteration, we obtain a new, improved operating point and a feasible transition from the operating point in the previous iteration. In addition to computing a feasible path to a known desired operating point, this algorithm can also be used to locally improve the operating point. Extensive numerical studies on a variety of test cases demonstrate the algorithm and the ability to arrive at a high-quality solution in few iterations.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('feasible_path_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1906.09483">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>J. Liu, B. Cui, <b>D.K. Molzahn</b>, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," <i>Submitted</i>.<br />
 				<span id="robust_dc_network_type" class="abstract" style="display:none">
 					With high penetrations of renewable generation and variable loads, there is significant uncertainty associated with power flows in DC networks such that stability and constraint satisfaction are important concerns. Most existing DC network optimal power flow (DN-OPF) formulations assume exact knowledge about loading conditions and do not provide stability guarantees. In contrast, this paper studies a DN-OPF formulation which considers both stability and constraint satisfaction under uncertainty. The need to account for a range of uncertainty realizations in this paper’s robust optimization formulation results in a challenging semi-infinite program (SIP). The proposed solution algorithm reformulates this SIP into a computationally amenable problem whose solution provides a feasible operating point for the SIP. This algorithm constructs a convex stability set using sufficient conditions for the existence of a feasible and stable power flow solution. Solving an optimization problem based on this convex stability set provides generator set points which ensure that the DC network has a stable operating point for any considered uncertainty realization. This optimization problem takes a form similar to a deterministic DN-OPF problem and is therefore tractable. The proposed algorithm is demonstrated using various DC networks adapted from IEEE test cases.
@@ -1129,6 +1118,17 @@
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>2020</h2>
 	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+				<span id="feasible_path_type" class="abstract" style="display:none">
+						Nonconvexity induced by the nonlinear AC power flow equations challenges solution algorithms for AC optimal power flow (OPF) problems. While significant research efforts have focused on reliably computing high-quality OPF solutions, it is not always clear that there exists a feasible path to reach the desired operating point. Transitioning between operating points while avoiding constraint violations can be challenging since the feasible space of the OPF problem is nonconvex and potentially disconnected. To address this problem, we propose an algorithm that computes a provably feasible path from an initial operating point to a desired operating point. Given an initial feasible point, the algorithm solves a sequence of convex quadratically constrained optimization problems over conservative convex inner approximations of the OPF feasible space. In each iteration, we obtain a new, improved operating point and a feasible transition from the operating point in the previous iteration. In addition to computing a feasible path to a known desired operating point, this algorithm can also be used to improve the operating point locally. Extensive numerical studies on a variety of test cases demonstrate the algorithm and the ability to arrive at a high-quality solution in few iterations.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('feasible_path_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1906.09483">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>A. Venzke, <b>D.K. Molzahn</b>, and S. Chatzivasileiadis, "Efficient Creation of Datasets for Data-Driven Power System Applications,"  to appear in <i>Electric Power Systems Research</i>, to be presented at <i>21st Power Systems Computation Conference (PSCC)</i>, June 29 - July 3, 2020.<br />
