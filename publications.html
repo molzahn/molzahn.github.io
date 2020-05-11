@@ -82,6 +82,17 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
+			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Robust AC Optimal Power Flow with Convex Restriction," <i>Submitted</i>.<br />
+				<span id="robustACOPFconvexrestriction_year" class="abstract" style="display:none">
+					Power systems are increasingly being subjected to uncertain fluctuations from load demands and renewable generators. In order to avoid constraint violations and maintain steady-state stability, operators must account for uncertainties when determining the dispatch point for a power system. Accordingly, this paper considers the robust AC OPF problem, which requires that both the operational limits and the AC power flow equations are satisfied for all uncertainty realizations within a specified uncertainty set. Guaranteeing robustness is challenging due to the non-convex, nonlinear AC power flow equations, which may not always have a solution. Using a convex restriction technique, we first derive a provably robust feasibility condition for the OPF problem that is formulated as an explicit set of convex quadratic constraints. This condition is the first to rigorously guarantee robust feasibility with respect to both the operational limits and the AC power flow equations. We then use this condition in an algorithm that obtains robust solutions to AC OPF problems by solving a sequence of convex optimization problems. We demonstrate our algorithm and its ability to control robustness versus operating cost trade-offs using PGLib test cases.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('robustACOPFconvexrestriction_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn_roald-robust_acopf.pdf">pdf</a> ] [ <a href="">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn_roald-robust_acopf.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn_roald-robust_acopf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
 			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow Problems via Complex Per Unit Normalization," <i>Submitted</i>.<br />
 				<span id="rqc_year" class="abstract" style="display:none">
 					Optimal power flow (OPF) is a key problem in power system operations. OPF problems that use the nonlinear AC power flow equations to accurately model the network physics have inherent challenges associated with non-convexity. To address these challenges, recent research has applied various convex relaxation approaches to OPF problems. The QC relaxation is a promising approach that convexifies the trigonometric and product terms in the OPF problem by enclosing these terms in convex envelopes. The accuracy of the QC relaxation strongly depends on the tightness of these envelopes. This paper presents two improvements to these envelopes. The first improvement leverages a polar representation of the branch admittances in addition to the rectangular representation used previously. The second improvement is based on a coordinate transformation via a complex per unit base power normalization that rotates the power flow equations. The trigonometric envelopes resulting from this rotation can be tighter than the corresponding envelopes in previous QC relaxation formulations. Using an empirical analysis with a variety of test cases, this paper suggests an appropriate value for the angle of the complex base power. Comparing the results with a state-of-the-art QC formulation reveals the advantages of the proposed improvements.
@@ -113,17 +124,6 @@
 			&emsp;[ <span onclick="showDiv('robust_dc_network_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/liu_cui_molzahn_chen_lu-robust_dc_network_opf.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1902.08163">link</a> ] [ Ref: <a href="pubs/liu_cui_molzahn_chen_lu-robust_dc_network_opf.bib">bib</a>   <a href="pubs/liu_cui_molzahn_chen_lu-robust_dc_network_opf.txt">txt</a> ] </p></li>
 		</span>
   </div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>A. Venzke, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Inexact Convex Relaxations of AC Optimal Power Flow Problems: Towards AC Feasibility," <i>Submitted</i>.<br />
-				<span id="inexact_relaxations_year" class="abstract" style="display:none">
-					Convex relaxations of AC optimal power flow (AC-OPF) problems have attracted significant interest as in several instances they provably yield the global optima to the original non-convex problems. If the relaxation fails to be exact, the optimality gap is often small, i.e., the relaxation's objective value bound is close to the objective value of the best known AC-feasible point. This work studies inexact solutions to the quadratic convex (QC) and semidefinite (SDP) relaxations, specifically providing a comprehensive analysis on the resulting distances to both AC-feasibility and local optimality. To this end, we propose two empirical distance metrics which complement the optimality gap. In addition, we investigate two methods to recover AC-feasible solutions: penalization methods and warm-starting of non-convex solvers. For the PGLib OPF benchmarks, we show that i) despite an optimality gap of less than 1%, several test cases still exhibit substantial distances to AC-feasibility and local optimality; ii) the optimality gaps do not strongly correlate with either distance. We also show that several existing penalization methods may fail to recover AC-feasible or near-globally optimal solutions and that benefits of warm-starting of local solvers strongly depend on test case and solver and are not correlated with the optimality gaps.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('inexact_relaxations_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1902.04815">link</a> ] [ Ref: <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.bib">bib</a>   <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.txt">txt</a> ] </p></li>
-		</span>
-  </div>
 	<!-- <div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
 	</div> -->
@@ -137,13 +137,24 @@
 		</div>
 		<div class="tile scale-anm Year">
 			<span>
+				<li><p>A. Venzke, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Inexact Convex Relaxations of AC Optimal Power Flow Problems: Towards AC Feasibility," to appear in <i>Electric Power Systems Resesarch</i>.<br />
+					<span id="inexact_relaxations_year" class="abstract" style="display:none">
+					Convex relaxations of AC optimal power flow (AC-OPF) problems have attracted significant interest as in several instances they provably yield the global optimum to the original non-convex problem. If, however, the relaxation is inexact, the obtained solution is not AC-feasible. The quality of the obtained solution is essential for several practical applications of AC-OPF, but detailed analyses are lacking in existing literature. This paper aims to cover this gap. We provide an in-depth investigation of the solution characteristics when convex relaxations are inexact, we assess the most promising AC feasibility recovery methods for large-scale systems, and we propose two new metrics that lead to a better understanding of the quality of the identified solutions. We perform a comprehensive assessment on 96 different test cases, ranging from 14 to 3120 buses, and we show the following: (i) Despite an optimality gap of less than 1%, several test cases still exhibit substantial distances to both AC feasibility and local optimality and the newly proposed metrics characterize these deviations. (ii) Penalization methods fail to recover an AC-feasible solution in 15 out of 45 test cases. (iii) The computational benefits of warm-starting non-convex solvers have significant variation, but a computational speedup exists in over 75% of the test cases.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('inexact_relaxations_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1902.04815">link</a> ] [ Ref: <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.bib">bib</a>   <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
+		<div class="tile scale-anm Year">
+			<span>
 				<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
 					<span id="feasible_path_year" class="abstract" style="display:none">
 						Nonconvexity induced by the nonlinear AC power flow equations challenges solution algorithms for AC optimal power flow (OPF) problems. While significant research efforts have focused on reliably computing high-quality OPF solutions, it is not always clear that there exists a feasible path to reach the desired operating point. Transitioning between operating points while avoiding constraint violations can be challenging since the feasible space of the OPF problem is nonconvex and potentially disconnected. To address this problem, we propose an algorithm that computes a provably feasible path from an initial operating point to a desired operating point. Given an initial feasible point, the algorithm solves a sequence of convex quadratically constrained optimization problems over conservative convex inner approximations of the OPF feasible space. In each iteration, we obtain a new, improved operating point and a feasible transition from the operating point in the previous iteration. In addition to computing a feasible path to a known desired operating point, this algorithm can also be used to improve the operating point locally. Extensive numerical studies on a variety of test cases demonstrate the algorithm and the ability to arrive at a high-quality solution in few iterations.
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('feasible_path_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9006948">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.txt">txt</a> ] </p></li>
+				&emsp;[ <span onclick="showDiv('feasible_path_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn_roald-feasible_path.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9006948">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn_roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn_roald-feasible_path.txt">txt</a> ] </p></li>
 			</span>
 	  </div>
 		<div class="tile scale-anm Year">
@@ -1073,6 +1084,17 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Robust AC Optimal Power Flow with Convex Restriction," <i>Submitted</i>.<br />
+				<span id="robustACOPFconvexrestriction_type" class="abstract" style="display:none">
+					Power systems are increasingly being subjected to uncertain fluctuations from load demands and renewable generators. In order to avoid constraint violations and maintain steady-state stability, operators must account for uncertainties when determining the dispatch point for a power system. Accordingly, this paper considers the robust AC OPF problem, which requires that both the operational limits and the AC power flow equations are satisfied for all uncertainty realizations within a specified uncertainty set. Guaranteeing robustness is challenging due to the non-convex, nonlinear AC power flow equations, which may not always have a solution. Using a convex restriction technique, we first derive a provably robust feasibility condition for the OPF problem that is formulated as an explicit set of convex quadratic constraints. This condition is the first to rigorously guarantee robust feasibility with respect to both the operational limits and the AC power flow equations. We then use this condition in an algorithm that obtains robust solutions to AC OPF problems by solving a sequence of convex optimization problems. We demonstrate our algorithm and its ability to control robustness versus operating cost trade-offs using PGLib test cases.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('robustACOPFconvexrestriction_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn_roald-robust_acopf.pdf">pdf</a> ] [ <a href="">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn_roald-robust_acopf.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn_roald-robust_acopf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow Problems via Complex Per Unit Normalization," <i>Submitted</i>.<br />
 				<span id="rqc_type" class="abstract" style="display:none">
 					Optimal power flow (OPF) is a key problem in power system operations. OPF problems that use the nonlinear AC power flow equations to accurately model the network physics have inherent challenges associated with non-convexity. To address these challenges, recent research has applied various convex relaxation approaches to OPF problems. The QC relaxation is a promising approach that convexifies the trigonometric and product terms in the OPF problem by enclosing these terms in convex envelopes. The accuracy of the QC relaxation strongly depends on the tightness of these envelopes. This paper presents two improvements to these envelopes. The first improvement leverages a polar representation of the branch admittances in addition to the rectangular representation used previously. The second improvement is based on a coordinate transformation via a complex per unit base power normalization that rotates the power flow equations. The trigonometric envelopes resulting from this rotation can be tighter than the corresponding envelopes in previous QC relaxation formulations. Using an empirical analysis with a variety of test cases, this paper suggests an appropriate value for the angle of the complex base power. Comparing the results with a state-of-the-art QC formulation reveals the advantages of the proposed improvements.
@@ -1105,19 +1127,19 @@
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
+		<h2>2020</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>A. Venzke, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Inexact Convex Relaxations of AC Optimal Power Flow Problems: Towards AC Feasibility," <i>Submitted</i>.<br />
+			<li><p>A. Venzke, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Inexact Convex Relaxations of AC Optimal Power Flow Problems: Towards AC Feasibility," to appear in <i>Electric Power Systems Research</i>.<br />
 				<span id="inexact_relaxations_type" class="abstract" style="display:none">
-					Convex relaxations of AC optimal power flow (AC-OPF) problems have attracted significant interest as in several instances they provably yield the global optima to the original non-convex problems. If the relaxation fails to be exact, the optimality gap is often small, i.e., the relaxation's objective value bound is close to the objective value of the best known AC-feasible point. This work studies inexact solutions to the quadratic convex (QC) and semidefinite (SDP) relaxations, specifically providing a comprehensive analysis on the resulting distances to both AC-feasibility and local optimality. To this end, we propose two empirical distance metrics which complement the optimality gap. In addition, we investigate two methods to recover AC-feasible solutions: penalization methods and warm-starting of non-convex solvers. For the PGLib OPF benchmarks, we show that i) despite an optimality gap of less than 1%, several test cases still exhibit substantial distances to AC-feasibility and local optimality; ii) the optimality gaps do not strongly correlate with either distance. We also show that several existing penalization methods may fail to recover AC-feasible or near-globally optimal solutions and that benefits of warm-starting of local solvers strongly depend on test case and solver and are not correlated with the optimality gaps.
+					Convex relaxations of AC optimal power flow (AC-OPF) problems have attracted significant interest as in several instances they provably yield the global optimum to the original non-convex problem. If, however, the relaxation is inexact, the obtained solution is not AC-feasible. The quality of the obtained solution is essential for several practical applications of AC-OPF, but detailed analyses are lacking in existing literature. This paper aims to cover this gap. We provide an in-depth investigation of the solution characteristics when convex relaxations are inexact, we assess the most promising AC feasibility recovery methods for large-scale systems, and we propose two new metrics that lead to a better understanding of the quality of the identified solutions. We perform a comprehensive assessment on 96 different test cases, ranging from 14 to 3120 buses, and we show the following: (i) Despite an optimality gap of less than 1%, several test cases still exhibit substantial distances to both AC feasibility and local optimality and the newly proposed metrics characterize these deviations. (ii) Penalization methods fail to recover an AC-feasible solution in 15 out of 45 test cases. (iii) The computational benefits of warm-starting non-convex solvers have significant variation, but a computational speedup exists in over 75% of the test cases.
 				</span>
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('inexact_relaxations_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/1902.04815">link</a> ] [ Ref: <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.bib">bib</a>   <a href="pubs/venzke_chatzivasileiadis_molzahn-inexact_relaxations.txt">txt</a> ] </p></li>
 		</span>
   </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<h2>2020</h2>
-	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>D. Lee, K. Turitsyn, <b>D.K. Molzahn</b>, and L.A. Roald, "Feasible Path Identification in Optimal Power Flow with Sequential Convex Restriction," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
@@ -1126,7 +1148,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('feasible_path_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9006948">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn-roald-feasible_path.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('feasible_path_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/lee_turitsyn_molzahn_roald-feasible_path.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9006948">link</a> ] [ Ref: <a href="pubs/lee_turitsyn_molzahn_roald-feasible_path.bib">bib</a>   <a href="pubs/lee_turitsyn_molzahn_roald-feasible_path.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
