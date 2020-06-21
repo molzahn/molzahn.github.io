@@ -1,1 +1,1 @@
-M.R. Narimani, D.K. Molzahn, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow Problems via Complex Per Unit Normalization," submitted.
+M.R. Narimani, D.K. Molzahn, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow Problems via Complex Per Unit Normalization," to appear in IEEE Transactions on Power Systems.

@@ -1,1 +1,1 @@
-A. Pena Ordieres, D.K. Molzahn, L.A. Roald, and A. Waechter, "DC Optimal Power Flow with Joint Chance Constraints," submitted.
+A. Pena Ordieres, D.K. Molzahn, L.A. Roald, and A. Waechter, "DC Optimal Power Flow with Joint Chance Constraints," to appear in IEEE Transactions on Power Systems.

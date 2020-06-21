@@ -93,28 +93,6 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow Problems via Complex Per Unit Normalization," <i>Submitted</i>.<br />
-				<span id="rqc_year" class="abstract" style="display:none">
-					Optimal power flow (OPF) is a key problem in power system operations. OPF problems that use the nonlinear AC power flow equations to accurately model the network physics have inherent challenges associated with non-convexity. To address these challenges, recent research has applied various convex relaxation approaches to OPF problems. The QC relaxation is a promising approach that convexifies the trigonometric and product terms in the OPF problem by enclosing these terms in convex envelopes. The accuracy of the QC relaxation strongly depends on the tightness of these envelopes. This paper presents two improvements to these envelopes. The first improvement leverages a polar representation of the branch admittances in addition to the rectangular representation used previously. The second improvement is based on a coordinate transformation via a complex per unit base power normalization that rotates the power flow equations. The trigonometric envelopes resulting from this rotation can be tighter than the corresponding envelopes in previous QC relaxation formulations. Using an empirical analysis with a variety of test cases, this paper suggests an appropriate value for the angle of the complex base power. Comparing the results with a state-of-the-art QC formulation reveals the advantages of the proposed improvements.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('rqc_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-rqc.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1912.05061">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-rqc.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-rqc.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>A. Pe&ntilde;a Ordieres, <b>D.K. Molzahn</b>, L.A. Roald, and A. W&auml;chter "DC Optimal Power Flow with Joint Chance Constraints," <i>Submitted</i>.<br />
-				<span id="jcc_dcopf_year" class="abstract" style="display:none">
-					Managing uncertainty and variability in power injections has become a major concern for power system operators due to the increasing levels of fluctuating renewable energy connected to the grid. This work addresses this uncertainty via a joint chance-constrained formulation of the DC optimal power flow (OPF) problem, which satisfies <i>all</i> the constraints <i>jointly</i> with a pre-determined probability. The few existing approaches for solving joint chance-constrained OPF problems are typically either computationally intractable for large-scale problems or give overly conservative solutions that satisfy the constraints far more often than required, resulting in excessively costly operation. This paper proposes an algorithm for solving joint chance-constrained DC OPF problems by adopting an S&#8467;<sub>1</sub>QP-type trust-region algorithm. This algorithm uses a sample-based approach that avoids making strong assumptions on the distribution of the uncertainties, scales favorably to large problems, and can be tuned to obtain less conservative results. We illustrate the performance of our method using several IEEE test cases. The results demonstrate the proposed algorithm's advantages in computational times and limited conservativeness of the solutions relative to other joint chance-constrained DC OPF algorithms.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('jcc_dcopf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1911.12439">link</a> ] [ Ref: <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.bib">bib</a>   <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Year">
-		<span>
 			<li><p>J. Liu, B. Cui, <b>D.K. Molzahn</b>, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," <i>Submitted</i>.<br />
 				<span id="robust_dc_network_year" class="abstract" style="display:none">
 					With high penetrations of renewable generation and variable loads, there is significant uncertainty associated with power flows in DC networks such that stability and constraint satisfaction are important concerns. Most existing DC network optimal power flow (DN-OPF) formulations assume exact knowledge about loading conditions and do not provide stability guarantees. In contrast, this paper studies a DN-OPF formulation which considers both stability and constraint satisfaction under uncertainty. The need to account for a range of uncertainty realizations in this paper’s robust optimization formulation results in a challenging semi-infinite program (SIP). The proposed solution algorithm reformulates this SIP into a computationally amenable problem whose solution provides a feasible operating point for the SIP. This algorithm constructs a convex stability set using sufficient conditions for the existence of a feasible and stable power flow solution. Solving an optimization problem based on this convex stability set provides generator set points which ensure that the DC network has a stable operating point for any considered uncertainty realization. This optimization problem takes a form similar to a deterministic DN-OPF problem and is therefore tractable. The proposed algorithm is demonstrated using various DC networks adapted from IEEE test cases.
@@ -134,6 +112,28 @@
 		</div>
 		<div class="tile scale-anm Year">
 			<h2>Journal Papers</h2>
+		</div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow Problems via Complex Per Unit Normalization," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+					<span id="rqc_year" class="abstract" style="display:none">
+						Optimal power flow (OPF) is a key problem in power system operations. OPF problems that use the nonlinear AC power flow equations to accurately model the network physics have inherent challenges associated with non-convexity. To address these challenges, recent research has applied various convex relaxation approaches to OPF problems. The QC relaxation is a promising approach that convexifies the trigonometric and product terms in the OPF problem by enclosing these terms in convex envelopes. The accuracy of the QC relaxation strongly depends on the tightness of these envelopes. This paper presents two improvements to these envelopes. The first improvement leverages a polar representation of the branch admittances in addition to the rectangular representation used previously. The second improvement is based on a coordinate transformation via a complex per unit base power normalization that rotates the power flow equations. The trigonometric envelopes resulting from this rotation can be tighter than the corresponding envelopes in previous QC relaxation formulations. Using an empirical analysis with a variety of test cases, this paper suggests an appropriate value for the angle of the complex base power. Comparing the results with a state-of-the-art QC formulation reveals the advantages of the proposed improvements.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('rqc_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-rqc.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1912.05061">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-rqc.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-rqc.txt">txt</a> ] </p></li>
+			</span>
+		</div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>A. Pe&ntilde;a Ordieres, <b>D.K. Molzahn</b>, L.A. Roald, and A. W&auml;chter "DC Optimal Power Flow with Joint Chance Constraints," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+					<span id="jcc_dcopf_year" class="abstract" style="display:none">
+						Managing uncertainty and variability in power injections has become a major concern for power system operators due to increasing levels of fluctuating renewable energy connected to the grid. This work addresses this uncertainty via a joint chance-constrained formulation of the DC optimal power flow (OPF) problem, which satisfies <i>all</i> the constraints <i>jointly</i> with a pre-determined probability. The few existing approaches for solving joint chance-constrained OPF problems are typically either computationally intractable for large-scale problems or give overly conservative solutions that satisfy the constraints far more often than required, resulting in excessively costly operation. This paper proposes an algorithm for solving joint chance-constrained DC OPF problems by adopting an S&#8467;<sub>1</sub>QP-type trust-region algorithm. This algorithm uses a sample-based approach that avoids making strong assumptions on the distribution of the uncertainties, scales favorably to large problems, and can be tuned to obtain less conservative results. We illustrate the performance of our method using several IEEE test cases. The results demonstrate the proposed algorithm's advantages in computational times and limited conservativeness of the solutions relative to other joint chance-constrained DC OPF algorithms.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('jcc_dcopf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1911.12439">link</a> ] [ Ref: <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.bib">bib</a>   <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.txt">txt</a> ] </p></li>
+			</span>
 		</div>
 		<div class="tile scale-anm Year">
 			<span>
@@ -1095,28 +1095,6 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow Problems via Complex Per Unit Normalization," <i>Submitted</i>.<br />
-				<span id="rqc_type" class="abstract" style="display:none">
-					Optimal power flow (OPF) is a key problem in power system operations. OPF problems that use the nonlinear AC power flow equations to accurately model the network physics have inherent challenges associated with non-convexity. To address these challenges, recent research has applied various convex relaxation approaches to OPF problems. The QC relaxation is a promising approach that convexifies the trigonometric and product terms in the OPF problem by enclosing these terms in convex envelopes. The accuracy of the QC relaxation strongly depends on the tightness of these envelopes. This paper presents two improvements to these envelopes. The first improvement leverages a polar representation of the branch admittances in addition to the rectangular representation used previously. The second improvement is based on a coordinate transformation via a complex per unit base power normalization that rotates the power flow equations. The trigonometric envelopes resulting from this rotation can be tighter than the corresponding envelopes in previous QC relaxation formulations. Using an empirical analysis with a variety of test cases, this paper suggests an appropriate value for the angle of the complex base power. Comparing the results with a state-of-the-art QC formulation reveals the advantages of the proposed improvements.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('rqc_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-rqc.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1912.05061">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-rqc.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-rqc.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>A. Pe&ntilde;a Ordieres, <b>D.K. Molzahn</b>, L.A. Roald, and A. W&auml;chter "DC Optimal Power Flow with Joint Chance Constraints," <i>Submitted</i>.<br />
-				<span id="jcc_dcopf_type" class="abstract" style="display:none">
-					Managing uncertainty and variability in power injections has become a major concern for power system operators due to the increasing levels of fluctuating renewable energy connected to the grid. This work addresses this uncertainty via a joint chance-constrained formulation of the DC optimal power flow (OPF) problem, which satisfies <i>all</i> the constraints <i>jointly</i> with a pre-determined probability. The few existing approaches for solving joint chance-constrained OPF problems are typically either computationally intractable for large-scale problems or give overly conservative solutions that satisfy the constraints far more often than required, resulting in excessively costly operation. This paper proposes an algorithm for solving joint chance-constrained DC OPF problems by adopting an S&#8467;<sub>1</sub>QP-type trust-region algorithm. This algorithm uses a sample-based approach that avoids making strong assumptions on the distribution of the uncertainties, scales favorably to large problems, and can be tuned to obtain less conservative results. We illustrate the performance of our method using several IEEE test cases. The results demonstrate the proposed algorithm's advantages in computational times and limited conservativeness of the solutions relative to other joint chance-constrained DC OPF algorithms.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('jcc_dcopf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1911.12439">link</a> ] [ Ref: <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.bib">bib</a>   <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>J. Liu, B. Cui, <b>D.K. Molzahn</b>, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," <i>Submitted</i>.<br />
 				<span id="robust_dc_network_type" class="abstract" style="display:none">
 					With high penetrations of renewable generation and variable loads, there is significant uncertainty associated with power flows in DC networks such that stability and constraint satisfaction are important concerns. Most existing DC network optimal power flow (DN-OPF) formulations assume exact knowledge about loading conditions and do not provide stability guarantees. In contrast, this paper studies a DN-OPF formulation which considers both stability and constraint satisfaction under uncertainty. The need to account for a range of uncertainty realizations in this paper’s robust optimization formulation results in a challenging semi-infinite program (SIP). The proposed solution algorithm reformulates this SIP into a computationally amenable problem whose solution provides a feasible operating point for the SIP. This algorithm constructs a convex stability set using sufficient conditions for the existence of a feasible and stable power flow solution. Solving an optimization problem based on this convex stability set provides generator set points which ensure that the DC network has a stable operating point for any considered uncertainty realization. This optimization problem takes a form similar to a deterministic DN-OPF problem and is therefore tractable. The proposed algorithm is demonstrated using various DC networks adapted from IEEE test cases.
@@ -1128,6 +1106,28 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>2020</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow Problems via Complex Per Unit Normalization," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+				<span id="rqc_type" class="abstract" style="display:none">
+					Optimal power flow (OPF) is a key problem in power system operations. OPF problems that use the nonlinear AC power flow equations to accurately model the network physics have inherent challenges associated with non-convexity. To address these challenges, recent research has applied various convex relaxation approaches to OPF problems. The QC relaxation is a promising approach that convexifies the trigonometric and product terms in the OPF problem by enclosing these terms in convex envelopes. The accuracy of the QC relaxation strongly depends on the tightness of these envelopes. This paper presents two improvements to these envelopes. The first improvement leverages a polar representation of the branch admittances in addition to the rectangular representation used previously. The second improvement is based on a coordinate transformation via a complex per unit base power normalization that rotates the power flow equations. The trigonometric envelopes resulting from this rotation can be tighter than the corresponding envelopes in previous QC relaxation formulations. Using an empirical analysis with a variety of test cases, this paper suggests an appropriate value for the angle of the complex base power. Comparing the results with a state-of-the-art QC formulation reveals the advantages of the proposed improvements.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('rqc_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-rqc.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1912.05061">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-rqc.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-rqc.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>A. Pe&ntilde;a Ordieres, <b>D.K. Molzahn</b>, L.A. Roald, and A. W&auml;chter "DC Optimal Power Flow with Joint Chance Constraints," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+				<span id="jcc_dcopf_type" class="abstract" style="display:none">
+					Managing uncertainty and variability in power injections has become a major concern for power system operators due to increasing levels of fluctuating renewable energy connected to the grid. This work addresses this uncertainty via a joint chance-constrained formulation of the DC optimal power flow (OPF) problem, which satisfies <i>all</i> the constraints <i>jointly</i> with a pre-determined probability. The few existing approaches for solving joint chance-constrained OPF problems are typically either computationally intractable for large-scale problems or give overly conservative solutions that satisfy the constraints far more often than required, resulting in excessively costly operation. This paper proposes an algorithm for solving joint chance-constrained DC OPF problems by adopting an S&#8467;<sub>1</sub>QP-type trust-region algorithm. This algorithm uses a sample-based approach that avoids making strong assumptions on the distribution of the uncertainties, scales favorably to large problems, and can be tuned to obtain less conservative results. We illustrate the performance of our method using several IEEE test cases. The results demonstrate the proposed algorithm's advantages in computational times and limited conservativeness of the solutions relative to other joint chance-constrained DC OPF algorithms.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('jcc_dcopf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/1911.12439">link</a> ] [ Ref: <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.bib">bib</a>   <a href="pubs/pena_ordieres_molzahn_roald_waechter-jcc_dcopf.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
