@@ -1,1 +1,1 @@
-A. Venzke, S. Chatzivasileiadis, and D.K. Molzahn, "Inexact Convex Relaxations of AC  Optimal Power Flow: Towards AC Feasibility," to appear in Electric Power Systems Research.
+A. Venzke, S. Chatzivasileiadis, and D.K. Molzahn, "Inexact Convex Relaxations of AC  Optimal Power Flow: Towards AC Feasibility," Electric Power Systems Research, vol. 187, October 2020.
