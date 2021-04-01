@@ -1,1 +1,1 @@
-M. Alkhraijah, M. Alowaifeer, X. Li, M.J. Till, and D.K. Molzahn, "Reactive Power Planning using Security-Constrained AC Optimal Power Flow and Sensitivity Analyses," to appear in Power and Energy Conference at Illinois (PECI), April 1-2, 2021.
+M. Alkhraijah, M. Alowaifeer, X. Li, M.J. Till, and D.K. Molzahn, "Reactive Power Planning using Security-Constrained AC Optimal Power Flow and Sensitivity Analyses," Power and Energy Conference at Illinois (PECI), April 1-2, 2021.
