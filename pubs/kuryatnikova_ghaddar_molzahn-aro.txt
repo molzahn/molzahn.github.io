@@ -1,1 +1,1 @@
-O. Kuryatnikova, B. Ghaddar, and D.K. Molzahn, "Adjustable Robust Two-Stage Polynomial Optimization with Application to AC Optimal Power Flow," submitted.
+O. Kuryatnikova, B. Ghaddar, and D.K. Molzahn, "Adjustable Robust Two-Stage Polynomial Optimization with Application to AC Optimal Power Flow," arXiv:2104.03107, April 2021.
