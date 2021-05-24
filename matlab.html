@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="Homepage for Daniel Molzahn"/>
+<meta name="keywords" content="daniel molzahn dan electric power systems"/>
+<meta name="author" content="Daniel Molzahn"/>
+<link rel="stylesheet" type="text/css" href="default.css" media="screen"/>
+<title>Daniel K. Molzahn</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="header">
+
+		<div class="title">
+			<h1>Daniel K. Molzahn</h1>
+		</div>
+
+		<div class="navigation">
+			<a href="index.html">Homepage</a>
+			<a href="biography.html">Biography</a>
+			<a href="publications.html">Publications</a>
+			<a href="molzahn_cv.pdf">CV</a>
+			<a href="code.html">Code</a>
+			<div class="clearer"><span></span></div>
+		</div>
+
+	</div>
+
+	<div class="main">
+
+		<div class="content">
+
+			<h1>Prototype Extreme Event Simulation Tool for Power Engineering Education<i></i></h1>
+
+<p>The course project for ECE 4320 places students in charge of operating, maintaining, and repairing a simulated model of the Georgia power system during a pandemic. The project's goal is to provide a low-cost supply of power to the loads by carefully choosing the generator outputs and allocating crews to perform maintenance and repairs of the transmission lines. Sending crews out to maintain and repair transmission lines may result in them being quarantined after exposure to the pandemic disease, precluding their use from the remainder of the simulation. Students must therefore balance the need to maintain low-cost and reliable power system operation against the health risk imposed on the repair and maintenance crews.</p>
+
+<h2>Code and Installation</h2>
+
+<p>The simulation code and all data files are given in Matlab format in <a href="matlab/ece4320project.zip">ece4320project.zip</a>. The simulation code is developed for Matlab 2019a. To avoid potential incompatibilities, install version 2019a or later. Note that Matlab's Mapping toolbox and the Optimization toolbox are required to run this tool. Both of these toolboxes are available with the Georgia Tech Matlab license.</p>
+
+<p>The simulation also relies on <a href="https://matpower.org">Matpower</a>, an open-source Matlab package that is included with the project. Matpower solves power flow and optimal power flow problems. The <a href="https://matpower.org/docs/MATPOWER-manual.pdf">Matpower manual</a> provides an extensive description of the functionality of this package.</p>
+
+<p>The simulation additionally uses another open-source Matlab package called <a href="https://yalmip.github.io/">YALMIP</a>, which is also included with the project. YALMIP is a so-called "modeling" package that simplifies the formulation and solution of optimization problems. This project uses YALMIP to formulate power flow and security-constrained unit commitment problems that serve as tools for determining generator setpoints and load shedding amounts during the simulation.</p>
+
+<p>To install the simulation tool (including both Matpower and YALMIP), simply unzip <a href="matlab/ece4320project.zip">ece4320project.zip</a> and add the associated files and folders to the Matlab path. To do this, either use the "Set Path" button on the Matlab toolbar or by execute the following command on the Matlab command line: addpath(genpath('c:\path\to\unzipped\files'));</p>
+
+<p>After installing the code, start the simulation via the GUI by executing the command "ece4320" on Matlab's command line or use the function-based interface described in the documentation.</p>
+
+<p>Documentation for the simulation tool and course project is included in the file <a href="matlab/ece4320project.zip">ece4320project.zip</a> and is also directly accessible here: <a href="matlab/ECE_4320_Project_Documentation.pdf">Project Documentation</a>.</p>
+
+<h2>Example Project Reports</h2>
+<p>Examples of student project reports from ECE 4320 (Fall 2020) are available below.</p>
+<ul>
+	<li><a href="matlab/Operating the Georgia Power Grid During a Pandemic Situation.pdf">Operating the Georgia Power Grid During a Pandemic Situation</a>, Daniel Bruce and Sebastian Tapias.</li>
+	<li><a href="matlab/Operating a Power System During a Pandemic.pdf">Operating a Power System During a Pandemic</a>, Ethan Taylor and Zachary Remick.</li>
+	<li><a href="matlab/Operating a Power Grid in a Pandemic.pdf">Operating a Power Grid in a Pandemic: Utilizing Simulations to Recommend Practices for a More Reliable, Cost Effective Grid</a>, Michelle Ray and Maile Wobb.</li>
+</ul>
+
+<h2>Student Feedback</h2>
+<p>Anonymous feedback obtained from CIOS and emails from students was very positive. Examples of student feedback on the course project include:</p>
+<ul>
+	<li><i>This was one of my favorite projects to work on during my time at Georgia Tech.</i></li>
+	<li><i>The end of year project was exciting.</i></li>
+	<li><i>I enjoyed our final project as it related power systems to everything that is happening in the world with the pandemic right now.</i></li>
+	<i><li>I appreciate how relevant this course was, especially including the project. </i></li>
+</ul>
+
+<img src="matlab/network_diagram.png" alt="Course Project GUI" width="750">
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+		</div>
+
+		<div class="sidenav">
+
+		</div>
+
+		<div class="clearer"><span></span></div>
+
+	</div>
+
+</div>
+
+<div class="footer">Last Updated September 2013. Template design by <a href="http://arcsin.se">Arcsin</a>
+</div>
+
+</body>
+
+</html>
