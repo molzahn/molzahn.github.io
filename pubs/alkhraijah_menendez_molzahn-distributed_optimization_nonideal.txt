@@ -1,1 +1,1 @@
-M. Alkhraijah, C. Menendez, and D.K. Molzahn, "Evaluating the Performance of Distributed Optimal Power Flow Algorithms with Nonideal Communication," submitted.
+M. Alkhraijah, C. Menendez, and D.K. Molzahn, "Evaluating the Performance of Distributed Optimal Power Flow Algorithms with Nonideal Communication," submitted, preprint available at arXiv:2106.00135.
