@@ -1,0 +1,1 @@
+A. Kody, S. Chevalier, S. Chatzivasileiadis, and D.K. Molzahn, "Modeling the AC Power Flow Equations with Optimally Compact Neural Networks: Application to Unit Commitment," submitted.

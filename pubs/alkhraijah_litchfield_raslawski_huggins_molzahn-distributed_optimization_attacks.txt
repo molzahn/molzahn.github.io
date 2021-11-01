@@ -1,0 +1,1 @@
+M. Alkhraijah, S. Litchfield, C. Raslawski, D. Huggins, and D.K. Molzahn, "Analyzing Malicious Data Injection Attacks on Distributed Optimal Power Flow Algorithms," submitted.

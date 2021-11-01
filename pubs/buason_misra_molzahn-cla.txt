@@ -1,0 +1,1 @@
+P. Buason, S. Misra, and D.K. Molzahn, "A Sample-Based Approach for Computing Conservative Linear Power Flow Approximations," submitted.

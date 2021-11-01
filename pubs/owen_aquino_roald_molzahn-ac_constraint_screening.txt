@@ -1,1 +1,1 @@
-A.D. Owen Aquino, L.A. Roald, and D.K. Molzahn, "Identifying Redundant Constraints for AC OPF: The Challenges of Local Solutions, Relaxation Tightness, and Approximation Inaccuracy," submitted.
+A.D. Owen Aquino, L.A. Roald, and D.K. Molzahn, "Identifying Redundant Constraints for AC OPF: The Challenges of Local Solutions, Relaxation Tightness, and Approximation Inaccuracy," to appear in 53rd North American Power Symposium (NAPS), November 2021.

@@ -1,1 +1,1 @@
-D. Lee, K. Turitsyn, D.K. Molzahn, and L.A. Roald, "Robust AC Optimal Power Flow with Convex Restriction," to appear in IEEE Transactions on Power Systems.
+D. Lee, K. Turitsyn, D.K. Molzahn, and L.A. Roald, "Robust AC Optimal Power Flow with Convex Restriction," IEEE Transactions on Power Systems, vol. 36, no. 6, pp. 4953-4966, November 2021.

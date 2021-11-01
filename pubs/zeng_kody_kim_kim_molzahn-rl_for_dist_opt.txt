@@ -1,0 +1,1 @@
+S. Zeng, A. Kody, Y. Kim, K. Kim, and D.K. Molzahn, "A Reinforcement Learning Approach to Parameter Selection for Distributed Optimization in Power Systems," submitted.
