@@ -1,1 +1,1 @@
-M. Alkhraijah, C. Menendez, and D.K. Molzahn, "Assessing the Impacts of Nonideal Communications on Distributed Optimal Power Flow Algorithms," submitted, preprint available at arXiv:2106.00135.
+M. Alkhraijah, C. Menendez, and D.K. Molzahn, "Assessing the Impacts of Nonideal Communications on Distributed Optimal Power Flow Algorithms," to appear in Electric Power Systems Research, to be presented at the 22nd Power Systems Computation Conference (PSCC 2022).

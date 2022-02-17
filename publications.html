@@ -82,39 +82,6 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>A. Kody, S. Chevalier, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Modeling the AC Power Flow Equations with Optimally Compact Neural Networks: Application to Unit Commitment," submitted.<br />
-				<span id="nn_pf_uc_year" class="abstract" style="display:none">
-					Nonlinear power flow constraints render a variety of power system optimization problems computationally intractable. Emerging research shows, however, that the nonlinear AC power flow equations can be successfully modeled using Neural Networks (NNs). These NNs can be exactly transformed into Mixed Integer Linear Programs (MILPs) and embedded inside challenging optimization problems, thus replacing nonlinearities that are intractable for many applications with tractable piecewise linear approximations. Such approaches, though, suffer from an explosion of the number of binary variables needed to represent the NN. Accordingly, this paper develops a technique for training an "optimally compact" NN, i.e., one that can represent the power flow equations with a sufficiently high degree of accuracy while still maintaining a tractable number of binary variables. We show that the resulting NN model is more expressive than both the DC and linearized power flow approximations when embedded inside of a challenging optimization problem (i.e., the AC unit commitment problem).
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nn_pf_uc_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2110.11269">link</a> ] [ Ref: <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.bib">bib</a>   <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>S. Zeng, A. Kody, Y. Kim, K. Kim, and <b>D.K. Molzahn</b>, "A Reinforcement Learning Approach to Parameter Selection for Distributed Optimization in Power Systems," submitted.<br />
-				<span id="rl_dist_year" class="abstract" style="display:none">
-					With the increasing penetration of distributed energy resources, distributed optimization algorithms have attracted significant attention for power systems applications due to their potential for superior scalability, privacy, and robustness to a single point-of-failure. The Alternating Direction Method of Multipliers (ADMM) is a popular distributed optimization algorithm; however, its convergence performance is highly dependent on the selection of penalty parameters, which are usually chosen heuristically. In this work, we use reinforcement learning (RL) to develop an adaptive penalty parameter selection policy for the AC optimal power flow (ACOPF) problem solved via ADMM with the goal of minimizing the number of iterations until convergence. We train our RL policy using deep Q-learning, and show that this policy can result in significantly accelerated convergence (up to a 59% reduction in the number of iterations compared to existing, curvature-informed penalty parameter selection methods). Furthermore, we show that our RL policy demonstrates promise for generalizability, performing well under unseen loading schemes as well as under unseen losses of lines and generators (up to a 50% reduction in iterations). This work thus provides a proof-of-concept for using RL for parameter selection in ADMM for power systems applications.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('rl_dist_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2110.11991">link</a> ] [ Ref: <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.bib">bib</a>   <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "A Sample-Based Approach for Computing Conservative Linear Power Flow Approximations," submitted.<br />
-				<span id="cla_year" class="abstract" style="display:none">
-					Non-convexities induced by the non-linear power flow equations challenge solution algorithms for many power system optimization and control problems. Linear approximations are often used to address these challenges by trading off modeling accuracy for tractability. The accuracy of a power flow linearization depends on the characteristics of the power system and the operational range where the linearization is applied. However, rather than exploiting knowledge of these characteristics for a particular system, many existing power flow linearizations are based on general assumptions for broad classes of systems, thus limiting their accuracy. Moreover, since existing linearizations do not consistently overestimate or underestimate quantities of interest such as voltage magnitudes and line flows, algorithms based on these linearizations may lead to constraint violations when applied to the system. In contrast, this paper computes <i>conservative linear approximations</i> of the power flow equations, i.e., linear approximations that overestimate or underestimate a quantity of interest in order to enable tractable algorithms that avoid constraint violations. Using a sample-based approach, we compute these conservative linearizations by solving a constrained linear regression problem. We analyze and improve the conservative linear approximations via an iterative sampling approach, optimization over functions of the quantities of interest, and a sample-complexity analysis. Considering the relationships between the voltage magnitudes and the active and reactive power injections, we characterize the performance of the conservative linear approximations for a range of test cases.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('cla_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cla.pdf">pdf</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cla.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
 			<li><p>A.D. Owen Aquino, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem," submitted.<br />
 				<span id="ml_for_n-k_year" class="abstract" style="display:none">
 					In order to achieve reliable electric service, engineers must design power grids such a small number of line failures will not result in significant amounts of load shedding. To identify problematic failure combinations, the <i>N-k</i> interdiction problem seeks the set of <i>k</i> failed lines (out of the <i>N</i> total lines in the system) that result in the largest amount of load shedding. This problem is formulated as a bilevel optimization where the upper-level selects the worst-case set line failures and the lower-level redispatches the system to minimize the load shedding. This problem becomes challenging due to the discrete variables associated with the failure selection in the upper-level problem and nonconvexities from the AC power flow equations in the lower-level problem.  We compare the performance of (1) a state-of-the-art optimization approach based on a network flow relaxation of the power flow equations, (2) a newly developed reinforcement learning approach based on a deep-Q-network algorithm, and (3) a newly developed algorithm based on a neural network formulated as a mixed-integer linear program. We evaluate the effectiveness of each approach in finding the contingencies that produce the largest shedding. The results show the proposed approaches produce competitive results in identifying worst-case contingencies.
@@ -137,17 +104,6 @@
   </div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>M. Alkhraijah, C. Menendez, and <b>D.K. Molzahn</b>, "Assessing the Impacts of Nonideal Communications on Distributed Optimal Power Flow Algorithms," submitted.<br />
-				<span id="nonideal_dist_year" class="abstract" style="display:none">
-					Power system operators are increasingly looking toward distributed optimization to address various challenges facing electric power systems. To assess their capabilities in environments with nonideal communications, this paper investigates the impacts of data quality on the performance of distributed optimization algorithms. Specifically, this paper compares the performance of the Alternating Direction Method of Multipliers (ADMM), Analytical Target Cascading (ATC), and Auxiliary Problem Principle (APP) algorithms in the context of DC Optimal Power Flow (DC OPF) problems. Using several test cases, this paper characterizes the performance of these algorithms in terms of their convergence rates and solution quality under three data quality nonidealities: (1) additive Gaussian noise, (2) bad data (large error), and (3) intermittent communication failure.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nonideal_dist_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2106.00135">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
 			<li><p>O. Kuryatnikova, B. Ghaddar, and <b>D.K. Molzahn</b>, "Adjustable Robust Two-Stage Polynomial Optimization with Application to AC Optimal Power Flow," submitted.<br />
 				<span id="aro_two_stage_year" class="abstract" style="display:none">
 				In this work, we consider two-stage polynomial optimization problems under uncertainty. In the first stage, one needs to decide upon the values of a subset of optimization variables (control variables). In the second stage, the uncertainty is revealed and the rest of optimization variables (state variables) are set up as a solution to a known system of possibly non-linear equations. This type of problem occurs, for instance, in optimization for dynamical systems, such as electric power systems. We combine tools from polynomial and robust optimization to provide a framework for general adjustable robust polynomial optimization problems. In particular, we propose an iterative algorithm to build a sequence of (approximately) robustly feasible solutions with an improving objective value and verify robust feasibility or infeasibility of the resulting solution under a semialgebraic uncertainty set. At each iteration, the algorithm optimizes over a subset of the feasible set and uses affine approximations of the second-stage equations while preserving the non-linearity of other constraints. The algorithm allows for additional simplifications in case of possibly non-convex quadratic problems under ellipsoidal uncertainty. We implement our approach for AC Optimal Power Flow and demonstrate the performance of our proposed method on Matpower instances.
@@ -161,7 +117,7 @@
 		<span>
 			<li><p>C. Hettle, S. Gupta, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," submitted.<br />
 				<span id="reconfiguration_submodularity_year" class="abstract" style="display:none">
-				We analyze a distributed approach for automatically reconfiguring distribution systems into an operational radial network after a fault occurs by creating an ordering in which switches automatically close upon detection of a downstream fault. The switches' reconnection ordering significantly impacts the expected time to reconnect under normal disruptions and thus affects reliability metrics such as SAIDI and CAIDI, which are the basis for regulator-imposed financial incentives for performance. We model the problem of finding a switch reconnection ordering that minimizes SAIDI and the expected reconnection time as Minimum Reconnection Time (MRT), which we show is a special case of the well-known minimum linear ordering problem (Iwata et al. 2012) from the submodular optimization literature. We prove that MRT is also NP-hard and generalize the kernel-based rounding approaches of (Bansal et al. 2012) to find better approximation algorithms for MRT than the general-purpose approaches. Finally, we consider optimizing multiple metrics simultaneously using local search methods that also reconfigure the system's base tree to ensure fairness in service disruptions and reconnection times. We computationally validate our approach on the NREL SMART-DS Greensboro synthetic urban-suburban network. We evaluate the performance of our reconfiguration methods and show significant reductions compared to single-metric-based optimizations.
+					The economic cost of power outages has been estimated to be between $35 billion and $50 billion annually in the United States. We analyze and advance methodologies for electrical distribution network reconfiguration in order to quickly restore power, an important lever for improving reliability. For short-term network disruptions, we give a novel model for reconfiguration by considering switches that can be sequentially closed upon detection of a network anomaly upstream. The order in which switches close has an impact on reliability metrics such as SAIDI, which are the basis for regulator-imposed financial performance incentives. We introduce the "Minimum Reconnection Time (MRT" problem, which aims to find an optimal switch ordering that minimizes the cost of outages and show that it generalizes metrics like SAIDI. We first show that MRT is a special case of the well-known minimum linear ordering problem from submodular optimization literature and that MRT is also NP-hard. We show how to approximate MRT using recent kernel-based randomized rounding approaches, and in turn improve the state-of-the-art for a broad class of MLOP instances. Finally, we note that the choice of reliability metric can result in significant differences for low and medium voltage buses. We therefore consider optimizing multiple metrics simultaneously using local search methods that reconfigure the system's base tree to optimize service disruptions, reconnection times, and energy losses. We computationally validate our reconfiguration methods on the NREL SMART-DS Greensboro synthetic urban-suburban network and show significant improvement in reliability metrics.
 				</span>
 		</span>
 		<span style="cursor:auto;">
@@ -190,13 +146,12 @@
 			&emsp;[ <span onclick="showDiv('admittance_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/turizo_molzahn-admittance_matrix_invertibility.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2012.04087">link</a> ] [ Ref: <a href="pubs/turizo_molzahn-admittance_matrix_invertibility.bib">bib</a>   <a href="pubs/turizo_molzahn-admittance_matrix_invertibility.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	<!--
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and D.K. Molzahn, "Recovering Voltage Sensitivities to Active and Reactive Power Injections in Distribution Systems", submitted.<br />
+			<li><p>S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and <b>D.K. Molzahn</b>, "Recovering Voltage Sensitivities to Active and Reactive Power Injections in Distribution Systems", submitted.<br />
 				<span id="recovering_sensitivities_year" class="abstract" style="display:none">
 				We analyze the sensitivity matrices relating active and reactive power injections to the voltage magnitudes—the block submatrices of the inverse AC Power Flow Jacobian. We develop a simple method to recover these sensitivity matrices under low observability conditions from advanced metering infrastructure (AMI) data via matrix completion techniques. The method provides an efficient approach for computing linearizations of the node voltages in the network, which can be updated iteratively. We also provide an analysis to show that these two sensitivity matrices take distinct values.
 				</span>
@@ -205,9 +160,72 @@
 			&emsp;[ <span onclick="showDiv('recovering_sensitivities_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.pdf">pdf</a> ] [ Ref: <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.bib">bib</a>   <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-  -->
 	</ul>
 	<ul class="tile scale-anm Year">
+		<div class="tile scale-anm Year">
+			<a name="2022"><h1>2022</h1></a>
+		</div>
+		<div class="tile scale-anm Year">
+			<h2>Journal Papers</h2>
+		</div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>A. Kody, S. Chevalier, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Modeling the AC Power Flow Equations with Optimally Compact Neural Networks: Application to Unit Commitment," to appear in <i>Electric Power Systems Research</i>. To be presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
+					<span id="nn_pf_uc_year" class="abstract" style="display:none">
+						Nonlinear power flow constraints render a variety of power system optimization problems computationally intractable. Emerging research shows, however, that the nonlinear AC power flow equations can be successfully modeled using Neural Networks (NNs). These NNs can be exactly transformed into Mixed Integer Linear Programs (MILPs) and embedded inside challenging optimization problems, thus replacing nonlinearities that are intractable for many applications with tractable piecewise linear approximations. Such approaches, though, suffer from an explosion of the number of binary variables needed to represent the NN. Accordingly, this paper develops a technique for training an "optimally compact" NN, i.e., one that can represent the power flow equations with a sufficiently high degree of accuracy while still maintaining a tractable number of binary variables. We show that the resulting NN model is more expressive than both the DC and linearized power flow approximations when embedded inside of a challenging optimization problem (i.e., the AC unit commitment problem).
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('nn_pf_uc_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2110.11269">link</a> ] [ Ref: <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.bib">bib</a>   <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>S. Zeng, A. Kody, Y. Kim, K. Kim, and <b>D.K. Molzahn</b>, "A Reinforcement Learning Approach to Parameter Selection for Distributed Optimization in Power Systems," to appear in <i>Electric Power Systems Research</i>. To be presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
+					<span id="rl_dist_year" class="abstract" style="display:none">
+						With the increasing penetration of distributed energy resources, distributed optimization algorithms have attracted significant attention for power systems applications due to their potential for superior scalability, privacy, and robustness to a single point-of-failure. The Alternating Direction Method of Multipliers (ADMM) is a popular distributed optimization algorithm; however, its convergence performance is highly dependent on the selection of penalty parameters, which are usually chosen heuristically. In this work, we use reinforcement learning (RL) to develop an adaptive penalty parameter selection policy for the AC optimal power flow (ACOPF) problem solved via ADMM with the goal of minimizing the number of iterations until convergence. We train our RL policy using deep Q-learning, and show that this policy can result in significantly accelerated convergence (up to a 59% reduction in the number of iterations compared to existing, curvature-informed penalty parameter selection methods). Furthermore, we show that our RL policy demonstrates promise for generalizability, performing well under unseen loading schemes as well as under unseen losses of lines and generators (up to a 50% reduction in iterations). This work thus provides a proof-of-concept for using RL for parameter selection in ADMM for power systems applications.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('rl_dist_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2110.11991">link</a> ] [ Ref: <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.bib">bib</a>   <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "A Sample-Based Approach for Computing Conservative Linear Power Flow Approximations," to appear in <i>Electric Power Systems Research</i>. To be presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
+					<span id="cla_year" class="abstract" style="display:none">
+						Non-convexities induced by the non-linear power flow equations challenge solution algorithms for many power system optimization and control problems. Linear approximations are often used to address these challenges by trading off modeling accuracy for tractability. The accuracy of a power flow linearization depends on the characteristics of the power system and the operational range where the linearization is applied. However, rather than exploiting knowledge of these characteristics for a particular system, many existing power flow linearizations are based on general assumptions for broad classes of systems, thus limiting their accuracy. Moreover, since existing linearizations do not consistently overestimate or underestimate quantities of interest such as voltage magnitudes and line flows, algorithms based on these linearizations may lead to constraint violations when applied to the system. In contrast, this paper computes <i>conservative linear approximations</i> of the power flow equations, i.e., linear approximations that overestimate or underestimate a quantity of interest in order to enable tractable algorithms that avoid constraint violations. Using a sample-based approach, we compute these conservative linearizations by solving a constrained linear regression problem. We analyze and improve the conservative linear approximations via an iterative sampling approach, optimization over functions of the quantities of interest, and a sample-complexity analysis. Considering the relationships between the voltage magnitudes and the active and reactive power injections, we characterize the performance of the conservative linear approximations for a range of test cases.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('cla_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cla.pdf">pdf</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cla.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>M. Alkhraijah, C. Menendez, and <b>D.K. Molzahn</b>, "Assessing the Impacts of Nonideal Communications on Distributed Optimal Power Flow Algorithms," to appear in <i>Electric Power Systems Research</i>. To be presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
+					<span id="nonideal_dist_year" class="abstract" style="display:none">
+						Power system operators are increasingly looking toward distributed optimization to address various challenges facing electric power systems. To assess their capabilities in environments with nonideal communications, this paper investigates the impacts of data quality on the performance of distributed optimization algorithms. Specifically, this paper compares the performance of the Alternating Direction Method of Multipliers (ADMM), Analytical Target Cascading (ATC), and Auxiliary Problem Principle (APP) algorithms in the context of DC Optimal Power Flow (DC OPF) problems. Using several test cases, this paper characterizes the performance of these algorithms in terms of their convergence rates and solution quality under three data quality nonidealities: (1) additive Gaussian noise, (2) bad data (large error), and (3) intermittent communication failure.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('nonideal_dist_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2106.00135">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
+		<div class="tile scale-anm Year">
+			<h2>Conference Proceedings</h2>
+		</div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>R. Harris, M. Alkhraijah, D. Huggins, and <b>D.K. Molzahn</b>, "On the Impacts of Different Consistency Constraint Formulations for Distributed Optimal Power Flow," to appear in <i>Texas Power and Energy Conference (TPEC)</i>, February 28 - March 1, 2022.<br />
+					<span id="consistency_constraints_distributed_opf_year" class="abstract" style="display:none">
+						The optimal power flow (OPF) problem finds the least costly operating point which meets the power grid's operational limits and obeys physical power flow laws. Complementing today's centralized optimization paradigm, future power grids may rely on distributed optimization where multiple agents work together to determine an acceptable operating point. In distributed algorithms, local agents solve subproblems to optimize their region of the system and share data to achieve consistency with their neighboring agents' subproblems. This paper investigates how different methods of enforcing power flow consistency constraints between local areas in distributed optimal power flow impact convergence rate and a classifier’s ability to detect malicious cyberattack. The distributed OPF problem is solved with the alternating direction method of multipliers (ADMM) algorithm. First, the ADMM algorithm’s convergence rate is compared for three different consistency constraint formulations. Next, the paper considers a cyberattack in which the integrity of information shared between agents is compromised, causing the algorithm to exhibit unacceptable behavior. A support vector machine (SVM) classifier is trained to detect the presence of manipulated data from such cyberattacks. Results demonstrate that consistency constraint formulation impacts the classifier's detection performance; for certain formulations, detection is highly accurate.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('consistency_constraints_distributed_opf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.bib">bib</a>   <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.txt">txt</a> ] </p></li>
+			</span>
+		</div>
 		<div class="tile scale-anm Year">
 			<a name="2021"><h1>2021</h1></a>
 		</div>
@@ -1323,39 +1341,6 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>A. Kody, S. Chevalier, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Modeling the AC Power Flow Equations with Optimally Compact Neural Networks: Application to Unit Commitment," submitted.<br />
-				<span id="nn_pf_uc_type" class="abstract" style="display:none">
-					Nonlinear power flow constraints render a variety of power system optimization problems computationally intractable. Emerging research shows, however, that the nonlinear AC power flow equations can be successfully modeled using Neural Networks (NNs). These NNs can be exactly transformed into Mixed Integer Linear Programs (MILPs) and embedded inside challenging optimization problems, thus replacing nonlinearities that are intractable for many applications with tractable piecewise linear approximations. Such approaches, though, suffer from an explosion of the number of binary variables needed to represent the NN. Accordingly, this paper develops a technique for training an "optimally compact" NN, i.e., one that can represent the power flow equations with a sufficiently high degree of accuracy while still maintaining a tractable number of binary variables. We show that the resulting NN model is more expressive than both the DC and linearized power flow approximations when embedded inside of a challenging optimization problem (i.e., the AC unit commitment problem).
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nn_pf_uc_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2110.11269">link</a> ] [ Ref: <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.bib">bib</a>   <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>S. Zeng, A. Kody, Y. Kim, K. Kim, and <b>D.K. Molzahn</b>, "A Reinforcement Learning Approach to Parameter Selection for Distributed Optimization in Power Systems," submitted.<br />
-				<span id="rl_dist_type" class="abstract" style="display:none">
-					With the increasing penetration of distributed energy resources, distributed optimization algorithms have attracted significant attention for power systems applications due to their potential for superior scalability, privacy, and robustness to a single point-of-failure. The Alternating Direction Method of Multipliers (ADMM) is a popular distributed optimization algorithm; however, its convergence performance is highly dependent on the selection of penalty parameters, which are usually chosen heuristically. In this work, we use reinforcement learning (RL) to develop an adaptive penalty parameter selection policy for the AC optimal power flow (ACOPF) problem solved via ADMM with the goal of minimizing the number of iterations until convergence. We train our RL policy using deep Q-learning, and show that this policy can result in significantly accelerated convergence (up to a 59% reduction in the number of iterations compared to existing, curvature-informed penalty parameter selection methods). Furthermore, we show that our RL policy demonstrates promise for generalizability, performing well under unseen loading schemes as well as under unseen losses of lines and generators (up to a 50% reduction in iterations). This work thus provides a proof-of-concept for using RL for parameter selection in ADMM for power systems applications.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('rl_dist_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2110.11991">link</a> ] [ Ref: <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.bib">bib</a>   <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "A Sample-Based Approach for Computing Conservative Linear Power Flow Approximations," submitted.<br />
-				<span id="cla_type" class="abstract" style="display:none">
-					Non-convexities induced by the non-linear power flow equations challenge solution algorithms for many power system optimization and control problems. Linear approximations are often used to address these challenges by trading off modeling accuracy for tractability. The accuracy of a power flow linearization depends on the characteristics of the power system and the operational range where the linearization is applied. However, rather than exploiting knowledge of these characteristics for a particular system, many existing power flow linearizations are based on general assumptions for broad classes of systems, thus limiting their accuracy. Moreover, since existing linearizations do not consistently overestimate or underestimate quantities of interest such as voltage magnitudes and line flows, algorithms based on these linearizations may lead to constraint violations when applied to the system. In contrast, this paper computes <i>conservative linear approximations</i> of the power flow equations, i.e., linear approximations that overestimate or underestimate a quantity of interest in order to enable tractable algorithms that avoid constraint violations. Using a sample-based approach, we compute these conservative linearizations by solving a constrained linear regression problem. We analyze and improve the conservative linear approximations via an iterative sampling approach, optimization over functions of the quantities of interest, and a sample-complexity analysis. Considering the relationships between the voltage magnitudes and the active and reactive power injections, we characterize the performance of the conservative linear approximations for a range of test cases.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('cla_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cla.pdf">pdf</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cla.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>A.D. Owen Aquino, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem," submitted.<br />
 				<span id="ml_for_n-k_type" class="abstract" style="display:none">
 					In order to achieve reliable electric service, engineers must design power grids such a small number of line failures will not result in significant amounts of load shedding. To identify problematic failure combinations, the <i>N-k</i> interdiction problem seeks the set of <i>k</i> failed lines (out of the <i>N</i> total lines in the system) that result in the largest amount of load shedding. This problem is formulated as a bilevel optimization where the upper-level selects the worst-case set line failures and the lower-level redispatches the system to minimize the load shedding. This problem becomes challenging due to the discrete variables associated with the failure selection in the upper-level problem and nonconvexities from the AC power flow equations in the lower-level problem.  We compare the performance of (1) a state-of-the-art optimization approach based on a network flow relaxation of the power flow equations, (2) a newly developed reinforcement learning approach based on a deep-Q-network algorithm, and (3) a newly developed algorithm based on a neural network formulated as a mixed-integer linear program. We evaluate the effectiveness of each approach in finding the contingencies that produce the largest shedding. The results show the proposed approaches produce competitive results in identifying worst-case contingencies.
@@ -1378,17 +1363,6 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>M. Alkhraijah, C. Menendez, and <b>D.K. Molzahn</b>, "Assessing the Impacts of Nonideal Communications on Distributed Optimal Power Flow Algorithms," submitted.<br />
-				<span id="nonideal_dist_type" class="abstract" style="display:none">
-					Power system operators are increasingly looking toward distributed optimization to address various challenges facing electric power systems. To assess their capabilities in environments with nonideal communications, this paper investigates the impacts of data quality on the performance of distributed optimization algorithms. Specifically, this paper compares the performance of the Alternating Direction Method of Multipliers (ADMM), Analytical Target Cascading (ATC), and Auxiliary Problem Principle (APP) algorithms in the context of DC Optimal Power Flow (DC OPF) problems. Using several test cases, this paper characterizes the performance of these algorithms in terms of their convergence rates and solution quality under three data quality nonidealities: (1) additive Gaussian noise, (2) bad data (large error), and (3) intermittent communication failure.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nonideal_dist_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2106.00135">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>O. Kuryatnikova, B. Ghaddar, and <b>D.K. Molzahn</b>, "Adjustable Robust Two-Stage Polynomial Optimization with Application to AC Optimal Power Flow," submitted.<br />
 				<span id="aro_two_stage_type" class="abstract" style="display:none">
 				In this work, we consider two-stage polynomial optimization problems under uncertainty. In the first stage, one needs to decide upon the values of a subset of optimization variables (control variables). In the second stage, the uncertainty is revealed and the rest of optimization variables (state variables) are set up as a solution to a known system of possibly non-linear equations. This type of problem occurs, for instance, in optimization for dynamical systems, such as electric power systems. We combine tools from polynomial and robust optimization to provide a framework for general adjustable robust polynomial optimization problems. In particular, we propose an iterative algorithm to build a sequence of (approximately) robustly feasible solutions with an improving objective value and verify robust feasibility or infeasibility of the resulting solution under a semialgebraic uncertainty set. At each iteration, the algorithm optimizes over a subset of the feasible set and uses affine approximations of the second-stage equations while preserving the non-linearity of other constraints. The algorithm allows for additional simplifications in case of possibly non-convex quadratic problems under ellipsoidal uncertainty. We implement our approach for AC Optimal Power Flow and demonstrate the performance of our proposed method on Matpower instances.
@@ -1402,7 +1376,7 @@
 		<span>
 			<li><p>C. Hettle, S. Gupta, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," submitted.<br />
 				<span id="reconfiguration_submodularity_type" class="abstract" style="display:none">
-				We analyze a distributed approach for automatically reconfiguring distribution systems into an operational radial network after a fault occurs by creating an ordering in which switches automatically close upon detection of a downstream fault. The switches' reconnection ordering significantly impacts the expected time to reconnect under normal disruptions and thus affects reliability metrics such as SAIDI and CAIDI, which are the basis for regulator-imposed financial incentives for performance. We model the problem of finding a switch reconnection ordering that minimizes SAIDI and the expected reconnection time as Minimum Reconnection Time (MRT), which we show is a special case of the well-known minimum linear ordering problem (Iwata et al. 2012) from the submodular optimization literature. We prove that MRT is also NP-hard and generalize the kernel-based rounding approaches of (Bansal et al. 2012) to find better approximation algorithms for MRT than the general-purpose approaches. Finally, we consider optimizing multiple metrics simultaneously using local search methods that also reconfigure the system's base tree to ensure fairness in service disruptions and reconnection times. We computationally validate our approach on the NREL SMART-DS Greensboro synthetic urban-suburban network. We evaluate the performance of our reconfiguration methods and show significant reductions compared to single-metric-based optimizations.
+					The economic cost of power outages has been estimated to be between $35 billion and $50 billion annually in the United States. We analyze and advance methodologies for electrical distribution network reconfiguration in order to quickly restore power, an important lever for improving reliability. For short-term network disruptions, we give a novel model for reconfiguration by considering switches that can be sequentially closed upon detection of a network anomaly upstream. The order in which switches close has an impact on reliability metrics such as SAIDI, which are the basis for regulator-imposed financial performance incentives. We introduce the "Minimum Reconnection Time (MRT)" problem, which aims to find an optimal switch ordering that minimizes the cost of outages and show that it generalizes metrics like SAIDI. We first show that MRT is a special case of the well-known minimum linear ordering problem from submodular optimization literature and that MRT is also NP-hard. We show how to approximate MRT using recent kernel-based randomized rounding approaches, and in turn improve the state-of-the-art for a broad class of MLOP instances. Finally, we note that the choice of reliability metric can result in significant differences for low and medium voltage buses. We therefore consider optimizing multiple metrics simultaneously using local search methods that reconfigure the system's base tree to optimize service disruptions, reconnection times, and energy losses. We computationally validate our reconfiguration methods on the NREL SMART-DS Greensboro synthetic urban-suburban network and show significant improvement in reliability metrics.
 				</span>
 		</span>
 		<span style="cursor:auto;">
@@ -1431,6 +1405,53 @@
 			&emsp;[ <span onclick="showDiv('admittance_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/turizo_molzahn-admittance_matrix_invertibility.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2012.04087">link</a> ] [ Ref: <a href="pubs/turizo_molzahn-admittance_matrix_invertibility.bib">bib</a>   <a href="pubs/turizo_molzahn-admittance_matrix_invertibility.txt">txt</a> ] </p></li>
 		</span>
 	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<h2>2022</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>A. Kody, S. Chevalier, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Modeling the AC Power Flow Equations with Optimally Compact Neural Networks: Application to Unit Commitment," to appear in <i>Electric Power Systems Research</i>. To be presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
+				<span id="nn_pf_uc_type" class="abstract" style="display:none">
+					Nonlinear power flow constraints render a variety of power system optimization problems computationally intractable. Emerging research shows, however, that the nonlinear AC power flow equations can be successfully modeled using Neural Networks (NNs). These NNs can be exactly transformed into Mixed Integer Linear Programs (MILPs) and embedded inside challenging optimization problems, thus replacing nonlinearities that are intractable for many applications with tractable piecewise linear approximations. Such approaches, though, suffer from an explosion of the number of binary variables needed to represent the NN. Accordingly, this paper develops a technique for training an "optimally compact" NN, i.e., one that can represent the power flow equations with a sufficiently high degree of accuracy while still maintaining a tractable number of binary variables. We show that the resulting NN model is more expressive than both the DC and linearized power flow approximations when embedded inside of a challenging optimization problem (i.e., the AC unit commitment problem).
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('nn_pf_uc_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2110.11269">link</a> ] [ Ref: <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.bib">bib</a>   <a href="pubs/kody_chevalier_chatzivasileiadis_molzahn-nn_pf_uc.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>S. Zeng, A. Kody, Y. Kim, K. Kim, and <b>D.K. Molzahn</b>, "A Reinforcement Learning Approach to Parameter Selection for Distributed Optimization in Power Systems," to appear in <i>Electric Power Systems Research</i>. To be presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
+				<span id="rl_dist_type" class="abstract" style="display:none">
+					With the increasing penetration of distributed energy resources, distributed optimization algorithms have attracted significant attention for power systems applications due to their potential for superior scalability, privacy, and robustness to a single point-of-failure. The Alternating Direction Method of Multipliers (ADMM) is a popular distributed optimization algorithm; however, its convergence performance is highly dependent on the selection of penalty parameters, which are usually chosen heuristically. In this work, we use reinforcement learning (RL) to develop an adaptive penalty parameter selection policy for the AC optimal power flow (ACOPF) problem solved via ADMM with the goal of minimizing the number of iterations until convergence. We train our RL policy using deep Q-learning, and show that this policy can result in significantly accelerated convergence (up to a 59% reduction in the number of iterations compared to existing, curvature-informed penalty parameter selection methods). Furthermore, we show that our RL policy demonstrates promise for generalizability, performing well under unseen loading schemes as well as under unseen losses of lines and generators (up to a 50% reduction in iterations). This work thus provides a proof-of-concept for using RL for parameter selection in ADMM for power systems applications.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('rl_dist_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2110.11991">link</a> ] [ Ref: <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.bib">bib</a>   <a href="pubs/zeng_kody_kim_kim_molzahn-rl_for_dist_opt.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "A Sample-Based Approach for Computing Conservative Linear Power Flow Approximations," to appear in <i>Electric Power Systems Research</i>. To be presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
+				<span id="cla_type" class="abstract" style="display:none">
+					Non-convexities induced by the non-linear power flow equations challenge solution algorithms for many power system optimization and control problems. Linear approximations are often used to address these challenges by trading off modeling accuracy for tractability. The accuracy of a power flow linearization depends on the characteristics of the power system and the operational range where the linearization is applied. However, rather than exploiting knowledge of these characteristics for a particular system, many existing power flow linearizations are based on general assumptions for broad classes of systems, thus limiting their accuracy. Moreover, since existing linearizations do not consistently overestimate or underestimate quantities of interest such as voltage magnitudes and line flows, algorithms based on these linearizations may lead to constraint violations when applied to the system. In contrast, this paper computes <i>conservative linear approximations</i> of the power flow equations, i.e., linear approximations that overestimate or underestimate a quantity of interest in order to enable tractable algorithms that avoid constraint violations. Using a sample-based approach, we compute these conservative linearizations by solving a constrained linear regression problem. We analyze and improve the conservative linear approximations via an iterative sampling approach, optimization over functions of the quantities of interest, and a sample-complexity analysis. Considering the relationships between the voltage magnitudes and the active and reactive power injections, we characterize the performance of the conservative linear approximations for a range of test cases.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('cla_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cla.pdf">pdf</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cla.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>M. Alkhraijah, C. Menendez, and <b>D.K. Molzahn</b>, "Assessing the Impacts of Nonideal Communications on Distributed Optimal Power Flow Algorithms," to appear in <i>Electric Power Systems Research</i>. To be presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
+				<span id="nonideal_dist_type" class="abstract" style="display:none">
+					Power system operators are increasingly looking toward distributed optimization to address various challenges facing electric power systems. To assess their capabilities in environments with nonideal communications, this paper investigates the impacts of data quality on the performance of distributed optimization algorithms. Specifically, this paper compares the performance of the Alternating Direction Method of Multipliers (ADMM), Analytical Target Cascading (ATC), and Auxiliary Problem Principle (APP) algorithms in the context of DC Optimal Power Flow (DC OPF) problems. Using several test cases, this paper characterizes the performance of these algorithms in terms of their convergence rates and solution quality under three data quality nonidealities: (1) additive Gaussian noise, (2) bad data (large error), and (3) intermittent communication failure.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('nonideal_dist_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2106.00135">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>2021</h2>
 	</div>
@@ -1838,11 +1859,34 @@
 	<div class="tile scale-anm Type" style="display:none">
     <a name="conferences"><h1>Conference Proceedings</h1></a>
   </div>
-	<!--
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
-  -->
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and <b>D.K. Molzahn</b>, "Recovering Voltage Sensitivities to Active and Reactive Power Injections in Distribution Systems", submitted.<br />
+				<span id="recovering_sensitivities_type" class="abstract" style="display:none">
+				We analyze the sensitivity matrices relating active and reactive power injections to the voltage magnitudes—the block submatrices of the inverse AC Power Flow Jacobian. We develop a simple method to recover these sensitivity matrices under low observability conditions from advanced metering infrastructure (AMI) data via matrix completion techniques. The method provides an efficient approach for computing linearizations of the node voltages in the network, which can be updated iteratively. We also provide an analysis to show that these two sensitivity matrices take distinct values.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('recovering_sensitivities_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.pdf">pdf</a> ] [ Ref: <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.bib">bib</a>   <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<h2>2022</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Harris, M. Alkhraijah, D. Huggins, and <b>D.K. Molzahn</b>, "On the Impacts of Different Consistency Constraint Formulations for Distributed Optimal Power Flow," to appear in <i>Texas Power and Energy Conference (TPEC)</i>, February 28 - March 1, 2022.<br />
+				<span id="consistency_constraints_distributed_opf_type" class="abstract" style="display:none">
+					The optimal power flow (OPF) problem finds the least costly operating point which meets the power grid's operational limits and obeys physical power flow laws. Complementing today's centralized optimization paradigm, future power grids may rely on distributed optimization where multiple agents work together to determine an acceptable operating point. In distributed algorithms, local agents solve subproblems to optimize their region of the system and share data to achieve consistency with their neighboring agents' subproblems. This paper investigates how different methods of enforcing power flow consistency constraints between local areas in distributed optimal power flow impact convergence rate and a classifier’s ability to detect malicious cyberattack. The distributed OPF problem is solved with the alternating direction method of multipliers (ADMM) algorithm. First, the ADMM algorithm’s convergence rate is compared for three different consistency constraint formulations. Next, the paper considers a cyberattack in which the integrity of information shared between agents is compromised, causing the algorithm to exhibit unacceptable behavior. A support vector machine (SVM) classifier is trained to detect the presence of manipulated data from such cyberattacks. Results demonstrate that consistency constraint formulation impacts the classifier's detection performance; for certain formulations, detection is highly accurate.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('consistency_constraints_distributed_opf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.bib">bib</a>   <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>2021</h2>
 	</div>

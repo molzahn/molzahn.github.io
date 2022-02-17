@@ -1,0 +1,1 @@
+R. Harris, M. Alkhraijah, D. Huggins, and D.K. Molzahn, "On the Impacts of Different Consistency Constraint Formulations for Distributed Optimal Power Flow," Texas Power and Energy Conference (TPEC), February 28 – March 1, 2022.
