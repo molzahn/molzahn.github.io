@@ -1,1 +1,1 @@
-S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and D.K. Molzahn, "Recovering Voltage Sensitivities to Active and Reactive Power Injections in Distribution Systems", submitted.
+S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and D.K. Molzahn, "Conditions for Estimation of Sensitivities of Voltage Magnitudes to Complex Power Injections", submitted.
