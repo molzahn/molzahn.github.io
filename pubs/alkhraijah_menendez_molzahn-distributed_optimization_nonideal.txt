@@ -1,1 +1,1 @@
-M. Alkhraijah, C. Menendez, and D.K. Molzahn, "Assessing the Impacts of Nonideal Communications on Distributed Optimal Power Flow Algorithms," to appear in Electric Power Systems Research, to be presented at the 22nd Power Systems Computation Conference (PSCC 2022).
+M. Alkhraijah, C. Menendez, and D.K. Molzahn, "Assessing the Impacts of Nonideal Communications on Distributed Optimal Power Flow Algorithms," Electric Power Systems Research, vol. 212, no. 108297, November 2022. Presented at 22nd Power Systems Computation Conference (PSCC), June 27 - July 1, 2022.

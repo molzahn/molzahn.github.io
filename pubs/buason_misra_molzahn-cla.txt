@@ -1,1 +1,1 @@
-P. Buason, S. Misra, and D.K. Molzahn, "A Sample-Based Approach for Computing Conservative Linear Power Flow Approximations," to appear in Electric Power Systems Research, to be presented at the 22nd Power Systems Computation Conference (PSCC 2022).
+P. Buason, S. Misra, and D.K. Molzahn, "A Sample-Based Approach for Computing Conservative Linear Power Flow Approximations," Electric Power Systems Research, vol. 212, no. 108579, November 2022. Presented at 22nd Power Systems Computation Conference (PSCC), June 27 - July 1, 2022.

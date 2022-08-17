@@ -1,0 +1,1 @@
+M. Alkhraijah, R. Harris, S. Litchfield, D. Huggins, and D.K. Molzahn, "Analyzing Malicious Data Injection Attacks on Distributed Optimal Power Flow Algorithms," to appear in 54th North American Power Symposium, October 2022.

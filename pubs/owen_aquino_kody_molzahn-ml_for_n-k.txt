@@ -1,1 +1,0 @@
-A.D. Owen Aquino, A. Kody, and D.K. Molzahn, "Comparing Machine Learning and Optimization Approaches for the N-k Interdiction Problem," submitted.

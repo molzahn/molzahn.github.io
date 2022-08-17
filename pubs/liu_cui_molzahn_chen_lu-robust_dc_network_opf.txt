@@ -1,1 +1,1 @@
-J. Liu, B. Cui, D.K. Molzahn, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," to appear in IEEE Transactions on Control of Network Systems.
+J. Liu, B. Cui, D.K. Molzahn, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," IEEE Transactions on Control of Network Systems, vol. 9, no. 2, pp. 904-916, June 2022.
