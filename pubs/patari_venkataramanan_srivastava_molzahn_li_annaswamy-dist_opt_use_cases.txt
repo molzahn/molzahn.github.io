@@ -1,1 +1,1 @@
-N. Patari, V. Venkataramanan, A.K. Srivastava, D.K. Molzahn, N. Li, and A. Annaswamy, "Distributed Optimization in Distribution Systems: Use Cases, Limitations, and Research Needs," to appear in IEEE Transactions on Power Systems.
+N. Patari, V. Venkataramanan, A.K. Srivastava, D.K. Molzahn, N. Li, and A. Annaswamy, "Distributed Optimization in Distribution Systems: Use Cases, Limitations, and Research Needs," IEEE Transactions on Power Systems, vol. 37, no. 5, pp. 3469-3481, September 2022.

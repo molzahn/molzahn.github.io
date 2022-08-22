@@ -67,7 +67,7 @@
 <!-- <div style="clear:both;"></div> -->
 <div id="portfolio">
 <div class="tile scale-anm Year" style="text-align:center;">
-			<p>[ <a href="#preprints">Preprints</a> ] [ <a href="#2021">2021</a> ] [ <a href="#2020">2020</a> ] [ <a href="#2019">2019</a> ] [ <a href="#2018">2018</a> ] [ <a href="#2017">2017</a> ] [ <a href="#2016">2016</a> ] [ <a href="#2015">2015</a> ] [ <a href="#2014">2014</a> ] [ <a href="#2013">2013</a> ] [ <a href="#2012">2012</a> ] [ <a href="#2011">2011</a> ] [ <a href="#2010">2010</a> ]</p>
+			<p>[ <a href="#preprints">Preprints</a> ] [ <a href="#2023">2023</a> ] [ <a href="#2022">2022</a> ] [ <a href="#2021">2021</a> ] [ <a href="#2020">2020</a> ] [ <a href="#2019">2019</a> ] [ <a href="#2018">2018</a> ] [ <a href="#2017">2017</a> ] [ <a href="#2016">2016</a> ] [ <a href="#2015">2015</a> ] [ <a href="#2014">2014</a> ] [ <a href="#2013">2013</a> ] [ <a href="#2012">2012</a> ] [ <a href="#2011">2011</a> ] [ <a href="#2010">2010</a> ]</p>
 </div>
 <div class="tile scale-anm Type" style="display:none; text-align:center;">
 		<p>[ <a href="#monographs">Monographs</a> ] [ <a href="#journals">Journal Papers</a> ] [ <a href="#conferences">Conference Proceedings</a> ] [ <a href="#dissertation">Ph.D. Dissertation</a> ] [ <a href="#thesis">Master's Thesis</a> ] [ <a href="#reports">Technical Reports</a> ] </p>
@@ -164,17 +164,6 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>A.D. Owen Aquino, R. Harris, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem Considering Load Variability," submitted.<br />
-				<span id="ml_for_n-k_year" class="abstract" style="display:none">
-					Power grids must be operated, protected, and maintained such that a small number of line failures will not result in significant load shedding. To identify problematic combination of failures, we consider an <i>N-k</i> interdiction problem that seeks the set of <i>k</i> failed lines (out of <i>N</i> total lines) that result in the largest load shed. This is naturally formulated as a bilevel optimization problem with an upper level representing the attacker that selects line failures and a lower level modeling the defender's generator redispatch to minimize the load shedding. Compounding the difficulties inherent to the bilevel nature of interdiction problems, we consider a nonlinear AC power flow model that makes this problem intractable with traditional solution approaches. Furthermore, since the solutions found at a particular load condition may not generalize to other loading conditions, operators may need to quickly recompute these worst-case failures online to protect against them during operations. To address these challenges, we formulate and compare the performance of three simplified methods for solving the <i>N-k</i> interdiction problem: a state-of-the-art optimization approach based on a network-flow relaxation of the power flow equations and two newly developed machine learning algorithms that predict load sheds given the state of the network.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ml_for_n-k_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.pdf">pdf</a> ] [ Ref: <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.bib">bib</a>   <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
 			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," submitted.<br />
 				<span id="restore_feasibility_year" class="abstract" style="display:none">
 					To address computational challenges associated with power flow nonconvexities, significant research efforts over the last decade have developed convex relaxations and approximations of optimal power flow (OPF) problems. However, benefits associated with the convexity of these relaxations and approximations can have tradeoffs in terms of solution accuracy since they may yield voltage phasors that are inconsistent with the power injections and line flows, limiting their usefulness for some applications. Inspired by state estimation techniques, this paper proposes a new method for obtaining an AC power flow feasible point from the solution to a relaxed or approximated OPF problem. By treating the inconsistent voltage phasors, power injections, and line flows analogously to noisy measurements in a state estimation algorithm, the proposed method yields power injections and voltage phasors that are feasible with respect to the AC power flow equations while incorporating information from many quantities in the solution to a relaxed or approximated OPF problem. We improve this method by adjusting weighting terms with a machine learning based approach. We demonstrate the proposed method using several relaxations and approximations. The result show up to several orders of magnitude improvement in accuracy over traditional methods.
@@ -187,23 +176,28 @@
 	</ul>
 	<ul class="tile scale-anm Year">
 		<div class="tile scale-anm Year">
+			<a name="2023"><h1>2023</h1></a>
+		</div>
+		<div class="tile scale-anm Year">
+			<h2>Conference Proceedings</h2>
+		</div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>A.D. Owen Aquino, R. Harris, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem Considering Load Variability," to appear in <i>56th Hawaii International Conference on System Sciences (HICSS)</i>, January 2023.<br />
+					<span id="ml_for_n-k_year" class="abstract" style="display:none">
+						Power grids must be operated, protected, and maintained such that a small number of line failures will not result in significant load shedding. To identify problematic combination of failures, we consider an <i>N-k</i> interdiction problem that seeks the set of <i>k</i> failed lines (out of <i>N</i> total lines) that result in the largest load shed. This is naturally formulated as a bilevel optimization problem with an upper level representing the attacker that selects line failures and a lower level modeling the defender's generator redispatch to minimize the load shedding. Compounding the difficulties inherent to the bilevel nature of interdiction problems, we consider a nonlinear AC power flow model that makes this problem intractable with traditional solution approaches. Furthermore, since the solutions found at a particular load condition may not generalize to other loading conditions, operators may need to quickly recompute these worst-case failures online to protect against them during operations. To address these challenges, we formulate and compare the performance of three simplified methods for solving the <i>N-k</i> interdiction problem: a state-of-the-art optimization approach based on a network-flow relaxation of the power flow equations and two newly developed machine learning algorithms that predict load sheds given the state of the network.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('ml_for_n-k_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.pdf">pdf</a> ] [ Ref: <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.bib">bib</a>   <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
+		<div class="tile scale-anm Year">
 			<a name="2022"><h1>2022</h1></a>
 		</div>
 		<div class="tile scale-anm Year">
 			<h2>Journal Papers</h2>
 		</div>
-		<div class="tile scale-anm Year">
-			<span>
-				<li><p>N. Patari, V. Venkataramanan, A.K. Srivastava, <b>D.K. Molzahn</b>, N. Li, and A. Annaswamy, "Distributed Optimization in Distribution Systems: Use Cases, Limitations, and Research Needs," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
-					<span id="dist_opt_wg_year" class="abstract" style="display:none">
-						Electric distribution grid operations typically rely on both centralized optimization and local non-optimal control techniques. As an alternative, distribution system operational practices can consider distributed optimization techniques that leverage communications among various neighboring agents to achieve optimal operation. With the rapidly increasing integration of distributed energy resources (DERs), distributed optimization algorithms are growing in importance due to their potential advantages in scalability, flexibility, privacy, and robustness relative to centralized optimization. Implementation of distributed optimization offers multiple challenges and also opportunities. This paper provides a comprehensive review of the recent advancements in distributed optimization for electric distribution systems and classifications using key attributes.  Problem formulations and distributed optimization algorithms are provided for example use cases, including volt/var control,  market clearing process,  loss minimization, and conservation voltage reduction. Finally, this paper also presents future research needs for the applicability of distributed optimization algorithms in the distribution system.
-					</span>
-			</span>
-			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('dist_opt_wg_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9635694">link</a> ] [ Ref: <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.bib">bib</a>   <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.txt">txt</a> ] </p></li>
-			</span>
-		</div>
-		<!--
 		<div class="tile scale-anm Year">
 			<span>
 				<li><p>L.A. Roald, D. Pozo, A. Papavasiliou, <b>D.K. Molzahn</b>, J. Kazempour, and A. Conejo, "Power Systems Optimization under Uncertainty: A Review of Methods and Applications," to appear in <i>Electric Power Systems Research</i>. Presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
@@ -215,7 +209,6 @@
 				&emsp;[ <span onclick="showDiv('pscc2022_survey_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/roald_pozo_papavasiliou_molzahn_kazempour_conejo-pscc2022_survey.pdf">pdf</a> ] [ Ref: <a href="pubs/roald_pozo_papavasiliou_molzahn_kazempour_conejo-pscc2022_survey.bib">bib</a>   <a href="pubs/roald_pozo_papavasiliou_molzahn_kazempour_conejo-pscc2022_survey.txt">txt</a> ] </p></li>
 			</span>
 	  </div>
-	-->
 		<div class="tile scale-anm Year">
 			<span>
 				<li><p>A. Kody, S. Chevalier, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Modeling the AC Power Flow Equations with Optimally Compact Neural Networks: Application to Unit Commitment," <i>Electric Power Systems Research</i>, vol. 212, no. 108282, November 2022. Presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
@@ -260,6 +253,17 @@
 				&emsp;[ <span onclick="showDiv('nonideal_dist_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378779622004801">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
 			</span>
 	  </div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>N. Patari, V. Venkataramanan, A.K. Srivastava, <b>D.K. Molzahn</b>, N. Li, and A. Annaswamy, "Distributed Optimization in Distribution Systems: Use Cases, Limitations, and Research Needs," <i>IEEE Transactions on Power Systems</i>, vol. 37, no. 5, pp. 3469-3481, September 2022.<br />
+					<span id="dist_opt_wg_year" class="abstract" style="display:none">
+						Electric distribution grid operations typically rely on both centralized optimization and local non-optimal control techniques. As an alternative, distribution system operational practices can consider distributed optimization techniques that leverage communications among various neighboring agents to achieve optimal operation. With the rapidly increasing integration of distributed energy resources (DERs), distributed optimization algorithms are growing in importance due to their potential advantages in scalability, flexibility, privacy, and robustness relative to centralized optimization. Implementation of distributed optimization offers multiple challenges and also opportunities. This paper provides a comprehensive review of the recent advancements in distributed optimization for electric distribution systems and classifications using key attributes.  Problem formulations and distributed optimization algorithms are provided for example use cases, including volt/var control,  market clearing process,  loss minimization, and conservation voltage reduction. Finally, this paper also presents future research needs for the applicability of distributed optimization algorithms in the distribution system.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('dist_opt_wg_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9635694">link</a> ] [ Ref: <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.bib">bib</a>   <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.txt">txt</a> ] </p></li>
+			</span>
+		</div>
 		<div class="tile scale-anm Year">
 			<span>
 				<li><p>J. Liu, B. Cui, <b>D.K. Molzahn</b>, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," <i>IEEE Transactions on Control of Network Systems</i>, vol. 9, no. 2, pp. 904-916, June 2022.<br />
@@ -1493,18 +1497,6 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>N. Patari, V. Venkataramanan, A.K. Srivastava, <b>D.K. Molzahn</b>, N. Li, and A. Annaswamy, "Distributed Optimization in Distribution Systems: Use Cases, Limitations, and Research Needs," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
-				<span id="dist_opt_wg_type" class="abstract" style="display:none">
-					Electric distribution grid operations typically rely on both centralized optimization and local non-optimal control techniques. As an alternative, distribution system operational practices can consider distributed optimization techniques that leverage communications among various neighboring agents to achieve optimal operation. With the rapidly increasing integration of distributed energy resources (DERs), distributed optimization algorithms are growing in importance due to their potential advantages in scalability, flexibility, privacy, and robustness relative to centralized optimization. Implementation of distributed optimization offers multiple challenges and also opportunities. This paper provides a comprehensive review of the recent advancements in distributed optimization for electric distribution systems and classifications using key attributes.  Problem formulations and distributed optimization algorithms are provided for example use cases, including volt/var control,  market clearing process,  loss minimization, and conservation voltage reduction. Finally, this paper also presents future research needs for the applicability of distributed optimization algorithms in the distribution system.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('dist_opt_wg_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9635694">link</a> ] [ Ref: <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.bib">bib</a>   <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<!--
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>L.A. Roald, D. Pozo, A. Papavasiliou, <b>D.K. Molzahn</b>, J. Kazempour, and A. Conejo, "Power Systems Optimization under Uncertainty: A Review of Methods and Applications," to appear in <i>Electric Power Systems Research</i>. Presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
 				<span id="pscc2022_survey_type" class="abstract" style="display:none">
 					Electric power systems and the companies and customers that interact with them are experiencing increasing levels of uncertainty due to factors such as renewable energy generation, market liberalization, and climate change. This raises the important question of how to make optimal decisions under uncertainty. This paper aims to provide an overview of existing methods for modeling and optimization of problems affected by uncertainty, targeted at researchers with a familiarity with power systems and optimization. We also review some important applications of optimization under uncertainty in power systems and provide an outlook to future directions of research.
@@ -1514,7 +1506,6 @@
 			&emsp;[ <span onclick="showDiv('pscc2022_survey_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/roald_pozo_papavasiliou_molzahn_kazempour_conejo-pscc2022_survey.pdf">pdf</a> ] [ Ref: <a href="pubs/roald_pozo_papavasiliou_molzahn_kazempour_conejo-pscc2022_survey.bib">bib</a>   <a href="pubs/roald_pozo_papavasiliou_molzahn_kazempour_conejo-pscc2022_survey.txt">txt</a> ] </p></li>
 		</span>
   </div>
--->
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>A. Kody, S. Chevalier, S. Chatzivasileiadis, and <b>D.K. Molzahn</b>, "Modeling the AC Power Flow Equations with Optimally Compact Neural Networks: Application to Unit Commitment," <i>Electric Power Systems Research</i>, vol. 212, no. 108282, November 2022. Presented at <i>22nd Power Systems Computation Conference (PSCC)</i>, June 27 - July 1, 2022.<br />
@@ -1559,6 +1550,17 @@
 			&emsp;[ <span onclick="showDiv('nonideal_dist_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378779622004801">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
 		</span>
   </div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>N. Patari, V. Venkataramanan, A.K. Srivastava, <b>D.K. Molzahn</b>, N. Li, and A. Annaswamy, "Distributed Optimization in Distribution Systems: Use Cases, Limitations, and Research Needs," <i>IEEE Transactions on Power Systems</i>, vol. 37, no. 5, pp. 3469-3481, September 2022.<br />
+				<span id="dist_opt_wg_type" class="abstract" style="display:none">
+					Electric distribution grid operations typically rely on both centralized optimization and local non-optimal control techniques. As an alternative, distribution system operational practices can consider distributed optimization techniques that leverage communications among various neighboring agents to achieve optimal operation. With the rapidly increasing integration of distributed energy resources (DERs), distributed optimization algorithms are growing in importance due to their potential advantages in scalability, flexibility, privacy, and robustness relative to centralized optimization. Implementation of distributed optimization offers multiple challenges and also opportunities. This paper provides a comprehensive review of the recent advancements in distributed optimization for electric distribution systems and classifications using key attributes.  Problem formulations and distributed optimization algorithms are provided for example use cases, including volt/var control,  market clearing process,  loss minimization, and conservation voltage reduction. Finally, this paper also presents future research needs for the applicability of distributed optimization algorithms in the distribution system.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dist_opt_wg_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9635694">link</a> ] [ Ref: <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.bib">bib</a>   <a href="pubs/patari_venkataramanan_srivastava_molzahn_li_annaswamy-dist_opt_use_cases.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>J. Liu, B. Cui, <b>D.K. Molzahn</b>, C. Chen, and X. Lu, "Optimal Power Flow for DC Networks with Robust Feasibility and Stability Guarantees," <i>IEEE Transactions on Control of Network Systems</i>, vol. 9, no. 2, pp. 904-916, June 2022.<br />
@@ -1960,17 +1962,6 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>A.D. Owen Aquino, R. Harris, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem Considering Load Variability," submitted.<br />
-				<span id="ml_for_n-k_type" class="abstract" style="display:none">
-					Power grids must be operated, protected, and maintained such that a small number of line failures will not result in significant load shedding. To identify problematic combination of failures, we consider an <i>N-k</i> interdiction problem that seeks the set of <i>k</i> failed lines (out of <i>N</i> total lines) that result in the largest load shed. This is naturally formulated as a bilevel optimization problem with an upper level representing the attacker that selects line failures and a lower level modeling the defender's generator redispatch to minimize the load shedding. Compounding the difficulties inherent to the bilevel nature of interdiction problems, we consider a nonlinear AC power flow model that makes this problem intractable with traditional solution approaches. Furthermore, since the solutions found at a particular load condition may not generalize to other loading conditions, operators may need to quickly recompute these worst-case failures online to protect against them during operations. To address these challenges, we formulate and compare the performance of three simplified methods for solving the <i>N-k</i> interdiction problem: a state-of-the-art optimization approach based on a network-flow relaxation of the power flow equations and two newly developed machine learning algorithms that predict load sheds given the state of the network.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ml_for_n-k_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.pdf">pdf</a> ] [ Ref: <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.bib">bib</a>   <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," submitted.<br />
 				<span id="restore_feasibility_type" class="abstract" style="display:none">
 					To address computational challenges associated with power flow nonconvexities, significant research efforts over the last decade have developed convex relaxations and approximations of optimal power flow (OPF) problems. However, benefits associated with the convexity of these relaxations and approximations can have tradeoffs in terms of solution accuracy since they may yield voltage phasors that are inconsistent with the power injections and line flows, limiting their usefulness for some applications. Inspired by state estimation techniques, this paper proposes a new method for obtaining an AC power flow feasible point from the solution to a relaxed or approximated OPF problem. By treating the inconsistent voltage phasors, power injections, and line flows analogously to noisy measurements in a state estimation algorithm, the proposed method yields power injections and voltage phasors that are feasible with respect to the AC power flow equations while incorporating information from many quantities in the solution to a relaxed or approximated OPF problem. We improve this method by adjusting weighting terms with a machine learning based approach. We demonstrate the proposed method using several relaxations and approximations. The result show up to several orders of magnitude improvement in accuracy over traditional methods.
@@ -1993,6 +1984,20 @@
 		</span>
 	</div>
 -->
+<div class="tile scale-anm Type" style="display:none">
+	<h2>2023</h2>
+</div>
+<div class="tile scale-anm Type" style="display:none">
+	<span>
+		<li><p>A.D. Owen Aquino, R. Harris, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem Considering Load Variability," to appear in <i>56th Hawaii International Conference on System Sciences (HICSS)</i>, January 2023.<br />
+			<span id="ml_for_n-k_type" class="abstract" style="display:none">
+				Power grids must be operated, protected, and maintained such that a small number of line failures will not result in significant load shedding. To identify problematic combination of failures, we consider an <i>N-k</i> interdiction problem that seeks the set of <i>k</i> failed lines (out of <i>N</i> total lines) that result in the largest load shed. This is naturally formulated as a bilevel optimization problem with an upper level representing the attacker that selects line failures and a lower level modeling the defender's generator redispatch to minimize the load shedding. Compounding the difficulties inherent to the bilevel nature of interdiction problems, we consider a nonlinear AC power flow model that makes this problem intractable with traditional solution approaches. Furthermore, since the solutions found at a particular load condition may not generalize to other loading conditions, operators may need to quickly recompute these worst-case failures online to protect against them during operations. To address these challenges, we formulate and compare the performance of three simplified methods for solving the <i>N-k</i> interdiction problem: a state-of-the-art optimization approach based on a network-flow relaxation of the power flow equations and two newly developed machine learning algorithms that predict load sheds given the state of the network.
+			</span>
+	</span>
+	<span style="cursor:auto;">
+		&emsp;[ <span onclick="showDiv('ml_for_n-k_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.pdf">pdf</a> ] [ Ref: <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.bib">bib</a>   <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.txt">txt</a> ] </p></li>
+	</span>
+</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>2022</h2>
 	</div>
