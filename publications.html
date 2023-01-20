@@ -135,20 +135,11 @@
 			&emsp;[ <span onclick="showDiv('scacopf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/curtis_molzahn_tu_waechter_wei_wong-scacopf.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2110.01737">link</a> ] [ Ref: <a href="pubs/curtis_molzahn_tu_waechter_wei_wong-scacopf.bib">bib</a>   <a href="pubs/curtis_molzahn_tu_waechter_wei_wong-scacopf.txt">txt</a> ] </p></li>
 		</span>
   </div>
+	<!--
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
 	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," submitted.<br />
-				<span id="restore_feasibility_year" class="abstract" style="display:none">
-					To address computational challenges associated with power flow nonconvexities, significant research efforts over the last decade have developed convex relaxations and approximations of optimal power flow (OPF) problems. However, benefits associated with the convexity of these relaxations and approximations can have tradeoffs in terms of solution accuracy since they may yield voltage phasors that are inconsistent with the power injections and line flows, limiting their usefulness for some applications. Inspired by state estimation techniques, this paper proposes a new method for obtaining an AC power flow feasible point from the solution to a relaxed or approximated OPF problem. By treating the inconsistent voltage phasors, power injections, and line flows analogously to noisy measurements in a state estimation algorithm, the proposed method yields power injections and voltage phasors that are feasible with respect to the AC power flow equations while incorporating information from many quantities in the solution to a relaxed or approximated OPF problem. We improve this method by adjusting weighting terms with a machine learning based approach. We demonstrate the proposed method using several relaxations and approximations. The result show up to several orders of magnitude improvement in accuracy over traditional methods.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('restore_feasibility_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-restore_feasibility.pdf">pdf</a> ] [ Ref: <a href="pubs/taheri_molzahn-restore_feasibility.bib">bib</a>   <a href="pubs/taheri_molzahn-restore_feasibility.txt">txt</a> ] </p></li>
-		</span>
-  </div>
+	-->
 	</ul>
 	<ul class="tile scale-anm Year">
 		<div class="tile scale-anm Year">
@@ -216,7 +207,18 @@
 		</div>
 		<div class="tile scale-anm Year">
 			<span>
-				<li><p>A.D. Owen Aquino, R. Harris, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem Considering Load Variability," <i>56th Hawaii International Conference on System Sciences (HICSS)</i>, January 2023.<br />
+				<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," to appear in <i>American Control Conference (ACC)</i>, May 31 - June 2, 2023.<br />
+					<span id="restore_feasibility_year" class="abstract" style="display:none">
+						To address computational challenges associated with power flow nonconvexities, significant research efforts over the last decade have developed convex relaxations and approximations of optimal power flow (OPF) problems. However, benefits associated with the convexity of these relaxations and approximations can have tradeoffs in terms of solution accuracy since they may yield voltage phasors that are inconsistent with the power injections and line flows, limiting their usefulness for some applications. Inspired by state estimation techniques, this paper proposes a new method for obtaining an AC power flow feasible point from the solution to a relaxed or approximated OPF problem. By treating the inconsistent voltage phasors, power injections, and line flows analogously to noisy measurements in a state estimation algorithm, the proposed method yields power injections and voltage phasors that are feasible with respect to the AC power flow equations while incorporating information from many quantities in the solution to a relaxed or approximated OPF problem. We improve this method by adjusting weighting terms with a machine learning based approach. We demonstrate the proposed method using several relaxations and approximations. The result show up to several orders of magnitude improvement in accuracy over traditional methods.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('restore_feasibility_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-restore_feasibility.pdf">pdf</a> ] [ Ref: <a href="pubs/taheri_molzahn-restore_feasibility.bib">bib</a>   <a href="pubs/taheri_molzahn-restore_feasibility.txt">txt</a> ] </p></li>
+			</span>
+	  </div>
+		<div class="tile scale-anm Year">
+			<span>
+				<li><p>A.D. Owen Aquino, R. Harris, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem Considering Load Variability," <i>56th Hawaii International Conference on System Sciences (HICSS)</i>, January 3-6, 2023.<br />
 					<span id="ml_for_n-k_year" class="abstract" style="display:none">
 						Power grids must be operated, protected, and maintained such that a small number of line failures will not result in significant load shedding. To identify problematic combination of failures, we consider an <i>N-k</i> interdiction problem that seeks the set of <i>k</i> failed lines (out of <i>N</i> total lines) that result in the largest load shed. This is naturally formulated as a bilevel optimization problem with an upper level representing the attacker that selects line failures and a lower level modeling the defender's generator redispatch to minimize the load shedding. Compounding the difficulties inherent to the bilevel nature of interdiction problems, we consider a nonlinear AC power flow model that makes this problem intractable with traditional solution approaches. Furthermore, since the solutions found at a particular load condition may not generalize to other loading conditions, operators may need to quickly recompute these worst-case failures online to protect against them during operations. To address these challenges, we formulate and compare the performance of three simplified methods for solving the <i>N-k</i> interdiction problem: a state-of-the-art optimization approach based on a network-flow relaxation of the power flow equations and two newly developed machine learning algorithms that predict load sheds given the state of the network.
 					</span>
@@ -2000,39 +2002,28 @@
 	<div class="tile scale-anm Type" style="display:none">
     <a name="conferences"><h1>Conference Proceedings</h1></a>
   </div>
+	<!--
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," submitted.<br />
-				<span id="restore_feasibility_type" class="abstract" style="display:none">
-					To address computational challenges associated with power flow nonconvexities, significant research efforts over the last decade have developed convex relaxations and approximations of optimal power flow (OPF) problems. However, benefits associated with the convexity of these relaxations and approximations can have tradeoffs in terms of solution accuracy since they may yield voltage phasors that are inconsistent with the power injections and line flows, limiting their usefulness for some applications. Inspired by state estimation techniques, this paper proposes a new method for obtaining an AC power flow feasible point from the solution to a relaxed or approximated OPF problem. By treating the inconsistent voltage phasors, power injections, and line flows analogously to noisy measurements in a state estimation algorithm, the proposed method yields power injections and voltage phasors that are feasible with respect to the AC power flow equations while incorporating information from many quantities in the solution to a relaxed or approximated OPF problem. We improve this method by adjusting weighting terms with a machine learning based approach. We demonstrate the proposed method using several relaxations and approximations. The result show up to several orders of magnitude improvement in accuracy over traditional methods.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('restore_feasibility_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-restore_feasibility.pdf">pdf</a> ] [ Ref: <a href="pubs/taheri_molzahn-restore_feasibility.bib">bib</a>   <a href="pubs/taheri_molzahn-restore_feasibility.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<!--
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and <b>D.K. Molzahn</b>, "Recovering Voltage Sensitivities to Active and Reactive Power Injections in Distribution Systems", submitted.<br />
-				<span id="recovering_sensitivities_type" class="abstract" style="display:none">
-				We analyze the sensitivity matrices relating active and reactive power injections to the voltage magnitudes—the block submatrices of the inverse AC Power Flow Jacobian. We develop a simple method to recover these sensitivity matrices under low observability conditions from advanced metering infrastructure (AMI) data via matrix completion techniques. The method provides an efficient approach for computing linearizations of the node voltages in the network, which can be updated iteratively. We also provide an analysis to show that these two sensitivity matrices take distinct values.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('recovering_sensitivities_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.pdf">pdf</a> ] [ Ref: <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.bib">bib</a>   <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.txt">txt</a> ] </p></li>
-		</span>
-	</div>
--->
+	-->
 <div class="tile scale-anm Type" style="display:none">
 	<h2>2023</h2>
 </div>
 <div class="tile scale-anm Type" style="display:none">
 	<span>
-		<li><p>A.D. Owen Aquino, R. Harris, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem Considering Load Variability," <i>56th Hawaii International Conference on System Sciences (HICSS)</i>, January 2023.<br />
+		<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," to appear in <i>American Control Conference (ACC)</i>, May 31 - June 2, 2023.<br />
+			<span id="restore_feasibility_type" class="abstract" style="display:none">
+				To address computational challenges associated with power flow nonconvexities, significant research efforts over the last decade have developed convex relaxations and approximations of optimal power flow (OPF) problems. However, benefits associated with the convexity of these relaxations and approximations can have tradeoffs in terms of solution accuracy since they may yield voltage phasors that are inconsistent with the power injections and line flows, limiting their usefulness for some applications. Inspired by state estimation techniques, this paper proposes a new method for obtaining an AC power flow feasible point from the solution to a relaxed or approximated OPF problem. By treating the inconsistent voltage phasors, power injections, and line flows analogously to noisy measurements in a state estimation algorithm, the proposed method yields power injections and voltage phasors that are feasible with respect to the AC power flow equations while incorporating information from many quantities in the solution to a relaxed or approximated OPF problem. We improve this method by adjusting weighting terms with a machine learning based approach. We demonstrate the proposed method using several relaxations and approximations. The result show up to several orders of magnitude improvement in accuracy over traditional methods.
+			</span>
+	</span>
+	<span style="cursor:auto;">
+		&emsp;[ <span onclick="showDiv('restore_feasibility_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-restore_feasibility.pdf">pdf</a> ] [ Ref: <a href="pubs/taheri_molzahn-restore_feasibility.bib">bib</a>   <a href="pubs/taheri_molzahn-restore_feasibility.txt">txt</a> ] </p></li>
+	</span>
+</div>
+<div class="tile scale-anm Type" style="display:none">
+	<span>
+		<li><p>A.D. Owen Aquino, R. Harris, A. Kody, and <b>D.K. Molzahn</b>, "Comparing Machine Learning and Optimization Approaches for the <i>N-k</i> Interdiction Problem Considering Load Variability," <i>56th Hawaii International Conference on System Sciences (HICSS)</i>, January 3-6, 2023.<br />
 			<span id="ml_for_n-k_type" class="abstract" style="display:none">
 				Power grids must be operated, protected, and maintained such that a small number of line failures will not result in significant load shedding. To identify problematic combination of failures, we consider an <i>N-k</i> interdiction problem that seeks the set of <i>k</i> failed lines (out of <i>N</i> total lines) that result in the largest load shed. This is naturally formulated as a bilevel optimization problem with an upper level representing the attacker that selects line failures and a lower level modeling the defender's generator redispatch to minimize the load shedding. Compounding the difficulties inherent to the bilevel nature of interdiction problems, we consider a nonlinear AC power flow model that makes this problem intractable with traditional solution approaches. Furthermore, since the solutions found at a particular load condition may not generalize to other loading conditions, operators may need to quickly recompute these worst-case failures online to protect against them during operations. To address these challenges, we formulate and compare the performance of three simplified methods for solving the <i>N-k</i> interdiction problem: a state-of-the-art optimization approach based on a network-flow relaxation of the power flow equations and two newly developed machine learning algorithms that predict load sheds given the state of the network.
 			</span>
