@@ -1,1 +1,1 @@
-A. Kody, A. West, and D.K. Molzahn, "Sharing the Load: Considering Fairness in De-energization Scheduling to Mitigate Wildfire Ignition Risk using Rolling Optimization," submitted, 2022.
+A. Kody, A. West, and D.K. Molzahn, "Sharing the Load: Considering Fairness in De-energization Scheduling to Mitigate Wildfire Ignition Risk using Rolling Optimization," 61st IEEE Control and Decision Conference (CDC), December 6-9, 2022.
