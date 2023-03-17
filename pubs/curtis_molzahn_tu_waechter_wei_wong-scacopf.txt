@@ -1,1 +1,1 @@
-F.E. Curtis, D.K. Molzahn, S. Tu, A. Wächter, E. Wei, and E. Wong, "A Decomposition Algorithm for Large-Scale Security-Constrained AC Optimal Power Flow," arXiv:2110.01737, 2021.
+F.E. Curtis, D.K. Molzahn, S. Tu, A. Wächter, E. Wei, and E. Wong, "A Decomposition Algorithm for Large-Scale Security-Constrained AC Optimal Power Flow," to appear in Operations Resesarch, 2023.
