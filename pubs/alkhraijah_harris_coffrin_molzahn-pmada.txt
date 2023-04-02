@@ -1,0 +1,1 @@
+M. Alkhraijah, R. Harris, C. Coffrin, and D.K. Molzahn, "PowerModelsADA: A Framework for Solving Optimal Power Flow using Distributed Algorithms," submitted, 2023.
