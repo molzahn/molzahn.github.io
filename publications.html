@@ -82,7 +82,18 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>M. Alkhraijah, R. Harris, C. Coffrin, and <b>D.K. Molzahn</b>, "PowerModelsADA: A Framework for Solving Optimal Power Flow using Distributed Algorithms," submitted.<br />
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>,, "AC Power Flow Feasibility Restoration via a State Estimation-Based Post-Processing Algorithm," submitted.<br />
+				<span id="ac_restoration_year" class="abstract" style="display:none">
+					This paper presents an algorithm for restoring AC power flow feasibility from solutions to simplified optimal power flow (OPF) problems, including convex relaxations, power flow approximations, and machine learning (ML) models. The proposed algorithm employs a state estimation-based post-processing technique in which voltage phasors, power injections, and line flows from solutions to relaxed, approximated, or ML-based OPF problems are treated similarly to noisy measurements in a state estimation algorithm. The algorithm leverages information from various quantities to obtain feasible voltage phasors and power injections that satisfy the AC power flow equations. Weight and bias parameters are computed offline using an adaptive stochastic gradient descent method. These parameters inform the online computations of the state estimation-based algorithm to recover feasible solutions. Furthermore, the proposed algorithm can simultaneously utilize combined solutions from different relaxations, approximations, and ML models to enhance performance. Case studies demonstrate the effectiveness and scalability of the proposed algorithm, with numerical results showing several orders of magnitude improvement over traditional methods for restoring AC power flow feasible solutions. 
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('ac_restoration_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2304.11418">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>M. Alkhraijah, R. Harris, C. Coffrin, and <b>D.K. Molzahn</b> "PowerModelsADA: A Framework for Solving Optimal Power Flow using Distributed Algorithms," submitted.<br />
 				<span id="pmada_year" class="abstract" style="display:none">
 					This letter presents PowerModelsADA, an open-source framework for solving Optimal Power Flow (OPF) problems using Alternating Distributed Algorithms (ADA). PowerModelsADA provides a framework to test, verify, and benchmark both existing and new ADAs. This paper demonstrates use cases for PowerModelsADA and validates its implementation with multiple OPF formulations.
 				</span>
@@ -1445,6 +1456,17 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC Power Flow Feasibility Restoration via a State Estimation-Based Post-Processing Algorithm," submitted.<br />
+				<span id="ac_restoration_type" class="abstract" style="display:none">
+					This paper presents an algorithm for restoring AC power flow feasibility from solutions to simplified optimal power flow (OPF) problems, including convex relaxations, power flow approximations, and machine learning (ML) models. The proposed algorithm employs a state estimation-based post-processing technique in which voltage phasors, power injections, and line flows from solutions to relaxed, approximated, or ML-based OPF problems are treated similarly to noisy measurements in a state estimation algorithm. The algorithm leverages information from various quantities to obtain feasible voltage phasors and power injections that satisfy the AC power flow equations. Weight and bias parameters are computed offline using an adaptive stochastic gradient descent method. These parameters inform the online computations of the state estimation-based algorithm to recover feasible solutions. Furthermore, the proposed algorithm can simultaneously utilize combined solutions from different relaxations, approximations, and ML models to enhance performance. Case studies demonstrate the effectiveness and scalability of the proposed algorithm, with numerical results showing several orders of magnitude improvement over traditional methods for restoring AC power flow feasible solutions. 
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('ac_restoration_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2304.11418">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
