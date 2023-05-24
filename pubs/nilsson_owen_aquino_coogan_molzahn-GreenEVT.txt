@@ -1,1 +1,1 @@
-G. Nilsson, A. D. Owen Aquino, S. Coogan, and D.K. Molzahn, "GreenEVT: Greensboro Electric Vehicle Testbed," submitted, 2023, https://github.com/GreenEVT/GreenEVT.
+G. Nilsson, A. D. Owen Aquino, S. Coogan, and D.K. Molzahn, "GreenEVT: Greensboro Electric Vehicle Testbed," submitted, preprint available at arXiv:2305.12722, 2023, https://github.com/GreenEVT/GreenEVT.
