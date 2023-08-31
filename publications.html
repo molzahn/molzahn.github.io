@@ -104,7 +104,7 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>M. Alkhraijah, R. Harris, C. Coffrin, and <b>D.K. Molzahn</b> "PowerModelsADA: A Framework for Solving Optimal Power Flow using Distributed Algorithms," submitted.<br />
+			<li><p>M. Alkhraijah, R. Harris, C. Coffrin, and <b>D.K. Molzahn</b>, "PowerModelsADA: A Framework for Solving Optimal Power Flow using Distributed Algorithms," submitted.<br />
 				<span id="pmada_year" class="abstract" style="display:none">
 					This letter presents PowerModelsADA, an open-source framework for solving Optimal Power Flow (OPF) problems using Alternating Distributed Algorithms (ADA). PowerModelsADA provides a framework to test, verify, and benchmark both existing and new ADAs. This paper demonstrates use cases for PowerModelsADA and validates its implementation with multiple OPF formulations.
 				</span>
@@ -126,17 +126,6 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>I. Aravena, <b>D.K. Molzahn</b>, S. Zhang, F.E. Curtis, S. Tu, A. Waechter, E. Wei, E. Wong, A. Gholami, K. Sun, X.A. Sun, S.T. Elbert, J.T. Holzer, and A. Veeramany, "Recent Developments in Security-Constrained AC Optimal Power Flow: Overview of Challenge 1 in the ARPA-E Grid Optimization Competition," submitted.<br />
-				<span id="go_intro_year" class="abstract" style="display:none">
-					The optimal power flow problem is central to many tasks in the design and operation of electric power grids. This problem seeks the minimum cost operating point for an electric power grid while satisfying both engineering requirements and physical laws describing how power flows through the electric network. By additionally considering the possibility of component failures and using an accurate AC power flow model of the electric network, the security-constrained AC optimal power flow (SC-AC-OPF) problem is of paramount practical relevance. To assess recent progress in solution algorithms for SC-AC-OPF problems and spur new innovations, the U.S. Department of Energy's Advanced Research Projects Agency-Energy (ARPA-E) organized Challenge 1 of the Grid Optimization (GO) competition. This paper describes the SC-AC-OPF problem formulation used in the competition, overviews historical developments and the state of the art in SC-AC-OPF algorithms, discusses the competition, and summarizes the algorithms used by the top three teams in Challenge 1 of the GO Competition (Teams gollnlp, GO-SNIP, and GMI-GO).
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('go_intro_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2206.07843">link</a> ] [ Ref: <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.bib">bib</a>   <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
 			<li><p>C. Hettle, S. Gupta, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," submitted.<br />
 				<span id="reconfiguration_submodularity_year" class="abstract" style="display:none">
 					The economic cost of power outages has been estimated to be between $35 billion and $50 billion annually in the United States. We analyze and advance methodologies for electrical distribution network reconfiguration in order to quickly restore power, an important lever for improving reliability. For short-term network disruptions, we give a novel model for reconfiguration by considering switches that can be sequentially closed upon detection of a network anomaly upstream. The order in which switches close has an impact on reliability metrics such as SAIDI, which are the basis for regulator-imposed financial performance incentives. We introduce the "Minimum Reconnection Time (MRT" problem, which aims to find an optimal switch ordering that minimizes the cost of outages and show that it generalizes metrics like SAIDI. We first show that MRT is a special case of the well-known minimum linear ordering problem from submodular optimization literature and that MRT is also NP-hard. We show how to approximate MRT using recent kernel-based randomized rounding approaches, and in turn improve the state-of-the-art for a broad class of MLOP instances. Finally, we note that the choice of reliability metric can result in significant differences for low and medium voltage buses. We therefore consider optimizing multiple metrics simultaneously using local search methods that reconfigure the system's base tree to optimize service disruptions, reconnection times, and energy losses. We computationally validate our reconfiguration methods on the NREL SMART-DS Greensboro synthetic urban-suburban network and show significant improvement in reliability metrics.
@@ -146,11 +135,20 @@
 			&emsp;[ <span onclick="showDiv('reconfiguration_submodularity_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2104.07631">link</a> ] [ Ref: <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.bib">bib</a>   <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.txt">txt</a> ] </p></li>
 		</span>
   </div>
-	<!--
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
 	</div>
-	-->
+	  <div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Harris and <b>D.K. Molzahn</b>, "Detecting and Mitigating Data Integrity Attacks on Distributed Algorithms for Optimal Power Flow using Machine Learning," submitted.<br />
+				<span id="hicss2024_year" class="abstract" style="display:none">
+					Using distributed algorithms, multiple computing agents can coordinate their operations by jointly solving optimal power flow problems. However, cyberattacks on the data communicated among agents may maliciously alter the behavior of a distributed algorithm. To improve cybersecurity, this paper proposes a machine learning method for detecting and mitigating data integrity attacks on distributed algorithms for solving optimal power flow problems. In an offline stage with trustworthy data, agents train and share machine learning models of their local subproblems. During online execution, each agent uses the trained models from neighboring agents to detect cyberattacks using a reputation system and then mitigate their impacts. Numerical results show that this method reliably, accurately, and quickly detects data integrity attacks and effectively mitigates their impacts to achieve near-feasible and near-optimal operating points.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('hicss2024_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_molzahn-hicss2024.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_molzahn-hicss2024.bib">bib</a>   <a href="pubs/harris_molzahn-hicss2024.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 	</ul>
 	<ul class="tile scale-anm Year">
 		<div class="tile scale-anm Year">
@@ -159,6 +157,17 @@
 		<div class="tile scale-anm Year">
 			<h2>Journal Papers</h2>
 		</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>I. Aravena, <b>D.K. Molzahn</b>, S. Zhang, F.E. Curtis, S. Tu, A. Waechter, E. Wei, E. Wong, A. Gholami, K. Sun, X.A. Sun, S.T. Elbert, J.T. Holzer, and A. Veeramany, "Recent Developments in Security-Constrained AC Optimal Power Flow: Overview of Challenge 1 in the ARPA-E Grid Optimization Competition," to appear in <i>Operations Research</i>, special issue on <i>Computational Advances in Short-Term Power System Operations</i>, 2023.<br />
+				<span id="go_intro_year" class="abstract" style="display:none">
+					The optimal power flow problem is central to many tasks in the design and operation of electric power grids. This problem seeks the minimum cost operating point for an electric power grid while satisfying both engineering requirements and physical laws describing how power flows through the electric network. By additionally considering the possibility of component failures and using an accurate AC power flow model of the electric network, the security-constrained AC optimal power flow (SC-AC-OPF) problem is of paramount practical relevance. To assess recent progress in solution algorithms for SC-AC-OPF problems and spur new innovations, the U.S. Department of Energy's Advanced Research Projects Agency-Energy (ARPA-E) organized Challenge 1 of the Grid Optimization (GO) competition. This paper describes the SC-AC-OPF problem formulation used in the competition, overviews historical developments and the state of the art in SC-AC-OPF algorithms, discusses the competition, and summarizes the algorithms used by the top three teams in Challenge 1 of the GO Competition (Teams gollnlp, GO-SNIP, and GMI-GO).
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('go_intro_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2206.07843">link</a> ] [ Ref: <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.bib">bib</a>   <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 	<div class="tile scale-anm Year">
 		<span>
 			<li><p>O. Kuryatnikova, B. Ghaddar, and <b>D.K. Molzahn</b>, "Adjustable Robust Two-Stage Polynomial Optimization with Application to AC Optimal Power Flow," to appear in <i>SIAM Journal on Optimization</i>.<br />
@@ -202,7 +211,7 @@
 		</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>D. Turizo and <b>D.K. Molzahn</b>, "Invertibility Conditions for the Admittance Matrices of Balanced Power Systems," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+			<li><p>D. Turizo and <b>D.K. Molzahn</b>, "Invertibility Conditions for the Admittance Matrices of Balanced Power Systems," <i>IEEE Transactions on Power Systems</i>, vol. 38, no. 4, pp. 3841-3853, July 2023.<br />
 				<span id="admittance_year" class="abstract" style="display:none">
 					The admittance matrix encodes the network topology and electrical parameters of a power system in order to relate the current injection and voltage phasors. Since admittance matrices are central to many power engineering analyses, their characteristics are important subjects of theoretical studies. This paper focuses on the key characteristic of <i>invertibility</i>. Previous literature has presented an invertibility condition for admittance matrices. This paper first identifies and fixes a technical issue in the proof of this previously presented invertibility condition. This paper then extends this previous work by deriving new conditions that are applicable to a broader class of systems with lossless branches and transformers with off-nominal tap ratios.
 				</span>
@@ -236,9 +245,20 @@
 		<div class="tile scale-anm Year">
 			<h2>Conference Proceedings</h2>
 		</div>
+  <div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Harris, A. Banerjee, and <b>D.K. Molzahn</b>, "Synthetic Test Case for Ukraine's Power Grid," to appear in <i>55th North American Power Symposium (NAPS)</i>, October 15-17, 2023.<br />
+				<span id="ukraine_year" class="abstract" style="display:none">
+					Power systems research requires realistic test cases to demonstrate and benchmark algorithmic innovations. However, to keep power grid information secure, much of the data for actual systems cannot be publicly released. This motivates the creation of synthetic test cases designed to match the characteristics of actual power grids. By only using publicly available data, these synthetic test cases can be freely released for research and educational purposes. Motivated by the ongoing conflict in Ukraine, this paper presents a synthetic test case for the Ukrainian electric transmission system. With the ability to run power flow and other analyses, this test case is relevant to emerging research and educational activities related to power grid security. To develop the test case, we leveraged publicly available data on population centers, generators, and transmission topology and voltage levels along with synthetic test case creation methodologies from recent literature. After describing the process used to develop this test case, this paper presents validation results using several widely accepted criteria for assessing the test case's realism. As an illustrative application, we demonstrate one use case by solving a bilevel linearization of the $N-k$ interdiction problem to identify critical sets of line failures which cause the most load shedding.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('ukraine_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 		<div class="tile scale-anm Year">
 			<span>
-				<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," to appear in <i>American Control Conference (ACC)</i>, May 31 - June 2, 2023.<br />
+				<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," <i>American Control Conference (ACC)</i>, May 31 - June 2, 2023.<br />
 					<span id="restore_feasibility_year" class="abstract" style="display:none">
 						To address computational challenges associated with power flow nonconvexities, significant research efforts over the last decade have developed convex relaxations and approximations of optimal power flow (OPF) problems. However, benefits associated with the convexity of these relaxations and approximations can have tradeoffs in terms of solution accuracy since they may yield voltage phasors that are inconsistent with the power injections and line flows, limiting their usefulness for some applications. Inspired by state estimation techniques, this paper proposes a new method for obtaining an AC power flow feasible point from the solution to a relaxed or approximated OPF problem. By treating the inconsistent voltage phasors, power injections, and line flows analogously to noisy measurements in a state estimation algorithm, the proposed method yields power injections and voltage phasors that are feasible with respect to the AC power flow equations while incorporating information from many quantities in the solution to a relaxed or approximated OPF problem. We improve this method by adjusting weighting terms with a machine learning based approach. We demonstrate the proposed method using several relaxations and approximations. The result show up to several orders of magnitude improvement in accuracy over traditional methods.
 					</span>
@@ -1511,17 +1531,6 @@
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('sensor_placement_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-sensor_placement.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2210.09414">link</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-sensor_placement.bib">bib</a>   <a href="pubs/buason_misra_molzahn-sensor_placement.txt">txt</a> ] </p></li>
 		</span>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>I. Aravena, <b>D.K. Molzahn</b>, S. Zhang, F.E. Curtis, S. Tu, A. Waechter, E. Wei, E. Wong, A. Gholami, K. Sun, X.A. Sun, S.T. Elbert, J.T. Holzer, and A. Veeramany, "Recent Developments in Security-Constrained AC Optimal Power Flow: Overview of Challenge 1 in the ARPA-E Grid Optimization Competition," submitted.<br />
-				<span id="go_intro_type" class="abstract" style="display:none">
-					The optimal power flow problem is central to many tasks in the design and operation of electric power grids. This problem seeks the minimum cost operating point for an electric power grid while satisfying both engineering requirements and physical laws describing how power flows through the electric network. By additionally considering the possibility of component failures and using an accurate AC power flow model of the electric network, the security-constrained AC optimal power flow (SC-AC-OPF) problem is of paramount practical relevance. To assess recent progress in solution algorithms for SC-AC-OPF problems and spur new innovations, the U.S. Department of Energy's Advanced Research Projects Agency-Energy (ARPA-E) organized Challenge 1 of the Grid Optimization (GO) competition. This paper describes the SC-AC-OPF problem formulation used in the competition, overviews historical developments and the state of the art in SC-AC-OPF algorithms, discusses the competition, and summarizes the algorithms used by the top three teams in Challenge 1 of the GO Competition (Teams gollnlp, GO-SNIP, and GMI-GO).
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('go_intro_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2206.07843">link</a> ] [ Ref: <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.bib">bib</a>   <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.txt">txt</a> ] </p></li>
-		</span>
-  </div>
 	<div class="tile scale-anm Type"  style="display:none">
 		<span>
 			<li><p>C. Hettle, S. Gupta, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," submitted.<br />
@@ -1536,6 +1545,17 @@
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>2023</h2>
 	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>I. Aravena, <b>D.K. Molzahn</b>, S. Zhang, F.E. Curtis, S. Tu, A. Waechter, E. Wei, E. Wong, A. Gholami, K. Sun, X.A. Sun, S.T. Elbert, J.T. Holzer, and A. Veeramany, "Recent Developments in Security-Constrained AC Optimal Power Flow: Overview of Challenge 1 in the ARPA-E Grid Optimization Competition," to appear in <i>Operations Research</i>, special issue on <i>Computational Advances in Short-Term Power System Operations</i>, 2023.<br />
+				<span id="go_intro_type" class="abstract" style="display:none">
+					The optimal power flow problem is central to many tasks in the design and operation of electric power grids. This problem seeks the minimum cost operating point for an electric power grid while satisfying both engineering requirements and physical laws describing how power flows through the electric network. By additionally considering the possibility of component failures and using an accurate AC power flow model of the electric network, the security-constrained AC optimal power flow (SC-AC-OPF) problem is of paramount practical relevance. To assess recent progress in solution algorithms for SC-AC-OPF problems and spur new innovations, the U.S. Department of Energy's Advanced Research Projects Agency-Energy (ARPA-E) organized Challenge 1 of the Grid Optimization (GO) competition. This paper describes the SC-AC-OPF problem formulation used in the competition, overviews historical developments and the state of the art in SC-AC-OPF algorithms, discusses the competition, and summarizes the algorithms used by the top three teams in Challenge 1 of the GO Competition (Teams gollnlp, GO-SNIP, and GMI-GO).
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('go_intro_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2206.07843">link</a> ] [ Ref: <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.bib">bib</a>   <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>O. Kuryatnikova, B. Ghaddar, and <b>D.K. Molzahn</b>, "Adjustable Robust Two-Stage Polynomial Optimization with Application to AC Optimal Power Flow," to appear in <i>SIAM Journal on Optimization</i>.<br />
@@ -1579,7 +1599,7 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>D. Turizo and <b>D.K. Molzahn</b>, "Invertibility Conditions for the Admittance Matrices of Balanced Power Systems," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+			<li><p>D. Turizo and <b>D.K. Molzahn</b>, "Invertibility Conditions for the Admittance Matrices of Balanced Power Systems," <i>IEEE Transactions on Power Systems</i>, vol. 38, no. 4, pp. 3841-3853, July 2023.<br />
 				<span id="admittance_type" class="abstract" style="display:none">
 					The admittance matrix encodes the network topology and electrical parameters of a power system in order to relate the current injection and voltage phasors. Since admittance matrices are central to many power engineering analyses, their characteristics are important subjects of theoretical studies. This paper focuses on the key characteristic of <i>invertibility</i>. Previous literature has presented an invertibility condition for admittance matrices. This paper first identifies and fixes a technical issue in the proof of this previously presented invertibility condition. This paper then extends this previous work by deriving new conditions that are applicable to a broader class of systems with lossless branches and transformers with off-nominal tap ratios.
 				</span>
@@ -2064,17 +2084,37 @@
 	<div class="tile scale-anm Type" style="display:none">
     <a name="conferences"><h1>Conference Proceedings</h1></a>
   </div>
-	<!--
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
-	-->
+  <div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Harris and <b>D.K. Molzahn</b>, "Detecting and Mitigating Data Integrity Attacks on Distributed Algorithms for Optimal Power Flow using Machine Learning," submitted.<br />
+				<span id="hicss2024_type" class="abstract" style="display:none">
+					Using distributed algorithms, multiple computing agents can coordinate their operations by jointly solving optimal power flow problems. However, cyberattacks on the data communicated among agents may maliciously alter the behavior of a distributed algorithm. To improve cybersecurity, this paper proposes a machine learning method for detecting and mitigating data integrity attacks on distributed algorithms for solving optimal power flow problems. In an offline stage with trustworthy data, agents train and share machine learning models of their local subproblems. During online execution, each agent uses the trained models from neighboring agents to detect cyberattacks using a reputation system and then mitigate their impacts. Numerical results show that this method reliably, accurately, and quickly detects data integrity attacks and effectively mitigates their impacts to achieve near-feasible and near-optimal operating points.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('hicss2024_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_molzahn-hicss2024.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_molzahn-hicss2024.bib">bib</a>   <a href="pubs/harris_molzahn-hicss2024.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 <div class="tile scale-anm Type" style="display:none">
 	<h2>2023</h2>
 </div>
+  <div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Harris, A. Banerjee, and <b>D.K. Molzahn</b>, "Synthetic Test Case for Ukraine's Power Grid," to appear in <i>55th North American Power Symposium (NAPS)</i>, October 15-17, 2023.<br />
+				<span id="ukraine_type" class="abstract" style="display:none">
+					Power systems research requires realistic test cases to demonstrate and benchmark algorithmic innovations. However, to keep power grid information secure, much of the data for actual systems cannot be publicly released. This motivates the creation of synthetic test cases designed to match the characteristics of actual power grids. By only using publicly available data, these synthetic test cases can be freely released for research and educational purposes. Motivated by the ongoing conflict in Ukraine, this paper presents a synthetic test case for the Ukrainian electric transmission system. With the ability to run power flow and other analyses, this test case is relevant to emerging research and educational activities related to power grid security. To develop the test case, we leveraged publicly available data on population centers, generators, and transmission topology and voltage levels along with synthetic test case creation methodologies from recent literature. After describing the process used to develop this test case, this paper presents validation results using several widely accepted criteria for assessing the test case's realism. As an illustrative application, we demonstrate one use case by solving a bilevel linearization of the $N-k$ interdiction problem to identify critical sets of line failures which cause the most load shedding.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('ukraine_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 <div class="tile scale-anm Type" style="display:none">
 	<span>
-		<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," to appear in <i>American Control Conference (ACC)</i>, May 31 - June 2, 2023.<br />
+		<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Restoring AC Power Flow Feasibility for Solutions to Relaxed and Approximated Optimal Power Flow Problems," <i>American Control Conference (ACC)</i>, May 31 - June 2, 2023.<br />
 			<span id="restore_feasibility_type" class="abstract" style="display:none">
 				To address computational challenges associated with power flow nonconvexities, significant research efforts over the last decade have developed convex relaxations and approximations of optimal power flow (OPF) problems. However, benefits associated with the convexity of these relaxations and approximations can have tradeoffs in terms of solution accuracy since they may yield voltage phasors that are inconsistent with the power injections and line flows, limiting their usefulness for some applications. Inspired by state estimation techniques, this paper proposes a new method for obtaining an AC power flow feasible point from the solution to a relaxed or approximated OPF problem. By treating the inconsistent voltage phasors, power injections, and line flows analogously to noisy measurements in a state estimation algorithm, the proposed method yields power injections and voltage phasors that are feasible with respect to the AC power flow equations while incorporating information from many quantities in the solution to a relaxed or approximated OPF problem. We improve this method by adjusting weighting terms with a machine learning based approach. We demonstrate the proposed method using several relaxations and approximations. The result show up to several orders of magnitude improvement in accuracy over traditional methods.
 			</span>

@@ -1,0 +1,1 @@
+R. Harris and D.K. Molzahn, “Detecting and Mitigating Data Integrity Attacks on Distributed Algorithms for Optimal Power Flow using Machine Learning,” submitted.
