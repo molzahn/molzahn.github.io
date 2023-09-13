@@ -1,1 +1,1 @@
-R. Harris and D.K. Molzahn, “Detecting and Mitigating Data Integrity Attacks on Distributed Algorithms for Optimal Power Flow using Machine Learning,” submitted.
+R. Harris and D.K. Molzahn, "Detecting and Mitigating Data Integrity Attacks on Distributed Algorithms for Optimal Power Flow using Machine Learning," to appear in 57th Hawaii International Conference on System Sciences (HICSS), January 3-6, 2024.
