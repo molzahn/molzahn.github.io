@@ -1,0 +1,1 @@
+M.R. Narimani, D.K. Molzahn, K.R. Davis, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow through Improved Linear Convex Envelopes," submitted, arXiv:2310.14463, 2023.

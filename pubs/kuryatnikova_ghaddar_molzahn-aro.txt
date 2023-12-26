@@ -1,1 +1,1 @@
-O. Kuryatnikova, B. Ghaddar, and D.K. Molzahn, "Adjustable Robust Two-Stage Polynomial Optimization with Application to AC Optimal Power Flow," to appear in SIAM Journal on Optimization, 2023.
+O. Kuryatnikova, B. Ghaddar, and D.K. Molzahn, "Two-Stage Robust Quadratic Optimization with Equalities and Its Application to Optimal Power Flow," SIAM Journal on Optimization, vol. 33, no. 4, pp. 2830-2857, December 2023.

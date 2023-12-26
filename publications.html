@@ -82,24 +82,79 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
+			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, K.R. Davis, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow through Improved Linear Convex Envelopes," submitted.<br />
+				<span id="QCtightening_year" class="abstract" style="display:none">
+					AC optimal power flow (AC OPF) is a fundamental problem in power system operations. Accurately modeling the network physics via the AC power flow equations makes AC OPF a challenging nonconvex problem. To search for global optima, recent research has developed various convex relaxations that bound the optimal objective values of AC OPF problems. The QC relaxation convexifies the AC OPF problem by enclosing the non-convex terms within convex envelopes. The QC relaxation's accuracy strongly depends on the tightness of these envelopes. This paper proposes two improvements for tightening QC relaxations of OPF problems. We first consider a particular nonlinear function whose projections are the nonlinear expressions appearing in the polar representation of the power flow equations. We construct a polytope-shaped convex envelope around this nonlinear function and derive convex expressions for the nonlinear terms using its projections. Second, we use sine and cosine expression properties, along with changes in their curvature, to tightness this convex envelope. We also propose a coordinate transformation to tighten the envelope by rotating power flow equations based on individual bus-specific angles. We compare these enhancements to a state-of-the-art QC relaxation method using PGLib-OPF test cases, revealing improved optimality gaps in 68% of the cases.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('QCtightening_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_davis_crow-QCtightening.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2310.14463">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_davis_crow-QCtightening.bib">bib</a>   <a href="pubs/narimani_molzahn_davis_crow-QCtightening.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>M. Alkhraijah, R. Harris, S. Litchfield, D. Huggins, and <b>D.K. Molzahn</b>, "Detecting Shared Data Manipulation in Distributed Optimization Algorithms," submitted.<br />
+				<span id="admmvulnerability_year" class="abstract" style="display:none">
+					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive two sufficient conditions for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the detection conditions' performance on three data manipulation strategies we previously proposed: simple, feedback, and bilevel optimization attacks. We then extend these three data manipulation strategies to avoid detection by considering both the detection conditions and a neural network (NN) detection model in the attacker's decision process. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection conditions successfully detect most of the data manipulation attacks. However, a bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack. 
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('admmvulnerability_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2310.13252">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," submitted.<br />
+				<span id="convergetol_year" class="abstract" style="display:none">
+					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate computing agents to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF generator dispatch is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. The proposed approach enables control of the trade-off between computational speed, which improves as the convergence tolerance increases, and distributed OPF solution cost, which increases with convergence tolerance due to tightened constraints, while ensuring feasibility.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('convergetol_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.08305">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<!--
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Piansky, G. Stinchfield, A. Kody, <b>D.K. Molzahn</b>, and J.P. Watson, "Long Duration Battery Sizing, Siting, and Operation Under Wildfire Risk Using Progressive Hedging," submitted.<br />
+				<span id="battsizesite_year" class="abstract" style="display:none">
+					Battery sizing and siting problems are computationally challenging due to the need to make long-term planning decisions that are cognizant of short-term operational decisions. This paper considers sizing, siting, and operating batteries in a power grid to maximize their benefits, including price arbitrage and load shed mitigation, during both normal operations and periods with high wildfire ignition risk. We formulate a multi-scenario optimization problem for long duration battery storage while considering the possibility of load shedding during Public Safety Power Shutoff (PSPS) events that de-energize lines to mitigate severe wildfire ignition risk. To enable a computationally scalable solution of this problem with many scenarios of wildfire risk and power injection variability, we develop a customized temporal decomposition method based on a progressive hedging framework. Extending traditional progressive hedging techniques, we consider coupling in both placement variables across all scenarios and state-of-charge variables at temporal boundaries. This enforces consistency across scenarios while enabling parallel computations despite both spatial and temporal coupling. The proposed decomposition facilitates efficient and scalable modeling of a full year of hourly operational decisions to inform the sizing and siting of batteries. With this decomposition, we model a year of hourly operational decisions to inform optimal battery placement for a 240-bus WECC model in under 19 minutes of wall-clock computing time.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('battsizesite_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.bib">bib</a>   <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+-->
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>P. Buason, S. Misra, J.P. Watson, and <b>D.K. Molzahn</b>, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," submitted.<br />
+				<span id="secondordersens_year" class="abstract" style="display:none">
+					The power flow equations are fundamental to power system planning, analysis, and control. However, their inherent non-linearity and non-convexity can pose significant challenges when solving problems that involve these equations. To address these challenges, linear approximations are frequently used to simplify computations at the potential cost of compromising accuracy and feasibility. Typical power flow approximations rely on general assumptions that are not always valid. Additionally, many existing linear approximations, such as the first-order Taylor series, overlook important information contained within higher-order terms. To gain a deeper understanding of the relationships among variables within a specific operational range and to achieve more accurate approximations, this paper considers a second-order sensitivity analysis of the power flow equations. By modeling the curvature of the power flow manifold, this paper uses the second-order sensitivities in an importance sampling method to improve the accuracy of adaptive power flow linearizations. Furthermore, this paper explores approximations formulated as rational functions with linear numerators and denominators that can be rewritten as linear constraints in power system optimization problems. These approximations, inspired by the Pad\'e approximant, utilize second-order power flow sensitivities. This approach is extended to enhance accuracy beyond what linear functions can achieve across various operational scenarios, and can also be constructed to be conservative (over- or under-estimate a quantity of interest).
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('secondordersens_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Optimizing Parameters of the DC Power Flow," submitted.<br />
+				<span id="dcparam_year" class="abstract" style="display:none">
+					Many power system operation and planning problems use the DC power flow approximation to address computational challenges from the nonlinearity of the AC power flow equations. The DC power flow simplifies the AC power flow equations to a linear form that relates active power flows to phase angle differences across branches, parameterized by coefficients based on the branches' susceptances. Inspired by techniques for training machine learning models, this paper proposes an algorithm that seeks optimal coefficient and bias parameters to improve the DC power flow approximation's accuracy. Specifically, the proposed algorithm selects the coefficient and bias parameter values that minimize the discrepancy, across a specified set of operational scenarios, between the power flows given by the DC approximation and the power flows from the AC equations. Gradient-based optimization methods like Broyden-Fletcher-Goldfarb-Shanno (BFGS), Limited-Memory BFGS (L-BFGS), and Truncated Newton Conjugate-Gradient (TNC) enable solution of the proposed algorithm for large systems. After an off-line training phase, the optimized parameters are used to improve the accuracy of the DC power flow during on-line computations. Numerical results show several orders of magnitude improvements in accuracy relative to a hot-start DC power flow approximation across a range of test cases.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dcparam_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ <a href="https://arxiv.org/pdf/2310.00447.pdf">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
 			<li><p>A. Jalilian, B. Taheri, and <b>D.K. Molzahn</b>, "Co-Optimization of Damage Assessment and Restoration: A Resilience-Driven Dynamic Crew Allocation for Power Distribution Systems," submitted.<br />
 				<span id="crewallocation_year" class="abstract" style="display:none">
 					This study introduces a mixed-integer linear programming (MILP) model, effectively co-optimizing patrolling, damage assessment, fault isolation, repair, and load re-energization processes. The model is designed to solve a vital operational conundrum: deciding between further network exploration to obtain more comprehensive data or addressing the repair of already identified faults. As information on the fault location and repair timelines becomes available, the model allows for dynamic adaptation of crew dispatch decisions. In addition, this study proposes a conservative power flow constraint set that considers two network loading scenarios within the final network configuration. This approach results in the determination of an upper and a lower bound for node voltage levels and an upper bound for power line flows. To underscore the practicality and scalability of the proposed model, we have demonstrated its application using IEEE 123-node and 8500-node test systems, where it delivered promising results.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('crewallocation_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/jalilian_taheri_molzahn-crewallocation.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2309.08704">link</a> ] [ Ref: <a href="pubs/jalilian_taheri_molzahn-crewallocation">bib</a>   <a href="pubs/jalilian_taheri_molzahn-crewallocation.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>G. Nilsson, A.D. Owen Aquino, S. Coogan, and <b>D.K. Molzahn</b>, "GreenEVT: Greensboro Electric Vehicle Testbed," submitted.<br />
-				<span id="greenevt_year" class="abstract" style="display:none">
-					The ongoing electrification of the transportation fleet will increase the load on the electric power grid. Since both the transportation network and the power grid already experience periods of significant stress, joint analyses of both infrastructures will most likely be necessary to ensure acceptable operation in the future. To enable such analyses, this paper presents an open-source testbed that jointly simulates high-fidelity models of both the electric distribution system and the transportation network. The testbed utilizes two open-source simulators, OpenDSS to simulate the electric distribution system and the microscopic traffic simulator SUMO to simulate the traffic dynamics. Electric vehicle charging links the electric distribution system and the transportation network models at vehicle locations determined using publicly available parcel data. Leveraging high-fidelity synthetic electric distribution system data from the SMART-DS project and transportation system data from OpenStreetMap, this testbed models the city of Greensboro, NC down to the household level. Moreover, the methodology and the supporting scripts released with the testbed allow adaption to other areas where high-fidelity geolocated OpenDSS datasets are available. After describing the components and usage of the testbed, we exemplify applications enabled by the testbed via two scenarios modeling the extreme stresses encountered during evacuations.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('greenevt_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2305.12722">link</a> ] [ Ref: <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.bib">bib</a>   <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.txt">txt</a> ] [ <a href="https://github.com/GreenEVT/GreenEVT">GitHub Repository</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('crewallocation_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/jalilian_taheri_molzahn-crewallocation.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2309.08704">link</a> ] [ Ref: <a href="pubs/jalilian_taheri_molzahn-crewallocation.bib">bib</a>   <a href="pubs/jalilian_taheri_molzahn-crewallocation.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -135,10 +190,101 @@
 			&emsp;[ <span onclick="showDiv('reconfiguration_submodularity_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2104.07631">link</a> ] [ Ref: <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.bib">bib</a>   <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.txt">txt</a> ] </p></li>
 		</span>
   </div>
+	<div class="tile scale-anm Year">
+		<h2>Conference Proceedings</h2>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Gupta, P. Buason, and <b>D.K. Molzahn</b>, "Fairness-aware Photovoltaic Generation Limits for Voltage Regulation in Power Distribution Networks using Conservative Linear Approximations," submitted.<br />
+				<span id="fairness_pv_limit_year" class="abstract" style="display:none">
+					This paper proposes a framework for fairly curtailing photovoltaic (PV) plants in response to the over-voltage problem in PV-rich distribution networks. The framework imposes PV generation limits to avoid overvoltages. These limits are computed a day ahead of real-time operations by solving an offline stochastic optimization problem using forecasted scenarios for PV generation and load demand. The framework minimizes the overall curtailment while considering fairness by reducing disparities in curtailments among different PV owners. We model the distribution grid constraints using a conservative linear approximation (CLA) of the AC power flow equations which is computed using a set of sampled power injections from the day-ahead predicted scenarios. The proposed framework is numerically validated on a CIGRE benchmark network interfaced with a large number of PV plants. We compare the performance of the proposed framework versus an alternative formulation that does not incorporate fairness considerations. To this end, we assess tradeoffs between fairness, as quantified with the Jain Fairness Index (JFI), and the total curtailed energy. 
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('fairness_pv_limit_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.pdf">pdf</a> ] [ Ref: <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.bib">bib</a>   <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>A.D. Owen Aquino, S. Talkington, and <b>D.K. Molzahn</b>, "Managing Vehicle Charging during Emergencies via Conservative Distribution System Modeling," submitted.<br />
+				<span id="EVacuation_feeder_year" class="abstract" style="display:none">
+					Combinatorial distribution system optimization problems, such as scheduling electric vehicle (EV) charging during evacuations, present significant computational challenges. These challenges stem from the large numbers of constraints, continuous variables, and discrete variables, coupled with the  unbalanced nature of distribution systems. In response to the escalating frequency of extreme events impacting electric power systems, this paper introduces a method that integrates sample-based conservative linear power flow approximations (CLAs) into an optimization framework. In particular, this integration aims to ameliorate the aforementioned challenges of distribution system optimization in the context of efficiently minimizing the charging time required for EVs in urban evacuation scenarios.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('EVacuation_feeder_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.16975">link</a> ] [ Ref: <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.bib">bib</a>   <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC Power Flow Informed Parameter Learning for DC Power Flow Network Equivalents," submitted.<br />
+				<span id="DCequivalents_year" class="abstract" style="display:none">
+					This paper presents an algorithm to optimize the parameters of power systems equivalents to enhance the accuracy of the DC power flow approximation in reduced networks. Based on a zonal division of the network, the algorithm produces a reduced power system equivalent that captures inter-zonal flows with aggregated buses and equivalent transmission lines. The algorithm refines coefficient and bias parameters for the DC power flow model of the reduced network, aiming to minimize discrepancies between inter-zonal flows in DC and AC power flow results. Using optimization methods like BFGS, L-BFGS, and TNC in an offline training phase, these parameters boost the accuracy of online DC power flow computations. In contrast to existing network equivalencing methods, the proposed algorithm optimizes accuracy over a specified range of operation as opposed to only considering a single nominal point. Numerical tests demonstrate substantial accuracy improvements over traditional equivalencing and approximation methods.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('DCequivalents_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.13104">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	</ul>
 	<ul class="tile scale-anm Year">
 		<div class="tile scale-anm Year">
 			<a name="2024"><h1>2024</h1></a>
+		</div>
+	<div class="tile scale-anm Year">
+		<h2>Journal Papers</h2>
+	</div>
+		<div class="tile scale-anm Year">
+		<span>
+			<li><p>G. Nilsson, A.D. Owen Aquino, S. Coogan, and <b>D.K. Molzahn</b>, "GreenEVT: Greensboro Electric Vehicle Testbed," to appear in <i>IEEE Systems Journal</i>.<br />
+				<span id="greenevt_year" class="abstract" style="display:none">
+					The ongoing electrification of the transportation fleet will increase the load on the electric power grid. Since both the transportation network and the power grid already experience periods of significant stress, joint analyses of both infrastructures will most likely be necessary to ensure acceptable operation in the future. To enable such analyses, this paper presents an open-source testbed that jointly simulates high-fidelity models of both the electric distribution system and the transportation network. The testbed utilizes two open-source simulators, OpenDSS to simulate the electric distribution system and the microscopic traffic simulator SUMO to simulate the traffic dynamics. Electric vehicle charging links the electric distribution system and the transportation network models at vehicle locations determined using publicly available parcel data. Leveraging high-fidelity synthetic electric distribution system data from the SMART-DS project and transportation system data from OpenStreetMap, this testbed models the city of Greensboro, NC down to the household level. Moreover, the methodology and the supporting scripts released with the testbed allow adaption to other areas where high-fidelity geolocated OpenDSS datasets are available. After describing the components and usage of the testbed, we exemplify applications enabled by the testbed via two scenarios modeling the extreme stresses encountered during evacuations.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('greenevt_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2305.12722">link</a> ] [ Ref: <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.bib">bib</a>   <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.txt">txt</a> ] [ <a href="https://github.com/GreenEVT/GreenEVT">GitHub Repository</a> ]</p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>M. Alkhraijah, R. Harris, C. Coffrin, and <b>D.K. Molzahn</b>, "PowerModelsADA: A Framework for Solving Optimal Power Flow using Distributed Algorithms," to appear in <i>IEEE Transactions on Power Systems (Letters)</i>.<br />
+				<span id="pmada_year" class="abstract" style="display:none">
+					This letter presents PowerModelsADA, an open-source framework for solving Optimal Power Flow (OPF) problems using Alternating Distributed Algorithms (ADA). PowerModelsADA provides a framework to test, verify, and benchmark both existing and new ADAs. This paper demonstrates use cases for PowerModelsADA and validates its implementation with multiple OPF formulations.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('pmada_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_coffrin_molzahn-pmada.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10262198">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_coffrin_molzahn-pmada.bib">bib</a>   <a href="pubs/alkhraijah_harris_coffrin_molzahn-pmada.txt">txt</a> ] [ <a href="https://github.com/mkhraijah/PowerModelsADA.jl">GitHub Repository</a> ]</p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>I. Aravena, <b>D.K. Molzahn</b>, S. Zhang, F.E. Curtis, S. Tu, A. Waechter, E. Wei, E. Wong, A. Gholami, K. Sun, X.A. Sun, S.T. Elbert, J.T. Holzer, and A. Veeramany, "Recent Developments in Security-Constrained AC Optimal Power Flow: Overview of Challenge 1 in the ARPA-E Grid Optimization Competition," to appear in <i>Operations Research</i>, special issue on <i>Computational Advances in Short-Term Power System Operations</i>.<br />
+				<span id="go_intro_year" class="abstract" style="display:none">
+					The optimal power flow problem is central to many tasks in the design and operation of electric power grids. This problem seeks the minimum cost operating point for an electric power grid while satisfying both engineering requirements and physical laws describing how power flows through the electric network. By additionally considering the possibility of component failures and using an accurate AC power flow model of the electric network, the security-constrained AC optimal power flow (SC-AC-OPF) problem is of paramount practical relevance. To assess recent progress in solution algorithms for SC-AC-OPF problems and spur new innovations, the U.S. Department of Energy's Advanced Research Projects Agency-Energy (ARPA-E) organized Challenge 1 of the Grid Optimization (GO) competition. This paper describes the SC-AC-OPF problem formulation used in the competition, overviews historical developments and the state of the art in SC-AC-OPF algorithms, discusses the competition, and summarizes the algorithms used by the top three teams in Challenge 1 of the GO Competition (Teams gollnlp, GO-SNIP, and GMI-GO).
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('go_intro_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.pdf">pdf</a> ] [ <a href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2022.0315">link</a> ] [ Ref: <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.bib">bib</a>   <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>F.E. Curtis, <b>D.K. Molzahn</b>, S. Tu, A. W&auml;chter, E. Wei, and E. Wong, "A Decomposition Algorithm for Large-Scale Security-Constrained AC Optimal Power Flow," to appear in <i>Operations Research</i>, special issue on <i>Computational Advances in Short-Term Power System Operations</i>.<br /> <b>Description of Team GO-SNIP's algorithm which finished second overall in the Department of Energy's Grid Optimization Competition Challenge 1.</b> <br/>
+				<span id="scacopf_year" class="abstract" style="display:none">
+					A decomposition algorithm for solving large-scale security-constrained AC optimal power flow problems is presented. The formulation considered is the one used in the ARPA-E Grid Optimization (GO) Competition, Challenge 1, held from November 2018 through October 2019. The techniques found to be most effective in terms of performance in the challenge are presented, including strategies for contingency selection, fast contingency evaluation, handling complementarity constraints, avoiding issues related to degeneracy, and exploiting parallelism. The results of numerical experiments are provided to demonstrate the effectiveness of the proposed techniques as compared to alternative strategies.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('scacopf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/curtis_molzahn_tu_waechter_wei_wong-scacopf.pdf">pdf</a> ] [ <a href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2023.2453">link</a> ] [ Ref: <a href="pubs/curtis_molzahn_tu_waechter_wei_wong-scacopf.bib">bib</a>   <a href="pubs/curtis_molzahn_tu_waechter_wei_wong-scacopf.txt">txt</a> ] </p></li>
+		</span>
+  </div>
+  		<div class="tile scale-anm Year">
+			<span>
+				<li><p>S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and <b>D.K. Molzahn</b>, "Conditions for Estimation of Sensitivities of Voltage Magnitudes to Complex Power Injections," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+					<span id="recovering_sensitivities_year" class="abstract" style="display:none">
+						Voltage phase angle measurements are often unavailable from sensors in distribution networks and transmission network boundaries. Therefore, this  paper  addresses  the  conditions for  estimating sensitivities  of  voltage  magnitudes  with  respect  to  complex (active  and  reactive) electric power injections based on sensor measurements.  These  sensitivities  represent  submatrices  of  the inverse power flow Jacobian. We extend previous results to show that  the  sensitivities  of  a  bus  voltage  magnitude  with  respect  to active power injections are unique and different from those with respect  to  reactive  power. The classical Newton-Raphson power flow model is used to derive a novel representation of bus voltage magnitudes as an underdetermined linear operator of the active and reactive power injections&mdash;parameterized by the bus power factors. Two conditions that ensure the existence of unique complex power injections given voltage magnitudes are established for this underdetermined linear system, thereby compressing the solution space. The first is a sufficient condition based on the bus power factors. The second is a necessary and sufficient condition based on the system eigenvalues.  We use matrix completion theory to develop estimation methods for recovering sensitivity matrices with  varying levels  of  sensor  availability.  Simulations  verify  the  results  and demonstrate engineering use of the proposed methods.
+					</span>
+			</span>
+			<span style="cursor:auto;">
+				&emsp;[ <span onclick="showDiv('recovering_sensitivities_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10018530">link</a> ] [ Ref: <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.bib">bib</a>   <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.txt">txt</a> ] </p></li>
+			</span>
 		</div>
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
@@ -160,50 +306,17 @@
 		<div class="tile scale-anm Year">
 			<h2>Journal Papers</h2>
 		</div>
-	<div class="tile scale-anm Year">
+  	<div class="tile scale-anm Year">
 		<span>
-			<li><p>M. Alkhraijah, R. Harris, C. Coffrin, and <b>D.K. Molzahn</b>, "PowerModelsADA: A Framework for Solving Optimal Power Flow using Distributed Algorithms," to appear in <i>IEEE Transactions on Power Systems (Letters)</i>.<br />
-				<span id="pmada_year" class="abstract" style="display:none">
-					This letter presents PowerModelsADA, an open-source framework for solving Optimal Power Flow (OPF) problems using Alternating Distributed Algorithms (ADA). PowerModelsADA provides a framework to test, verify, and benchmark both existing and new ADAs. This paper demonstrates use cases for PowerModelsADA and validates its implementation with multiple OPF formulations.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('pmada_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_coffrin_molzahn-pmada.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10262198">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_coffrin_molzahn-pmada.bib">bib</a>   <a href="pubs/alkhraijah_harris_coffrin_molzahn-pmada.txt">txt</a> ] [ <a href="https://github.com/mkhraijah/PowerModelsADA.jl">GitHub Repository</a> ]</p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>I. Aravena, <b>D.K. Molzahn</b>, S. Zhang, F.E. Curtis, S. Tu, A. Waechter, E. Wei, E. Wong, A. Gholami, K. Sun, X.A. Sun, S.T. Elbert, J.T. Holzer, and A. Veeramany, "Recent Developments in Security-Constrained AC Optimal Power Flow: Overview of Challenge 1 in the ARPA-E Grid Optimization Competition," to appear in <i>Operations Research</i>, special issue on <i>Computational Advances in Short-Term Power System Operations</i>, 2023.<br />
-				<span id="go_intro_year" class="abstract" style="display:none">
-					The optimal power flow problem is central to many tasks in the design and operation of electric power grids. This problem seeks the minimum cost operating point for an electric power grid while satisfying both engineering requirements and physical laws describing how power flows through the electric network. By additionally considering the possibility of component failures and using an accurate AC power flow model of the electric network, the security-constrained AC optimal power flow (SC-AC-OPF) problem is of paramount practical relevance. To assess recent progress in solution algorithms for SC-AC-OPF problems and spur new innovations, the U.S. Department of Energy's Advanced Research Projects Agency-Energy (ARPA-E) organized Challenge 1 of the Grid Optimization (GO) competition. This paper describes the SC-AC-OPF problem formulation used in the competition, overviews historical developments and the state of the art in SC-AC-OPF algorithms, discusses the competition, and summarizes the algorithms used by the top three teams in Challenge 1 of the GO Competition (Teams gollnlp, GO-SNIP, and GMI-GO).
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('go_intro_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.pdf">pdf</a> ] [ <a href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2022.0315">link</a> ] [ Ref: <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.bib">bib</a>   <a href="pubs/aravena_molzahn_zhang_et_al-go_intro.txt">txt</a> ] </p></li>
-		</span>
-  </div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>O. Kuryatnikova, B. Ghaddar, and <b>D.K. Molzahn</b>, "Adjustable Robust Two-Stage Polynomial Optimization with Application to AC Optimal Power Flow," to appear in <i>SIAM Journal on Optimization</i>.<br />
+			<li><p>O. Kuryatnikova, B. Ghaddar, and <b>D.K. Molzahn</b>, "Two-Stage Robust Quadratic Optimization with Equalities and Its Application to Optimal Power Flow," <i>SIAM Journal on Optimization</i>, vol. 33, no. 4, pp. 2830-2857, December 2023.<br />
 				<span id="aro_two_stage_year" class="abstract" style="display:none">
-				In this work, we consider two-stage polynomial optimization problems under uncertainty. In the first stage, one needs to decide upon the values of a subset of optimization variables (control variables). In the second stage, the uncertainty is revealed and the rest of optimization variables (state variables) are set up as a solution to a known system of possibly non-linear equations. This type of problem occurs, for instance, in optimization for dynamical systems, such as electric power systems. We combine tools from polynomial and robust optimization to provide a framework for general adjustable robust polynomial optimization problems. In particular, we propose an iterative algorithm to build a sequence of (approximately) robustly feasible solutions with an improving objective value and verify robust feasibility or infeasibility of the resulting solution under a semialgebraic uncertainty set. At each iteration, the algorithm optimizes over a subset of the feasible set and uses affine approximations of the second-stage equations while preserving the non-linearity of other constraints. The algorithm allows for additional simplifications in case of possibly non-convex quadratic problems under ellipsoidal uncertainty. We implement our approach for AC Optimal Power Flow and demonstrate the performance of our proposed method on Matpower instances.
+				In this work, we consider two-stage quadratic optimization problems under ellipsoidal uncertainty. In the first stage, one needs to decide upon the values of a subset of optimization variables (control variables). In the second stage, the uncertainty is revealed, and the rest of the optimization variables (state variables) are set up as a solution to a known system of possibly nonlinear equations. This type of problem occurs, for instance, in optimization for dynamical systems, such as electric power systems as well as gas and water networks. We propose a convergent iterative algorithm to build a sequence of approximately robustly feasible solutions with an improving objective value. At each iteration, the algorithm optimizes over a subset of the feasible set and uses affine approximations of the second-stage equations while preserving the nonlinearity of other constraints. We implement our approach and demonstrate its performance on Matpower instances of AC optimal power flow. Although this paper focuses on quadratic problems, the approach is suitable for more general setups.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('aro_two_stage_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2104.03107">link</a> ] [ Ref: <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.bib">bib</a>   <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('aro_two_stage_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.pdf">pdf</a> ] [ <a href="https://epubs.siam.org/doi/full/10.1137/22M1469651">link</a> ] [ Ref: <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.bib">bib</a>   <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>F.E. Curtis, <b>D.K. Molzahn</b>, S. Tu, A. W&auml;chter, E. Wei, and E. Wong, "A Decomposition Algorithm for Large-Scale Security-Constrained AC Optimal Power Flow," to appear in <i>Operations Research</i>, special issue on <i>Computational Advances in Short-Term Power System Operations</i>, 2023.<br /> <b>Description of Team GO-SNIP's algorithm which finished second overall in the Department of Energy's Grid Optimization Competition Challenge 1.</b> <br/>
-				<span id="scacopf_year" class="abstract" style="display:none">
-					A decomposition algorithm for solving large-scale security-constrained AC optimal power flow problems is presented. The formulation considered is the one used in the ARPA-E Grid Optimization (GO) Competition, Challenge 1, held from November 2018 through October 2019. The techniques found to be most effective in terms of performance in the challenge are presented, including strategies for contingency selection, fast contingency evaluation, handling complementarity constraints, avoiding issues related to degeneracy, and exploiting parallelism. The results of numerical experiments are provided to demonstrate the effectiveness of the proposed techniques as compared to alternative strategies.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('scacopf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/curtis_molzahn_tu_waechter_wei_wong-scacopf.pdf">pdf</a> ] [ <a href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2023.2453">link</a> ] [ Ref: <a href="pubs/curtis_molzahn_tu_waechter_wei_wong-scacopf.bib">bib</a>   <a href="pubs/curtis_molzahn_tu_waechter_wei_wong-scacopf.txt">txt</a> ] </p></li>
-		</span>
-  </div>
 		<div class="tile scale-anm Year">
 			<span>
 				<li><p>F. Milano and <b>D.K. Molzahn</b>, "Forward to the EPSR Special Issue for PSCC 2022," <i>Electric Power Systems Research</i>, vol. 217, no. 109148, April 2023.<br />
@@ -212,17 +325,6 @@
 				&emsp; [ <a href="pubs/milano_molzahn-pscc2022.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779623000378">link</a> ] [ Ref: <a href="pubs/milano_molzahn-pscc2022.bib">bib</a>   <a href="pubs/milano_molzahn-pscc2022.txt">txt</a> ] </p></li>
 			</span>
 	  </div>
-		<div class="tile scale-anm Year">
-			<span>
-				<li><p>S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and <b>D.K. Molzahn</b>, "Conditions for Estimation of Sensitivities of Voltage Magnitudes to Complex Power Injections," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
-					<span id="recovering_sensitivities_year" class="abstract" style="display:none">
-						Voltage phase angle measurements are often unavailable from sensors in distribution networks and transmission network boundaries. Therefore, this  paper  addresses  the  conditions for  estimating sensitivities  of  voltage  magnitudes  with  respect  to  complex (active  and  reactive) electric power injections based on sensor measurements.  These  sensitivities  represent  submatrices  of  the inverse power flow Jacobian. We extend previous results to show that  the  sensitivities  of  a  bus  voltage  magnitude  with  respect  to active power injections are unique and different from those with respect  to  reactive  power. The classical Newton-Raphson power flow model is used to derive a novel representation of bus voltage magnitudes as an underdetermined linear operator of the active and reactive power injections&mdash;parameterized by the bus power factors. Two conditions that ensure the existence of unique complex power injections given voltage magnitudes are established for this underdetermined linear system, thereby compressing the solution space. The first is a sufficient condition based on the bus power factors. The second is a necessary and sufficient condition based on the system eigenvalues.  We use matrix completion theory to develop estimation methods for recovering sensitivity matrices with  varying levels  of  sensor  availability.  Simulations  verify  the  results  and demonstrate engineering use of the proposed methods.
-					</span>
-			</span>
-			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('recovering_sensitivities_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10018530">link</a> ] [ Ref: <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.bib">bib</a>   <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.txt">txt</a> ] </p></li>
-			</span>
-		</div>
 	<div class="tile scale-anm Year">
 		<span>
 			<li><p>D. Turizo and <b>D.K. Molzahn</b>, "Invertibility Conditions for the Admittance Matrices of Balanced Power Systems," <i>IEEE Transactions on Power Systems</i>, vol. 38, no. 4, pp. 3841-3853, July 2023.<br />
@@ -261,13 +363,13 @@
 		</div>
   <div class="tile scale-anm Year">
 		<span>
-			<li><p>R. Harris, A. Banerjee, and <b>D.K. Molzahn</b>, "Synthetic Test Case for Ukraine's Power Grid," to appear in <i>55th North American Power Symposium (NAPS)</i>, October 15-17, 2023.<br />
+			<li><p>R. Harris, A. Banerjee, and <b>D.K. Molzahn</b>, "Synthetic Test Case for Ukraine's Power Grid," <i>55th North American Power Symposium (NAPS)</i>, October 15-17, 2023.<br />
 				<span id="ukraine_year" class="abstract" style="display:none">
 					Power systems research requires realistic test cases to demonstrate and benchmark algorithmic innovations. However, to keep power grid information secure, much of the data for actual systems cannot be publicly released. This motivates the creation of synthetic test cases designed to match the characteristics of actual power grids. By only using publicly available data, these synthetic test cases can be freely released for research and educational purposes. Motivated by the ongoing conflict in Ukraine, this paper presents a synthetic test case for the Ukrainian electric transmission system. With the ability to run power flow and other analyses, this test case is relevant to emerging research and educational activities related to power grid security. To develop the test case, we leveraged publicly available data on population centers, generators, and transmission topology and voltage levels along with synthetic test case creation methodologies from recent literature. After describing the process used to develop this test case, this paper presents validation results using several widely accepted criteria for assessing the test case's realism. As an illustrative application, we demonstrate one use case by solving a bilevel linearization of the $N-k$ interdiction problem to identify critical sets of line failures which cause the most load shedding.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ukraine_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('ukraine_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] [ <a href="https://github.com/rjuly7/ukraine_test_case">GitHub Repository</a> ]</p></li>
 		</span>
   </div>
 		<div class="tile scale-anm Year">
@@ -1503,9 +1605,75 @@
 		<h2>Preprints</h2>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, K.R. Davis, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow through Improved Linear Convex Envelopes," submitted.<br />
+				<span id="QCtightening_type" class="abstract" style="display:none">
+					AC optimal power flow (AC OPF) is a fundamental problem in power system operations. Accurately modeling the network physics via the AC power flow equations makes AC OPF a challenging nonconvex problem. To search for global optima, recent research has developed various convex relaxations that bound the optimal objective values of AC OPF problems. The QC relaxation convexifies the AC OPF problem by enclosing the non-convex terms within convex envelopes. The QC relaxation's accuracy strongly depends on the tightness of these envelopes. This paper proposes two improvements for tightening QC relaxations of OPF problems. We first consider a particular nonlinear function whose projections are the nonlinear expressions appearing in the polar representation of the power flow equations. We construct a polytope-shaped convex envelope around this nonlinear function and derive convex expressions for the nonlinear terms using its projections. Second, we use sine and cosine expression properties, along with changes in their curvature, to tightness this convex envelope. We also propose a coordinate transformation to tighten the envelope by rotating power flow equations based on individual bus-specific angles. We compare these enhancements to a state-of-the-art QC relaxation method using PGLib-OPF test cases, revealing improved optimality gaps in 68% of the cases.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('QCtightening_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_davis_crow-QCtightening.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2310.14463">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_davis_crow-QCtightening.bib">bib</a>   <a href="pubs/narimani_molzahn_davis_crow-QCtightening.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>M. Alkhraijah, R. Harris, S. Litchfield, D. Huggins, and <b>D.K. Molzahn</b>, "Detecting Shared Data Manipulation in Distributed Optimization Algorithms," submitted.<br />
+				<span id="admmvulnerability_type" class="abstract" style="display:none">
+					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive two sufficient conditions for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the detection conditions' performance on three data manipulation strategies we previously proposed: simple, feedback, and bilevel optimization attacks. We then extend these three data manipulation strategies to avoid detection by considering both the detection conditions and a neural network (NN) detection model in the attacker's decision process. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection conditions successfully detect most of the data manipulation attacks. However, a bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack. 
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('admmvulnerability_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2310.13252">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," submitted.<br />
+				<span id="convergetol_type" class="abstract" style="display:none">
+					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate computing agents to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF generator dispatch is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. The proposed approach enables control of the trade-off between computational speed, which improves as the convergence tolerance increases, and distributed OPF solution cost, which increases with convergence tolerance due to tightened constraints, while ensuring feasibility.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('convergetol_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.08305">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<!--
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Piansky, G. Stinchfield, A. Kody, <b>D.K. Molzahn</b>, and J.P. Watson, "Long Duration Battery Sizing, Siting, and Operation Under Wildfire Risk Using Progressive Hedging," submitted.<br />
+				<span id="battsizesite_type" class="abstract" style="display:none">
+					Battery sizing and siting problems are computationally challenging due to the need to make long-term planning decisions that are cognizant of short-term operational decisions. This paper considers sizing, siting, and operating batteries in a power grid to maximize their benefits, including price arbitrage and load shed mitigation, during both normal operations and periods with high wildfire ignition risk. We formulate a multi-scenario optimization problem for long duration battery storage while considering the possibility of load shedding during Public Safety Power Shutoff (PSPS) events that de-energize lines to mitigate severe wildfire ignition risk. To enable a computationally scalable solution of this problem with many scenarios of wildfire risk and power injection variability, we develop a customized temporal decomposition method based on a progressive hedging framework. Extending traditional progressive hedging techniques, we consider coupling in both placement variables across all scenarios and state-of-charge variables at temporal boundaries. This enforces consistency across scenarios while enabling parallel computations despite both spatial and temporal coupling. The proposed decomposition facilitates efficient and scalable modeling of a full year of hourly operational decisions to inform the sizing and siting of batteries. With this decomposition, we model a year of hourly operational decisions to inform optimal battery placement for a 240-bus WECC model in under 19 minutes of wall-clock computing time.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('battsizesite_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.bib">bib</a>   <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+-->
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>P. Buason, S. Misra, J.P. Watson, and <b>D.K. Molzahn</b>, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," submitted.<br />
+				<span id="secondordersens_type" class="abstract" style="display:none">
+					The power flow equations are fundamental to power system planning, analysis, and control. However, their inherent non-linearity and non-convexity can pose significant challenges when solving problems that involve these equations. To address these challenges, linear approximations are frequently used to simplify computations at the potential cost of compromising accuracy and feasibility. Typical power flow approximations rely on general assumptions that are not always valid. Additionally, many existing linear approximations, such as the first-order Taylor series, overlook important information contained within higher-order terms. To gain a deeper understanding of the relationships among variables within a specific operational range and to achieve more accurate approximations, this paper considers a second-order sensitivity analysis of the power flow equations. By modeling the curvature of the power flow manifold, this paper uses the second-order sensitivities in an importance sampling method to improve the accuracy of adaptive power flow linearizations. Furthermore, this paper explores approximations formulated as rational functions with linear numerators and denominators that can be rewritten as linear constraints in power system optimization problems. These approximations, inspired by the Pad\'e approximant, utilize second-order power flow sensitivities. This approach is extended to enhance accuracy beyond what linear functions can achieve across various operational scenarios, and can also be constructed to be conservative (over- or under-estimate a quantity of interest).
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('secondordersens_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Optimizing Parameters of the DC Power Flow," submitted.<br />
+				<span id="dcparam_type" class="abstract" style="display:none">
+					Many power system operation and planning problems use the DC power flow approximation to address computational challenges from the nonlinearity of the AC power flow equations. The DC power flow simplifies the AC power flow equations to a linear form that relates active power flows to phase angle differences across branches, parameterized by coefficients based on the branches' susceptances. Inspired by techniques for training machine learning models, this paper proposes an algorithm that seeks optimal coefficient and bias parameters to improve the DC power flow approximation's accuracy. Specifically, the proposed algorithm selects the coefficient and bias parameter values that minimize the discrepancy, across a specified set of operational scenarios, between the power flows given by the DC approximation and the power flows from the AC equations. Gradient-based optimization methods like Broyden-Fletcher-Goldfarb-Shanno (BFGS), Limited-Memory BFGS (L-BFGS), and Truncated Newton Conjugate-Gradient (TNC) enable solution of the proposed algorithm for large systems. After an off-line training phase, the optimized parameters are used to improve the accuracy of the DC power flow during on-line computations. Numerical results show several orders of magnitude improvements in accuracy relative to a hot-start DC power flow approximation across a range of test cases.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dcparam_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ <a href="https://arxiv.org/pdf/2310.00447.pdf">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
 			<span>
 				<li><p>A. Jalilian, B. Taheri, and <b>D.K. Molzahn</b>, "Co-Optimization of Damage Assessment and Restoration: A Resilience-Driven Dynamic Crew Allocation for Power Distribution Systems," submitted.<br />
-					<span id="crewallocation_year" class="abstract" style="display:none">
+					<span id="crewallocation_type" class="abstract" style="display:none">
 						This study introduces a mixed-integer linear programming (MILP) model, effectively co-optimizing patrolling, damage assessment, fault isolation, repair, and load re-energization processes. The model is designed to solve a vital operational conundrum: deciding between further network exploration to obtain more comprehensive data or addressing the repair of already identified faults. As information on the fault location and repair timelines becomes available, the model allows for dynamic adaptation of crew dispatch decisions. In addition, this study proposes a conservative power flow constraint set that considers two network loading scenarios within the final network configuration. This approach results in the determination of an upper and a lower bound for node voltage levels and an upper bound for power line flows. To underscore the practicality and scalability of the proposed model, we have demonstrated its application using IEEE 123-node and 8500-node test systems, where it delivered promising results.
 					</span>
 			</span>
@@ -1513,17 +1681,6 @@
 				&emsp;[ <span onclick="showDiv('crewallocation_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/jalilian_taheri_molzahn-crewallocation.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2309.08704">link</a> ] [ Ref: <a href="pubs/jalilian_taheri_molzahn-crewallocation">bib</a>   <a href="pubs/jalilian_taheri_molzahn-crewallocation.txt">txt</a> ] </p></li>
 			</span>
 		</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>G. Nilsson, A.D. Owen Aquino, S. Coogan, and <b>D.K. Molzahn</b>, "GreenEVT: Greensboro Electric Vehicle Testbed," submitted.<br />
-				<span id="greenevt_type" class="abstract" style="display:none">
-					The ongoing electrification of the transportation fleet will increase the load on the electric power grid. Since both the transportation network and the power grid already experience periods of significant stress, joint analyses of both infrastructures will most likely be necessary to ensure acceptable operation in the future. To enable such analyses, this paper presents an open-source testbed that jointly simulates high-fidelity models of both the electric distribution system and the transportation network. The testbed utilizes two open-source simulators, OpenDSS to simulate the electric distribution system and the microscopic traffic simulator SUMO to simulate the traffic dynamics. Electric vehicle charging links the electric distribution system and the transportation network models at vehicle locations determined using publicly available parcel data. Leveraging high-fidelity synthetic electric distribution system data from the SMART-DS project and transportation system data from OpenStreetMap, this testbed models the city of Greensboro, NC down to the household level. Moreover, the methodology and the supporting scripts released with the testbed allow adaption to other areas where high-fidelity geolocated OpenDSS datasets are available. After describing the components and usage of the testbed, we exemplify applications enabled by the testbed via two scenarios modeling the extreme stresses encountered during evacuations.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('greenevt_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2305.12722">link</a> ] [ Ref: <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.bib">bib</a>   <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.txt">txt</a> ] [ <a href="https://github.com/GreenEVT/GreenEVT">GitHub Repository</a> ] </p></li>
-		</span>
-	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC Power Flow Feasibility Restoration via a State Estimation-Based Post-Processing Algorithm," submitted.<br />
@@ -1557,7 +1714,18 @@
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
-		<h2>2023</h2>
+		<h2>2024</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>G. Nilsson, A.D. Owen Aquino, S. Coogan, and <b>D.K. Molzahn</b>, "GreenEVT: Greensboro Electric Vehicle Testbed," to appear in <i>IEEE Systems Journal</i>.<br />
+				<span id="greenevt_type" class="abstract" style="display:none">
+					The ongoing electrification of the transportation fleet will increase the load on the electric power grid. Since both the transportation network and the power grid already experience periods of significant stress, joint analyses of both infrastructures will most likely be necessary to ensure acceptable operation in the future. To enable such analyses, this paper presents an open-source testbed that jointly simulates high-fidelity models of both the electric distribution system and the transportation network. The testbed utilizes two open-source simulators, OpenDSS to simulate the electric distribution system and the microscopic traffic simulator SUMO to simulate the traffic dynamics. Electric vehicle charging links the electric distribution system and the transportation network models at vehicle locations determined using publicly available parcel data. Leveraging high-fidelity synthetic electric distribution system data from the SMART-DS project and transportation system data from OpenStreetMap, this testbed models the city of Greensboro, NC down to the household level. Moreover, the methodology and the supporting scripts released with the testbed allow adaption to other areas where high-fidelity geolocated OpenDSS datasets are available. After describing the components and usage of the testbed, we exemplify applications enabled by the testbed via two scenarios modeling the extreme stresses encountered during evacuations.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('greenevt_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2305.12722">link</a> ] [ Ref: <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.bib">bib</a>   <a href="pubs/nilsson_owen_aquino_coogan_molzahn-GreenEVT.txt">txt</a> ] [ <a href="https://github.com/GreenEVT/GreenEVT">GitHub Repository</a> ] </p></li>
+		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
@@ -1583,17 +1751,6 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>O. Kuryatnikova, B. Ghaddar, and <b>D.K. Molzahn</b>, "Adjustable Robust Two-Stage Polynomial Optimization with Application to AC Optimal Power Flow," to appear in <i>SIAM Journal on Optimization</i>.<br />
-				<span id="aro_two_stage_type" class="abstract" style="display:none">
-				In this work, we consider two-stage polynomial optimization problems under uncertainty. In the first stage, one needs to decide upon the values of a subset of optimization variables (control variables). In the second stage, the uncertainty is revealed and the rest of optimization variables (state variables) are set up as a solution to a known system of possibly non-linear equations. This type of problem occurs, for instance, in optimization for dynamical systems, such as electric power systems. We combine tools from polynomial and robust optimization to provide a framework for general adjustable robust polynomial optimization problems. In particular, we propose an iterative algorithm to build a sequence of (approximately) robustly feasible solutions with an improving objective value and verify robust feasibility or infeasibility of the resulting solution under a semialgebraic uncertainty set. At each iteration, the algorithm optimizes over a subset of the feasible set and uses affine approximations of the second-stage equations while preserving the non-linearity of other constraints. The algorithm allows for additional simplifications in case of possibly non-convex quadratic problems under ellipsoidal uncertainty. We implement our approach for AC Optimal Power Flow and demonstrate the performance of our proposed method on Matpower instances.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('aro_two_stage_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2104.03107">link</a> ] [ Ref: <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.bib">bib</a>   <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>F.E. Curtis, <b>D.K. Molzahn</b>, S. Tu, A. W&auml;chter, E. Wei, and E. Wong, "A Decomposition Algorithm for Large-Scale Security-Constrained AC Optimal Power Flow," to appear in <i>Operations Research</i>, special issue on <i>Computational Advances in Short-Term Power System Operations</i>, 2023.<br /> <b>Description of Team GO-SNIP's algorithm which finished second overall in the Department of Energy's Grid Optimization Competition Challenge 1.</b> <br/>
 				<span id="scacopf_type" class="abstract" style="display:none">
 					A decomposition algorithm for solving large-scale security-constrained AC optimal power flow problems is presented. The formulation considered is the one used in the ARPA-E Grid Optimization (GO) Competition, Challenge 1, held from November 2018 through October 2019. The techniques found to be most effective in terms of performance in the challenge are presented, including strategies for contingency selection, fast contingency evaluation, handling complementarity constraints, avoiding issues related to degeneracy, and exploiting parallelism. The results of numerical experiments are provided to demonstrate the effectiveness of the proposed techniques as compared to alternative strategies.
@@ -1605,14 +1762,6 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>F. Milano and <b>D.K. Molzahn</b>, "Forward to the EPSR Special Issue for PSCC 2022," <i>Electric Power Systems Research</i>, vol. 217, no. 109148, April 2023.<br />
-		</span>
-		<span style="cursor:auto;">
-			&emsp; [ <a href="pubs/milano_molzahn-pscc2022.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779623000378">link</a> ] [ Ref: <a href="pubs/milano_molzahn-pscc2022.bib">bib</a>   <a href="pubs/milano_molzahn-pscc2022.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and <b>D.K. Molzahn</b>, "Conditions for Estimation of Sensitivities of Voltage Magnitudes to Complex Power Injections," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
 				<span id="recovering_sensitivities_type" class="abstract" style="display:none">
 					Voltage phase angle measurements are often unavailable from sensors in distribution networks and transmission network boundaries. Therefore, this  paper  addresses  the  conditions for  estimating sensitivities  of  voltage  magnitudes  with  respect  to  complex (active  and  reactive) electric power injections based on sensor measurements.  These  sensitivities  represent  submatrices  of  the inverse power flow Jacobian. We extend previous results to show that  the  sensitivities  of  a  bus  voltage  magnitude  with  respect  to active power injections are unique and different from those with respect  to  reactive  power. The classical Newton-Raphson power flow model is used to derive a novel representation of bus voltage magnitudes as an underdetermined linear operator of the active and reactive power injections&mdash;parameterized by the bus power factors. Two conditions that ensure the existence of unique complex power injections given voltage magnitudes are established for this underdetermined linear system, thereby compressing the solution space. The first is a sufficient condition based on the bus power factors. The second is a necessary and sufficient condition based on the system eigenvalues.  We use matrix completion theory to develop estimation methods for recovering sensitivity matrices with  varying levels  of  sensor  availability.  Simulations  verify  the  results  and demonstrate engineering use of the proposed methods.
@@ -1620,6 +1769,28 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('recovering_sensitivities_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10018530">link</a> ] [ Ref: <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.bib">bib</a>   <a href="pubs/talkington_turizo_grijalva_fernandez_molzahn-recovering_sensitivities.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<h2>2023</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>O. Kuryatnikova, B. Ghaddar, and <b>D.K. Molzahn</b>, "Two-Stage Robust Quadratic Optimization with Equalities and Its Application to Optimal Power Flow," <i>SIAM Journal on Optimization</i>, vol. 33, no. 4, pp. 2830-2857, December 2023.<br />
+				<span id="aro_two_stage_type" class="abstract" style="display:none">
+				In this work, we consider two-stage quadratic optimization problems under ellipsoidal uncertainty. In the first stage, one needs to decide upon the values of a subset of optimization variables (control variables). In the second stage, the uncertainty is revealed, and the rest of the optimization variables (state variables) are set up as a solution to a known system of possibly nonlinear equations. This type of problem occurs, for instance, in optimization for dynamical systems, such as electric power systems as well as gas and water networks. We propose a convergent iterative algorithm to build a sequence of approximately robustly feasible solutions with an improving objective value. At each iteration, the algorithm optimizes over a subset of the feasible set and uses affine approximations of the second-stage equations while preserving the nonlinearity of other constraints. We implement our approach and demonstrate its performance on Matpower instances of AC optimal power flow. Although this paper focuses on quadratic problems, the approach is suitable for more general setups.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('aro_two_stage_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.pdf">pdf</a> ] [ <a href="https://epubs.siam.org/doi/full/10.1137/22M1469651">link</a> ] [ Ref: <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.bib">bib</a>   <a href="pubs/kuryatnikova_ghaddar_molzahn-aro.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>F. Milano and <b>D.K. Molzahn</b>, "Forward to the EPSR Special Issue for PSCC 2022," <i>Electric Power Systems Research</i>, vol. 217, no. 109148, April 2023.<br />
+		</span>
+		<span style="cursor:auto;">
+			&emsp; [ <a href="pubs/milano_molzahn-pscc2022.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779623000378">link</a> ] [ Ref: <a href="pubs/milano_molzahn-pscc2022.bib">bib</a>   <a href="pubs/milano_molzahn-pscc2022.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2109,10 +2280,39 @@
 	<div class="tile scale-anm Type" style="display:none">
     <a name="conferences"><h1>Conference Proceedings</h1></a>
   </div>
-	<!-- <div class="tile scale-anm Type" style="display:none">
+	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
--->
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Gupta, P. Buason, and <b>D.K. Molzahn</b>, "Fairness-aware Photovoltaic Generation Limits for Voltage Regulation in Power Distribution Networks using Conservative Linear Approximations," submitted.<br />
+				<span id="fairness_pv_limit_type" class="abstract" style="display:none">
+					This paper proposes a framework for fairly curtailing photovoltaic (PV) plants in response to the over-voltage problem in PV-rich distribution networks. The framework imposes PV generation limits to avoid overvoltages. These limits are computed a day ahead of real-time operations by solving an offline stochastic optimization problem using forecasted scenarios for PV generation and load demand. The framework minimizes the overall curtailment while considering fairness by reducing disparities in curtailments among different PV owners. We model the distribution grid constraints using a conservative linear approximation (CLA) of the AC power flow equations which is computed using a set of sampled power injections from the day-ahead predicted scenarios. The proposed framework is numerically validated on a CIGRE benchmark network interfaced with a large number of PV plants. We compare the performance of the proposed framework versus an alternative formulation that does not incorporate fairness considerations. To this end, we assess tradeoffs between fairness, as quantified with the Jain Fairness Index (JFI), and the total curtailed energy. 
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('fairness_pv_limit_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.pdf">pdf</a> ] [ Ref: <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.bib">bib</a>   <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>A.D. Owen Aquino, S. Talkington, and <b>D.K. Molzahn</b>, "Managing Vehicle Charging during Emergencies via Conservative Distribution System Modeling," submitted.<br />
+				<span id="EVacuation_feeder_type" class="abstract" style="display:none">
+					Combinatorial distribution system optimization problems, such as scheduling electric vehicle (EV) charging during evacuations, present significant computational challenges. These challenges stem from the large numbers of constraints, continuous variables, and discrete variables, coupled with the  unbalanced nature of distribution systems. In response to the escalating frequency of extreme events impacting electric power systems, this paper introduces a method that integrates sample-based conservative linear power flow approximations (CLAs) into an optimization framework. In particular, this integration aims to ameliorate the aforementioned challenges of distribution system optimization in the context of efficiently minimizing the charging time required for EVs in urban evacuation scenarios.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('EVacuation_feeder_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.16975">link</a> ] [ Ref: <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.bib">bib</a>   <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC Power Flow Informed Parameter Learning for DC Power Flow Network Equivalents," submitted.<br />
+				<span id="DCequivalents_type" class="abstract" style="display:none">
+					This paper presents an algorithm to optimize the parameters of power systems equivalents to enhance the accuracy of the DC power flow approximation in reduced networks. Based on a zonal division of the network, the algorithm produces a reduced power system equivalent that captures inter-zonal flows with aggregated buses and equivalent transmission lines. The algorithm refines coefficient and bias parameters for the DC power flow model of the reduced network, aiming to minimize discrepancies between inter-zonal flows in DC and AC power flow results. Using optimization methods like BFGS, L-BFGS, and TNC in an offline training phase, these parameters boost the accuracy of online DC power flow computations. In contrast to existing network equivalencing methods, the proposed algorithm optimizes accuracy over a specified range of operation as opposed to only considering a single nominal point. Numerical tests demonstrate substantial accuracy improvements over traditional equivalencing and approximation methods.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('DCequivalents_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.13104">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 <div class="tile scale-anm Type" style="display:none">
 	<h2>2024</h2>
 </div>
@@ -2132,13 +2332,13 @@
 </div>
   <div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>R. Harris, A. Banerjee, and <b>D.K. Molzahn</b>, "Synthetic Test Case for Ukraine's Power Grid," to appear in <i>55th North American Power Symposium (NAPS)</i>, October 15-17, 2023.<br />
+			<li><p>R. Harris, A. Banerjee, and <b>D.K. Molzahn</b>, "Synthetic Test Case for Ukraine's Power Grid," <i>55th North American Power Symposium (NAPS)</i>, October 15-17, 2023.<br />
 				<span id="ukraine_type" class="abstract" style="display:none">
 					Power systems research requires realistic test cases to demonstrate and benchmark algorithmic innovations. However, to keep power grid information secure, much of the data for actual systems cannot be publicly released. This motivates the creation of synthetic test cases designed to match the characteristics of actual power grids. By only using publicly available data, these synthetic test cases can be freely released for research and educational purposes. Motivated by the ongoing conflict in Ukraine, this paper presents a synthetic test case for the Ukrainian electric transmission system. With the ability to run power flow and other analyses, this test case is relevant to emerging research and educational activities related to power grid security. To develop the test case, we leveraged publicly available data on population centers, generators, and transmission topology and voltage levels along with synthetic test case creation methodologies from recent literature. After describing the process used to develop this test case, this paper presents validation results using several widely accepted criteria for assessing the test case's realism. As an illustrative application, we demonstrate one use case by solving a bilevel linearization of the $N-k$ interdiction problem to identify critical sets of line failures which cause the most load shedding.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ukraine_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('ukraine_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] [ <a href="https://github.com/rjuly7/ukraine_test_case">GitHub Repository</a> ]</p></li>
 		</span>
   </div>
 <div class="tile scale-anm Type" style="display:none">
