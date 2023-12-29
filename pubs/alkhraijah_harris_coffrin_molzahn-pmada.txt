@@ -1,1 +1,1 @@
-M. Alkhraijah, R. Harris, C. Coffrin, and D.K. Molzahn, "PowerModelsADA: A Framework for Solving Optimal Power Flow using Distributed Algorithms," to appear in IEEE Transactions on Power Systems, 2023.
+M. Alkhraijah, R. Harris, C. Coffrin, and D.K. Molzahn, "PowerModelsADA: A Framework for Solving Optimal Power Flow using Distributed Algorithms," IEEE Transactions on Power Systems, vol. 39, no. 1, pp. 2357-2360, January 2024.

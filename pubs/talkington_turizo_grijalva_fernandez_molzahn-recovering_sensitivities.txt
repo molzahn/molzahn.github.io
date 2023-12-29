@@ -1,1 +1,1 @@
-S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and D.K. Molzahn, "Conditions for Estimation of Sensitivities of Voltage Magnitudes to Complex Power Injections", submitted.
+S. Talkington, D. Turizo, S. Grijalva, J. Fernandez, and D.K. Molzahn, "Conditions for Estimation of Sensitivities of Voltage Magnitudes to Complex Power Injections", IEEE Transactions on Power Systems, vol. 39, no. 1, pp. 478-491, January 2024.
