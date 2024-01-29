@@ -1,0 +1,1 @@
+M. Alkhraijah and D.K. Molzahn, "A Fault-Tolerant Distributed Termination Method for Distributed Optimization Algorithms", submitted.
