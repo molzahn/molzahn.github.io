@@ -82,6 +82,16 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
+			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Improving Fairness in Photovoltaic Curtailments via Daily Topology Reconfiguration for Voltage Control in Power Distribution Networks," submitted.<br />
+				<span id="gupta_molzahn-PV_topology_fairness_year" class="abstract" style="display:none">
+					In PV-rich power distribution systems, over-voltage issues are often addressed by curtailing excess generation from PV plants (in addition to reactive power control), raising fairness concerns. Existing fairness-aware control schemes tackle this problem by incorporating fairness objectives into the cost function. However, such schemes result in increased overall curtailments. This paper proposes a solution through daily topology reconfiguration, ensuring that different PV plants face varying grid conditions each day, leading to different curtailment levels and enhancing fairness. We illustrate that implementing this approach enhances overall fairness without significantly increasing overall curtailments. The optimization problem involves two stages. The day-ahead stage optimizes the network topology using day-ahead forecasts of PV generation and demand, minimizing net curtailment and accounting for fairness based on curtailments from prior days. The real-time stage implements the optimized topology and computes active and reactive power setpoints for the PV plants. Day-ahead grid constraints are modeled using LinDistFlow, and real-time control employs a linearized model with a first-order Taylor approximation. The proposed scheme is numerically validated on several benchmark test cases. Results are compared using the Jain Fairness Index, considering fairness and reconfiguration scenarios.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('gupta_molzahn-PV_topology_fairness_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-PV_topology_fairness.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2403.07853">link</a> ] [ Ref: <a href="pubs/gupta_molzahn-PV_topology_fairness.bib">bib</a>   <a href="pubs/gupta_molzahn-PV_topology_fairness.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
 			<li><p>M. Alkhraijah and <b>D.K. Molzahn</b>, "A Fault-Tolerant Distributed Termination Method for Distributed Optimization Algorithms," submitted.<br />
 				<span id="dist_termination_year" class="abstract" style="display:none">
 					This paper proposes a fully distributed termination method for distributed optimization algorithms solved by multiple agents. The proposed method guarantees terminating a distributed optimization algorithm after satisfying the global termination criterion using information from local computations and neighboring agents. The proposed method requires additional iterations after satisfying the global terminating criterion to communicate the termination status. The number of additional iterations is bounded by the diameter of the communication network. This paper also proposes a fault-tolerant extension of this termination method that prevents early termination due to faulty agents or communication errors. We provide a proof of the method's correctness and demonstrate the proposed method by solving the optimal power flow problem for electric power grids using the alternating direction method of multipliers.
@@ -104,7 +114,7 @@
 		<span>
 			<li><p>M. Alkhraijah, R. Harris, S. Litchfield, D. Huggins, and <b>D.K. Molzahn</b>, "Detecting Shared Data Manipulation in Distributed Optimization Algorithms," submitted.<br />
 				<span id="admmvulnerability_year" class="abstract" style="display:none">
-					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive two sufficient conditions for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the detection conditions' performance on three data manipulation strategies we previously proposed: simple, feedback, and bilevel optimization attacks. We then extend these three data manipulation strategies to avoid detection by considering both the detection conditions and a neural network (NN) detection model in the attacker's decision process. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection conditions successfully detect most of the data manipulation attacks. However, a bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack. 
+					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive two sufficient conditions for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the detection conditions' performance on three data manipulation strategies we previously proposed: simple, feedback, and bilevel optimization attacks. We then extend these three data manipulation strategies to avoid detection by considering both the detection conditions and a neural network (NN) detection model in the attacks. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection conditions successfully detect most of the data manipulation attacks. However, a bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack.
 				</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('admmvulnerability_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2310.13252">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
@@ -114,27 +124,14 @@
 		<span>
 			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," submitted.<br />
 				<span id="convergetol_year" class="abstract" style="display:none">
-					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate computing agents to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF generator dispatch is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. The proposed approach enables control of the trade-off between computational speed, which improves as the convergence tolerance increases, and distributed OPF solution cost, which increases with convergence tolerance due to tightened constraints, while ensuring feasibility.
+					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate controllers to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF solution is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. While ensuring feasibility, the proposed approach enables control of the trade-off between computational speed, which improves with looser convergence tolerance, and distributed OPF solution cost, which degrades with looser convergence tolerance due to tightened constraints.
 				</span>
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('convergetol_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.08305">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	<!--
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>R. Piansky, G. Stinchfield, A. Kody, <b>D.K. Molzahn</b>, and J.P. Watson, "Long Duration Battery Sizing, Siting, and Operation Under Wildfire Risk Using Progressive Hedging," submitted.<br />
-				<span id="battsizesite_year" class="abstract" style="display:none">
-					Battery sizing and siting problems are computationally challenging due to the need to make long-term planning decisions that are cognizant of short-term operational decisions. This paper considers sizing, siting, and operating batteries in a power grid to maximize their benefits, including price arbitrage and load shed mitigation, during both normal operations and periods with high wildfire ignition risk. We formulate a multi-scenario optimization problem for long duration battery storage while considering the possibility of load shedding during Public Safety Power Shutoff (PSPS) events that de-energize lines to mitigate severe wildfire ignition risk. To enable a computationally scalable solution of this problem with many scenarios of wildfire risk and power injection variability, we develop a customized temporal decomposition method based on a progressive hedging framework. Extending traditional progressive hedging techniques, we consider coupling in both placement variables across all scenarios and state-of-charge variables at temporal boundaries. This enforces consistency across scenarios while enabling parallel computations despite both spatial and temporal coupling. The proposed decomposition facilitates efficient and scalable modeling of a full year of hourly operational decisions to inform the sizing and siting of batteries. With this decomposition, we model a year of hourly operational decisions to inform optimal battery placement for a 240-bus WECC model in under 19 minutes of wall-clock computing time.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('battsizesite_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.bib">bib</a>   <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.txt">txt</a> ] </p></li>
-		</span>
-	</div>
--->
-	<div class="tile scale-anm Year">
+		<div class="tile scale-anm Year">
 		<span>
 			<li><p>P. Buason, S. Misra, J.P. Watson, and <b>D.K. Molzahn</b>, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," submitted.<br />
 				<span id="secondordersens_year" class="abstract" style="display:none">
@@ -147,17 +144,6 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Optimizing Parameters of the DC Power Flow," submitted.<br />
-				<span id="dcparam_year" class="abstract" style="display:none">
-					Many power system operation and planning problems use the DC power flow approximation to address computational challenges from the nonlinearity of the AC power flow equations. The DC power flow simplifies the AC power flow equations to a linear form that relates active power flows to phase angle differences across branches, parameterized by coefficients based on the branches' susceptances. Inspired by techniques for training machine learning models, this paper proposes an algorithm that seeks optimal coefficient and bias parameters to improve the DC power flow approximation's accuracy. Specifically, the proposed algorithm selects the coefficient and bias parameter values that minimize the discrepancy, across a specified set of operational scenarios, between the power flows given by the DC approximation and the power flows from the AC equations. Gradient-based optimization methods like Broyden-Fletcher-Goldfarb-Shanno (BFGS), Limited-Memory BFGS (L-BFGS), and Truncated Newton Conjugate-Gradient (TNC) enable solution of the proposed algorithm for large systems. After an off-line training phase, the optimized parameters are used to improve the accuracy of the DC power flow during on-line computations. Numerical results show several orders of magnitude improvements in accuracy relative to a hot-start DC power flow approximation across a range of test cases.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('dcparam_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ <a href="https://arxiv.org/pdf/2310.00447.pdf">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Year">
-		<span>
 			<li><p>A. Jalilian, B. Taheri, and <b>D.K. Molzahn</b>, "Co-Optimization of Damage Assessment and Restoration: A Resilience-Driven Dynamic Crew Allocation for Power Distribution Systems," submitted.<br />
 				<span id="crewallocation_year" class="abstract" style="display:none">
 					This study introduces a mixed-integer linear programming (MILP) model, effectively co-optimizing patrolling, damage assessment, fault isolation, repair, and load re-energization processes. The model is designed to solve a vital operational conundrum: deciding between further network exploration to obtain more comprehensive data or addressing the repair of already identified faults. As information on the fault location and repair timelines becomes available, the model allows for dynamic adaptation of crew dispatch decisions. In addition, this study proposes a conservative power flow constraint set that considers two network loading scenarios within the final network configuration. This approach results in the determination of an upper and a lower bound for node voltage levels and an upper bound for power line flows. To underscore the practicality and scalability of the proposed model, we have demonstrated its application using IEEE 123-node and 8500-node test systems, where it delivered promising results.
@@ -165,17 +151,6 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('crewallocation_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/jalilian_taheri_molzahn-crewallocation.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2309.08704">link</a> ] [ Ref: <a href="pubs/jalilian_taheri_molzahn-crewallocation.bib">bib</a>   <a href="pubs/jalilian_taheri_molzahn-crewallocation.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC Power Flow Feasibility Restoration via a State Estimation-Based Post-Processing Algorithm," submitted.<br />
-				<span id="ac_restoration_year" class="abstract" style="display:none">
-					This paper presents an algorithm for restoring AC power flow feasibility from solutions to simplified optimal power flow (OPF) problems, including convex relaxations, power flow approximations, and machine learning (ML) models. The proposed algorithm employs a state estimation-based post-processing technique in which voltage phasors, power injections, and line flows from solutions to relaxed, approximated, or ML-based OPF problems are treated similarly to noisy measurements in a state estimation algorithm. The algorithm leverages information from various quantities to obtain feasible voltage phasors and power injections that satisfy the AC power flow equations. Weight and bias parameters are computed offline using an adaptive stochastic gradient descent method. These parameters inform the online computations of the state estimation-based algorithm to recover feasible solutions. Furthermore, the proposed algorithm can simultaneously utilize combined solutions from different relaxations, approximations, and ML models to enhance performance. Case studies demonstrate the effectiveness and scalability of the proposed algorithm, with numerical results showing several orders of magnitude improvement over traditional methods for restoring AC power flow feasible solutions. 
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ac_restoration_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2304.11418">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -212,6 +187,39 @@
 		</div>
 	<div class="tile scale-anm Year">
 		<h2>Journal Papers</h2>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Piansky, G. Stinchfield, A. Kody, <b>D.K. Molzahn</b>, and J.P. Watson, "Long Duration Battery Sizing, Siting, and Operation Under Wildfire Risk Using Progressive Hedging," to appear in <i>Electric Power Systems Research</i>, to be presented at <i>23rd Power Systems Computation Conference (PSCC)</i>, June 4-7. 2024.<br />
+				<span id="battsizesite_year" class="abstract" style="display:none">
+					Battery sizing and siting problems are computationally challenging due to the need to make long-term planning decisions that are cognizant of short-term operational decisions. This paper considers sizing, siting, and operating batteries in a power grid to maximize their benefits, including price arbitrage and load shed mitigation, during both normal operations and periods with high wildfire ignition risk. We formulate a multi-scenario optimization problem for long duration battery storage while considering the possibility of load shedding during Public Safety Power Shutoff (PSPS) events that de-energize lines to mitigate severe wildfire ignition risk. To enable a computationally scalable solution of this problem with many scenarios of wildfire risk and power injection variability, we develop a customized temporal decomposition method based on a progressive hedging framework. Extending traditional progressive hedging techniques, we consider coupling in both placement variables across all scenarios and state-of-charge variables at temporal boundaries. This enforces consistency across scenarios while enabling parallel computations despite both spatial and temporal coupling. The proposed decomposition facilitates efficient and scalable modeling of a full year of hourly operational decisions to inform the sizing and siting of batteries. With this decomposition, we model a year of hourly operational decisions to inform optimal battery placement for a 240-bus WECC model in under 70 minutes of wall-clock time.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('battsizesite_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.bib">bib</a>   <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Optimizing Parameters of the DC Power Flow," to appear in <i>Electric Power Systems Research</i>, to be presented at <i>23rd Power Systems Computation Conference (PSCC)</i>, June 4-7. 2024.<br />
+				<span id="dcparam_year" class="abstract" style="display:none">
+					Many power system operation and planning problems use the DC power flow approximation to address computational challenges from the nonlinearity of the AC power flow equations. The DC power flow simplifies the AC power flow equations to a linear form that relates active power flows to phase angle differences across branches, parameterized by coefficients based on the branches' susceptances. Inspired by techniques for training machine learning models, this paper proposes an algorithm that seeks optimal coefficient and bias parameters to improve the DC power flow approximation's accuracy. Specifically, the proposed algorithm selects the coefficient and bias parameter values that minimize the discrepancy, across a specified set of operational scenarios, between the power flows given by the DC approximation and the power flows from the AC equations. Gradient-based optimization methods like Broyden-Fletcher-Goldfarb-Shanno (BFGS), Limited-Memory BFGS (L-BFGS), and Truncated Newton Conjugate-Gradient (TNC) enable solution of the proposed algorithm for large systems. After an off-line training phase, the optimized parameters are used to improve the accuracy of the DC power flow during on-line computations. Numerical results show several orders of magnitude improvements in accuracy relative to a hot-start DC power flow approximation across a range of test cases.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dcparam_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ <a href="https://arxiv.org/pdf/2310.00447.pdf">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC Power Flow Feasibility Restoration via a State Estimation-Based Post-Processing Algorithm," to appear in <i>Electric Power Systems Research</i>, to be presented at <i>23rd Power Systems Computation Conference (PSCC)</i>, June 4-7. 2024.<br />
+				<span id="ac_restoration_year" class="abstract" style="display:none">
+					This paper presents an algorithm for restoring AC power flow feasibility from solutions to simplified optimal power flow (OPF) problems, including convex relaxations, power flow approximations, and machine learning (ML) models. The proposed algorithm employs a state estimation-based post-processing technique in which voltage phasors, power injections, and line flows from solutions to relaxed, approximated, or ML-based OPF problems are treated similarly to noisy measurements in a state estimation algorithm. The algorithm leverages information from various quantities to obtain feasible voltage phasors and power injections that satisfy the AC power flow equations. Weight and bias parameters are computed offline using an adaptive stochastic gradient descent method. By automatically learning the trustworthiness of various outputs from simplified OPF problems, these parameters inform the online computations of the state estimation-based algorithm to both recover feasible solutions and characterize the performance of power flow approximations, relaxations, and ML models. Furthermore, the proposed algorithm can simultaneously utilize combined solutions from different relaxations, approximations, and ML models to enhance performance. Case studies demonstrate the effectiveness and scalability of the proposed algorithm, with solutions that are both AC power flow feasible and much closer to the true AC OPF solutions than alternative methods, often by several orders of magnitude in the squared two-norm loss function. 
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('ac_restoration_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2304.11418">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 		<div class="tile scale-anm Year">
 		<span>
@@ -1618,6 +1626,16 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Improving Fairness in Photovoltaic Curtailments via Daily Topology Reconfiguration for Voltage Control in Power Distribution Networks," submitted.<br />
+				<span id="gupta_molzahn-PV_topology_fairness_type" class="abstract" style="display:none">
+					In PV-rich power distribution systems, over-voltage issues are often addressed by curtailing excess generation from PV plants (in addition to reactive power control), raising fairness concerns. Existing fairness-aware control schemes tackle this problem by incorporating fairness objectives into the cost function. However, such schemes result in increased overall curtailments. This paper proposes a solution through daily topology reconfiguration, ensuring that different PV plants face varying grid conditions each day, leading to different curtailment levels and enhancing fairness. We illustrate that implementing this approach enhances overall fairness without significantly increasing overall curtailments. The optimization problem involves two stages. The day-ahead stage optimizes the network topology using day-ahead forecasts of PV generation and demand, minimizing net curtailment and accounting for fairness based on curtailments from prior days. The real-time stage implements the optimized topology and computes active and reactive power setpoints for the PV plants. Day-ahead grid constraints are modeled using LinDistFlow, and real-time control employs a linearized model with a first-order Taylor approximation. The proposed scheme is numerically validated on several benchmark test cases. Results are compared using the Jain Fairness Index, considering fairness and reconfiguration scenarios.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('gupta_molzahn-PV_topology_fairness_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-PV_topology_fairness.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2403.07853">link</a> ] [ Ref: <a href="pubs/gupta_molzahn-PV_topology_fairness.bib">bib</a>   <a href="pubs/gupta_molzahn-PV_topology_fairness.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>M. Alkhraijah and <b>D.K. Molzahn</b>, "A Fault-Tolerant Distributed Termination Method for Distributed Optimization Algorithms," submitted.<br />
 				<span id="dist_termination_type" class="abstract" style="display:none">
 					This paper proposes a fully distributed termination method for distributed optimization algorithms solved by multiple agents. The proposed method guarantees terminating a distributed optimization algorithm after satisfying the global termination criterion using information from local computations and neighboring agents. The proposed method requires additional iterations after satisfying the global terminating criterion to communicate the termination status. The number of additional iterations is bounded by the diameter of the communication network. This paper also proposes a fault-tolerant extension of this termination method that prevents early termination due to faulty agents or communication errors. We provide a proof of the method's correctness and demonstrate the proposed method by solving the optimal power flow problem for electric power grids using the alternating direction method of multipliers.
@@ -1657,19 +1675,6 @@
 			&emsp;[ <span onclick="showDiv('convergetol_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.08305">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	<!--
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>R. Piansky, G. Stinchfield, A. Kody, <b>D.K. Molzahn</b>, and J.P. Watson, "Long Duration Battery Sizing, Siting, and Operation Under Wildfire Risk Using Progressive Hedging," submitted.<br />
-				<span id="battsizesite_type" class="abstract" style="display:none">
-					Battery sizing and siting problems are computationally challenging due to the need to make long-term planning decisions that are cognizant of short-term operational decisions. This paper considers sizing, siting, and operating batteries in a power grid to maximize their benefits, including price arbitrage and load shed mitigation, during both normal operations and periods with high wildfire ignition risk. We formulate a multi-scenario optimization problem for long duration battery storage while considering the possibility of load shedding during Public Safety Power Shutoff (PSPS) events that de-energize lines to mitigate severe wildfire ignition risk. To enable a computationally scalable solution of this problem with many scenarios of wildfire risk and power injection variability, we develop a customized temporal decomposition method based on a progressive hedging framework. Extending traditional progressive hedging techniques, we consider coupling in both placement variables across all scenarios and state-of-charge variables at temporal boundaries. This enforces consistency across scenarios while enabling parallel computations despite both spatial and temporal coupling. The proposed decomposition facilitates efficient and scalable modeling of a full year of hourly operational decisions to inform the sizing and siting of batteries. With this decomposition, we model a year of hourly operational decisions to inform optimal battery placement for a 240-bus WECC model in under 19 minutes of wall-clock computing time.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('battsizesite_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.bib">bib</a>   <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.txt">txt</a> ] </p></li>
-		</span>
-	</div>
--->
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>P. Buason, S. Misra, J.P. Watson, and <b>D.K. Molzahn</b>, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," submitted.<br />
@@ -1679,17 +1684,6 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('secondordersens_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Optimizing Parameters of the DC Power Flow," submitted.<br />
-				<span id="dcparam_type" class="abstract" style="display:none">
-					Many power system operation and planning problems use the DC power flow approximation to address computational challenges from the nonlinearity of the AC power flow equations. The DC power flow simplifies the AC power flow equations to a linear form that relates active power flows to phase angle differences across branches, parameterized by coefficients based on the branches' susceptances. Inspired by techniques for training machine learning models, this paper proposes an algorithm that seeks optimal coefficient and bias parameters to improve the DC power flow approximation's accuracy. Specifically, the proposed algorithm selects the coefficient and bias parameter values that minimize the discrepancy, across a specified set of operational scenarios, between the power flows given by the DC approximation and the power flows from the AC equations. Gradient-based optimization methods like Broyden-Fletcher-Goldfarb-Shanno (BFGS), Limited-Memory BFGS (L-BFGS), and Truncated Newton Conjugate-Gradient (TNC) enable solution of the proposed algorithm for large systems. After an off-line training phase, the optimized parameters are used to improve the accuracy of the DC power flow during on-line computations. Numerical results show several orders of magnitude improvements in accuracy relative to a hot-start DC power flow approximation across a range of test cases.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('dcparam_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ <a href="https://arxiv.org/pdf/2310.00447.pdf">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -1703,17 +1697,6 @@
 				&emsp;[ <span onclick="showDiv('crewallocation_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/jalilian_taheri_molzahn-crewallocation.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2309.08704">link</a> ] [ Ref: <a href="pubs/jalilian_taheri_molzahn-crewallocation">bib</a>   <a href="pubs/jalilian_taheri_molzahn-crewallocation.txt">txt</a> ] </p></li>
 			</span>
 		</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC Power Flow Feasibility Restoration via a State Estimation-Based Post-Processing Algorithm," submitted.<br />
-				<span id="ac_restoration_type" class="abstract" style="display:none">
-					This paper presents an algorithm for restoring AC power flow feasibility from solutions to simplified optimal power flow (OPF) problems, including convex relaxations, power flow approximations, and machine learning (ML) models. The proposed algorithm employs a state estimation-based post-processing technique in which voltage phasors, power injections, and line flows from solutions to relaxed, approximated, or ML-based OPF problems are treated similarly to noisy measurements in a state estimation algorithm. The algorithm leverages information from various quantities to obtain feasible voltage phasors and power injections that satisfy the AC power flow equations. Weight and bias parameters are computed offline using an adaptive stochastic gradient descent method. These parameters inform the online computations of the state estimation-based algorithm to recover feasible solutions. Furthermore, the proposed algorithm can simultaneously utilize combined solutions from different relaxations, approximations, and ML models to enhance performance. Case studies demonstrate the effectiveness and scalability of the proposed algorithm, with numerical results showing several orders of magnitude improvement over traditional methods for restoring AC power flow feasible solutions. 
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ac_restoration_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2304.11418">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
-		</span>
-	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "A Data-Driven Sensor Placement Approach for Detecting Voltage Violations in Distribution Systems," submitted.<br />
@@ -1737,6 +1720,39 @@
   </div>
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>2024</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Piansky, G. Stinchfield, A. Kody, <b>D.K. Molzahn</b>, and J.P. Watson, "Long Duration Battery Sizing, Siting, and Operation Under Wildfire Risk Using Progressive Hedging," to appear in <i>Electric Power Systems Research</i>, to be presented at <i>23rd Power Systems Computation Conference (PSCC)</i>, June 4-7. 2024.<br />
+				<span id="battsizesite_type" class="abstract" style="display:none">
+					Battery sizing and siting problems are computationally challenging due to the need to make long-term planning decisions that are cognizant of short-term operational decisions. This paper considers sizing, siting, and operating batteries in a power grid to maximize their benefits, including price arbitrage and load shed mitigation, during both normal operations and periods with high wildfire ignition risk. We formulate a multi-scenario optimization problem for long duration battery storage while considering the possibility of load shedding during Public Safety Power Shutoff (PSPS) events that de-energize lines to mitigate severe wildfire ignition risk. To enable a computationally scalable solution of this problem with many scenarios of wildfire risk and power injection variability, we develop a customized temporal decomposition method based on a progressive hedging framework. Extending traditional progressive hedging techniques, we consider coupling in both placement variables across all scenarios and state-of-charge variables at temporal boundaries. This enforces consistency across scenarios while enabling parallel computations despite both spatial and temporal coupling. The proposed decomposition facilitates efficient and scalable modeling of a full year of hourly operational decisions to inform the sizing and siting of batteries. With this decomposition, we model a year of hourly operational decisions to inform optimal battery placement for a 240-bus WECC model in under 70 minutes of wall-clock time.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('battsizesite_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.bib">bib</a>   <a href="pubs/piansky_stinchfield_kody_molzahn_watson-battsizesite.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Optimizing Parameters of the DC Power Flow," to appear in <i>Electric Power Systems Research</i>, to be presented at <i>23rd Power Systems Computation Conference (PSCC)</i>, June 4-7. 2024.<br />
+				<span id="dcparam_type" class="abstract" style="display:none">
+					Many power system operation and planning problems use the DC power flow approximation to address computational challenges from the nonlinearity of the AC power flow equations. The DC power flow simplifies the AC power flow equations to a linear form that relates active power flows to phase angle differences across branches, parameterized by coefficients based on the branches' susceptances. Inspired by techniques for training machine learning models, this paper proposes an algorithm that seeks optimal coefficient and bias parameters to improve the DC power flow approximation's accuracy. Specifically, the proposed algorithm selects the coefficient and bias parameter values that minimize the discrepancy, across a specified set of operational scenarios, between the power flows given by the DC approximation and the power flows from the AC equations. Gradient-based optimization methods like Broyden-Fletcher-Goldfarb-Shanno (BFGS), Limited-Memory BFGS (L-BFGS), and Truncated Newton Conjugate-Gradient (TNC) enable solution of the proposed algorithm for large systems. After an off-line training phase, the optimized parameters are used to improve the accuracy of the DC power flow during on-line computations. Numerical results show several orders of magnitude improvements in accuracy relative to a hot-start DC power flow approximation across a range of test cases.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dcparam_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ <a href="https://arxiv.org/pdf/2310.00447.pdf">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC Power Flow Feasibility Restoration via a State Estimation-Based Post-Processing Algorithm," to appear in <i>Electric Power Systems Research</i>, to be presented at <i>23rd Power Systems Computation Conference (PSCC)</i>, June 4-7. 2024.<br />
+				<span id="ac_restoration_type" class="abstract" style="display:none">
+					This paper presents an algorithm for restoring AC power flow feasibility from solutions to simplified optimal power flow (OPF) problems, including convex relaxations, power flow approximations, and machine learning (ML) models. The proposed algorithm employs a state estimation-based post-processing technique in which voltage phasors, power injections, and line flows from solutions to relaxed, approximated, or ML-based OPF problems are treated similarly to noisy measurements in a state estimation algorithm. The algorithm leverages information from various quantities to obtain feasible voltage phasors and power injections that satisfy the AC power flow equations. Weight and bias parameters are computed offline using an adaptive stochastic gradient descent method. By automatically learning the trustworthiness of various outputs from simplified OPF problems, these parameters inform the online computations of the state estimation-based algorithm to both recover feasible solutions and characterize the performance of power flow approximations, relaxations, and ML models. Furthermore, the proposed algorithm can simultaneously utilize combined solutions from different relaxations, approximations, and ML models to enhance performance. Case studies demonstrate the effectiveness and scalability of the proposed algorithm, with solutions that are both AC power flow feasible and much closer to the true AC OPF solutions than alternative methods, often by several orders of magnitude in the squared two-norm loss function. 
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('ac_restoration_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2304.11418">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>

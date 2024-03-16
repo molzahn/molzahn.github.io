@@ -1,1 +1,1 @@
-B. Taheri and D.K. Molzahn, "Optimizing Parameters of the DC Power Flow," submitted, arXiv:2310.00447, 2023.
+B. Taheri and D.K. Molzahn, "Optimizing Parameters of the DC Power Flow," to appear in Electric Power Systems Research, to be presented at the 23rd Power Systems Computation Conference (PSCC), 2024.
