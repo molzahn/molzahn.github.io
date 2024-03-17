@@ -1,1 +1,1 @@
-B. Taheri and D.K. Molzahn, “AC Power Flow Informed Parameter Learning for DC Power Flow Network Equivalents,” submitted, 2023.
+B. Taheri and D.K. Molzahn, “AC Power Flow Informed Parameter Learning for DC Power Flow Network Equivalents,” 8th Texas Power and Energy Conference (TPEC), February 12-13, 2024.

@@ -1,1 +1,1 @@
-R. Gupta, P. Buason, and D.K. Molzahn, “Fairness-aware Photovoltaic Generation Limits for Voltage Regulation in Power Distribution Networks using Conservative Linear Approximations,” submitted, 2023.
+R. Gupta, P. Buason, and D.K. Molzahn, “Fairness-aware Photovoltaic Generation Limits for Voltage Regulation in Power Distribution Networks using Conservative Linear Approximations,” 8th Texas Power and Energy Conference (TPEC), February 12-13, 2024.
