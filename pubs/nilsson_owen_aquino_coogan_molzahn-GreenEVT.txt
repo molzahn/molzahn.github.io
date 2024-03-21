@@ -1,1 +1,1 @@
-G. Nilsson, A. D. Owen Aquino, S. Coogan, and D.K. Molzahn, "GreenEVT: Greensboro Electric Vehicle Testbed," to appear in IEEE Systems Journal, 2023, https://github.com/GreenEVT/GreenEVT.
+G. Nilsson, A. D. Owen Aquino, S. Coogan, and D.K. Molzahn, "GreenEVT: Greensboro Electric Vehicle Testbed," IEEE Systems Journal, vol. 18, no. 1, pp. 600-611, March 2024, https://github.com/GreenEVT/GreenEVT.
