@@ -1,1 +1,1 @@
-A. Jalilian, B. Taheri, and D.K. Molzahn, "Co-Optimization of Damage Assessment and Restoration: A Resilience-Driven Dynamic Crew Allocation for Power Distribution Systems," submitted, preprint available at arXiv:2309.08704, 2023.
+A. Jalilian, B. Taheri, and D.K. Molzahn, "Co-Optimization of Damage Assessment and Restoration: A Resilience-Driven Dynamic Crew Allocation for Power Distribution Systems," to appear in IEEE Transactions on Power Systems, 2024.
