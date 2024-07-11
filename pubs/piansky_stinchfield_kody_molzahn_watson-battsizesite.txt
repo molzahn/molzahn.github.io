@@ -1,1 +1,1 @@
-R. Piansky, G. Stinchfield, A. Kody, D.K. Molzahn, and J.P. Watson, "Long Duration Battery Sizing, Siting, and Operation Under Wildfire Risk Using Progressive Hedging," submitted, 2023.
+R. Piansky, G. Stinchfield, A. Kody, D.K. Molzahn, and J.P. Watson, "Long Duration Battery Sizing, Siting, and Operation Under Wildfire Risk Using Progressive Hedging," Electric Power Systems Research, vol. 235, no. 110785, October 2024, presented at 23rd Power Systems Computation Conference (PSCC), June 4-7, 2024.

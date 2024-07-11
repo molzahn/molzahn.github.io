@@ -1,1 +1,1 @@
-B. Taheri and D.K. Molzahn, "AC Power Flow Feasibility Restoration via a State Estimation-Based Post-Processing Algorithm," to appear in Electric Power Systems Research, to be presented at the 23rd Power Systems Computation Conference (PSCC), 2024.
+B. Taheri and D.K. Molzahn, "AC Power Flow Feasibility Restoration via a State Estimation-Based Post-Processing Algorithm," Electric Power Systems Research, volume. 235, no. 110642, October 2024, presented at the 23rd Power Systems Computation Conference (PSCC).
