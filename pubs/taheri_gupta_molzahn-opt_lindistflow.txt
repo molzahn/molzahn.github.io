@@ -1,1 +1,1 @@
-B. Taheri, R. Gupta, and D.K. Molzahn, "Optimized LinDistFlow for High-Fidelity Power Flow Modeling of Distribution Networks," submitted, 2024.
+B. Taheri, R. Gupta, and D.K. Molzahn, "Optimizing Parameters of the LinDistFlow Power Flow Approximation for Distribution Systems," submitted, 2024.

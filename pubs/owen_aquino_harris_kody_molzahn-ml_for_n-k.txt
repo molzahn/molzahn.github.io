@@ -1,1 +1,1 @@
-A.D. Owen Aquino, R. Harris, A. Kody, and D.K. Molzahn, "Comparing Machine Learning and Optimization Approaches for the N-k Interdiction Problem Considering Load Variability," Hawaii International Conference on System Sciences (HICSS), January 2023.
+A.D. Owen Aquino, R. Harris, A. Kody, and D.K. Molzahn, "Comparing Machine Learning and Optimization Approaches for the N-k Interdiction Problem Considering Load Variability," 56th Hawaii International Conference on System Sciences (HICSS), January 2023.

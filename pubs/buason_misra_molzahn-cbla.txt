@@ -1,1 +1,1 @@
-P. Buason, S. Misra, and D.K. Molzahn, "Sample-Based Conservative Bias Linear Power Flow Approximations," to appear in IEEE IAS Industrial and Commercial Power System Asia (IEEE I&CPS Asia), July 2024.
+P. Buason, S. Misra, and D.K. Molzahn, "Sample-Based Conservative Bias Linear Power Flow Approximations," IEEE IAS Industrial and Commercial Power System Asia (IEEE I&CPS Asia), July 2024.
