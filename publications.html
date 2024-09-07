@@ -67,7 +67,7 @@
 <!-- <div style="clear:both;"></div> -->
 <div id="portfolio">
 <div class="tile scale-anm Year" style="text-align:center;">
-			<p>[ <a href="#preprints">Preprints</a> ] [ <a href="#2024">2024</a> ] [ <a href="#2023">2023</a> ] [ <a href="#2022">2022</a> ] [ <a href="#2021">2021</a> ] [ <a href="#2020">2020</a> ] [ <a href="#2019">2019</a> ] [ <a href="#2018">2018</a> ] [ <a href="#2017">2017</a> ] [ <a href="#2016">2016</a> ] [ <a href="#2015">2015</a> ] [ <a href="#2014">2014</a> ] [ <a href="#2013">2013</a> ] [ <a href="#2012">2012</a> ] [ <a href="#2011">2011</a> ] [ <a href="#2010">2010</a> ]</p>
+			<p>[ <a href="#preprints">Preprints</a> ] [ <a href="#2025">2025</a> ] [ <a href="#2024">2024</a> ] [ <a href="#2023">2023</a> ] [ <a href="#2022">2022</a> ] [ <a href="#2021">2021</a> ] [ <a href="#2020">2020</a> ] [ <a href="#2019">2019</a> ] [ <a href="#2018">2018</a> ] [ <a href="#2017">2017</a> ] [ <a href="#2016">2016</a> ] [ <a href="#2015">2015</a> ] [ <a href="#2014">2014</a> ] [ <a href="#2013">2013</a> ] [ <a href="#2012">2012</a> ] [ <a href="#2011">2011</a> ] [ <a href="#2010">2010</a> ]</p>
 </div>
 <div class="tile scale-anm Type" style="display:none; text-align:center;">
 		<p>[ <a href="#monographs">Monographs</a> ] [ <a href="#journals">Journal Papers</a> ] [ <a href="#conferences">Conference Proceedings</a> ] [ <a href="#dissertation">Ph.D. Dissertation</a> ] [ <a href="#thesis">Master's Thesis</a> ] [ <a href="#reports">Technical Reports</a> ] </p>
@@ -176,41 +176,6 @@
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
 	</div>
-	<!--
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>R. Asiamah, R. Gupta, R. Haider, and <b>D.K. Molzahn</b>, "Performance Assessment of Data Sampling Strategies for Neural Network-based Voltage Approximations," submitted.<br />
-				<span id="nn_sampling_year" class="abstract" style="display:none">
-					Machine learning models have been developed for a wide variety of power system applications. The accuracy of a machine learning model strongly depends on the selection of training data. In many settings where real data are limited or unavailable, machine learning models are trained using synthetic data sampled via different strategies. Using the task of approximating the voltage magnitudes associated with specified complex power injections as an illustrative application, this paper compares the performance of neural networks trained on four different sampling strategies: (i) correlated loads at fixed power factor, (ii) correlated loads at varying power factor, (iii) uncorrelated loads at fixed power factor, and (iv) uncorrelated loads at varying power factor. A new sampling strategy that combines these four strategies into one training dataset is also introduced and assessed. Results from transmission and distribution test cases of varying sizes show that these strategies for creating synthetic training data yield varied neural network accuracy. The accuracy differences across the various strategies vary by up to a factor of four. While none of the first four strategies outperform the others across all test cases, neural networks trained with the combined dataset perform the best overall, maintaining a high accuracy and low error spreads.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nn_sampling_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.bib">bib</a>   <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>L. Thomas, V. Thomas, and <b>D.K. Molzahn</b>, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," submitted.<br />
-				<span id="p2p_conf_year" class="abstract" style="display:none">
-					Peer-to-peer (P2P) energy trading has emerged as a transformative approach to electrical power distribution, empowering individuals and communities to directly exchange energy resources within local networks. Challenges arise in modeling the supply and demand ratio and behavior of prosumers (market participants who can buy and sell electricity). The supply and demand ratio can be described as the balance between the amount of energy available for sale by prosumers (supply) and the amount of energy desired for purchase by other prosumers (demand). This ratio can be effective in determining pricing and the feasibility of energy transactions. This paper proposes two algorithms to optimize the supply and demand ratio between prosumers in a P2P energy trading market, improving overall efficiency of transactions while accounting for prosumer behavior. A bilevel optimization framework is modeled for buyers who determine their purchase quantities and the fraction of power to purchase from each seller. The seller's algorithm finds the price that maximizes the seller's profit based on the buyer's demand. A numerical case study involving five prosumers - two sellers and three buyers - is presented and results in an equilibrium state for prosumer transactions in this P2P energy trading market. The bilevel optimization approach successfully balances supply and demand in the P2P energy market where the sellers maximize revenue by adjusting prices and buyers meet their energy demands.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('p2p_conf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/thomas_thomas_molzahn-p2p_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/thomas_thomas_molzahn-p2p_conf.bib">bib</a>   <a href="pubs/thomas_thomas_molzahn-p2p_conf.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>R. Piansky, S. Taylor, N. Rhodes, <b>D.K. Molzahn</b>, L.A. Roald, and J.P. Watson, "Quantifying Metrics for Wildfire Ignition Risk from Geographic Data in Power Shutoff Decision-Making," submitted.<br />
-				<span id="wildfire_metrics_year" class="abstract" style="display:none">
-					To mitigate the threat of wildfire ignitions from electric power infrastructure, utilities preemptively de-energize power lines, which may result in power shutoffs. Data regarding wildfire ignition risks are key inputs for planning power line de-energizations. There are multiple ways to formulate risk metrics that spatially aggregate risk map data. Considering both threshold- and optimization-based methods for planning power line de-energizations, this paper defines and compares the results of employing six metrics for quantifying the wildfire ignition risks of power lines from risk maps. The numeric results use the California Test System (CATS), a large-scale synthetic grid model with power line paths accurate to the infrastructure in California. This is the first application of the optimal power shutoff on such a large and realistic test case. Using Wildland Fire Potential Index maps for an entire year, we show that the choice of risk metric significantly impacts the lines that are de-energized and resulting load shed.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfire_metrics_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
-		</span>
-	</div>
--->
 	<div class="tile scale-anm Year">
 		<span>
 			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Analysis of Fairness-promoting Optimization Schemes of Photovoltaic Curtailments for Voltage Regulation in Power Distribution Networks," submitted.<br />
@@ -225,6 +190,23 @@
 	</ul>
 	<ul class="tile scale-anm Year">
 		<div class="tile scale-anm Year">
+			<a name="2025"><h1>2025</h1></a>
+		</div>
+	<div class="tile scale-anm Year">
+		<h2>Conference Proceedings</h2>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Piansky, S. Taylor, N. Rhodes, <b>D.K. Molzahn</b>, L.A. Roald, and J.P. Watson, "Quantifying Metrics for Wildfire Ignition Risk from Geographic Data in Power Shutoff Decision-Making," to appear in <i>58th Hawaii International Conference on System Sciences (HICSS)</i>, January 7-10, 2025.<br />
+				<span id="wildfire_metrics_year" class="abstract" style="display:none">
+					To mitigate the threat of wildfire ignitions from electric power infrastructure, utilities preemptively de-energize power lines, which may result in power shutoffs. Data regarding wildfire ignition risks are key inputs for planning power line de-energizations. There are multiple ways to formulate risk metrics that spatially aggregate risk map data. Considering both threshold- and optimization-based methods for planning power line de-energizations, this paper defines and compares the results of employing six metrics for quantifying the wildfire ignition risks of power lines from risk maps. The numeric results use the California Test System (CATS), a large-scale synthetic grid model with power line paths accurate to the infrastructure in California. This is the first application of the optimal power shutoff on such a large and realistic test case. Using Wildland Fire Potential Index maps for an entire year, we show that the choice of risk metric significantly impacts the lines that are de-energized and resulting load shed.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('wildfire_metrics_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+		<div class="tile scale-anm Year">
 			<a name="2024"><h1>2024</h1></a>
 		</div>
 	<div class="tile scale-anm Year">
@@ -237,7 +219,7 @@
 					AC optimal power flow (AC OPF) is a fundamental problem in power system operations. Accurately modeling the network physics via the AC power flow equations makes AC OPF a challenging nonconvex problem. To search for global optima, recent research has developed various convex relaxations that bound the optimal objective values of AC OPF problems. The QC relaxation convexifies the AC OPF problem by enclosing the non-convex terms within convex envelopes. The QC relaxation's accuracy strongly depends on the tightness of these envelopes. This paper proposes two improvements for tightening QC relaxations of OPF problems. We first consider a particular nonlinear function whose projections are the nonlinear expressions appearing in the polar representation of the power flow equations. We construct a polytope-shaped convex envelope around this nonlinear function and derive convex expressions for the nonlinear terms using its projections. Second, we use sine and cosine expression properties, along with changes in their curvature, to tighten this convex envelope. We also propose a coordinate transformation to tighten the envelope by rotating power flow equations based on individual bus-specific angles. We compare these enhancements to a state-of-the-art QC relaxation method using PGLib-OPF test cases, revealing improved optimality gaps in 68% of the cases.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('QCtightening_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_davis_crow-QCtightening.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2310.14463">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_davis_crow-QCtightening.bib">bib</a>   <a href="pubs/narimani_molzahn_davis_crow-QCtightening.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('QCtightening_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_davis_crow-QCtightening.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10646561">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_davis_crow-QCtightening.bib">bib</a>   <a href="pubs/narimani_molzahn_davis_crow-QCtightening.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -340,6 +322,28 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('sensor_bandits_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_gupta_asiamah_buason_molzahn-sensor_bandits.pdf">pdf</a> ] [ Ref: <a href="pubs/talkington_gupta_asiamah_buason_molzahn-sensor_bandits.bib">bib</a>   <a href="pubs/talkington_gupta_asiamah_buason_molzahn-sensor_bandits.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Asiamah, R. Gupta, R. Haider, and <b>D.K. Molzahn</b>, "Performance Assessment of Data Sampling Strategies for Neural Network-based Voltage Approximations," to appear in <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
+				<span id="nn_sampling_year" class="abstract" style="display:none">
+					Machine learning models have been developed for a wide variety of power system applications. The accuracy of a machine learning model strongly depends on the selection of training data. In many settings where real data are limited or unavailable, machine learning models are trained using synthetic data sampled via different strategies. Using the task of approximating the voltage magnitudes associated with specified complex power injections as an illustrative application, this paper compares the performance of neural networks trained on four different sampling strategies: (i) correlated loads at fixed power factor, (ii) correlated loads at varying power factor, (iii) uncorrelated loads at fixed power factor, and (iv) uncorrelated loads at varying power factor. A new sampling strategy that combines these four strategies into one training dataset is also introduced and assessed. Results from transmission and distribution test cases of varying sizes show that these strategies for creating synthetic training data yield varied neural network accuracy. The accuracy differences across the various strategies vary by up to a factor of four. While none of the first four strategies outperform the others across all test cases, neural networks trained with the combined dataset perform the best overall, maintaining a high accuracy and low error spreads.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('nn_sampling_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.bib">bib</a>   <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>L. Thomas, V. Thomas, and <b>D.K. Molzahn</b>, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," to appear in <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
+				<span id="p2p_conf_year" class="abstract" style="display:none">
+					Peer-to-peer (P2P) energy trading has emerged as a transformative approach to electrical power distribution, empowering individuals and communities to directly exchange energy resources within local networks. Challenges arise in modeling the supply and demand ratio and behavior of prosumers (market participants who can buy and sell electricity). The supply and demand ratio can be described as the balance between the amount of energy available for sale by prosumers (supply) and the amount of energy desired for purchase by other prosumers (demand). This ratio can be effective in determining pricing and the feasibility of energy transactions. This paper proposes two algorithms to optimize the supply and demand ratio between prosumers in a P2P energy trading market, improving overall efficiency of transactions while accounting for prosumer behavior. A bilevel optimization framework is modeled for buyers who determine their purchase quantities and the fraction of power to purchase from each seller. The seller's algorithm finds the price that maximizes the seller's profit based on the buyer's demand. A numerical case study involving five prosumers - two sellers and three buyers - is presented and results in an equilibrium state for prosumer transactions in this P2P energy trading market. The bilevel optimization approach successfully balances supply and demand in the P2P energy market where the sellers maximize revenue by adjusting prices and buyers meet their energy demands.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('p2p_conf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/thomas_thomas_molzahn-p2p_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/thomas_thomas_molzahn-p2p_conf.bib">bib</a>   <a href="pubs/thomas_thomas_molzahn-p2p_conf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -1822,7 +1826,7 @@
 					AC optimal power flow (AC OPF) is a fundamental problem in power system operations. Accurately modeling the network physics via the AC power flow equations makes AC OPF a challenging nonconvex problem. To search for global optima, recent research has developed various convex relaxations that bound the optimal objective values of AC OPF problems. The QC relaxation convexifies the AC OPF problem by enclosing the non-convex terms within convex envelopes. The QC relaxation's accuracy strongly depends on the tightness of these envelopes. This paper proposes two improvements for tightening QC relaxations of OPF problems. We first consider a particular nonlinear function whose projections are the nonlinear expressions appearing in the polar representation of the power flow equations. We construct a polytope-shaped convex envelope around this nonlinear function and derive convex expressions for the nonlinear terms using its projections. Second, we use sine and cosine expression properties, along with changes in their curvature, to tighten this convex envelope. We also propose a coordinate transformation to tighten the envelope by rotating power flow equations based on individual bus-specific angles. We compare these enhancements to a state-of-the-art QC relaxation method using PGLib-OPF test cases, revealing improved optimality gaps in 68% of the cases.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('QCtightening_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_davis_crow-QCtightening.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2310.14463">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_davis_crow-QCtightening.bib">bib</a>   <a href="pubs/narimani_molzahn_davis_crow-QCtightening.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('QCtightening_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_davis_crow-QCtightening.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10646561">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_davis_crow-QCtightening.bib">bib</a>   <a href="pubs/narimani_molzahn_davis_crow-QCtightening.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2447,41 +2451,6 @@
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
-	<!--
-		<div class="tile scale-anm Type"  style="display:none">
-		<span>
-			<li><p>R. Asiamah, R. Gupta, R. Haider, and <b>D.K. Molzahn</b>, "Performance Assessment of Data Sampling Strategies for Neural Network-based Voltage Approximations," submitted.<br />
-				<span id="nn_sampling_type" class="abstract" style="display:none">
-					Machine learning models have been developed for a wide variety of power system applications. The accuracy of a machine learning model strongly depends on the selection of training data. In many settings where real data are limited or unavailable, machine learning models are trained using synthetic data sampled via different strategies. Using the task of approximating the voltage magnitudes associated with specified complex power injections as an illustrative application, this paper compares the performance of neural networks trained on four different sampling strategies: (i) correlated loads at fixed power factor, (ii) correlated loads at varying power factor, (iii) uncorrelated loads at fixed power factor, and (iv) uncorrelated loads at varying power factor. A new sampling strategy that combines these four strategies into one training dataset is also introduced and assessed. Results from transmission and distribution test cases of varying sizes show that these strategies for creating synthetic training data yield varied neural network accuracy. The accuracy differences across the various strategies vary by up to a factor of four. While none of the first four strategies outperform the others across all test cases, neural networks trained with the combined dataset perform the best overall, maintaining a high accuracy and low error spreads.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nn_sampling_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.bib">bib</a>   <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Type"  style="display:none">
-		<span>
-			<li><p>L. Thomas, V. Thomas, and <b>D.K. Molzahn</b>, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," submitted.<br />
-				<span id="p2p_conf_type" class="abstract" style="display:none">
-					Peer-to-peer (P2P) energy trading has emerged as a transformative approach to electrical power distribution, empowering individuals and communities to directly exchange energy resources within local networks. Challenges arise in modeling the supply and demand ratio and behavior of prosumers (market participants who can buy and sell electricity). The supply and demand ratio can be described as the balance between the amount of energy available for sale by prosumers (supply) and the amount of energy desired for purchase by other prosumers (demand). This ratio can be effective in determining pricing and the feasibility of energy transactions. This paper proposes two algorithms to optimize the supply and demand ratio between prosumers in a P2P energy trading market, improving overall efficiency of transactions while accounting for prosumer behavior. A bilevel optimization framework is modeled for buyers who determine their purchase quantities and the fraction of power to purchase from each seller. The seller's algorithm finds the price that maximizes the seller's profit based on the buyer's demand. A numerical case study involving five prosumers - two sellers and three buyers - is presented and results in an equilibrium state for prosumer transactions in this P2P energy trading market. The bilevel optimization approach successfully balances supply and demand in the P2P energy market where the sellers maximize revenue by adjusting prices and buyers meet their energy demands.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('p2p_conf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/thomas_thomas_molzahn-p2p_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/thomas_thomas_molzahn-p2p_conf.bib">bib</a>   <a href="pubs/thomas_thomas_molzahn-p2p_conf.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>R. Piansky, S. Taylor, N. Rhodes, <b>D.K. Molzahn</b>, L.A. Roald, and J.P. Watson, "Quantifying Metrics for Wildfire Ignition Risk from Geographic Data in Power Shutoff Decision-Making," submitted.<br />
-				<span id="wildfire_metrics_type" class="abstract" style="display:none">
-					To mitigate the threat of wildfire ignitions from electric power infrastructure, utilities preemptively de-energize power lines, which may result in power shutoffs. Data regarding wildfire ignition risks are key inputs for planning power line de-energizations. There are multiple ways to formulate risk metrics that spatially aggregate risk map data. Considering both threshold- and optimization-based methods for planning power line de-energizations, this paper defines and compares the results of employing six metrics for quantifying the wildfire ignition risks of power lines from risk maps. The numeric results use the California Test System (CATS), a large-scale synthetic grid model with power line paths accurate to the infrastructure in California. This is the first application of the optimal power shutoff on such a large and realistic test case. Using Wildland Fire Potential Index maps for an entire year, we show that the choice of risk metric significantly impacts the lines that are de-energized and resulting load shed.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfire_metrics_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	-->
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Analysis of Fairness-promoting Optimization Schemes of Photovoltaic Curtailments for Voltage Regulation in Power Distribution Networks," submitted.<br />
@@ -2491,6 +2460,20 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('fairness_analysis_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-fairness_analysis.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2404.00394">link</a> ] [ Ref: <a href="pubs/gupta_molzahn-fairness_analysis.bib">bib</a>   <a href="pubs/gupta_molzahn-fairness_analysis.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+<h2>2025</h2>
+</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Piansky, S. Taylor, N. Rhodes, <b>D.K. Molzahn</b>, L.A. Roald, and J.P. Watson, "Quantifying Metrics for Wildfire Ignition Risk from Geographic Data in Power Shutoff Decision-Making," to appear in <i>58th Hawaii International Conference on System Sciences (HICSS)</i>, January 7-10, 2025.<br />
+				<span id="wildfire_metrics_type" class="abstract" style="display:none">
+					To mitigate the threat of wildfire ignitions from electric power infrastructure, utilities preemptively de-energize power lines, which may result in power shutoffs. Data regarding wildfire ignition risks are key inputs for planning power line de-energizations. There are multiple ways to formulate risk metrics that spatially aggregate risk map data. Considering both threshold- and optimization-based methods for planning power line de-energizations, this paper defines and compares the results of employing six metrics for quantifying the wildfire ignition risks of power lines from risk maps. The numeric results use the California Test System (CATS), a large-scale synthetic grid model with power line paths accurate to the infrastructure in California. This is the first application of the optimal power shutoff on such a large and realistic test case. Using Wildland Fire Potential Index maps for an entire year, we show that the choice of risk metric significantly impacts the lines that are de-energized and resulting load shed.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('wildfire_metrics_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -2505,6 +2488,28 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('sensor_bandits_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_gupta_asiamah_buason_molzahn-sensor_bandits.pdf">pdf</a> ] [ Ref: <a href="pubs/talkington_gupta_asiamah_buason_molzahn-sensor_bandits.bib">bib</a>   <a href="pubs/talkington_gupta_asiamah_buason_molzahn-sensor_bandits.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type"  style="display:none">
+		<span>
+			<li><p>R. Asiamah, R. Gupta, R. Haider, and <b>D.K. Molzahn</b>, "Performance Assessment of Data Sampling Strategies for Neural Network-based Voltage Approximations," to appear in <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
+				<span id="nn_sampling_type" class="abstract" style="display:none">
+					Machine learning models have been developed for a wide variety of power system applications. The accuracy of a machine learning model strongly depends on the selection of training data. In many settings where real data are limited or unavailable, machine learning models are trained using synthetic data sampled via different strategies. Using the task of approximating the voltage magnitudes associated with specified complex power injections as an illustrative application, this paper compares the performance of neural networks trained on four different sampling strategies: (i) correlated loads at fixed power factor, (ii) correlated loads at varying power factor, (iii) uncorrelated loads at fixed power factor, and (iv) uncorrelated loads at varying power factor. A new sampling strategy that combines these four strategies into one training dataset is also introduced and assessed. Results from transmission and distribution test cases of varying sizes show that these strategies for creating synthetic training data yield varied neural network accuracy. The accuracy differences across the various strategies vary by up to a factor of four. While none of the first four strategies outperform the others across all test cases, neural networks trained with the combined dataset perform the best overall, maintaining a high accuracy and low error spreads.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('nn_sampling_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.bib">bib</a>   <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type"  style="display:none">
+		<span>
+			<li><p>L. Thomas, V. Thomas, and <b>D.K. Molzahn</b>, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," to appear in <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
+				<span id="p2p_conf_type" class="abstract" style="display:none">
+					Peer-to-peer (P2P) energy trading has emerged as a transformative approach to electrical power distribution, empowering individuals and communities to directly exchange energy resources within local networks. Challenges arise in modeling the supply and demand ratio and behavior of prosumers (market participants who can buy and sell electricity). The supply and demand ratio can be described as the balance between the amount of energy available for sale by prosumers (supply) and the amount of energy desired for purchase by other prosumers (demand). This ratio can be effective in determining pricing and the feasibility of energy transactions. This paper proposes two algorithms to optimize the supply and demand ratio between prosumers in a P2P energy trading market, improving overall efficiency of transactions while accounting for prosumer behavior. A bilevel optimization framework is modeled for buyers who determine their purchase quantities and the fraction of power to purchase from each seller. The seller's algorithm finds the price that maximizes the seller's profit based on the buyer's demand. A numerical case study involving five prosumers - two sellers and three buyers - is presented and results in an equilibrium state for prosumer transactions in this P2P energy trading market. The bilevel optimization approach successfully balances supply and demand in the P2P energy market where the sellers maximize revenue by adjusting prices and buyers meet their energy demands.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('p2p_conf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/thomas_thomas_molzahn-p2p_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/thomas_thomas_molzahn-p2p_conf.bib">bib</a>   <a href="pubs/thomas_thomas_molzahn-p2p_conf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">

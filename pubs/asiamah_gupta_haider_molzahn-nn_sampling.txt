@@ -1,0 +1,1 @@
+R. Asiamah, R. Gupta, R. Haider, and D.K. Molzahn, "Performance Assessment of Data Sampling Strategies for Neural Network-based Voltage Approximations," to appear in 56th North American Power Symposium (NAPS), October 13-15, 2024.
