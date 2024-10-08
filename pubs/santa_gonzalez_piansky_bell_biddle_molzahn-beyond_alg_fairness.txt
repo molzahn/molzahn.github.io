@@ -1,1 +1,1 @@
-R. Santa González, R. Piansky, S.M. Bell, J. Biddle, and D.K.~Molzahn, "Beyond Algorithmic Fairness: A Guide to Develop and Deploy Ethical AI-Enabled Decision-Support Tools," submitted.
+R. Santa González, R. Piansky, S.M. Bell, J. Biddle, and D.K. Molzahn, "Beyond Algorithmic Fairness: A Guide to Develop and Deploy Ethical AI-Enabled Decision-Support Tools," submitted.
