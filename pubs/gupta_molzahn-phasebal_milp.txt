@@ -1,0 +1,1 @@
+R. Gupta and D.K. Molzahn, "Optimizing Phase Allocation in Unbalanced Power Distribution Networks using a Linearized DistFlow Formulation," submitted.

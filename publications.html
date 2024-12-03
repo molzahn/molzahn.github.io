@@ -82,6 +82,26 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC-Informed DC Optimal Transmission Switching Problems via Parameter Optimization," submitted.<br />
+				<span id="taheri_molzahn-optimal_dcots_year" class="abstract" style="display:none">
+					Optimal Transmission Switching (OTS) problems minimize operational costs while treating both the transmission line energization statuses and generator setpoints as decision variables. The combination of nonlinearities from an AC power flow model and discrete variables associated with line statuses makes AC-OTS a computationally challenging Mixed-Integer Nonlinear Program (MINLP). To address these challenges, the DC power flow approximation is often used to obtain a DC-OTS formulation expressed as a Mixed-Integer Linear Program (MILP). However, this approximation often leads to suboptimal or infeasible switching decisions when evaluated with an AC power flow model. This paper proposes an enhanced DC-OTS formulation that leverages techniques for training machine learning models to optimize the DC power flow model's parameters. By optimally selecting parameter values that align flows in the DC power flow model with apparent power flows&mdash;incorporating both real and reactive components&mdash;from AC Optimal Power Flow (OPF) solutions, our method more accurately captures line congestion behavior. Integrating these optimized parameters into the DC-OTS formulation significantly improves the accuracy of switching decisions and reduces discrepancies between DC-OTS and AC-OTS solutions. We compare our optimized DC-OTS model against traditional OTS approaches, including DC-OTS, Linear Programming AC (LPAC)-OTS, and Quadratic Convex (QC)-OTS. Numeric results show that switching decisions from our model yield better performance when evaluated using an AC power flow model, with up to 44% cost reductions in some cases.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('taheri_molzahn-optimal_dcots_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-optimal_dcots.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2411.10528">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-optimal_dcots.bib">bib</a>   <a href="pubs/taheri_molzahn-optimal_dcots.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Improving the Accuracy of DC Optimal Power Flow Formulations via Parameter Optimization," submitted.<br />
+				<span id="taheri_molzahn-optimal_dcopf_year" class="abstract" style="display:none">
+					DC Optimal Power Flow (DC-OPF) problems optimize the generators' active power setpoints while satisfying constraints based on the DC power flow linearization. The computational tractability advantages of DC-OPF problems come at the expense of inaccuracies relative to AC Optimal Power Flow (AC-OPF) problems which accurately model the nonlinear steady-state behavior of power grids. This paper proposes an algorithm that significantly improves the accuracy of the generators' active power setpoints from DC-OPF problems with respect to the corresponding AC-OPF problems over a specified range of operating conditions. Using sensitivity information in a machine learning-inspired methodology, this algorithm tunes coefficient and bias parameters in the DC power flow approximation to improve the accuracy of the resulting DC-OPF solutions. Employing the Truncated Newton Conjugate-Gradient (TNC) method&mdash;a Quasi-Newton optimization technique&mdash;this parameter tuning occurs during an offline training phase, with the resulting parameters then used in online computations. Numerical results underscore the algorithm's efficacy with accuracy improvements in squared two-norm and &infin;-norm losses of up to 90&percnt; and 79&percnt;, respectively, relative to traditional DC-OPF formulations.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('taheri_molzahn-optimal_dcopf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-optimal_dcopf.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2410.11725">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-optimal_dcopf.bib">bib</a>   <a href="pubs/taheri_molzahn-optimal_dcopf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
 			<li><p>D. Turizo, D. Cifuentes, A. Leykin, and <b>D.K. Molzahn</b>, "Discrete Shortest Paths in Optimal Power Flow Feasible Regions," submitted.<br />
 				<span id="turizo_cifuentes_leykin_molzahn-shortest_path_year" class="abstract" style="display:none">
 					Optimal power flow (OPF) is a critical optimization problem for power systems to operate at points where cost or operational objectives are optimized. Due to the non-convexity of the set of feasible OPF operating points, it is non-trivial to transition the power system from its current operating point to the optimal one without violating constraints. On top of that, practical considerations dictate that the transition should be achieved using a small number of small-magnitude control actions. To solve this problem, this paper proposes an algorithm for computing a transition path by framing it as a shortest path problem. This problem is formulated in terms of a discretized piece-wise linear path, where the number of pieces is fixed a priori in order to limit the number of control actions. This formulation yields a nonlinear optimization problem (NLP) with a block tridiagonal structure, which we leverage by utilizing a specialized interior point method. An initial feasible path for our method is generated by solving a sequence of relaxations which are then tightened in a homotopy-like procedure. Numerical experiments illustrate the effectiveness of the algorithm. 
@@ -151,30 +171,38 @@
 			&emsp;[ <span onclick="showDiv('convergetol_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.08305">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-		<div class="tile scale-anm Year">
-		<span>
-			<li><p>P. Buason, S. Misra, J.P. Watson, and <b>D.K. Molzahn</b>, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," submitted.<br />
-				<span id="secondordersens_year" class="abstract" style="display:none">
-					The power flow equations are fundamental to power system planning, analysis, and control. However, their inherent non-linearity and non-convexity can pose significant challenges when solving problems that involve these equations. To address these challenges, linear approximations are frequently used to simplify computations at the potential cost of compromising accuracy and feasibility. Typical power flow approximations rely on general assumptions that are not always valid. Additionally, many existing linear approximations, such as the first-order Taylor series, overlook important information contained within higher-order terms. To gain a deeper understanding of the relationships among variables within a specific operational range and to achieve more accurate approximations, this paper considers a second-order sensitivity analysis of the power flow equations. By modeling the curvature of the power flow manifold, this paper uses the second-order sensitivities in an importance sampling method to improve the accuracy of adaptive power flow linearizations. Furthermore, this paper explores approximations formulated as rational functions with linear numerators and denominators that can be rewritten as linear constraints in power system optimization problems. These approximations, inspired by the Pad\'e approximant, utilize second-order power flow sensitivities. This approach is extended to enhance accuracy beyond what linear functions can achieve across various operational scenarios, and can also be constructed to be conservative (over- or under-estimate a quantity of interest).
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('secondordersens_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2404.04391">link </a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
-		</span>
+	<div class="tile scale-anm Year">
+		<h2>Conference Proceedings</h2>
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>C. Hettle, S. Gupta, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," submitted.<br />
-				<span id="reconfiguration_submodularity_year" class="abstract" style="display:none">
-					The economic cost of power outages has been estimated to be between $35 billion and $50 billion annually in the United States. We analyze and advance methodologies for electrical distribution network reconfiguration in order to quickly restore power, an important lever for improving reliability. For short-term network disruptions, we give a novel model for reconfiguration by considering switches that can be sequentially closed upon detection of a network anomaly upstream. The order in which switches close has an impact on reliability metrics such as SAIDI, which are the basis for regulator-imposed financial performance incentives. We introduce the "Minimum Reconnection Time (MRT" problem, which aims to find an optimal switch ordering that minimizes the cost of outages and show that it generalizes metrics like SAIDI. We first show that MRT is a special case of the well-known minimum linear ordering problem from submodular optimization literature and that MRT is also NP-hard. We show how to approximate MRT using recent kernel-based randomized rounding approaches, and in turn improve the state-of-the-art for a broad class of MLOP instances. Finally, we note that the choice of reliability metric can result in significant differences for low and medium voltage buses. We therefore consider optimizing multiple metrics simultaneously using local search methods that reconfigure the system's base tree to optimize service disruptions, reconnection times, and energy losses. We computationally validate our reconfiguration methods on the NREL SMART-DS Greensboro synthetic urban-suburban network and show significant improvement in reliability metrics.
-				</span>
+			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Optimizing Phase Allocation in Unbalanced Power Distribution Networks using a Linearized DistFlow Formulation," submitted.<br />
+				<span id="phasebal_milp_year" class="abstract" style="display:none">
+					Power distribution networks, especially in North America, are often unbalanced but are designed to keep unbalance levels within the limits specified by IEEE, IEC, and NEMA standards. However, rapid integration of unbalanced devices, such as electric vehicle (EV) chargers and single-phase solar plants, can exacerbate these imbalances. This increase can trigger protection devices, increase losses, and potentially damage devices. To address this issue, phase swapping (or phase allocation) has been proposed. Existing approaches predominantly rely on heuristic methods. In this work, we develop a mixed integer linear programming (MILP) approach for phase allocation. Our approach uses linearized DistFlow equations to represent the distribution network and incorporates a phase consistency constraint, enforced with binary variables, to ensure that downstream phase configurations align with upstream configurations. We validate the proposed approach on multiple benchmark test cases and demonstrate that it effectively improves network balance, as quantified by various metrics.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('reconfiguration_submodularity_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2104.07631">link</a> ] [ Ref: <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.bib">bib</a>   <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('phasebal_milp_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-phasebal_milp.pdf">pdf</a> ] [ Ref: <a href="pubs/gupta_molzahn-phasebal_milp.bib">bib</a>   <a href="pubs/gupta_molzahn-phasebal_milp.txt">txt</a> ] </p></li>
 		</span>
-  </div>
+	</div> 
 	<div class="tile scale-anm Year">
-		<h2>Conference Proceedings</h2>
+		<span>
+			<li><p>R. Harris, C.-Y. Chang, and <b>D.K. Molzahn</b>, "Integrated Transmission-Distribution Multi-Period Switching for Wildfire Risk Mitigation: Improving Speed and Scalability with Distributed Optimization," submitted.<br />
+				<span id="wildfireTD_conf_year" class="abstract" style="display:none">
+					With increasingly frequent and severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. Since many distributed energy resources are located in distribution systems, we investigate coordinating transmission and distribution systems when optimizing transmission line de-energization decisions. We consider a coordinated transmission-distribution optimization problem that balances tradeoffs between wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which provide power to reduce load shedding when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem and apply a distributed optimization algorithm. We demonstrate this approach on a large-scale test case geo-located in California that contains a transmission system with actual wildfire risk data coupled with multiple realistic distribution system models. Our results demonstrate that applying distributed optimization enables solving large-scale multi-period switching problems that are intractable using state-of-the-art centralized solvers.
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('wildfireTD_conf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
+		</span>
+	</div> 
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Analysis of Fairness-promoting Optimization Schemes of Photovoltaic Curtailments for Voltage Regulation in Power Distribution Networks," submitted.<br />
+				<span id="fairness_analysis_year" class="abstract" style="display:none">
+					Active power curtailment of photovoltaic (PV) generation is commonly exercised to mitigate over-voltage issues in power distribution networks. However, fairness concerns arise as certain PV plants may experience more significant curtailments than others depending on their locations within the network. Existing literature tackles this issue through fairness-promoting/aware optimization schemes. These schemes can be broadly categorized into two types. The first type maximizes an additional fairness objective along with the main objective of curtailment minimization. The second type is formulated as a feedback controller, where fairness is accounted for by assigning different weights (as feedback) in the curtailment minimization objective for each PV plant based on previous curtailment actions. This work combines these two schemes and provides extensive comparisons and analyses. We compare the performance in terms of fairness and net curtailments for several benchmark test networks.
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('fairness_analysis_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-fairness_analysis.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2404.00394">link</a> ] [ Ref: <a href="pubs/gupta_molzahn-fairness_analysis.bib">bib</a>   <a href="pubs/gupta_molzahn-fairness_analysis.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
@@ -185,17 +213,6 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('beyond_alg_fairness_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2409.11489">link</a> ] [ Ref: <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.bib">bib</a>   <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Analysis of Fairness-promoting Optimization Schemes of Photovoltaic Curtailments for Voltage Regulation in Power Distribution Networks," submitted.<br />
-				<span id="fairness_analysis_year" class="abstract" style="display:none">
-					Active power curtailment of photovoltaic (PV) generation is commonly exercised to mitigate over-voltage issues in power distribution networks. However, fairness concerns arise as certain PV plants may experience more significant curtailments than others depending on their locations within the network. Existing literature tackles this issue through fairness-promoting/aware optimization schemes. These schemes can be broadly categorized into two types. The first type maximizes an additional fairness objective along with the main objective of curtailment minimization. The second type is formulated as a feedback controller, where fairness is accounted for by assigning different weights (as feedback) in the curtailment minimization objective for each PV plant based on previous curtailment actions. In this work, we combine these two schemes and provide extensive analyses and comparisons of these two fairness schemes. We compare the performance in terms of fairness and net curtailments for several benchmark test networks.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('fairness_analysis_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-fairness_analysis.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2404.00394">link</a> ] [ Ref: <a href="pubs/gupta_molzahn-fairness_analysis.bib">bib</a>   <a href="pubs/gupta_molzahn-fairness_analysis.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	</ul>
@@ -214,7 +231,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfire_metrics_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('wildfire_metrics_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2409.20511">link</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 		<div class="tile scale-anm Year">
@@ -223,6 +240,28 @@
 	<div class="tile scale-anm Year">
 		<h2>Journal Papers</h2>
 	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>P. Buason, S. Misra, J.P. Watson, and <b>D.K. Molzahn</b>, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+				<span id="secondordersens_year" class="abstract" style="display:none">
+					The power flow equations are fundamental to power system planning, analysis, and control. However, their inherent non-linearity and non-convexity can pose significant challenges when solving problems that involve these equations. To address these challenges, linear approximations are frequently used to simplify computations at the potential cost of compromising accuracy and feasibility. Typical power flow approximations rely on general assumptions that are not always valid. Additionally, many existing linear approximations, such as the first-order Taylor series, overlook important information contained within higher-order terms. To gain a deeper understanding of the relationships among variables within a specific operational range and to achieve more accurate approximations, this paper considers a second-order sensitivity analysis of the power flow equations. By modeling the curvature of the power flow manifold, this paper uses the second-order sensitivities in an importance sampling method to improve the accuracy of adaptive power flow linearizations. Furthermore, this paper explores approximations formulated as rational functions with linear numerators and denominators that can be rewritten as linear constraints in power system optimization problems. These approximations, inspired by the Pad\'e approximant, utilize second-order power flow sensitivities. This approach is extended to enhance accuracy beyond what linear functions can achieve across various operational scenarios, and can also be constructed to be conservative (over- or under-estimate a quantity of interest).
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('secondordersens_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10755158">link </a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>C. Hettle, S. Gupta, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," to appear in <i>INFORMS Journal on Computing</i>.<br />
+				<span id="reconfiguration_submodularity_year" class="abstract" style="display:none">
+					The economic cost of power outages has been estimated to be between $35 billion and $50 billion annually in the United States. We analyze and advance methodologies for electrical distribution network reconfiguration in order to quickly restore power, an important lever for improving reliability. For short-term network disruptions, we give a novel model for reconfiguration by considering switches that can be sequentially closed upon detection of a network anomaly upstream. The order in which switches close has an impact on reliability metrics such as SAIDI, which are the basis for regulator-imposed financial performance incentives. We introduce the "Minimum Reconnection Time (MRT" problem, which aims to find an optimal switch ordering that minimizes the cost of outages and show that it generalizes metrics like SAIDI. We first show that MRT is a special case of the well-known minimum linear ordering problem from submodular optimization literature and that MRT is also NP-hard. We show how to approximate MRT using recent kernel-based randomized rounding approaches, and in turn improve the state-of-the-art for a broad class of MLOP instances. Finally, we note that the choice of reliability metric can result in significant differences for low and medium voltage buses. We therefore consider optimizing multiple metrics simultaneously using local search methods that reconfigure the system's base tree to optimize service disruptions, reconnection times, and energy losses. We computationally validate our reconfiguration methods on the NREL SMART-DS Greensboro synthetic urban-suburban network and show significant improvement in reliability metrics.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('reconfiguration_submodularity_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2104.07631">link</a> ] [ Ref: <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.bib">bib</a>   <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.txt">txt</a> ] </p></li>
+		</span>
+  </div>
 	<div class="tile scale-anm Year">
 		<span>
 			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, K.R. Davis, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow through Improved Linear Convex Envelopes," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
@@ -337,24 +376,24 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>R. Asiamah, R. Gupta, R. Haider, and <b>D.K. Molzahn</b>, "Performance Assessment of Data Sampling Strategies for Neural Network-based Voltage Approximations," to appear in <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
+			<li><p>R. Asiamah, R. Gupta, R. Haider, and <b>D.K. Molzahn</b>, "Performance Assessment of Data Sampling Strategies for Neural Network-based Voltage Approximations," <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br /> <b>First runner-up for the Best Graduate Presentation award.</b> <br/>
 				<span id="nn_sampling_year" class="abstract" style="display:none">
 					Machine learning models have been developed for a wide variety of power system applications. The accuracy of a machine learning model strongly depends on the selection of training data. In many settings where real data are limited or unavailable, machine learning models are trained using synthetic data sampled via different strategies. Using the task of approximating the voltage magnitudes associated with specified complex power injections as an illustrative application, this paper compares the performance of neural networks trained on four different sampling strategies: (i) correlated loads at fixed power factor, (ii) correlated loads at varying power factor, (iii) uncorrelated loads at fixed power factor, and (iv) uncorrelated loads at varying power factor. A new sampling strategy that combines these four strategies into one training dataset is also introduced and assessed. Results from transmission and distribution test cases of varying sizes show that these strategies for creating synthetic training data yield varied neural network accuracy. The accuracy differences across the various strategies vary by up to a factor of four. While none of the first four strategies outperform the others across all test cases, neural networks trained with the combined dataset perform the best overall, maintaining a high accuracy and low error spreads.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nn_sampling_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.bib">bib</a>   <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('nn_sampling_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10741775">link</a> ] [ Ref: <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.bib">bib</a>   <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>L. Thomas, V. Thomas, and <b>D.K. Molzahn</b>, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," to appear in <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
+			<li><p>L. Thomas, V. Thomas, and <b>D.K. Molzahn</b>, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
 				<span id="p2p_conf_year" class="abstract" style="display:none">
 					Peer-to-peer (P2P) energy trading has emerged as a transformative approach to electrical power distribution, empowering individuals and communities to directly exchange energy resources within local networks. Challenges arise in modeling the supply and demand ratio and behavior of prosumers (market participants who can buy and sell electricity). The supply and demand ratio can be described as the balance between the amount of energy available for sale by prosumers (supply) and the amount of energy desired for purchase by other prosumers (demand). This ratio can be effective in determining pricing and the feasibility of energy transactions. This paper proposes two algorithms to optimize the supply and demand ratio between prosumers in a P2P energy trading market, improving overall efficiency of transactions while accounting for prosumer behavior. A bilevel optimization framework is modeled for buyers who determine their purchase quantities and the fraction of power to purchase from each seller. The seller's algorithm finds the price that maximizes the seller's profit based on the buyer's demand. A numerical case study involving five prosumers - two sellers and three buyers - is presented and results in an equilibrium state for prosumer transactions in this P2P energy trading market. The bilevel optimization approach successfully balances supply and demand in the P2P energy market where the sellers maximize revenue by adjusting prices and buyers meet their energy demands.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('p2p_conf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/thomas_thomas_molzahn-p2p_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/thomas_thomas_molzahn-p2p_conf.bib">bib</a>   <a href="pubs/thomas_thomas_molzahn-p2p_conf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('p2p_conf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/thomas_thomas_molzahn-p2p_conf.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10741728">link</a> ] [ Ref: <a href="pubs/thomas_thomas_molzahn-p2p_conf.bib">bib</a>   <a href="pubs/thomas_thomas_molzahn-p2p_conf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -384,7 +423,7 @@
 					Combinatorial distribution system optimization problems, such as scheduling electric vehicle (EV) charging during evacuations, present significant computational challenges. These challenges stem from the large numbers of constraints, continuous variables, and discrete variables, coupled with the  unbalanced nature of distribution systems. In response to the escalating frequency of extreme events impacting electric power systems, this paper introduces a method that integrates sample-based conservative linear power flow approximations (CLAs) into an optimization framework. In particular, this integration aims to ameliorate the aforementioned challenges of distribution system optimization in the context of efficiently minimizing the charging time required for EVs in urban evacuation scenarios.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('EVacuation_feeder_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.16975">link</a> ] [ Ref: <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.bib">bib</a>   <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('EVacuation_feeder_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10472235">link</a> ] [ Ref: <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.bib">bib</a>   <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -394,7 +433,7 @@
 					This paper presents an algorithm to optimize the parameters of power systems equivalents to enhance the accuracy of the DC power flow approximation in reduced networks. Based on a zonal division of the network, the algorithm produces a reduced power system equivalent that captures inter-zonal flows with aggregated buses and equivalent transmission lines. The algorithm refines coefficient and bias parameters for the DC power flow model of the reduced network, aiming to minimize discrepancies between inter-zonal flows in DC and AC power flow results. Using optimization methods like BFGS, L-BFGS, and TNC in an offline training phase, these parameters boost the accuracy of online DC power flow computations. In contrast to existing network equivalencing methods, the proposed algorithm optimizes accuracy over a specified range of operation as opposed to only considering a single nominal point. Numerical tests demonstrate substantial accuracy improvements over traditional equivalencing and approximation methods.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('DCequivalents_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.13104">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('DCequivalents_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10472173">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	  <div class="tile scale-anm Year">
@@ -499,7 +538,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ukraine_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] [ <a href="https://github.com/rjuly7/ukraine_test_case">GitHub Repository</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('ukraine_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10318676">link</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] [ <a href="https://github.com/rjuly7/ukraine_test_case">GitHub Repository</a> ]</p></li>
 		</span>
   </div>
 		<div class="tile scale-anm Year">
@@ -1734,6 +1773,26 @@
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "AC-Informed DC Optimal Transmission Switching Problems via Parameter Optimization," submitted.<br />
+				<span id="taheri_molzahn-optimal_dcots_type" class="abstract" style="display:none">
+					Optimal Transmission Switching (OTS) problems minimize operational costs while treating both the transmission line energization statuses and generator setpoints as decision variables. The combination of nonlinearities from an AC power flow model and discrete variables associated with line statuses makes AC-OTS a computationally challenging Mixed-Integer Nonlinear Program (MINLP). To address these challenges, the DC power flow approximation is often used to obtain a DC-OTS formulation expressed as a Mixed-Integer Linear Program (MILP). However, this approximation often leads to suboptimal or infeasible switching decisions when evaluated with an AC power flow model. This paper proposes an enhanced DC-OTS formulation that leverages techniques for training machine learning models to optimize the DC power flow model's parameters. By optimally selecting parameter values that align flows in the DC power flow model with apparent power flows&mdash;incorporating both real and reactive components&mdash;from AC Optimal Power Flow (OPF) solutions, our method more accurately captures line congestion behavior. Integrating these optimized parameters into the DC-OTS formulation significantly improves the accuracy of switching decisions and reduces discrepancies between DC-OTS and AC-OTS solutions. We compare our optimized DC-OTS model against traditional OTS approaches, including DC-OTS, Linear Programming AC (LPAC)-OTS, and Quadratic Convex (QC)-OTS. Numeric results show that switching decisions from our model yield better performance when evaluated using an AC power flow model, with up to 44% cost reductions in some cases.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('taheri_molzahn-optimal_dcots_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-optimal_dcots.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2411.10528">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-optimal_dcots.bib">bib</a>   <a href="pubs/taheri_molzahn-optimal_dcots.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Improving the Accuracy of DC Optimal Power Flow Formulations via Parameter Optimization," submitted.<br />
+				<span id="taheri_molzahn-optimal_dcopf_type" class="abstract" style="display:none">
+					DC Optimal Power Flow (DC-OPF) problems optimize the generators' active power setpoints while satisfying constraints based on the DC power flow linearization. The computational tractability advantages of DC-OPF problems come at the expense of inaccuracies relative to AC Optimal Power Flow (AC-OPF) problems which accurately model the nonlinear steady-state behavior of power grids. This paper proposes an algorithm that significantly improves the accuracy of the generators' active power setpoints from DC-OPF problems with respect to the corresponding AC-OPF problems over a specified range of operating conditions. Using sensitivity information in a machine learning-inspired methodology, this algorithm tunes coefficient and bias parameters in the DC power flow approximation to improve the accuracy of the resulting DC-OPF solutions. Employing the Truncated Newton Conjugate-Gradient (TNC) method&mdash;a Quasi-Newton optimization technique&mdash;this parameter tuning occurs during an offline training phase, with the resulting parameters then used in online computations. Numerical results underscore the algorithm's efficacy with accuracy improvements in squared two-norm and &infin;-norm losses of up to 90&percnt; and 79&percnt;, respectively, relative to traditional DC-OPF formulations.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('taheri_molzahn-optimal_dcopf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-optimal_dcopf.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2410.11725">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-optimal_dcopf.bib">bib</a>   <a href="pubs/taheri_molzahn-optimal_dcopf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>D. Turizo, D. Cifuentes, A. Leykin, and <b>D.K. Molzahn</b>, "Discrete Shortest Paths in Optimal Power Flow Feasible Regions," submitted.<br />
@@ -1806,19 +1865,22 @@
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
+		<h2>2024</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>P. Buason, S. Misra, J.P. Watson, and <b>D.K. Molzahn</b>, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," submitted.<br />
+			<li><p>P. Buason, S. Misra, J.P. Watson, and <b>D.K. Molzahn</b>, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
 				<span id="secondordersens_type" class="abstract" style="display:none">
 					The power flow equations are fundamental to power system planning, analysis, and control. However, their inherent non-linearity and non-convexity can pose significant challenges when solving problems that involve these equations. To address these challenges, linear approximations are frequently used to simplify computations at the potential cost of compromising accuracy and feasibility. Typical power flow approximations rely on general assumptions that are not always valid. Additionally, many existing linear approximations, such as the first-order Taylor series, overlook important information contained within higher-order terms. To gain a deeper understanding of the relationships among variables within a specific operational range and to achieve more accurate approximations, this paper considers a second-order sensitivity analysis of the power flow equations. By modeling the curvature of the power flow manifold, this paper uses the second-order sensitivities in an importance sampling method to improve the accuracy of adaptive power flow linearizations. Furthermore, this paper explores approximations formulated as rational functions with linear numerators and denominators that can be rewritten as linear constraints in power system optimization problems. These approximations, inspired by the Pad\'e approximant, utilize second-order power flow sensitivities. This approach is extended to enhance accuracy beyond what linear functions can achieve across various operational scenarios, and can also be constructed to be conservative (over- or under-estimate a quantity of interest).
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('secondordersens_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2404.04391">link </a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('secondordersens_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10755158">link </a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type"  style="display:none">
 		<span>
-			<li><p>C. Hettle, S. Gupta, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," submitted.<br />
+			<li><p>C. Hettle, S. Gupta, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," to appear in <i>INFORMS Journal on Computing</i>.<br />
 				<span id="reconfiguration_submodularity_type" class="abstract" style="display:none">
 					The economic cost of power outages has been estimated to be between $35 billion and $50 billion annually in the United States. We analyze and advance methodologies for electrical distribution network reconfiguration in order to quickly restore power, an important lever for improving reliability. For short-term network disruptions, we give a novel model for reconfiguration by considering switches that can be sequentially closed upon detection of a network anomaly upstream. The order in which switches close has an impact on reliability metrics such as SAIDI, which are the basis for regulator-imposed financial performance incentives. We introduce the "Minimum Reconnection Time (MRT)" problem, which aims to find an optimal switch ordering that minimizes the cost of outages and show that it generalizes metrics like SAIDI. We first show that MRT is a special case of the well-known minimum linear ordering problem from submodular optimization literature and that MRT is also NP-hard. We show how to approximate MRT using recent kernel-based randomized rounding approaches, and in turn improve the state-of-the-art for a broad class of MLOP instances. Finally, we note that the choice of reliability metric can result in significant differences for low and medium voltage buses. We therefore consider optimizing multiple metrics simultaneously using local search methods that reconfigure the system's base tree to optimize service disruptions, reconnection times, and energy losses. We computationally validate our reconfiguration methods on the NREL SMART-DS Greensboro synthetic urban-suburban network and show significant improvement in reliability metrics.
 				</span>
@@ -1827,9 +1889,6 @@
 			&emsp;[ <span onclick="showDiv('reconfiguration_submodularity_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2104.07631">link</a> ] [ Ref: <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.bib">bib</a>   <a href="pubs/hettle_gupta_molzahn-reconfiguration_submodularity.txt">txt</a> ] </p></li>
 		</span>
   </div>
-	<div class="tile scale-anm Type" style="display:none">
-		<h2>2024</h2>
-	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>M.R. Narimani, <b>D.K. Molzahn</b>, K.R. Davis, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow through Improved Linear Convex Envelopes," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
@@ -2464,6 +2523,37 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Optimizing Phase Allocation in Unbalanced Power Distribution Networks using a Linearized DistFlow Formulation," submitted.<br />
+				<span id="phasebal_milp_type" class="abstract" style="display:none">
+					Power distribution networks, especially in North America, are often unbalanced but are designed to keep unbalance levels within the limits specified by IEEE, IEC, and NEMA standards. However, rapid integration of unbalanced devices, such as electric vehicle (EV) chargers and single-phase solar plants, can exacerbate these imbalances. This increase can trigger protection devices, increase losses, and potentially damage devices. To address this issue, phase swapping (or phase allocation) has been proposed. Existing approaches predominantly rely on heuristic methods. In this work, we develop a mixed integer linear programming (MILP) approach for phase allocation. Our approach uses linearized DistFlow equations to represent the distribution network and incorporates a phase consistency constraint, enforced with binary variables, to ensure that downstream phase configurations align with upstream configurations. We validate the proposed approach on multiple benchmark test cases and demonstrate that it effectively improves network balance, as quantified by various metrics.
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('phasebal_milp_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-phasebal_milp.pdf">pdf</a> ] [ Ref: <a href="pubs/gupta_molzahn-phasebal_milp.bib">bib</a>   <a href="pubs/gupta_molzahn-phasebal_milp.txt">txt</a> ] </p></li>
+		</span>
+	</div> 
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Harris, C.-Y. Chang, and <b>D.K. Molzahn</b>, "Integrated Transmission-Distribution Multi-Period Switching for Wildfire Risk Mitigation: Improving Speed and Scalability with Distributed Optimization," submitted.<br />
+				<span id="wildfireTD_conf_type" class="abstract" style="display:none">
+					With increasingly frequent and severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. Since many distributed energy resources are located in distribution systems, we investigate coordinating transmission and distribution systems when optimizing transmission line de-energization decisions. We consider a coordinated transmission-distribution optimization problem that balances tradeoffs between wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which provide power to reduce load shedding when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem and apply a distributed optimization algorithm. We demonstrate this approach on a large-scale test case geo-located in California that contains a transmission system with actual wildfire risk data coupled with multiple realistic distribution system models. Our results demonstrate that applying distributed optimization enables solving large-scale multi-period switching problems that are intractable using state-of-the-art centralized solvers.
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('wildfireTD_conf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
+		</span>
+	</div> 
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Analysis of Fairness-promoting Optimization Schemes of Photovoltaic Curtailments for Voltage Regulation in Power Distribution Networks," submitted.<br />
+				<span id="fairness_analysis_type" class="abstract" style="display:none">
+					Active power curtailment of photovoltaic (PV) generation is commonly exercised to mitigate over-voltage issues in power distribution networks. However, fairness concerns arise as certain PV plants may experience more significant curtailments than others depending on their locations within the network. Existing literature tackles this issue through fairness-promoting/aware optimization schemes. These schemes can be broadly categorized into two types. The first type maximizes an additional fairness objective along with the main objective of curtailment minimization. The second type is formulated as a feedback controller, where fairness is accounted for by assigning different weights (as feedback) in the curtailment minimization objective for each PV plant based on previous curtailment actions. This work combines these two schemes and provides extensive comparisons and analyses. We compare the performance in terms of fairness and net curtailments for several benchmark test networks.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('fairness_analysis_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-fairness_analysis.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2404.00394">link</a> ] [ Ref: <a href="pubs/gupta_molzahn-fairness_analysis.bib">bib</a>   <a href="pubs/gupta_molzahn-fairness_analysis.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>R. Santa Gonz&aacute;lez, R. Piansky, S.M. Bell, J. Biddle, and <b>D.K. Molzahn</b>, "Beyond Algorithmic Fairness: A Guide to Develop and Deploy Ethical AI-Enabled Decision-Support Tools," submitted.<br />
 				<span id="beyond_alg_fairness_type" class="abstract" style="display:none">
 					The integration of artificial intelligence (AI) and optimization hold substantial promise for improving the efficiency, reliability, and resilience of engineered systems. Due to the networked nature of many engineered systems, ethically deploying methodologies at this intersection poses challenges that are distinct from other AI settings, thus motivating the development of ethical guidelines tailored to AI-enabled optimization. This paper highlights the need to go beyond fairness-driven algorithms to systematically address ethical decisions spanning the stages of modeling, data curation, results analysis, and implementation of optimization-based decision support tools. Accordingly, this paper identifies ethical considerations required when deploying algorithms at the intersection of AI and optimization via case studies in power systems as well as supply chain and logistics. Rather than providing a prescriptive set of rules, this paper aims to foster reflection and awareness among researchers and encourage consideration of ethical implications at every step of the decision-making process. 
@@ -2471,17 +2561,6 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('beyond_alg_fairness_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2409.11489">link</a> ] [ Ref: <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.bib">bib</a>   <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Analysis of Fairness-promoting Optimization Schemes of Photovoltaic Curtailments for Voltage Regulation in Power Distribution Networks," submitted.<br />
-				<span id="fairness_analysis_type" class="abstract" style="display:none">
-					Active power curtailment of photovoltaic (PV) generation is commonly exercised to mitigate over-voltage issues in power distribution networks. However, fairness concerns arise as certain PV plants may experience more significant curtailments than others depending on their locations within the network. Existing literature tackles this issue through fairness-promoting/aware optimization schemes. These schemes can be broadly categorized into two types. The first type maximizes an additional fairness objective along with the main objective of curtailment minimization. The second type is formulated as a feedback controller, where fairness is accounted for by assigning different weights (as feedback) in the curtailment minimization objective for each PV plant based on previous curtailment actions. In this work, we combine these two schemes and provide extensive analyses and comparisons of these two fairness schemes. We compare the performance in terms of fairness and net curtailments for several benchmark test networks.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('fairness_analysis_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-fairness_analysis.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2404.00394">link</a> ] [ Ref: <a href="pubs/gupta_molzahn-fairness_analysis.bib">bib</a>   <a href="pubs/gupta_molzahn-fairness_analysis.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -2495,13 +2574,13 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfire_metrics_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('wildfire_metrics_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2409.20511">link</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
 	<h2>2024</h2>
 </div>
-<div class="tile scale-anm Type">
+<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>S. Talkington, R. Gupta, R. Asiamah, P. Buason, and <b>D.K. Molzahn</b>, "Strategic Electric Distribution Network Sensing via Spectral Bandits," to appear in <i>63rd IEEE Conference on Decision and Control (CDC)</i>, December 16-19, 2024.<br />
 				<span id="sensor_bandits_type" class="abstract" style="display:none">
@@ -2514,24 +2593,24 @@
 	</div>
 <div class="tile scale-anm Type"  style="display:none">
 		<span>
-			<li><p>R. Asiamah, R. Gupta, R. Haider, and <b>D.K. Molzahn</b>, "Performance Assessment of Data Sampling Strategies for Neural Network-based Voltage Approximations," to appear in <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
+			<li><p>R. Asiamah, R. Gupta, R. Haider, and <b>D.K. Molzahn</b>, "Performance Assessment of Data Sampling Strategies for Neural Network-based Voltage Approximations," <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br /> <b>First runner-up for the Best Graduate Presentation award.</b> <br/>
 				<span id="nn_sampling_type" class="abstract" style="display:none">
 					Machine learning models have been developed for a wide variety of power system applications. The accuracy of a machine learning model strongly depends on the selection of training data. In many settings where real data are limited or unavailable, machine learning models are trained using synthetic data sampled via different strategies. Using the task of approximating the voltage magnitudes associated with specified complex power injections as an illustrative application, this paper compares the performance of neural networks trained on four different sampling strategies: (i) correlated loads at fixed power factor, (ii) correlated loads at varying power factor, (iii) uncorrelated loads at fixed power factor, and (iv) uncorrelated loads at varying power factor. A new sampling strategy that combines these four strategies into one training dataset is also introduced and assessed. Results from transmission and distribution test cases of varying sizes show that these strategies for creating synthetic training data yield varied neural network accuracy. The accuracy differences across the various strategies vary by up to a factor of four. While none of the first four strategies outperform the others across all test cases, neural networks trained with the combined dataset perform the best overall, maintaining a high accuracy and low error spreads.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nn_sampling_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.bib">bib</a>   <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('nn_sampling_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10741775">link</a> ] [ Ref: <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.bib">bib</a>   <a href="pubs/asiamah_gupta_haider_molzahn-nn_sampling.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type"  style="display:none">
 		<span>
-			<li><p>L. Thomas, V. Thomas, and <b>D.K. Molzahn</b>, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," to appear in <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
+			<li><p>L. Thomas, V. Thomas, and <b>D.K. Molzahn</b>, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," <i>56th North American Power Symposium (NAPS)</i>, October 13-15, 2024.<br />
 				<span id="p2p_conf_type" class="abstract" style="display:none">
 					Peer-to-peer (P2P) energy trading has emerged as a transformative approach to electrical power distribution, empowering individuals and communities to directly exchange energy resources within local networks. Challenges arise in modeling the supply and demand ratio and behavior of prosumers (market participants who can buy and sell electricity). The supply and demand ratio can be described as the balance between the amount of energy available for sale by prosumers (supply) and the amount of energy desired for purchase by other prosumers (demand). This ratio can be effective in determining pricing and the feasibility of energy transactions. This paper proposes two algorithms to optimize the supply and demand ratio between prosumers in a P2P energy trading market, improving overall efficiency of transactions while accounting for prosumer behavior. A bilevel optimization framework is modeled for buyers who determine their purchase quantities and the fraction of power to purchase from each seller. The seller's algorithm finds the price that maximizes the seller's profit based on the buyer's demand. A numerical case study involving five prosumers - two sellers and three buyers - is presented and results in an equilibrium state for prosumer transactions in this P2P energy trading market. The bilevel optimization approach successfully balances supply and demand in the P2P energy market where the sellers maximize revenue by adjusting prices and buyers meet their energy demands.
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('p2p_conf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/thomas_thomas_molzahn-p2p_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/thomas_thomas_molzahn-p2p_conf.bib">bib</a>   <a href="pubs/thomas_thomas_molzahn-p2p_conf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('p2p_conf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/thomas_thomas_molzahn-p2p_conf.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10741728">link</a> ] [ Ref: <a href="pubs/thomas_thomas_molzahn-p2p_conf.bib">bib</a>   <a href="pubs/thomas_thomas_molzahn-p2p_conf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2561,7 +2640,7 @@
 					Combinatorial distribution system optimization problems, such as scheduling electric vehicle (EV) charging during evacuations, present significant computational challenges. These challenges stem from the large numbers of constraints, continuous variables, and discrete variables, coupled with the  unbalanced nature of distribution systems. In response to the escalating frequency of extreme events impacting electric power systems, this paper introduces a method that integrates sample-based conservative linear power flow approximations (CLAs) into an optimization framework. In particular, this integration aims to ameliorate the aforementioned challenges of distribution system optimization in the context of efficiently minimizing the charging time required for EVs in urban evacuation scenarios.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('EVacuation_feeder_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.16975">link</a> ] [ Ref: <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.bib">bib</a>   <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('EVacuation_feeder_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10472235">link</a> ] [ Ref: <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.bib">bib</a>   <a href="pubs/owen_aquino_talkington_molzahn-EVacuation_feeder.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2571,7 +2650,7 @@
 					This paper presents an algorithm to optimize the parameters of power systems equivalents to enhance the accuracy of the DC power flow approximation in reduced networks. Based on a zonal division of the network, the algorithm produces a reduced power system equivalent that captures inter-zonal flows with aggregated buses and equivalent transmission lines. The algorithm refines coefficient and bias parameters for the DC power flow model of the reduced network, aiming to minimize discrepancies between inter-zonal flows in DC and AC power flow results. Using optimization methods like BFGS, L-BFGS, and TNC in an offline training phase, these parameters boost the accuracy of online DC power flow computations. In contrast to existing network equivalencing methods, the proposed algorithm optimizes accuracy over a specified range of operation as opposed to only considering a single nominal point. Numerical tests demonstrate substantial accuracy improvements over traditional equivalencing and approximation methods.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('DCequivalents_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.13104">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('DCequivalents_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10472173">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
 		</span>
 	</div>
   <div class="tile scale-anm Type" style="display:none">
@@ -2596,7 +2675,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ukraine_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] [ <a href="https://github.com/rjuly7/ukraine_test_case">GitHub Repository</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('ukraine_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_banerjee_molzahn-ukraine.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10318676">link</a> ] [ Ref: <a href="pubs/harris_banerjee_molzahn-ukraine.bib">bib</a>   <a href="pubs/harris_banerjee_molzahn-ukraine.txt">txt</a> ] [ <a href="https://github.com/rjuly7/ukraine_test_case">GitHub Repository</a> ]</p></li>
 		</span>
   </div>
 <div class="tile scale-anm Type" style="display:none">

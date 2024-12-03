@@ -1,1 +1,1 @@
-L. Thomas, V. Thomas, and D.K. Molzahn, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," to appear in 56th North American Power Symposium (NAPS), October 13-15, 2024.
+L. Thomas, V. Thomas, and D.K. Molzahn, "Designing a Peer-to-Peer Energy Trading Market to Improve Prosumer Participation in a Community using Evolutionary Algorithms," 56th North American Power Symposium (NAPS), October 13-15, 2024.
