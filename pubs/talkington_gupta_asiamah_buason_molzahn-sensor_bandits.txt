@@ -1,1 +1,1 @@
-S. Talkington, R. Gupta, R. Asiamah, P. Buason, and D.K. Molzahn, "Strategic Electric Distribution Network Sensing via Spectral Bandits," to appear in 63rd IEEE Conference on Decision and Control (CDC), December 16-19, 2024.
+S. Talkington, R. Gupta, R. Asiamah, P. Buason, and D.K. Molzahn, "Strategic Electric Distribution Network Sensing via Spectral Bandits," 63rd IEEE Conference on Decision and Control (CDC), December 16-19, 2024.
