@@ -181,18 +181,37 @@
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
+		<h2>Conference Proceedings</h2>
+	</div>
+	<div class="tile scale-anm Year">
 		<span>
-			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," submitted.<br />
-				<span id="convergetol_year" class="abstract" style="display:none">
-					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate controllers to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF solution is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. While ensuring feasibility, the proposed approach enables control of the trade-off between computational speed, which improves with looser convergence tolerance, and distributed OPF solution cost, which degrades with looser convergence tolerance due to tightened constraints.
-				</span>
+			<li><p>R. Harris, C.-Y. Chang, and <b>D.K. Molzahn</b>, "Integrated Transmission-Distribution Multi-Period Switching for Wildfire Risk Mitigation: Improving Speed and Scalability with Distributed Optimization," submitted.<br />
+				<span id="wildfireTD_conf_year" class="abstract" style="display:none">
+					With increasingly severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. We investigate a coordinated transmission-distribution optimization problem that balances wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which may support loads when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators'’' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem over both space and time and apply a distributed optimization algorithm. Using a large-scale synthetic California test case with realistic distribution models and real wildfire risk data, we show that distributed optimization can solve large-scale multi-period switching problems that are otherwise intractable for centralized solvers. We also discuss challenges and future directions for improving the distributed algorithm's convergence performance as the number of time periods increases.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('convergetol_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.08305">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('wildfireTD_conf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
+		</span>
+	</div> 
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "Sample-Based Piecewise Linear Power Flow Approximations Using Second-Order Sensitivities," submitted.<br />
+				<span id="cpla_year" class="abstract" style="display:none">
+					 With increasingly severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. We investigate a coordinated transmission-distribution optimization problem that balances wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which may support loads when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem over both space and time and apply a distributed optimization algorithm. Using a large-scale synthetic California test case with realistic distribution models and real wildfire risk data, we show that distributed optimization can solve large-scale multi-period switching problems that are otherwise intractable for centralized solvers. We also discuss challenges and future directions for improving the distributed algorithm's convergence performance as the number of time periods increases.
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('cpla_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cpla.pdf">pdf</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cpla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cpla.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
-		<h2>Conference Proceedings</h2>
+		<span>
+			<li><p>R. Piansky, <b>D.K. Molzahn</b>, N.D. Jackson, and J.K. Skolfield, "Evaluating Undergrounding Decisions for Wildfire Ignition Risk Mitigation across Multiple Hazards," submitted.<br />
+				<span id="resiliency_comp_year" class="abstract" style="display:none">
+					With electric power infrastructure increasingly susceptible to impacts from climate-driven natural disasters, there is an increasing need for optimization algorithms that determine where to harden the power grid. Prior work has primarily developed optimal hardening approaches for specific acute disaster scenarios. Given the extensive costs of hardening the grid, it is important to understand how a particular set of resilience investments will perform under multiple types of natural hazards. Using a large-scale test case representing the Texas power system, this paper aims to understand how line undergrounding investment decisions made for wildfire ignition risk mitigation perform during a range of wildfire, hurricane, and wind events. Given the varying geographical spread and damage profile of these events, we show that investment decisions made to address one type of natural disaster do not necessarily improve broader resilience outcomes, supporting the need for co-optimization across a range of hazards. 
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('resiliency_comp_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_molzahn_jackson_skolfield-resiliency_comp.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_molzahn_jackson_skolfield-resiliency_comp.bib">bib</a>   <a href="pubs/piansky_molzahn_jackson_skolfield-resiliency_comp.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
@@ -202,16 +221,6 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('phasebal_milp_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-phasebal_milp.pdf">pdf</a> ] [ Ref: <a href="pubs/gupta_molzahn-phasebal_milp.bib">bib</a>   <a href="pubs/gupta_molzahn-phasebal_milp.txt">txt</a> ] </p></li>
-		</span>
-	</div> 
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>R. Harris, C.-Y. Chang, and <b>D.K. Molzahn</b>, "Integrated Transmission-Distribution Multi-Period Switching for Wildfire Risk Mitigation: Improving Speed and Scalability with Distributed Optimization," submitted.<br />
-				<span id="wildfireTD_conf_year" class="abstract" style="display:none">
-					With increasingly frequent and severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. Since many distributed energy resources are located in distribution systems, we investigate coordinating transmission and distribution systems when optimizing transmission line de-energization decisions. We consider a coordinated transmission-distribution optimization problem that balances tradeoffs between wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which provide power to reduce load shedding when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem and apply a distributed optimization algorithm. We demonstrate this approach on a large-scale test case geo-located in California that contains a transmission system with actual wildfire risk data coupled with multiple realistic distribution system models. Our results demonstrate that applying distributed optimization enables solving large-scale multi-period switching problems that are intractable using state-of-the-art centralized solvers.
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfireTD_conf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
 		</span>
 	</div> 
 	<div class="tile scale-anm Year">
@@ -244,6 +253,17 @@
 		</div>
 	<div class="tile scale-anm Year">
 		<h2>Journal Papers</h2>
+	</div>
+		<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+				<span id="convergetol_year" class="abstract" style="display:none">
+					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate controllers to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF solution is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. While ensuring feasibility, the proposed approach enables control of the trade-off between computational speed, which improves with looser convergence tolerance, and distributed OPF solution cost, which degrades with looser convergence tolerance due to tightened constraints.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('convergetol_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.08305">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 <div class="tile scale-anm Year">
 		<span>
@@ -1899,8 +1919,11 @@
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
+		<h2>2025</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," submitted.<br />
+			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
 				<span id="convergetol_type" class="abstract" style="display:none">
 					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate computing agents to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF generator dispatch is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. The proposed approach enables control of the trade-off between computational speed, which improves as the convergence tolerance increases, and distributed OPF solution cost, which increases with convergence tolerance due to tightened constraints, while ensuring feasibility.
 				</span>
@@ -1908,9 +1931,6 @@
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('convergetol_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2311.08305">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
 		</span>
-	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<h2>2025</h2>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
@@ -2571,22 +2591,42 @@
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>R. Harris, C.-Y. Chang, and <b>D.K. Molzahn</b>, "Integrated Transmission-Distribution Multi-Period Switching for Wildfire Risk Mitigation: Improving Speed and Scalability with Distributed Optimization," submitted.<br />
+				<span id="wildfireTD_conf_type" class="abstract" style="display:none">
+					With increasingly severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. We investigate a coordinated transmission-distribution optimization problem that balances wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which may support loads when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators'’' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem over both space and time and apply a distributed optimization algorithm. Using a large-scale synthetic California test case with realistic distribution models and real wildfire risk data, we show that distributed optimization can solve large-scale multi-period switching problems that are otherwise intractable for centralized solvers. We also discuss challenges and future directions for improving the distributed algorithm's convergence performance as the number of time periods increases.
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('wildfireTD_conf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
+		</span>
+	</div> 
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "Sample-Based Piecewise Linear Power Flow Approximations Using Second-Order Sensitivities," submitted.<br />
+				<span id="cpla_type" class="abstract" style="display:none">
+					 With increasingly severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. We investigate a coordinated transmission-distribution optimization problem that balances wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which may support loads when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem over both space and time and apply a distributed optimization algorithm. Using a large-scale synthetic California test case with realistic distribution models and real wildfire risk data, we show that distributed optimization can solve large-scale multi-period switching problems that are otherwise intractable for centralized solvers. We also discuss challenges and future directions for improving the distributed algorithm's convergence performance as the number of time periods increases.
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('cpla_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cpla.pdf">pdf</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cpla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cpla.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Piansky, <b>D.K. Molzahn</b>, N.D. Jackson, and J.K. Skolfield, "Evaluating Undergrounding Decisions for Wildfire Ignition Risk Mitigation across Multiple Hazards," submitted.<br />
+				<span id="resiliency_comp_type" class="abstract" style="display:none">
+					With electric power infrastructure increasingly susceptible to impacts from climate-driven natural disasters, there is an increasing need for optimization algorithms that determine where to harden the power grid. Prior work has primarily developed optimal hardening approaches for specific acute disaster scenarios. Given the extensive costs of hardening the grid, it is important to understand how a particular set of resilience investments will perform under multiple types of natural hazards. Using a large-scale test case representing the Texas power system, this paper aims to understand how line undergrounding investment decisions made for wildfire ignition risk mitigation perform during a range of wildfire, hurricane, and wind events. Given the varying geographical spread and damage profile of these events, we show that investment decisions made to address one type of natural disaster do not necessarily improve broader resilience outcomes, supporting the need for co-optimization across a range of hazards. 
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('resiliency_comp_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_molzahn_jackson_skolfield-resiliency_comp.pdf">pdf</a> ] [ Ref: <a href="pubs/piansky_molzahn_jackson_skolfield-resiliency_comp.bib">bib</a>   <a href="pubs/piansky_molzahn_jackson_skolfield-resiliency_comp.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>R. Gupta and <b>D.K. Molzahn</b>, "Optimizing Phase Allocation in Unbalanced Power Distribution Networks using a Linearized DistFlow Formulation," submitted.<br />
 				<span id="phasebal_milp_type" class="abstract" style="display:none">
 					Power distribution networks, especially in North America, are often unbalanced but are designed to keep unbalance levels within the limits specified by IEEE, IEC, and NEMA standards. However, rapid integration of unbalanced devices, such as electric vehicle (EV) chargers and single-phase solar plants, can exacerbate these imbalances. This increase can trigger protection devices, increase losses, and potentially damage devices. To address this issue, phase swapping (or phase allocation) has been proposed. Existing approaches predominantly rely on heuristic methods. In this work, we develop a mixed integer linear programming (MILP) approach for phase allocation. Our approach uses linearized DistFlow equations to represent the distribution network and incorporates a phase consistency constraint, enforced with binary variables, to ensure that downstream phase configurations align with upstream configurations. We validate the proposed approach on multiple benchmark test cases and demonstrate that it effectively improves network balance, as quantified by various metrics.
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('phasebal_milp_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-phasebal_milp.pdf">pdf</a> ] [ Ref: <a href="pubs/gupta_molzahn-phasebal_milp.bib">bib</a>   <a href="pubs/gupta_molzahn-phasebal_milp.txt">txt</a> ] </p></li>
-		</span>
-	</div> 
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>R. Harris, C.-Y. Chang, and <b>D.K. Molzahn</b>, "Integrated Transmission-Distribution Multi-Period Switching for Wildfire Risk Mitigation: Improving Speed and Scalability with Distributed Optimization," submitted.<br />
-				<span id="wildfireTD_conf_type" class="abstract" style="display:none">
-					With increasingly frequent and severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. Since many distributed energy resources are located in distribution systems, we investigate coordinating transmission and distribution systems when optimizing transmission line de-energization decisions. We consider a coordinated transmission-distribution optimization problem that balances tradeoffs between wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which provide power to reduce load shedding when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem and apply a distributed optimization algorithm. We demonstrate this approach on a large-scale test case geo-located in California that contains a transmission system with actual wildfire risk data coupled with multiple realistic distribution system models. Our results demonstrate that applying distributed optimization enables solving large-scale multi-period switching problems that are intractable using state-of-the-art centralized solvers.
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfireTD_conf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
 		</span>
 	</div> 
 	<div class="tile scale-anm Type" style="display:none">
