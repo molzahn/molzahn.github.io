@@ -1,1 +1,1 @@
-M.R. Narimani, D.K. Molzahn, K.R. Davis, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow through Improved Linear Convex Envelopes," to appear in IEEE Transactions on Power Systems, 2024.
+M.R. Narimani, D.K. Molzahn, K.R. Davis, and M.L. Crow, "Tightening QC Relaxations of AC Optimal Power Flow through Improved Linear Convex Envelopes," IEEE Transactions on Power Systems, vol. 40, no. 2, pp. 1465-1480, March 2025.

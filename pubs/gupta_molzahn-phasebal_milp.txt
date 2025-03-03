@@ -1,1 +1,1 @@
-R. Gupta and D.K. Molzahn, "Optimizing Phase Allocation in Unbalanced Power Distribution Networks using a Linearized DistFlow Formulation," submitted.
+R. Gupta and D.K. Molzahn, "Optimizing Phase Allocation in Unbalanced Power Distribution Networks using a Linearized DistFlow Formulation," IEEE Power and Energy Society General Meeting (PESGM), July 27–31, 2025.
