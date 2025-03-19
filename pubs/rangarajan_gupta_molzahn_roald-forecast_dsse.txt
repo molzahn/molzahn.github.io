@@ -1,1 +1,1 @@
-A. Rangarajan, R.K. Gupta, D.K. Molzahn and L.A. Roald, "Forecast-Aided State Estimation in Unbalanced Distribution Networks Using Smart Meter Data under Limited Communication Bandwidth," submitted.
+A. Rangarajan, R.K. Gupta, D.K. Molzahn and L.A. Roald, "Forecast-Aided State Estimation in Unbalanced Distribution Networks Using Smart Meter Data under Limited Communication Bandwidth," to appear in Sustainable Energy, Grids and Networks for presentation at the 12th IREP Bulk Power system Dynamics and Control Symposium, June 22-27, 2025
