@@ -1,1 +1,1 @@
-R. Harris, C.-Y. Chang, and D.K. Molzahn, "Integrated Transmission-Distribution Multi-Period Switching for Wildfire Risk Mitigation: Improving Speed and Scalability with Distributed Optimization," submitted.
+R. Harris, C.-Y. Chang, and D.K. Molzahn, "Integrated Transmission-Distribution Multi-Period Switching for Wildfire Risk Mitigation: Improving Speed and Scalability with Distributed Optimization," to appear in IEEE Kiel PowerTech, June 29 - July 3, 2025.

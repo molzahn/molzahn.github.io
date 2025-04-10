@@ -1,1 +1,1 @@
-P. Buason, S. Misra, and D.K. Molzahn, "Sample-Based Piecewise Linear Power Flow Approximations Using Second-Order Sensitivities," submitted, 2025.
+P. Buason, S. Misra, and D.K. Molzahn, "Sample-Based Piecewise Linear Power Flow Approximations Using Second-Order Sensitivities," to appear in IEEE Kiel PowerTech, June 29 - July 3, 2025.
