@@ -1,1 +1,1 @@
-P. Buason, S. Misra, J.P. Watson, and D.K. Molzahn, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," to appear in IEEE Transactions on Power Systems, 2024.
+P. Buason, S. Misra, J.P. Watson, and D.K. Molzahn, "Adaptive Power Flow Approximations with Second-Order Sensitivity Insights," IEEE Transactions on Power Systems, vol. 40, no. 3, pp. 2648-2660, May 2025.
