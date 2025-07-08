@@ -1,0 +1,1 @@
+N. Dimate, S. Dorado-Rojas, and D.K. Molzahn, "On the Impact of PWM Modulation Strategies on the Discrete-Time Modeling of a Boost Converter," submitted.
