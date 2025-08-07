@@ -1,1 +1,1 @@
-R. Gupta and D.K. Molzahn, "Improving Fairness in Photovoltaic Curtailments via Daily Topology Reconfiguration for Voltage Control in Power Distribution Networks," to appear in Applied Energy.
+R. Gupta and D.K. Molzahn, "Improving Fairness in Photovoltaic Curtailments via Daily Topology Reconfiguration for Voltage Control in Power Distribution Networks," Applied Energy, vol. 400, no. 126543, December 2025.
