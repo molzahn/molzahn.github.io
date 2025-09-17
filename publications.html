@@ -67,7 +67,7 @@
 <!-- <div style="clear:both;"></div> -->
 <div id="portfolio">
 <div class="tile scale-anm Year" style="text-align:center;">
-			<p>[ <a href="#preprints">Preprints</a> ] [ <a href="#2025">2025</a> ] [ <a href="#2024">2024</a> ] [ <a href="#2023">2023</a> ] [ <a href="#2022">2022</a> ] [ <a href="#2021">2021</a> ] [ <a href="#2020">2020</a> ] [ <a href="#2019">2019</a> ] [ <a href="#2018">2018</a> ] [ <a href="#2017">2017</a> ] [ <a href="#2016">2016</a> ] [ <a href="#2015">2015</a> ] [ <a href="#2014">2014</a> ] [ <a href="#2013">2013</a> ] [ <a href="#2012">2012</a> ] [ <a href="#2011">2011</a> ] [ <a href="#2010">2010</a> ]</p>
+			<p>[ <a href="#preprints">Preprints</a> ] [ <a href="#2026">2026</a> ] [ <a href="#2025">2025</a> ] [ <a href="#2024">2024</a> ] [ <a href="#2023">2023</a> ] [ <a href="#2022">2022</a> ] [ <a href="#2021">2021</a> ] [ <a href="#2020">2020</a> ] [ <a href="#2019">2019</a> ] [ <a href="#2018">2018</a> ] [ <a href="#2017">2017</a> ] [ <a href="#2016">2016</a> ] [ <a href="#2015">2015</a> ] [ <a href="#2014">2014</a> ] [ <a href="#2013">2013</a> ] [ <a href="#2012">2012</a> ] [ <a href="#2011">2011</a> ] [ <a href="#2010">2010</a> ]</p>
 </div>
 <div class="tile scale-anm Type" style="display:none; text-align:center;">
 		<p>[ <a href="#monographs">Monographs</a> ] [ <a href="#journals">Journal Papers</a> ] [ <a href="#conferences">Conference Proceedings</a> ] [ <a href="#dissertation">Ph.D. Dissertation</a> ] [ <a href="#thesis">Master's Thesis</a> ] [ <a href="#reports">Technical Reports</a> ] </p>
@@ -79,6 +79,16 @@
   </div>
 	<div class="tile scale-anm Year">
 		<h2>Journal Papers</h2>
+	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>H. Park, K. Kwag, <b>D.K. Molzahn</b>, and R.K. Gupta, "Fair Cost Allocation in Energy Communities: A DLMP-based Bilevel Optimization with a Shapley Value Approach," submitted.<br />
+				<span id="park_kwag_molzahn_gupta-shapley_year" class="abstract" style="display:none">
+					Energy communities (ECs) are emerging as a promising decentralized model for managing cooperative distributed energy resources (DERs). As these communities expand and their operations become increasingly integrated into the grid, ensuring fairness in allocating operating costs among participants becomes a challenge. In distribution networks, DER operations at the community level can influence Distribution Locational Marginal Prices (DLMPs), which in turn affect system's operation cost. This interdependence between local decisions and system-level pricing introduces new challenges for fair and transparent cost allocation. Despite growing interest in fairness-aware methods, most methods do not account for the impact of DLMPs. To fill this gap, we propose a bilevel optimization model in which a Community Energy Aggregator (CEA) schedules DERs across multiple ECs while a Distribution System Operator (DSO) determines DLMPs through network-constrained dispatch. Leveraging the Karush-Kuhn-Tucker (KKT) conditions and strong duality, the bilevel model is reformulated into a tractable single-level problem. We achieve fairness in the cost allocation by applying the Shapley value to quantify each community’s marginal contribution to system-wide cost savings. The effectiveness of the proposed method is validated through simulations on several benchmark distribution systems.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('park_kwag_molzahn_gupta-shapley_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_kwag_molzahn_gupta-shapley.pdf">pdf</a> ] [ Ref: <a href="pubs/park_kwag_molzahn_gupta-shapley.bib">bib</a>   <a href="pubs/park_kwag_molzahn_gupta-shapley.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 <div class="tile scale-anm Year">
 		<span>
@@ -155,39 +165,15 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>B.K. Ashebo, S. Talkington, S. Zonouz, and <b>D.K. Molzahn</b>, "Covert Distribution Load Tripping Attacks," submitted.<br />
-				<span id="dlc_attacks_year" class="abstract" style="display:none">
-					The increasing integration of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, has introduced new cybersecurity challenges in distribution networks. This paper presents a data-driven attack model that examines how an adversary can exploit direct load control (DLC) mechanisms to selectively disconnect downstream loads during periods of high solar generation. Such targeted load tripping forces excess PV output to flow back toward the substation transformer, potentially causing power imbalances and transformer overloading. We model both PV output and load demand as multivariate Gaussian distributions to capture their inherent temporal and spatial uncertainties. A probabilistic power imbalance metric is defined to quantify the extent of reverse flow under compromised conditions. To identify the most impactful combinations of load disconnections and timing, we employ a multi-armed bandit approach based on the Upper Confidence Bound (UCB) algorithm. Simulation results demonstrate the feasibility and effectiveness of the attack strategy under realistic variability in solar output and demand. 
+			<li><p>M.R. Narimani, K.R. Davis, and <b>D.K. Molzahn</b>, "Certifying the Nonexistence of Feasible Paths Between Power System Operating Points," submitted<br />
+				<span id="no_path_year" class="abstract" style="display:none">
+					By providing the optimal operating point that satisfies both the power flow equations and engineering limits, the optimal power flow (OPF) problem is central to the operation of electric power systems. While extensive research efforts have focused on reliably computing high-quality OPF solutions, assessing the feasibility of transitioning between operating points remains challenging since the feasible spaces of OPF problems may consist of multiple disconnected components. It is not possible to transition between operating points in different disconnected components without violating OPF constraints. To identify such situations, this paper introduces an algorithm for certifying the infeasibility of transitioning between two operating points within an OPF feasible space. As an indication of potential disconnectedness, the algorithm first seeks an infeasible point on the line connecting a pair of feasible points. The algorithm then certifies disconnectedness by using convex relaxation and bound tightening techniques to show that all points on the plane that is normal to this line are infeasible. Using this algorithm, we provide the first certifications of disconnected feasible spaces for a variety of OPF test cases. 
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('dlc_attacks_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.bib">bib</a>   <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('no_path_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_davis_molzahn-no_path.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2509.05935">link</a> ] [ Ref: <a href="pubs/narimani_davis_molzahn-no_path.bib">bib</a>   <a href="pubs/narimani_davis_molzahn-no_path.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>S. Talkington and <b>D.K. Molzahn</b>, "VArsity: Can Large Language Models Keep Power Engineering Students in Phase?," submitted.<br />
-				<span id="VArsity_year" class="abstract" style="display:none">
-					This paper provides an educational case study regarding our experience in deploying ChatGPT Large Language Models (LLMs) in the Spring 2025 and Fall 2023 offerings of ECE 4320: Power System Analysis & Control at Georgia Tech. As part of course assessments, students were tasked with identifying, explaining, and correcting errors in the ChatGPT outputs corresponding to power factor correction problems. While most students successfully identified the errors in the outputs from the GPT-4 version of ChatGPT used in Fall 2023, students found the errors from the ChatGPT o1 version much more difficult to identify in Spring 2025. As shown in this case study, the role of LLMs in pedagogy, assessment, and learning in power engineering classrooms is an important topic deserving further investigation.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('VArsity_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_molzahn-VArsity.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2507.20995">link</a> ] [ Ref: <a href="pubs/talkington_molzahn-VArsity.bib">bib</a>   <a href="pubs/talkington_molzahn-VArsity.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<!--
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>R. Asiamah, K.K. Ji, J.-P. Watson, and <b>D.K. Molzahn</b>, "Sensitivity Analyses of Synthetic Power Grid Modeling Techniques in a Global Context: A Case Study in Ghana," submitted.<br />
-				<span id="hicss2026_year" class="abstract" style="display:none">
-					Synthetic power grid models play a pivotal role in algorithmic benchmarking and techno-economic policy analysis. Existing research on creating and validating realistic synthetic models has primarily been conducted for regions in the United States and Europe using methods based on the characteristics of these regions. In this paper, we examine the suitability of these methods for creating representative synthetic models for regions outside the United States and Europe. Differing data availability, power consumption behaviors, and applicability of various modeling assumptions challenge the suitability of existing synthetic grid creation methods for regions outside of Western countries. Our analysis focuses on Ghana, a country in West Africa. We evaluate methods for estimating electricity demand and approximating transmission network topologies by benchmarking them against a representation of Ghana developed in our previous work that is based on an accurate network topology and extensive public reports. Our numerical results indicate that existing population-based demand assumptions may be inapplicable; however, transmission topology methodologies can yield reasonable results as long as aggregate network characteristics align with those of the real system.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('hicss2026_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.bib">bib</a>   <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	-->
 	<!--
 	<div class="tile scale-anm Year">
 		<span>
@@ -203,6 +189,23 @@
 	-->
 	</ul>
 	<ul class="tile scale-anm Year">
+		<div class="tile scale-anm Year">
+			<a name="2026"><h1>2026</h1></a>
+		</div>
+	<div class="tile scale-anm Year">
+		<h2>Conference Proceedings</h2>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Asiamah, K.K. Ji, J.-P. Watson, and <b>D.K. Molzahn</b>, "Sensitivity Analyses of Synthetic Power Grid Modeling Techniques in a Global Context: A Case Study in Ghana," to appear in <i>59th Hawaii International Conference on System Sciences (HICSS)</i>, January 6-9, 2026.<br />
+				<span id="hicss2026_year" class="abstract" style="display:none">
+					Synthetic power grid models play a pivotal role in algorithmic benchmarking and techno-economic policy analysis. Existing synthetic grid research has primarily focused on regions in the United States and Europe using methods based on these regions' characteristics. This paper examines these methods' suitability for creating representative models for other regions. Differing data availability, power consumption behaviors, and applicability of various modeling assumptions challenge the suitability of existing synthetic grid methods for non-Western countries. Our analysis focuses on the West African country of Ghana. We evaluate methods for estimating electric demand and transmission network topologies by benchmarking them against a representation of Ghana developed in our previous work that is based on an accurate network topology and public reports. Our results indicate that existing population-based demand assumptions may be inapplicable. Transmission topology methods can yield reasonable results when aggregate characteristics match those of the real system, but they do not capture the centralization of Ghana's grid.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('hicss2026_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.bib">bib</a>   <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 		<div class="tile scale-anm Year">
 			<a name="2025"><h1>2025</h1></a>
 		</div>
@@ -229,17 +232,6 @@
 			&emsp;[ <span onclick="showDiv('taheri_molzahn-optimal_dcots_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-optimal_dcots.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11023158">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-optimal_dcots.bib">bib</a>   <a href="pubs/taheri_molzahn-optimal_dcots.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-		<div class="tile scale-anm Year">
-		<span>
-			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
-				<span id="convergetol_year" class="abstract" style="display:none">
-					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate controllers to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF solution is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. While ensuring feasibility, the proposed approach enables control of the trade-off between computational speed, which improves with looser convergence tolerance, and distributed OPF solution cost, which degrades with looser convergence tolerance due to tightened constraints.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('convergetol_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10874150">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
-		</span>
-	</div>
 	<div class="tile scale-anm Year">
 		<span>
 			<li><p>S. Gupta, C. Hettle, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," to appear in <i>INFORMS Journal on Computing</i>.<br />
@@ -259,6 +251,17 @@
 				</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('gupta_molzahn-PV_topology_fairness_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-PV_topology_fairness.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0306261925012735">link</a> ] [ Ref: <a href="pubs/gupta_molzahn-PV_topology_fairness.bib">bib</a>   <a href="pubs/gupta_molzahn-PV_topology_fairness.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+		<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," <i>IEEE Transactions on Power Systems</i>, vol. 40, no. 5, pp. 3901-3913, September 2025.<br />
+				<span id="convergetol_year" class="abstract" style="display:none">
+					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate controllers to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF solution is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. While ensuring feasibility, the proposed approach enables control of the trade-off between computational speed, which improves with looser convergence tolerance, and distributed OPF solution cost, which degrades with looser convergence tolerance due to tightened constraints.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('convergetol_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10874150">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -325,6 +328,28 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>B.K. Ashebo, S. Talkington, S. Zonouz, and <b>D.K. Molzahn</b>, "Covert Distribution Load Tripping Attacks," to appear in <i>57th North American Power Symposium (NAPS)</i>, October 26-28, 2025.<br />
+				<span id="dlc_attacks_year" class="abstract" style="display:none">
+					The increasing integration of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, has introduced new cybersecurity challenges in distribution networks. This paper presents a data-driven attack model that examines how an adversary can exploit direct load control (DLC) mechanisms to selectively disconnect downstream loads during periods of high solar generation. Such targeted load tripping forces excess PV output to flow back toward the substation transformer, potentially causing power imbalances and transformer overloading. We model both PV output and load demand as multivariate Gaussian distributions to capture their inherent temporal and spatial uncertainties. A probabilistic power imbalance metric is defined to quantify the extent of reverse flow under compromised conditions. To identify the most impactful combinations of load disconnections and timing, we employ a multi-armed bandit approach based on the Upper Confidence Bound (UCB) algorithm. Simulation results demonstrate the feasibility and effectiveness of the attack strategy under realistic variability in solar output and demand. 
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dlc_attacks_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.bib">bib</a>   <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>S. Talkington and <b>D.K. Molzahn</b>, "VArsity: Can Large Language Models Keep Power Engineering Students in Phase?," to appear in <i>57th North American Power Symposium (NAPS)</i>, October 26-28, 2025.<br />
+				<span id="VArsity_year" class="abstract" style="display:none">
+					This paper provides an educational case study regarding our experience in deploying ChatGPT Large Language Models (LLMs) in the Spring 2025 and Fall 2023 offerings of ECE 4320: Power System Analysis & Control at Georgia Tech. As part of course assessments, students were tasked with identifying, explaining, and correcting errors in the ChatGPT outputs corresponding to power factor correction problems. While most students successfully identified the errors in the outputs from the GPT-4 version of ChatGPT used in Fall 2023, students found the errors from the ChatGPT o1 version much more difficult to identify in Spring 2025. As shown in this case study, the role of LLMs in pedagogy, assessment, and learning in power engineering classrooms is an important topic deserving further investigation.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('VArsity_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_molzahn-VArsity.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2507.20995">link</a> ] [ Ref: <a href="pubs/talkington_molzahn-VArsity.bib">bib</a>   <a href="pubs/talkington_molzahn-VArsity.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
@@ -395,6 +420,20 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('kpec2025_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] <!-- [ <a href="">link</a> ] --> [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>J. Ero, K. Slattery, X. Qin, S. Talkington, and <b>D.K. Molzahn</b>, "Optimizing State Estimation Error with the LinDist3Flow Model," <i>IEEE Opportunity Research Scholars Symposium (ORSS)</i>, April 24, 2025.<br />
+				<span id="orss2025_year" class="abstract" style="display:none">
+					  This research paper presents an algorithmic approach to optimizing state estimation errors in unbalanced distribution networks as the integration of renewable energy sources such as solar and wind increases. These resources introduce uncertainty into grid models, challenging the satisfaction of engineering constraints.
+
+						The study focuses on the impacts of this randomness on power flow equations and aims to enhance grid state estimation by combining electric grid physics with techniques from probability theory. The goal is to develop methodologies that effectively utilize uncertain measurement data, optimizing the accuracy and efficiency of smart meter data streams.
+
+						The algorithm implementation aims to learn the optimal line parameters (resistance and reactance) in a three-phase unbalanced distribution system by minimizing the discrepancy between predicted and measured voltage values. It leverages the LinDist3Flow power flow approximation model to simulate voltage magnitudes, and formulates a loss function representing the squared error between the predicted and noisy measurements. The ADAM optimization algorithm iteratively minimizes this loss function, adjusting the parameters to achieve the best fit to observed data. This contributes to improving the accuracy of power flow modeling under noisy and unbalanced conditions.
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('orss2025_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/ero_slattery_qin_talkington_molzahn-orss2025.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11121639">link</a> ] [ Ref: <a href="pubs/ero_slattery_qin_talkington_molzahn-orss2025.bib">bib</a>   <a href="pubs/ero_slattery_qin_talkington_molzahn-orss2025.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -1926,6 +1965,16 @@
 	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>H. Park, K. Kwag, <b>D.K. Molzahn</b>, and R.K. Gupta, "Fair Cost Allocation in Energy Communities: A DLMP-based Bilevel Optimization with a Shapley Value Approach," submitted.<br />
+				<span id="park_kwag_molzahn_gupta-shapley_type" class="abstract" style="display:none">
+					Energy communities (ECs) are emerging as a promising decentralized model for managing cooperative distributed energy resources (DERs). As these communities expand and their operations become increasingly integrated into the grid, ensuring fairness in allocating operating costs among participants becomes a challenge. In distribution networks, DER operations at the community level can influence Distribution Locational Marginal Prices (DLMPs), which in turn affect system's operation cost. This interdependence between local decisions and system-level pricing introduces new challenges for fair and transparent cost allocation. Despite growing interest in fairness-aware methods, most methods do not account for the impact of DLMPs. To fill this gap, we propose a bilevel optimization model in which a Community Energy Aggregator (CEA) schedules DERs across multiple ECs while a Distribution System Operator (DSO) determines DLMPs through network-constrained dispatch. Leveraging the Karush-Kuhn-Tucker (KKT) conditions and strong duality, the bilevel model is reformulated into a tractable single-level problem. We achieve fairness in the cost allocation by applying the Shapley value to quantify each community’s marginal contribution to system-wide cost savings. The effectiveness of the proposed method is validated through simulations on several benchmark distribution systems.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('park_kwag_molzahn_gupta-shapley_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_kwag_molzahn_gupta-shapley.pdf">pdf</a> ] [ Ref: <a href="pubs/park_kwag_molzahn_gupta-shapley.bib">bib</a>   <a href="pubs/park_kwag_molzahn_gupta-shapley.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>S. Talkington, A. Rangarajan, P.A. de Alc&acirc;ntara, L.A. Roald, <b>D.K. Molzahn</b>, and D.R. Fuhrmann, "Error Bounds for Radial Network Topology Learning from Quantized Measurements," submitted.<br />
 				<span id="talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology_type" class="abstract" style="display:none">
 					We probabilistically bound the error of a solution to a radial network topology learning problem where both connectivity and line parameters are estimated. In our model, data errors are introduced by the precision of the sensors, i.e., quantization. This produces a nonlinear measurement model that embeds the <i>operation of the sensor communication network</i> into the learning problem, expanding beyond the additive noise models typically seen in power system estimation algorithms. We show that the error of a learned radial network topology is proportional to the quantization bin width and grows sublinearly in the number of nodes, provided that the number of samples per node is logarithmic in the number of nodes.
@@ -2017,17 +2066,6 @@
 			&emsp;[ <span onclick="showDiv('taheri_molzahn-optimal_dcots_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-optimal_dcots.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11023158">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-optimal_dcots.bib">bib</a>   <a href="pubs/taheri_molzahn-optimal_dcots.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
-				<span id="convergetol_type" class="abstract" style="display:none">
-					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate computing agents to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF generator dispatch is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. The proposed approach enables control of the trade-off between computational speed, which improves as the convergence tolerance increases, and distributed OPF solution cost, which increases with convergence tolerance due to tightened constraints, while ensuring feasibility.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('convergetol_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10874150">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
-		</span>
-	</div>
 	<div class="tile scale-anm Type"  style="display:none">
 		<span>
 			<li><p>S. Gupta, C. Hettle, and <b>D.K. Molzahn</b>, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," to appear in <i>INFORMS Journal on Computing</i>.<br />
@@ -2047,6 +2085,17 @@
 				</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('gupta_molzahn-PV_topology_fairness_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_molzahn-PV_topology_fairness.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0306261925012735">link</a> ] [ Ref: <a href="pubs/gupta_molzahn-PV_topology_fairness.bib">bib</a>   <a href="pubs/gupta_molzahn-PV_topology_fairness.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+				<li><p>R. Harris, M. Alkhraijah, and <b>D.K. Molzahn</b>, "Optimally Managing the Impacts of Convergence Tolerance for Distributed Optimal Power Flow," <i>IEEE Transactions on Power Systems</i>, vol. 40, no. 5, pp. 3901-3913, September 2025.<br />
+				<span id="convergetol_type" class="abstract" style="display:none">
+					The future power grid may rely on distributed optimization to determine the set-points for huge numbers of distributed energy resources. There has been significant work on applying distributed algorithms to optimal power flow (OPF) problems, which require separate computing agents to agree on shared boundary variable values. Looser tolerances for the mismatches in these shared variables generally yield faster convergence at the expense of exacerbating constraint violations, but there is little quantitative understanding of how the convergence tolerance affects solution quality. To address this gap, we first quantify how convergence tolerance impacts constraint violations when the distributed OPF generator dispatch is applied to the power system. Using insights from this analysis, we then develop a bound tightening algorithm which guarantees that operating points from distributed OPF algorithms will not result in violations despite the possibility of shared variable mismatches within the convergence tolerance. We also explore how bounding the cumulative shared variable mismatches can prevent unnecessary conservativeness in the bound tightening. The proposed approach enables control of the trade-off between computational speed, which improves as the convergence tolerance increases, and distributed OPF solution cost, which increases with convergence tolerance due to tightened constraints, while ensuring feasibility.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('convergetol_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_molzahn-convergetol.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10874150">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_molzahn-convergetol.bib">bib</a>   <a href="pubs/harris_alkhraijah_molzahn-convergetol.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2722,46 +2771,21 @@
 	<div class="tile scale-anm Type" style="display:none">
     <a name="conferences"><h1>Conference Proceedings</h1></a>
   </div>
+  
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>B.K. Ashebo, S. Talkington, S. Zonouz, and <b>D.K. Molzahn</b>, "Covert Distribution Load Tripping Attacks," submitted.<br />
-				<span id="dlc_attacks_type" class="abstract" style="display:none">
-					The increasing integration of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, has introduced new cybersecurity challenges in distribution networks. This paper presents a data-driven attack model that examines how an adversary can exploit direct load control (DLC) mechanisms to selectively disconnect downstream loads during periods of high solar generation. Such targeted load tripping forces excess PV output to flow back toward the substation transformer, potentially causing power imbalances and transformer overloading. We model both PV output and load demand as multivariate Gaussian distributions to capture their inherent temporal and spatial uncertainties. A probabilistic power imbalance metric is defined to quantify the extent of reverse flow under compromised conditions. To identify the most impactful combinations of load disconnections and timing, we employ a multi-armed bandit approach based on the Upper Confidence Bound (UCB) algorithm. Simulation results demonstrate the feasibility and effectiveness of the attack strategy under realistic variability in solar output and demand. 
+			<li><p>M.R. Narimani, K.R. Davis, and <b>D.K. Molzahn</b>, "Certifying the Nonexistence of Feasible Paths Between Power System Operating Points," submitted<br />
+				<span id="no_path_type" class="abstract" style="display:none">
+					By providing the optimal operating point that satisfies both the power flow equations and engineering limits, the optimal power flow (OPF) problem is central to the operation of electric power systems. While extensive research efforts have focused on reliably computing high-quality OPF solutions, assessing the feasibility of transitioning between operating points remains challenging since the feasible spaces of OPF problems may consist of multiple disconnected components. It is not possible to transition between operating points in different disconnected components without violating OPF constraints. To identify such situations, this paper introduces an algorithm for certifying the infeasibility of transitioning between two operating points within an OPF feasible space. As an indication of potential disconnectedness, the algorithm first seeks an infeasible point on the line connecting a pair of feasible points. The algorithm then certifies disconnectedness by using convex relaxation and bound tightening techniques to show that all points on the plane that is normal to this line are infeasible. Using this algorithm, we provide the first certifications of disconnected feasible spaces for a variety of OPF test cases. 
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('dlc_attacks_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.bib">bib</a>   <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('no_path_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_davis_molzahn-no_path.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2509.05935">link</a> ] [ Ref: <a href="pubs/narimani_davis_molzahn-no_path.bib">bib</a>   <a href="pubs/narimani_davis_molzahn-no_path.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>S. Talkington and <b>D.K. Molzahn</b>, "VArsity: Can Large Language Models Keep Power Engineering Students in Phase?," submitted.<br />
-				<span id="VArsity_type" class="abstract" style="display:none">
-					This paper provides an educational case study regarding our experience in deploying ChatGPT Large Language Models (LLMs) in the Spring 2025 and Fall 2023 offerings of ECE 4320: Power System Analysis & Control at Georgia Tech. As part of course assessments, students were tasked with identifying, explaining, and correcting errors in the ChatGPT outputs corresponding to power factor correction problems. While most students successfully identified the errors in the outputs from the GPT-4 version of ChatGPT used in Fall 2023, students found the errors from the ChatGPT o1 version much more difficult to identify in Spring 2025. As shown in this case study, the role of LLMs in pedagogy, assessment, and learning in power engineering classrooms is an important topic deserving further investigation.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('VArsity_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_molzahn-VArsity.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2507.20995">link</a> ] [ Ref: <a href="pubs/talkington_molzahn-VArsity.bib">bib</a>   <a href="pubs/talkington_molzahn-VArsity.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	<!--
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>R. Asiamah, K.K. Ji, J.-P. Watson, and <b>D.K. Molzahn</b>, "Sensitivity Analyses of Synthetic Power Grid Modeling Techniques in a Global Context: A Case Study in Ghana," submitted.<br />
-				<span id="hicss2026_type" class="abstract" style="display:none">
-					Synthetic power grid models play a pivotal role in algorithmic benchmarking and techno-economic policy analysis. Existing research on creating and validating realistic synthetic models has primarily been conducted for regions in the United States and Europe using methods based on the characteristics of these regions. In this paper, we examine the suitability of these methods for creating representative synthetic models for regions outside the United States and Europe. Differing data availability, power consumption behaviors, and applicability of various modeling assumptions challenge the suitability of existing synthetic grid creation methods for regions outside of Western countries. Our analysis focuses on Ghana, a country in West Africa. We evaluate methods for estimating electricity demand and approximating transmission network topologies by benchmarking them against a representation of Ghana developed in our previous work that is based on an accurate network topology and extensive public reports. Our numerical results indicate that existing population-based demand assumptions may be inapplicable; however, transmission topology methodologies can yield reasonable results as long as aggregate network characteristics align with those of the real system.
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('hicss2026_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.bib">bib</a>   <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	-->
-	<!--
-	-->
 	<!--
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
@@ -2776,8 +2800,44 @@
 	</div>
 	-->
 <div class="tile scale-anm Type" style="display:none">
+<h2>2026</h2>
+</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Asiamah, K.K. Ji, J.-P. Watson, and <b>D.K. Molzahn</b>, "Sensitivity Analyses of Synthetic Power Grid Modeling Techniques in a Global Context: A Case Study in Ghana," to appear in <i>59th Hawaii International Conference on System Sciences (HICSS)</i>, January 6-9, 2026.<br />
+				<span id="hicss2026_type" class="abstract" style="display:none">
+					Synthetic power grid models play a pivotal role in algorithmic benchmarking and techno-economic policy analysis. Existing synthetic grid research has primarily focused on regions in the United States and Europe using methods based on these regions' characteristics. This paper examines these methods' suitability for creating representative models for other regions. Differing data availability, power consumption behaviors, and applicability of various modeling assumptions challenge the suitability of existing synthetic grid methods for non-Western countries. Our analysis focuses on the West African country of Ghana. We evaluate methods for estimating electric demand and transmission network topologies by benchmarking them against a representation of Ghana developed in our previous work that is based on an accurate network topology and public reports. Our results indicate that existing population-based demand assumptions may be inapplicable. Transmission topology methods can yield reasonable results when aggregate characteristics match those of the real system, but they do not capture the centralization of Ghana's grid.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('hicss2026_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.pdf">pdf</a> ] [ Ref: <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.bib">bib</a>   <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
 <h2>2025</h2>
 </div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B.K. Ashebo, S. Talkington, S. Zonouz, and <b>D.K. Molzahn</b>, "Covert Distribution Load Tripping Attacks," to appear in <i>57th North American Power Symposium (NAPS)</i>, October 26-28, 2025.<br />
+				<span id="dlc_attacks_type" class="abstract" style="display:none">
+					The increasing integration of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, has introduced new cybersecurity challenges in distribution networks. This paper presents a data-driven attack model that examines how an adversary can exploit direct load control (DLC) mechanisms to selectively disconnect downstream loads during periods of high solar generation. Such targeted load tripping forces excess PV output to flow back toward the substation transformer, potentially causing power imbalances and transformer overloading. We model both PV output and load demand as multivariate Gaussian distributions to capture their inherent temporal and spatial uncertainties. A probabilistic power imbalance metric is defined to quantify the extent of reverse flow under compromised conditions. To identify the most impactful combinations of load disconnections and timing, we employ a multi-armed bandit approach based on the Upper Confidence Bound (UCB) algorithm. Simulation results demonstrate the feasibility and effectiveness of the attack strategy under realistic variability in solar output and demand. 
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dlc_attacks_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.bib">bib</a>   <a href="pubs/ashebo_talkington_zonouz_molzahn-dlc_attacks.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>S. Talkington and <b>D.K. Molzahn</b>, "VArsity: Can Large Language Models Keep Power Engineering Students in Phase?," to appear in <i>57th North American Power Symposium (NAPS)</i>, October 26-28, 2025.<br />
+				<span id="VArsity_type" class="abstract" style="display:none">
+					This paper provides an educational case study regarding our experience in deploying ChatGPT Large Language Models (LLMs) in the Spring 2025 and Fall 2023 offerings of ECE 4320: Power System Analysis & Control at Georgia Tech. As part of course assessments, students were tasked with identifying, explaining, and correcting errors in the ChatGPT outputs corresponding to power factor correction problems. While most students successfully identified the errors in the outputs from the GPT-4 version of ChatGPT used in Fall 2023, students found the errors from the ChatGPT o1 version much more difficult to identify in Spring 2025. As shown in this case study, the role of LLMs in pedagogy, assessment, and learning in power engineering classrooms is an important topic deserving further investigation.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('VArsity_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_molzahn-VArsity.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2507.20995">link</a> ] [ Ref: <a href="pubs/talkington_molzahn-VArsity.bib">bib</a>   <a href="pubs/talkington_molzahn-VArsity.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>N. Dimate, S. Dorado-Rojas, and <b>D.K. Molzahn</b>, "On the Impact of PWM Modulation Strategies on the Discrete-Time Modeling of a Boost Converter,"  to appear in <i>Innovative Smart Grid Technologies (ISGT) Europe</i>, October 20th-23rd, 2025.<br />
@@ -2848,6 +2908,20 @@
 		</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('kpec2025_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] <!-- [ <a href="">link</a> ] --> [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>J. Ero, K. Slattery, X. Qin, S. Talkington, and <b>D.K. Molzahn</b>, "Optimizing State Estimation Error with the LinDist3Flow Model," <i>IEEE Opportunity Research Scholars Symposium (ORSS)</i>, April 24, 2025.<br />
+				<span id="orss2025_type" class="abstract" style="display:none">
+					  This research paper presents an algorithmic approach to optimizing state estimation errors in unbalanced distribution networks as the integration of renewable energy sources such as solar and wind increases. These resources introduce uncertainty into grid models, challenging the satisfaction of engineering constraints.
+
+						The study focuses on the impacts of this randomness on power flow equations and aims to enhance grid state estimation by combining electric grid physics with techniques from probability theory. The goal is to develop methodologies that effectively utilize uncertain measurement data, optimizing the accuracy and efficiency of smart meter data streams.
+
+						The algorithm implementation aims to learn the optimal line parameters (resistance and reactance) in a three-phase unbalanced distribution system by minimizing the discrepancy between predicted and measured voltage values. It leverages the LinDist3Flow power flow approximation model to simulate voltage magnitudes, and formulates a loss function representing the squared error between the predicted and noisy measurements. The ADAM optimization algorithm iteratively minimizes this loss function, adjusting the parameters to achieve the best fit to observed data. This contributes to improving the accuracy of power flow modeling under noisy and unbalanced conditions.
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('orss2025_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/ero_slattery_qin_talkington_molzahn-orss2025.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11121639">link</a> ] [ Ref: <a href="pubs/ero_slattery_qin_talkington_molzahn-orss2025.bib">bib</a>   <a href="pubs/ero_slattery_qin_talkington_molzahn-orss2025.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">

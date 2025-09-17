@@ -1,0 +1,1 @@
+H. Park, K. Kwag, D.K. Molzahn, and R.K. Gupta, “Fair Cost Allocation in Energy Communities:\\ A DLMP-based Bilevel Optimization with a Shapley Value Approach,” submitted.
