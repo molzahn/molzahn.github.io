@@ -1,1 +1,1 @@
-B. Taheri and D.K. Molzahn, "AC-Informed DC Optimal Transmission Switching Problems via Parameter Optimization," to appear in IEEE Transactions on Power Systems.
+B. Taheri and D.K. Molzahn, "AC-Informed DC Optimal Transmission Switching Problems via Parameter Optimization," IEEE Transactions on Power Systems, vol. 40, no. 6, pp. 5422-5433, November 2025.
