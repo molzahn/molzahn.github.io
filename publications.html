@@ -82,6 +82,16 @@
 	</div>
 <div class="tile scale-anm Year">
 		<span>
+			<li><p>J. Cohn, <b>D.K. Molzahn</b>, and S. Dhople, "Calculating the Grid: A Late 20th Century Story of Innovation, Transition, and Reciprocity in Electrification and Computing," submitted. <br />
+				<span id="cohn_molzahn_dhople-grid_computation_year" class="abstract" style="display:none">
+					The National Academy of Engineering classified widespread electrification as the greatest engineering accomplishment of the 20th century. Innovation in computing technologies proved essential to this achievement. Additionally, as engineers adapted computer hardware and software for grid control, they contributed to advances in computation. The traditional story of electrification follows steady expansion from small central station power systems to continental-scale interconnected grids. Yet, transitions triggered by blackouts, evolving energy resource mixes and patterns of use, regulatory restructuring, and technological innovation punctuated this history. System operators faced a consistent challenge&mdash;keeping the lights on&mdash;as transitions threatened to undermine grid stability and efficiency. Today we are in the midst of another, perhaps more profound, and certainly more rapid transition. Additionally, computation itself poses both challenges and solutions for grid stability. This paper analyzes how 20th-century engineers and system operators developed the algorithms that provide optimization and control of the electric power grid.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('cohn_molzahn_dhople-grid_computation_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/cohn_molzahn_dhople-grid_computation.pdf">pdf</a> ] [ Ref: <a href="pubs/cohn_molzahn_dhople-grid_computation.bib">bib</a>   <a href="pubs/cohn_molzahn_dhople-grid_computation.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Year">
+		<span>
 			<li><p>S. Talkington, D. Turizo, S.A. Dorado-Rojas, R.K Gupta, and <b>D.K. Molzahn</b>, "Differentiating Through Power Flow Solutions for Admittance and Topology Control," submitted. <br />
 				<span id="talkington_turizo_dorado_rojas_gupta_molzahn-admittace_differentiation_year" class="abstract" style="display:none">
 					The power flow equations relate bus voltage phasors to power injections via the network admittance matrix. These equations are central to the key operational and protection functions of power systems (e.g., optimal power flow scheduling and control, state estimation, protection, and fault location, among others). As control, optimization, and estimation of network admittance parameters are central to multiple avenues of research in electric power systems, we propose a linearization of power flow solutions obtained by implicitly differentiating them with respect to the network admittance parameters. This is achieved by utilizing the implicit function theorem, in which we show that such a differentiation is guaranteed to exist under mild conditions and is applicable to generic power systems (radial or meshed). The proposed theory is applied to derive sensitivities of complex voltages, line currents, and power flows. The developed theory of linearizing the power flow equations around changes in the complex network admittance parameters has numerous applications. We demonstrate several of these applications, such as predicting the nodal voltages when the network topology changes without solving the power flow equations. We showcase the application for continuous admittance control, which is used to increase the hosting capacity of a given distribution network.
@@ -97,7 +107,7 @@
 					DC Optimal Power Flow (DCOPF) is widely utilized in power system operations due to its simplicity and computational efficiency. However, its lossless, reactive power–agnostic model often yields dispatches that are infeasible under practical operating scenarios such as the nonlinear AC power flow (ACPF) equations. While theoretical analysis demonstrates that DCOPF solutions are inherently AC-infeasible, their widespread industry adoption suggests substantial practical utility. This paper develops a unified DCOPF&rarr;ACPF pipeline to recover AC feasible solutions from DCOPF-based dispatches. The pipeline uses four DCOPF variants and applies AC feasibility recovery using both distributed slack allocation and PV/PQ switching. The main objective is to identify the most effective pipeline for restoring AC feasibility. Evaluation across over 10,000 dispatch scenarios on various test cases demonstrates that the structured ACPF model yields solutions that satisfy both the ACPF equations, and all engineering inequality constraints. In a 13,659-bus case, the mean absolute error and cost differences between DCOPF and ACOPF are reduced by 75% and 93%, respectively, compared to conventional single slack bus methods. Under extreme loading conditions, the pipeline reduces inequality constraint violations by a factor of 3 to 5.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.pdf">pdf</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2511.14725">link</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Year">
@@ -215,7 +225,29 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>S. Talkington, D.M. Ostrovskii, and <b>D.K. Molzahn</b>, "Efficient Network Reconfiguration by Randomized Switching," submitted<br />
+			<li><p>M.R. Narimani, J.A. Madrigal, K.R. Davis, and <b>D.K. Molzahn</b>, "Exploring OPF Feasible Spaces using Nonlinear Programming and Continuation Methods," submitted.<br />
+				<span id="narimani_madrigal_davis_molzahn-nlp_cpf_year" class="abstract" style="display:none">
+					Optimal power flow (OPF) is a key problem in the operation of electric power systems. This problem optimizes an objective function while satisfying constraints imposed by non-linear power flow equations and engineering limits. Due to their non-convexity, understanding OPF feasible spaces is essential for improving solution algorithms. This paper presents an approach that employs local solvers and continuation power flow methods to visualize OPF feasible spaces. Starting from a particular feasible point, the approach iteratively solves a modified OPF problem to find an additional feasible point that maximizes the distance from the points computed in previous iterations. Subsequently, continuation power flow is executed between each pair of the computed points to discover additional feasible points. We demonstrate the proposed algorithm on test cases with up to several tens of buses.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('narimani_madrigal_davis_molzahn-nlp_cpf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.pdf">pdf</a> ] [ Ref: <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf">bib</a>   <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>C. Khanpour, J.K. Skolfield, and <b>D.K. Molzahn</b>, "Empirical Comparison of AC and DC Power Flow Models in Transmission Expansion Planning," submitted.<br />
+				<span id="khanpour_skolfield_molzahn-ac_v_dc_tep_year" class="abstract" style="display:none">
+					Expansion planning models often rely on the DC power flow approximation for the sake of computational tractability. The AC power flow model, however, is the full representation of a power system's steady-state behavior, while DC power flow is a linear approximation, so it is important to understand how well the DC approximation performs in this context. In this paper, we investigate the impact of utilizing the nonlinear AC power flow model versus the DC power flow linearization in transmission expansion planning. We compare investment decisions obtained from the IDAES-GTEP package on a 5-bus and 9-bus test systems under several scenarios that vary line parameters. Our results show that, for standard parameter ranges, AC and DC formulations yield nearly identical expansion plans, whereas under extreme parameter variations that exaggerate losses or reactive effects the models can select different investment decisions, but with the AC formulation requiring substantially more computation time and similar final investment costs.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>S. Talkington, D.M. Ostrovskii, and <b>D.K. Molzahn</b>, "Efficient Network Reconfiguration by Randomized Switching," submitted.<br />
 				<span id="talkington_ostrovskii_molzahn-randomized_switching_year" class="abstract" style="display:none">
 					By providing the optimal operating point that satisfies both the power flow equations and engineering limits, the optimal power flow (OPF) problem is central to the operation of electric power systems. While extensive research efforts have focused on reliably computing high-quality OPF solutions, assessing the feasibility of transitioning between operating points remains challenging since the feasible spaces of OPF problems may consist of multiple disconnected components. It is not possible to transition between operating points in different disconnected components without violating OPF constraints. To identify such situations, this paper introduces an algorithm for certifying the infeasibility of transitioning between two operating points within an OPF feasible space. As an indication of potential disconnectedness, the algorithm first seeks an infeasible point on the line connecting a pair of feasible points. The algorithm then certifies disconnectedness by using convex relaxation and bound tightening techniques to show that all points on the plane that is normal to this line are infeasible. Using this algorithm, we provide the first certifications of disconnected feasible spaces for a variety of OPF test cases. 
 				</span>
@@ -226,7 +258,7 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>M.R. Narimani, K.R. Davis, and <b>D.K. Molzahn</b>, "Certifying the Nonexistence of Feasible Paths Between Power System Operating Points," submitted<br />
+			<li><p>M.R. Narimani, K.R. Davis, and <b>D.K. Molzahn</b>, "Certifying the Nonexistence of Feasible Paths Between Power System Operating Points," submitted.<br />
 				<span id="no_path_year" class="abstract" style="display:none">
 					By providing the optimal operating point that satisfies both the power flow equations and engineering limits, the optimal power flow (OPF) problem is central to the operation of electric power systems. While extensive research efforts have focused on reliably computing high-quality OPF solutions, assessing the feasibility of transitioning between operating points remains challenging since the feasible spaces of OPF problems may consist of multiple disconnected components. It is not possible to transition between operating points in different disconnected components without violating OPF constraints. To identify such situations, this paper introduces an algorithm for certifying the infeasibility of transitioning between two operating points within an OPF feasible space. As an indication of potential disconnectedness, the algorithm first seeks an infeasible point on the line connecting a pair of feasible points. The algorithm then certifies disconnectedness by using convex relaxation and bound tightening techniques to show that all points on the plane that is normal to this line are infeasible. Using this algorithm, we provide the first certifications of disconnected feasible spaces for a variety of OPF test cases. 
 				</span>
@@ -2036,6 +2068,16 @@
 	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>J. Cohn, <b>D.K. Molzahn</b>, and S. Dhople, "Calculating the Grid: A Late 20th Century Story of Innovation, Transition, and Reciprocity in Electrification and Computing," submitted. <br />
+				<span id="cohn_molzahn_dhople-grid_computation_type" class="abstract" style="display:none">
+					The National Academy of Engineering classified widespread electrification as the greatest engineering accomplishment of the 20th century. Innovation in computing technologies proved essential to this achievement. Additionally, as engineers adapted computer hardware and software for grid control, they contributed to advances in computation. The traditional story of electrification follows steady expansion from small central station power systems to continental-scale interconnected grids. Yet, transitions triggered by blackouts, evolving energy resource mixes and patterns of use, regulatory restructuring, and technological innovation punctuated this history. System operators faced a consistent challenge&mdash;keeping the lights on&mdash;as transitions threatened to undermine grid stability and efficiency. Today we are in the midst of another, perhaps more profound, and certainly more rapid transition. Additionally, computation itself poses both challenges and solutions for grid stability. This paper analyzes how 20th-century engineers and system operators developed the algorithms that provide optimization and control of the electric power grid.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('cohn_molzahn_dhople-grid_computation_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/cohn_molzahn_dhople-grid_computation.pdf">pdf</a> ] [ Ref: <a href="pubs/cohn_molzahn_dhople-grid_computation.bib">bib</a>   <a href="pubs/cohn_molzahn_dhople-grid_computation.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>S. Talkington, D. Turizo, S.A. Dorado-Rojas, R.K Gupta, and <b>D.K. Molzahn</b>, "Differentiating Through Power Flow Solutions for Admittance and Topology Control," submitted. <br />
 				<span id="talkington_turizo_dorado_rojas_gupta_molzahn-admittace_differentiation_type" class="abstract" style="display:none">
 					The power flow equations relate bus voltage phasors to power injections via the network admittance matrix. These equations are central to the key operational and protection functions of power systems (e.g., optimal power flow scheduling and control, state estimation, protection, and fault location, among others). As control, optimization, and estimation of network admittance parameters are central to multiple avenues of research in electric power systems, we propose a linearization of power flow solutions obtained by implicitly differentiating them with respect to the network admittance parameters. This is achieved by utilizing the implicit function theorem, in which we show that such a differentiation is guaranteed to exist under mild conditions and is applicable to generic power systems (radial or meshed). The proposed theory is applied to derive sensitivities of complex voltages, line currents, and power flows. The developed theory of linearizing the power flow equations around changes in the complex network admittance parameters has numerous applications. We demonstrate several of these applications, such as predicting the nodal voltages when the network topology changes without solving the power flow equations. We showcase the application for continuous admittance control, which is used to increase the hosting capacity of a given distribution network.
@@ -2051,7 +2093,7 @@
 					DC Optimal Power Flow (DCOPF) is widely utilized in power system operations due to its simplicity and computational efficiency. However, its lossless, reactive power–agnostic model often yields dispatches that are infeasible under practical operating scenarios such as the nonlinear AC power flow (ACPF) equations. While theoretical analysis demonstrates that DCOPF solutions are inherently AC-infeasible, their widespread industry adoption suggests substantial practical utility. This paper develops a unified DCOPF&rarr;ACPF pipeline to recover AC feasible solutions from DCOPF-based dispatches. The pipeline uses four DCOPF variants and applies AC feasibility recovery using both distributed slack allocation and PV/PQ switching. The main objective is to identify the most effective pipeline for restoring AC feasibility. Evaluation across over 10,000 dispatch scenarios on various test cases demonstrates that the structured ACPF model yields solutions that satisfy both the ACPF equations, and all engineering inequality constraints. In a 13,659-bus case, the mean absolute error and cost differences between DCOPF and ACOPF are reduced by 75% and 93%, respectively, compared to conventional single slack bus methods. Under extreme loading conditions, the pipeline reduces inequality constraint violations by a factor of 3 to 5.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.pdf">pdf</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2511.14725">link</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -2905,6 +2947,28 @@
   
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>M.R. Narimani, J.A. Madrigal, K.R. Davis, and <b>D.K. Molzahn</b>, "Exploring OPF Feasible Spaces using Nonlinear Programming and Continuation Methods," submitted<br />
+				<span id="narimani_madrigal_davis_molzahn-nlp_cpf_type" class="abstract" style="display:none">
+					Optimal power flow (OPF) is a key problem in the operation of electric power systems. This problem optimizes an objective function while satisfying constraints imposed by non-linear power flow equations and engineering limits. Due to their non-convexity, understanding OPF feasible spaces is essential for improving solution algorithms. This paper presents an approach that employs local solvers and continuation power flow methods to visualize OPF feasible spaces. Starting from a particular feasible point, the approach iteratively solves a modified OPF problem to find an additional feasible point that maximizes the distance from the points computed in previous iterations. Subsequently, continuation power flow is executed between each pair of the computed points to discover additional feasible points. We demonstrate the proposed algorithm on test cases with up to several tens of buses.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('narimani_madrigal_davis_molzahn-nlp_cpf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.pdf">pdf</a> ] [ Ref: <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf">bib</a>   <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>C. Khanpour, J.K. Skolfield, and <b>D.K. Molzahn</b>, "Empirical Comparison of AC and DC Power Flow Models in Transmission Expansion Planning," submitted<br />
+				<span id="khanpour_skolfield_molzahn-ac_v_dc_tep_type" class="abstract" style="display:none">
+					Expansion planning models often rely on the DC power flow approximation for the sake of computational tractability. The AC power flow model, however, is the full representation of a power system's steady-state behavior, while DC power flow is a linear approximation, so it is important to understand how well the DC approximation performs in this context. In this paper, we investigate the impact of utilizing the nonlinear AC power flow model versus the DC power flow linearization in transmission expansion planning. We compare investment decisions obtained from the IDAES-GTEP package on a 5-bus and 9-bus test systems under several scenarios that vary line parameters. Our results show that, for standard parameter ranges, AC and DC formulations yield nearly identical expansion plans, whereas under extreme parameter variations that exaggerate losses or reactive effects the models can select different investment decisions, but with the AC formulation requiring substantially more computation time and similar final investment costs.
+				</span>
+		</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>

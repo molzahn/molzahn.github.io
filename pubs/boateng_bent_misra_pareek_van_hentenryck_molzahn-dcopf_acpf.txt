@@ -1,1 +1,1 @@
-M.A. Boateng, R. Bent, S. Misra, P. Park, P. Van Hentenryck, and D.K. Molzahn, "Towards AC Feasibility of DCOPF Dispatch," submitted, 2025.
+M.A. Boateng, R. Bent, S. Misra, P. Park, P. Van Hentenryck, and D.K. Molzahn, "Towards AC Feasibility of DCOPF Dispatch," arXiv:2511.14725, 2025.

@@ -1,1 +1,1 @@
-D. Turizo, D. Cifuentes, A. Leykin, and D.K. Molzahn, "Discrete Shortest Paths in Optimal Power Flow Feasible Regions," to appear in IEEE Transactions on Power Systems, 2025.
+D. Turizo, D. Cifuentes, A. Leykin, and D.K. Molzahn, "Discrete Shortest Paths in Optimal Power Flow Feasible Regions," IEEE Transactions on Power Systems, vol. 40, no. 6, pp. 5027-5040, November 2025.
