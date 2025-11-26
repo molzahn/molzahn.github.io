@@ -1,1 +1,1 @@
-N. Dimate, S. Dorado-Rojas, and D.K. Molzahn, "On the Impact of PWM Modulation Strategies on the Discrete-Time Modeling of a Boost Converter," to appear in Innovative Smart Grid Technologies (ISGT) Europe, October 20th-23rd, 2025.
+N. Dimate, S. Dorado-Rojas, and D.K. Molzahn, "On the Impact of PWM Modulation Strategies on the Discrete-Time Modeling of a Boost Converter," Innovative Smart Grid Technologies (ISGT) Europe, October 20th-23rd, 2025.

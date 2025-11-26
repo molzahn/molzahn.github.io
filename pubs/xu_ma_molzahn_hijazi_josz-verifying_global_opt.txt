@@ -1,1 +1,1 @@
-S. Xu, R. Ma, D.K. Molzahn, H.L. Hijazi, and C. Josz, "Verifying Global Optimality of Candidate Solutions to Polynomial Optimization Problems," to appear in 60th IEEE Conference on Decision and Control (CDC), December 13-15, 2021.
+S. Xu, R. Ma, D.K. Molzahn, H.L. Hijazi, and C. Josz, "Verifying Global Optimality of Candidate Solutions to Polynomial Optimization Problems," 60th IEEE Conference on Decision and Control (CDC), December 13-15, 2021.
