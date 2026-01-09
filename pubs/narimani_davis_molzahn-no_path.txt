@@ -1,1 +1,1 @@
-M.R. Narimani, K.R. Davis, and D.K. Molzahn, “Certifying the Nonexistence of Feasible Paths Between Power System Operating Points,” to appear in IEEE Control Systems Letters, to be presented at the American Control Conference (ACC), May 26-29, 2026.
+M.R. Narimani, K.R. Davis, and D.K. Molzahn, “Certifying the Nonexistence of Feasible Paths Between Power System Operating Points,” IEEE Control Systems Letters, vol. 9, pp. 2987-2992, 2025, to be presented at the American Control Conference (ACC), May 26-29, 2026.

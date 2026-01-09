@@ -1,1 +1,1 @@
-R. Asiamah, K.K. Ji, J.-P. Watson, and D.K. Molzahn<, "Sensitivity Analyses of Synthetic Power Grid Modeling Techniques in a Global Context: A Case Study in Ghana," to appear in 59th Hawaii International Conference on System Sciences (HICSS), January 6-9, 2026.
+R. Asiamah, K.K. Ji, J.-P. Watson, and D.K. Molzahn<, "Sensitivity Analyses of Synthetic Power Grid Modeling Techniques in a Global Context: A Case Study in Ghana," 59th Hawaii International Conference on System Sciences (HICSS), January 6-9, 2026.
