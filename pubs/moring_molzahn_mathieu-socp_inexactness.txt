@@ -1,1 +1,1 @@
-H. Moring, D.K. Molzahn, and J.L. Mathieu, "Proof of the Inexactness of Second-order Cone Relaxations for Calculating Operating Envelopes," submitted.
+H. Moring, D.K. Molzahn, and J.L. Mathieu, "Exploring the Inexactness of Second-order Cone Relaxations for Calculating Operating Envelopes," to appear in IEEE Transactions on Power Systems.
