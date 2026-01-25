@@ -1,1 +1,1 @@
-W. Huang, R. Piansky, B. Dilkina, and D.K. Molzahn, "Machine Learning Guided Optimal Transmission Switching to Mitigate Wildfire Ignition Risk," submitted, 2025.
+W. Huang, R. Piansky, B. Dilkina, and D.K. Molzahn, "Machine Learning Guided Optimal Transmission Switching to Mitigate Wildfire Ignition Risk," to appear in Electric Power Systems Research for presentation at the 24th Power Systems Computation Conference (PSCC), June 8-12, 2026.

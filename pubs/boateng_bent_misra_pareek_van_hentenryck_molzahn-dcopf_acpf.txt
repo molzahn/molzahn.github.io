@@ -1,1 +1,1 @@
-M.A. Boateng, R. Bent, S. Misra, P. Park, P. Van Hentenryck, and D.K. Molzahn, "Towards AC Feasibility of DCOPF Dispatch," arXiv:2511.14725, 2025.
+M.A. Boateng, R. Bent, S. Misra, P. Park, P. Van Hentenryck, and D.K. Molzahn, "Towards AC Feasibility of DCOPF Dispatch," to appear in Electric Power Systems Research for presentation at the 24th Power Systems Computation Conference (PSCC), June 8-12, 2026.
