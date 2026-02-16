@@ -1,1 +1,1 @@
-S. Talkington, A. Rangarajan, P.A. de Alcântara, L.A. Roald, D.K. Molzahn, and D.R. Fuhrmann, "Error Bounds for Radial Network Topology Learning from Quantized Measurements," submitted.
+S. Talkington, A. Rangarajan, P.A. de Alcântara, L.A. Roald, D.K. Molzahn, and D.R. Fuhrmann, "Error Bounds for Radial Network Topology Learning from Quantized Measurements," to appear in IEEE Transactions on Power Systems (Letters).
