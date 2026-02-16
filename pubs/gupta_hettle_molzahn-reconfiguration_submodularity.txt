@@ -1,1 +1,1 @@
-S. Gupta, C. Hettle, and D.K. Molzahn, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," to appear in INFORMS Journal on Computing.
+S. Gupta, C. Hettle, and D.K. Molzahn, "Fair and Reliable Reconnections for Temporary Disruptions in Electric Distribution Networks using Submodularity," INFORMS Journal on Computing, vol. 38, no. 1, pp. 67-85, January-February 2026.
