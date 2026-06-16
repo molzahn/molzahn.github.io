@@ -80,6 +80,26 @@
 	<div class="tile scale-anm Year">
 		<h2>Journal Papers</h2>
 	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Not All Warm Starts Help: Benchmarking Primal-Dual Initializations for ACOPF Algorithms," submitted. <br />
+				<span id="taheri_molzahn-warmstart_year" class="abstract" style="display:none">
+					Warm starts are widely used to accelerate AC optimal power flow (ACOPF) solves, but the impact of different initialization strategies has received limited systematic study, particularly for the primal-dual interior-point methods that dominate large-scale ACOPF algorithms. This paper benchmarks initialization strategies for ACOPF solved with the interior-point solver IPOPT on 19 PGLib-OPF instances (5 to 30,000 buses), testing all 15 non-empty subsets of the primal blocks {Pg, Qg, Vm, Va} under oracle conditions and three DC-seeded combinations in a practical setting. The experiments show that most partial primal-plus-dual restarts increase solve time or reduce convergence reliability. Among the oracle primal-plus-dual (O-PD) configurations, only the complete restart reliably converges on every baseline-convergent case, reaching a 47.6% median solve-time speedup. Twelve of the 14 partial O-PD combinations have negative median speedups, and several fail repeatedly on larger networks. Decomposing the dual into constraint and bound multipliers shows that <i>coverage</i>, not the presence of duals per se, governs robustness: the full bound-multiplier vector reaches 90.7% convergence and a 26.8% median speedup, whereas block-matched coverage (oracle multipliers on some bounds, defaults on the rest) drops to 70.4% and -31.1%. Practical DC seeding sometimes helps the AC solve, but the benefit is no longer statistically significant once the DCOPF presolve cost is included in the end-to-end comparison (p = 0.4171). For learned warm-start methods, the results support the following target ordering: predict the full primal vector first; if only partial coverage is possible, prioritize voltage variables; and avoid partial or inconsistent dual predictions unless the primal estimate is nearly complete.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('taheri_molzahn-warmstart_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-warmstart.pdf">pdf</a> ] [ Ref: <a href="pubs/taheri_molzahn-warmstart.bib">bib</a>   <a href="pubs/taheri_molzahn-warmstart.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>H. Park, J. Lee, and <b>D.K. Molzahn</b>, "Preventive Public Safety Power Shutoff Planning under Decision-Dependent Wildfire Ignition Risk," submitted. <br />
+				<span id="park_lee_molzahn-ddu_psps_year" class="abstract" style="display:none">
+					In this paper, we study an integrated planning and multi-period operational problem for wildfire-resilient power grid operation, in which preventive public safety power shutoff (PSPS) decisions are taken in advance to mitigate wildfire-induced disruptions. Unlike conventional PSPS models that represent wildfire risk through exogenous parameters, we explicitly model wildfire ignition events that may damage energized transmission lines and force them out of service. This formulation captures the decision-dependent nature of wildfire risk and introduces stochastic network topology changes. We formulate the problem as a two-stage stochastic optimization model that minimizes the expected operational and wildfire damage costs under ignition-driven disruption scenarios. Because scenario probabilities depend on PSPS decisions, the resulting problem is a mixed-integer nonlinear program (MINLP). To solve this model efficiently, we derive an exact linear representation of decision-dependent scenario probabilities and develop a mixed-integer linear programming (MILP)-based bounding framework. Computational experiments on representative transmission systems demonstrate that the proposed approach yields different PSPS strategies from conventional risk-based formulations, while achieving high solution accuracy with significantly improved computational scalability relative to the original MINLP. The results further indicate that network recourse can provide additional operational benefits under wildfire disruptions.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('park_lee_molzahn-ddu_psps_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_lee_molzahn-ddu_psps.pdf">pdf</a> ] [ Ref: <a href="pubs/park_lee_molzahn-ddu_psps.bib">bib</a>   <a href="pubs/park_lee_molzahn-ddu_psps.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 <div class="tile scale-anm Year">
 		<span>
 			<li><p>H. Park, <b>D.K. Molzahn</b>, and R.K. Gupta, "Ramping-aware Enhanced Flexibility Aggregation of Distributed Generation with Energy Storage in Power Distribution Networks," submitted. <br />
@@ -87,7 +107,7 @@
 					Power distribution networks are increasingly hosting controllable and flexible distributed energy resources (DERs) that, when aggregated, can provide ancillary support to transmission systems. However, existing aggregation schemes often ignore the ramping constraints of these DERs, which can render them impractical in real deployments. This work proposes a ramping-aware flexibility aggregation scheme, computed at the transmission–distribution boundary, that explicitly accounts for DER ramp limits and yields flexibility envelopes that are provably disaggregable. To further enhance the attainable flexibility region, we introduce a novel “pre-ramping” strategy, which proactively adjusts resource operating points to enlarge the aggregated flexibility envelope while preserving both network feasibility and disaggregation guarantees. The proposed method demonstrates a 5.2% to 19.2% improvement in flexibility relative to the baseline model, depending on system conditions. We validate the scheme on an IEEE-33 bus distribution system and provide formal proofs showing that both aggregation strategies are disaggregable for all feasible trajectories within the aggregate flexibility envelope.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('park_molzahn_gupta-ramping_envelope_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_molzahn_gupta-ramping_envelope.pdf">pdf</a> ] [ Ref: <a href="pubs/park_molzahn_gupta-ramping_envelope.bib">bib</a>   <a href="pubs/park_molzahn_gupta-ramping_envelope.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('park_molzahn_gupta-ramping_envelope_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_molzahn_gupta-ramping_envelope.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2601.14689">link</a> ] [ Ref: <a href="pubs/park_molzahn_gupta-ramping_envelope.bib">bib</a>   <a href="pubs/park_molzahn_gupta-ramping_envelope.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Year">
@@ -107,17 +127,7 @@
 					Energy communities (ECs) are emerging as a promising decentralized model for managing cooperative distributed energy resources (DERs). As these communities expand and their operations become increasingly integrated into the grid, ensuring fairness in allocating operating costs among participants becomes a challenge. In distribution networks, DER operations at the community level can influence Distribution Locational Marginal Prices (DLMPs), which in turn affect system's operation cost. This interdependence between local decisions and system-level pricing introduces new challenges for fair and transparent cost allocation. Despite growing interest in fairness-aware methods, most methods do not account for the impact of DLMPs. To fill this gap, we propose a bilevel optimization model in which a Community Energy Aggregator (CEA) schedules DERs across multiple ECs while a Distribution System Operator (DSO) determines DLMPs through network-constrained dispatch. Leveraging the Karush-Kuhn-Tucker (KKT) conditions and strong duality, the bilevel model is reformulated into a tractable single-level problem. We achieve fairness in the cost allocation by applying the Shapley value to quantify each community’s marginal contribution to system-wide cost savings. The effectiveness of the proposed method is validated through simulations on several benchmark distribution systems.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('park_kwag_molzahn_gupta-shapley_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_kwag_molzahn_gupta-shapley.pdf">pdf</a> ] [ Ref: <a href="pubs/park_kwag_molzahn_gupta-shapley.bib">bib</a>   <a href="pubs/park_kwag_molzahn_gupta-shapley.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Year">
-		<span>
-			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "Conservative Bias Linear Power Flow Approximations: Application to Unit Commitment," submitted.<br />
-				<span id="buason_misra_molzahn-cbla_ias_year" class="abstract" style="display:none">
-					The power flow equations are central to many problems in power system planning, analysis, and control. However, their inherent non-linearity and non-convexity present substantial challenges during problem-solving processes, especially for optimization problems. Accordingly, linear approximations are commonly employed to streamline computations, although this can often entail compromises in accuracy and feasibility. This paper proposes an approach termed <i>Conservative Bias Linear Approximations (CBLA)</i> for addressing these limitations. By minimizing approximation errors across a specified operating range while incorporating conservativeness (over- or under-estimating quantities of interest), CBLA strikes a balance between accuracy and tractability by maintaining linear constraints. By allowing users to design loss functions tailored to the specific approximated function, the bias approximation approach significantly enhances approximation accuracy. We illustrate the effectiveness of our proposed approach through several test cases, including its application to a unit commitment problem, where CBLA consistently achieves lower operating costs and improved feasibility compared to traditional linearization methods.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('buason_misra_molzahn-cbla_ias_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cbla_ias.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2404.09876">link</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cbla_ias.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cbla_ias.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('park_kwag_molzahn_gupta-shapley_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_kwag_molzahn_gupta-shapley.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2510.22321">link</a> ] [ Ref: <a href="pubs/park_kwag_molzahn_gupta-shapley.bib">bib</a>   <a href="pubs/park_kwag_molzahn_gupta-shapley.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -133,42 +143,27 @@
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
 	</div>
-	<!--
 <div class="tile scale-anm Year">
 		<span>
-			<li><p>A. Raymaker, S. Talkington, Z. Ryu, R. Asiamah, E. Abukhousa, B. Ashebo, A. Chhotaray, <b>D.K. Molzahn</b>, F. Li, S. Zonouz, and R. Beyah, "Grid Trouble in Paradise: Uncovering Vulnerable Distributed Energy Resources and Their Grid-Level Risks," submitted.<br />
-				<span id="raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der_year" class="abstract" style="display:none">
-					Grid-connected solar distributed energy resources (DERs), such as solar inverters and monitoring platforms, have been deployed at unprecedented scale over the past few years, with global solar capacity more than doubling since 2022. To support monitoring and control, many of these systems are Internet-connected and configured by installers or end users, yet the real-world scale of their Internet exposure and the implications for power grid operation remain poorly understood.<br /><br />
+			<li><p>B. Ashebo, A. Raymaker, S. Talkington, R. Asiamah, A. Chhotaray, S. Zonouz, and <b>D.K. Molzahn</b>, "Analyzing Cyber Resilience of Distribution Systems with Vulnerable Inverter-Based Resources," submitted.<br />
+				<span id="ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_year" class="abstract" style="display:none">
+					The proliferation of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, introduces new operational and security challenges for distribution networks. This paper presents a cyber-physical attack framework in which an adversary manipulates selected inverters to disrupt grid operations. To identify worst-case attacks, we formulate optimization problems that maximize steady-state voltage violations. The set of compromised inverters in these problems is constrained by an attack budget that is informed by vulnerabilities identified via our associated screening of Internet-connected inverters. The worst-case attack problems are formulated as Mixed-Integer Linear Programs (MILPs) that use the linearized DistFlow equations to model the impact of the attack on unbalanced three-phase distribution systems. The attack solutions obtained from the LinDist3Flow formulation are validated using AC power flow (ACPF) simulations with fixed attacked inverter setpoints. Numerical experiments on modified IEEE 13-bus, 34-bus, and 123-bus distribution test cases demonstrate that compromising between 10% and 25% of strategically selected inverters can induce voltage violations across multiple buses. 
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.bib">bib</a>   <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>N. Dimate, S.A. Dorado-Rojas, and <b>D.K. Molzahn</b>, "Julia-based Software-in-the-Loop Offline Co-Simulation for Embedded Control Validation in Power Converters," submitted.<br />
+				<span id="diamate_dorado_rojas_molzahn-SIL_year" class="abstract" style="display:none">
+					This article presents a software-in-the-loop co-simulation architecture, implemented within a networked control framework, for validating control software in power converter applications. The proposed architecture combines Julia's symbolic modeling capabilities and high-performance numerical computing with a Python-based controller connected via TCP/IP. This combination provides a modular and flexible environment for software-in-the-loop validation of closed-loop control algorithms. The co-simulation setup is evaluated using a boost converter model regulated by a lead-lag controller. The results show that the developed co-simulation architecture functions correctly and that the proposed validation environment captures implementation-related delays, thereby supporting a more realistic software-based validation of control design before deployment on a real electronic control unit. Furthermore, the potential extension of the proposed architecture to more complex networked control topologies is discussed.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('diamate_dorado_rojas_molzahn-SIL_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/diamate_dorado_rojas_molzahn-SIL.pdf">pdf</a> ] [ Ref: <a href="pubs/diamate_dorado_rojas_molzahn-SIL.bib">bib</a>   <a href="pubs/diamate_dorado_rojas_molzahn-SIL.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 
-					In this paper, we present an Internet-scale evaluation of exposed and vulnerable solar DER infrastructure, and assess the risk that compromised DERs can pose to energy grids. We develop a method for accurately identifying solar DERs from Internet scanning data, and discover a diverse population of over 44,000 Internet-exposed solar DERs. We detect that at least 9,000 of these DERs have known CVEs, such as unauthenticated monitoring and control endpoints. To assess the risk that these vulnerable DERs pose to a power grid, we use an electric grid network for Oahu, Hawaii, established and used by the power system research community, and conduct a power-system analysis. Our evaluation shows that by compromising exposed DERs, attackers can cause voltage and line flow violations across multiple locations in the Oahu network, resulting in a range of consequences from degraded power quality to damaged power-electric components to power outages. Ultimately, our work brings to light the emerging threat of grid-connected DERs, and provides directions for improving energy security.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der.pdf">pdf</a> ] [ Ref: <a href="pubs/raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der.bib">bib</a>   <a href="pubs/raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	-->
-	<!--
-<div class="tile scale-anm Year">
-		<span>
-			<li><p>M. Boateng, R. Bent, S. Misra, P. Pareek, P. Van Hentenryck, and <b>D.K. Molzahn</b>, "Restoring AC Feasibility of DCOPF Solutions via Parameter-Optimized Power Flow," submitted.<br />
-				<span id="boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore_year" class="abstract" style="display:none">
-					The DC optimal power flow (DCOPF) is a standard tool for power system operations due to its computational efficiency and scalability. However, DCOPF dispatches are not guaranteed to satisfy the nonlinear AC power flow (ACPF) equations or operational limits. This paper develops a parameterized, differentiable ACPF restoration layer that seeks to restore AC feasibility of DCOPF dispatches. The restoration layer incorporates distributed slack for active power balancing and PV/PQ switching for reactive power regulation, both implemented through smooth differentiable surrogates with tunable parameters including participation factors, voltage setpoints, and regulation steepness. Parameter optimization is performed offline using our proposed fully smooth DCAC<sup>SS</sup> formulation, enabling gradient-based training via the implicit function theorem. The learned parameters are then deployed online in both a smooth pipeline (DCAC<sup>SS</sup><sub>opt</sub>) and a discrete pipeline (DCAC<sup>DD</sup><sub>opt</sub>). The approach is evaluated across IEEE and PEGASE test systems using two DCOPF variants &mdash; including a lossy DCOPF. Experimental results demonstrate that both DCAC<sup>SS</sup><sub>opt</sub> and DCAC<sub>opt</sub> consistently remove inequality-constraint violations and significantly improve iteration counts and solving times compared to their unoptimized DCAC<sub>init</sub> counterparts across test cases.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore.pdf">pdf</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	-->
-<div class="tile scale-anm Year">
-		<span>
-			<li><p>S. Talkington, C. Khanpour, R.K. Gupta, S.A. Dorado-Rojas, H. Park, D. Turizo, D.M. Ostrovskii, and <b>D.K. Molzahn</b>, "Admittance Matrix Concentration Inequalities for Understanding Uncertain Power Networks," submitted.<br />
-				<span id="talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance_year" class="abstract" style="display:none">
-					This paper presents conservative probabilistic bounds for the spectrum of the admittance matrix and classical linear power flow models under uncertain network parameters; for example, probabilistic line contingencies. Our proposed approach imports tools from probability theory, such as concentration inequalities for random matrices. This provides a theoretical framework for understanding error bounds of common approximations of the AC power flow equations under parameter uncertainty, including the DC and LinDistFlow approximations. Additionally, the resulting upper bounds scale as <em>O</em>(&#8730;(&Delta;<sub>c</sub> log <em>n</em>)), where &Delta;<sub>c</sub> is the maximum nodal criticality&mdash;a network-theoretic quantity capturing how uncertainty concentrates at critical nodes for use in contingency analysis. We validate these bounds on IEEE test networks, demonstrating that they correctly capture the scaling behavior of spectral perturbations up to conservative constants.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2510.17798">link</a> ] [ Ref: <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.bib">bib</a>   <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.txt">txt</a> ] </p></li>
-		</span>
-	</div>
 <div class="tile scale-anm Year">
 		<span>
 			<li><p>R. Harris, D. Turizo, and <b>D.K. Molzahn</b>, "Secure Warm Start for Distributed Optimal Power Flow via Privacy-Preserving Neural Networks," submitted.<br />
@@ -190,19 +185,6 @@
 			&emsp;[ <span onclick="showDiv('talkington_ostrovskii_molzahn-randomized_switching_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_ostrovskii_molzahn-randomized_switching.pdf">pdf</a> ] [ Ref: <a href="pubs/talkington_ostrovskii_molzahn-randomized_switching.bib">bib</a>   <a href="pubs/talkington_ostrovskii_molzahn-randomized_switching.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	<!--
-	<div class="tile scale-anm Year">
-		<span>
-			<li><p>R. Santa Gonz&aacute;lez, R. Piansky, S.M. Bell, J. Biddle, and <b>D.K. Molzahn</b>, "Beyond Algorithmic Fairness: A Guide to Develop and Deploy Ethical AI-Enabled Decision-Support Tools," submitted.<br />
-				<span id="beyond_alg_fairness_year" class="abstract" style="display:none">
-					The integration of artificial intelligence (AI) and optimization hold substantial promise for improving the efficiency, reliability, and resilience of engineered systems. Due to the networked nature of many engineered systems, ethically deploying methodologies at this intersection poses challenges that are distinct from other AI settings, thus motivating the development of ethical guidelines tailored to AI-enabled optimization. This paper highlights the need to go beyond fairness-driven algorithms to systematically address ethical decisions spanning the stages of modeling, data curation, results analysis, and implementation of optimization-based decision support tools. Accordingly, this paper identifies ethical considerations required when deploying algorithms at the intersection of AI and optimization via case studies in power systems as well as supply chain and logistics. Rather than providing a prescriptive set of rules, this paper aims to foster reflection and awareness among researchers and encourage consideration of ethical implications at every step of the decision-making process. 
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('beyond_alg_fairness_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2409.11489">link</a> ] [ Ref: <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.bib">bib</a>   <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	-->
 	</ul>
 	<ul class="tile scale-anm Year">
 		<div class="tile scale-anm Year">
@@ -210,6 +192,16 @@
 		</div>
 	<div class="tile scale-anm Year">
 		<h2>Journal Papers</h2>
+	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "Conservative Bias Linear Power Flow Approximations: Application to Unit Commitment," to appear in <i>IEEE Transactions on Industry Applications</i>.<br />
+				<span id="buason_misra_molzahn-cbla_ias_year" class="abstract" style="display:none">
+					The power flow equations are central to many problems in power system planning, analysis, and control. However, their inherent non-linearity and non-convexity present substantial challenges during problem-solving processes, especially for optimization problems. Accordingly, linear approximations are commonly employed to streamline computations, although this can often entail compromises in accuracy and feasibility. This paper proposes an approach termed <i>Conservative Bias Linear Approximations (CBLA)</i> for addressing these limitations. By minimizing approximation errors across a specified operating range while incorporating conservativeness (over- or under-estimating quantities of interest), CBLA strikes a balance between accuracy and tractability by maintaining linear constraints. By allowing users to design loss functions tailored to the specific approximated function, the bias approximation approach significantly enhances approximation accuracy. We illustrate the effectiveness of our proposed approach through several test cases, including its application to a unit commitment problem, where CBLA consistently achieves lower operating costs and improved feasibility compared to traditional linearization methods.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('buason_misra_molzahn-cbla_ias_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cbla_ias.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2404.09876">link</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cbla_ias.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cbla_ias.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
@@ -219,16 +211,6 @@
 				</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('cohn_molzahn_dhople-grid_computation_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/cohn_molzahn_dhople-grid_computation.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11475571">link</a> ] [ Ref: <a href="pubs/cohn_molzahn_dhople-grid_computation.bib">bib</a>   <a href="pubs/cohn_molzahn_dhople-grid_computation.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Year">
-		<span>
-			<li><p>S. Talkington, A. Rangarajan, P.A. de Alc&acirc;ntara, L.A. Roald, <b>D.K. Molzahn</b>, and D.R. Fuhrmann, "Error Bounds for Radial Network Topology Learning from Quantized Measurements," to appear in <i>IEEE Transactions on Power Systems (Letters)</i>.<br />
-				<span id="talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology_year" class="abstract" style="display:none">
-					We probabilistically bound the error of a solution to a radial network topology learning problem where both connectivity and line parameters are estimated. In our model, data errors are introduced by the precision of the sensors, i.e., quantization. This produces a nonlinear measurement model that embeds the <i>operation of the sensor communication network</i> into the learning problem, expanding beyond the additive noise models typically seen in power system estimation algorithms. We show that the error of a learned radial network topology is proportional to the quantization bin width and grows sublinearly in the number of nodes, provided that the number of samples per node is logarithmic in the number of nodes.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11403974">link</a> ] [ Ref: <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.bib">bib</a>   <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Year">
@@ -282,9 +264,19 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 			&emsp;[ <span onclick="showDiv('moring_molzahn_mathieu-socp_inexactness_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/moring_molzahn_mathieu-socp_inexactness.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11363406">link</a> ] [ Ref: <a href="pubs/moring_molzahn_mathieu-socp_inexactness.bib">bib</a>   <a href="pubs/moring_molzahn_mathieu-socp_inexactness.txt">txt</a> ] </p></li>
 		</span>
 	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>S. Talkington, A. Rangarajan, P.A. de Alc&acirc;ntara, L.A. Roald, <b>D.K. Molzahn</b>, and D.R. Fuhrmann, "Error Bounds for Radial Network Topology Learning from Quantized Measurements," <i>IEEE Transactions on Power Systems (Letters)</i>, vol. 41, no. 3, pp. 2402-2405, May 2026.<br />
+				<span id="talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology_year" class="abstract" style="display:none">
+					We probabilistically bound the error of a solution to a radial network topology learning problem where both connectivity and line parameters are estimated. In our model, data errors are introduced by the precision of the sensors, i.e., quantization. This produces a nonlinear measurement model that embeds the <i>operation of the sensor communication network</i> into the learning problem, expanding beyond the additive noise models typically seen in power system estimation algorithms. We show that the error of a learned radial network topology is proportional to the quantization bin width and grows sublinearly in the number of nodes, provided that the number of samples per node is logarithmic in the number of nodes.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11403974">link</a> ] [ Ref: <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.bib">bib</a>   <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	<div class="tile scale-anm Year">
 		<span>
-			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Improving the Accuracy of DC Optimal Power Flow Formulations via Parameter Optimization," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Improving the Accuracy of DC Optimal Power Flow Formulations via Parameter Optimization," <i>IEEE Transactions on Power Systems</i>, vol. 41, no. 3, pp. 2373-2385, May 2026.<br />
 				<span id="taheri_molzahn-optimal_dcopf_year" class="abstract" style="display:none">
 					DC Optimal Power Flow (DC-OPF) problems optimize the generators' active power setpoints while satisfying constraints based on the DC power flow linearization. The computational tractability advantages of DC-OPF problems come at the expense of inaccuracies relative to AC Optimal Power Flow (AC-OPF) problems which accurately model the nonlinear steady-state behavior of power grids. This paper proposes an algorithm that significantly improves the accuracy of the generators' active power setpoints from DC-OPF problems with respect to the corresponding AC-OPF problems over a specified range of operating conditions. Using sensitivity information in a machine learning-inspired methodology, this algorithm tunes coefficient and bias parameters in the DC power flow approximation to improve the accuracy of the resulting DC-OPF solutions. Employing the Truncated Newton Conjugate-Gradient (TNC) method&mdash;a Quasi-Newton optimization technique&mdash;this parameter tuning occurs during an offline training phase, with the resulting parameters then used in online computations. Numerical results underscore the algorithm's efficacy with accuracy improvements in squared two-norm and &infin;-norm losses of up to 90&percnt; and 79&percnt;, respectively, relative to traditional DC-OPF formulations.
 				</span>
@@ -294,7 +286,7 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 	</div>
 		<div class="tile scale-anm Year">
 		<span>
-			<li><p>B. Taheri, R. Gupta and <b>D.K. Molzahn</b>, "Optimizing Parameters of the LinDistFlow Power Flow Approximation for Distribution Systems," to appear in <i>IEEE Transactions on Smart Grid</i>.<br />
+			<li><p>B. Taheri, R. Gupta and <b>D.K. Molzahn</b>, "Optimizing Parameters of the LinDistFlow Power Flow Approximation for Distribution Systems," <i>IEEE Transactions on Smart Grid</i>, vol. 17, no. 2, pp. 1029-1042, March 2026.<br />
 					<span id="taheri_gupta_molzahn-opt_lindistflow_year" class="abstract" style="display:none">
 						The DistFlow model accurately represents power flows in distribution systems, but the model's nonlinearities result in computational challenges for many applications. Accordingly, a linear approximation known as LinDistFlow (and its three-phase extension LinDist3Flow) is commonly employed. This paper introduces a parameter optimization algorithm for enhancing the accuracy of this approximation for both balanced single-phase equivalent and unbalanced three-phase distribution network models, with the goal of aligning the outputs more closely with those from the nonlinear DistFlow model. Using sensitivity information, our algorithm optimizes the LinDistFlow approximation's coefficient and bias parameters to minimize discrepancies in predictions of voltage magnitudes relative to the nonlinear DistFlow model. The parameter optimization algorithm employs the Truncated Newton Conjugate-Gradient (TNC) method to fine-tune coefficients and bias parameters during an offline training phase to improve the LinDistFlow approximation's accuracy. Numerical results underscore the algorithm's efficacy, showcasing accuracy improvements in L1-norm and L	&infin;-norm losses of up to 92% and 88%, respectively, relative to the traditional LinDistFlow model. We also assess how the optimized parameters perform under changes in the network topology and demonstrate the optimized LinDistFlow approximation's efficacy in a hosting capacity optimization problem.
 					</span>
@@ -317,6 +309,26 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
 	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>D.K.K. Koomson, R. Asiamah, K.K. Ji, J.-P. Watson, and <b>D.K. Molzahn</b>, "Assessing the Realism of Synthetic Power Grid Models Using Real-World Case Studies in Ghana," to appear in <i>IEEE PES &amp; IAS PowerAfrica Conference</i>, September 21-25, 2026.<br />
+				<span id="koomson_asiamah_ji_watson_molzahn-ghana_reliability_year" class="abstract" style="display:none">
+					Developing realistic synthetic electric grid models for specific geographic regions is an important topic of power systems research. Synthetic grids provide researchers with testbeds for studying region-specific problems and informing associated policies. This paper presents two validation studies for one such synthetic grid model developed for Ghana, a West African country. First, we conduct a reliability study of the country's electric grid to identify the most critical lines. Next, we solve a Transmission Network Expansion Planning (TNEP) problem to identify the minimum-cost set of transmission lines to be constructed to satisfy a forecasted loading scenario. The results of these two studies contribute to validating the realism of the synthetic grid model. The most critical lines identified in our reliability analysis align with those for which faults have previously caused major blackout incidents. Furthermore, the lines identified by the TNEP solution are spatially aligned with a subset of actual transmission expansion projects proposed by the Ghana Grid Company. Ultimately, the similarity between the validation test results and real-world observations helps to validate the realism of the synthetic grid and demonstrates its usefulness in advancing power system research in Ghana.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('koomson_asiamah_ji_watson_molzahn-ghana_reliability_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/koomson_asiamah_ji_watson_molzahn-ghana_reliability.pdf">pdf</a> ] [ Ref: <a href="pubs/koomson_asiamah_ji_watson_molzahn-ghana_reliability.bib">bib</a>   <a href="pubs/koomson_asiamah_ji_watson_molzahn-ghana_reliability.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>S. Talkington, C. Khanpour, R.K. Gupta, S.A. Dorado-Rojas, H. Park, D. Turizo, D.M. Ostrovskii, and <b>D.K. Molzahn</b>, "Admittance Matrix Concentration Inequalities for Understanding Uncertain Power Networks," to appear in <i>1st PowerUp Conference</i>, September 9-11, 2026.<br />
+				<span id="talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance_year" class="abstract" style="display:none">
+					This paper presents conservative probabilistic bounds for the spectrum of the admittance matrix and classical linear power flow models under uncertain network parameters; for example, probabilistic line contingencies. Our proposed approach imports tools from probability theory, such as concentration inequalities for random matrices. This provides a theoretical framework for understanding error bounds of common approximations of the AC power flow equations under parameter uncertainty, including the DC and LinDistFlow approximations. Additionally, the resulting upper bounds scale as <em>O</em>(&#8730;(&Delta;<sub>c</sub> log <em>n</em>)), where &Delta;<sub>c</sub> is the maximum nodal criticality&mdash;a network-theoretic quantity capturing how uncertainty concentrates at critical nodes for use in contingency analysis. We validate these bounds on IEEE test networks, demonstrating that they correctly capture the scaling behavior of spectral perturbations up to conservative constants.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2510.17798">link</a> ] [ Ref: <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.bib">bib</a>   <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	<div class="tile scale-anm Year">
 		<span>
 			<li><p>M.R. Narimani, J.A. Madrigal, K.R. Davis, and <b>D.K. Molzahn</b>, "Exploring OPF Feasible Spaces using Nonlinear Programming and Continuation Methods," <i>10th Texas Power and Energy Conference (TPEC)</i>, February 8-10, 2026.<br />
@@ -325,7 +337,7 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('narimani_madrigal_davis_molzahn-nlp_cpf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.pdf">pdf</a> ] [ Ref: <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf">bib</a>   <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('narimani_madrigal_davis_molzahn-nlp_cpf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11513090/">link</a> ] [ Ref: <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf">bib</a>   <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -336,7 +348,7 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11513197">link</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -563,7 +575,7 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 					Various types of reactive power control laws are heterogeneously used for inverter-based resources (IBRs) in distribution grids. As a result, grid operators may not be aware of <i>which type</i> of control law is used by a particular IBR. Different control laws imply different voltage support behaviors, which need to be known for the development of accurate computational models for power system analysis. To help mitigate this challenge, this paper develops simple <i>classification</i> algorithms to <i>identify</i> which type of control law governs the reactive power output of a behind-the-meter solar photovoltaic inverter when the specific control law selected by the IBR owner is unknown. Notably, the two algorithms introduced only require <i>aggregated</i> smart meter measurements to assign candidate reactive power control laws (e.g., constant power factor, volt-var control) to distribution network inverters. We present a case study to assess their accuracy in performing the classification task.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('kpec2025_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] <!-- [ <a href="">link</a> ] --> [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('kpec2025_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11045009">link</a> ] [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -2109,12 +2121,32 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Not All Warm Starts Help: Benchmarking Primal-Dual Initializations for ACOPF Algorithms," submitted. <br />
+				<span id="taheri_molzahn-warmstart_type" class="abstract" style="display:none">
+					Warm starts are widely used to accelerate AC optimal power flow (ACOPF) solves, but the impact of different initialization strategies has received limited systematic study, particularly for the primal-dual interior-point methods that dominate large-scale ACOPF algorithms. This paper benchmarks initialization strategies for ACOPF solved with the interior-point solver IPOPT on 19 PGLib-OPF instances (5 to 30,000 buses), testing all 15 non-empty subsets of the primal blocks {Pg, Qg, Vm, Va} under oracle conditions and three DC-seeded combinations in a practical setting. The experiments show that most partial primal-plus-dual restarts increase solve time or reduce convergence reliability. Among the oracle primal-plus-dual (O-PD) configurations, only the complete restart reliably converges on every baseline-convergent case, reaching a 47.6% median solve-time speedup. Twelve of the 14 partial O-PD combinations have negative median speedups, and several fail repeatedly on larger networks. Decomposing the dual into constraint and bound multipliers shows that <i>coverage</i>, not the presence of duals per se, governs robustness: the full bound-multiplier vector reaches 90.7% convergence and a 26.8% median speedup, whereas block-matched coverage (oracle multipliers on some bounds, defaults on the rest) drops to 70.4% and -31.1%. Practical DC seeding sometimes helps the AC solve, but the benefit is no longer statistically significant once the DCOPF presolve cost is included in the end-to-end comparison (p = 0.4171). For learned warm-start methods, the results support the following target ordering: predict the full primal vector first; if only partial coverage is possible, prioritize voltage variables; and avoid partial or inconsistent dual predictions unless the primal estimate is nearly complete.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('taheri_molzahn-warmstart_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-warmstart.pdf">pdf</a> ] [ Ref: <a href="pubs/taheri_molzahn-warmstart.bib">bib</a>   <a href="pubs/taheri_molzahn-warmstart.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>H. Park, J. Lee, and <b>D.K. Molzahn</b>, "Preventive Public Safety Power Shutoff Planning under Decision-Dependent Wildfire Ignition Risk," submitted. <br />
+				<span id="park_lee_molzahn-ddu_psps_type" class="abstract" style="display:none">
+					In this paper, we study an integrated planning and multi-period operational problem for wildfire-resilient power grid operation, in which preventive public safety power shutoff (PSPS) decisions are taken in advance to mitigate wildfire-induced disruptions. Unlike conventional PSPS models that represent wildfire risk through exogenous parameters, we explicitly model wildfire ignition events that may damage energized transmission lines and force them out of service. This formulation captures the decision-dependent nature of wildfire risk and introduces stochastic network topology changes. We formulate the problem as a two-stage stochastic optimization model that minimizes the expected operational and wildfire damage costs under ignition-driven disruption scenarios. Because scenario probabilities depend on PSPS decisions, the resulting problem is a mixed-integer nonlinear program (MINLP). To solve this model efficiently, we derive an exact linear representation of decision-dependent scenario probabilities and develop a mixed-integer linear programming (MILP)-based bounding framework. Computational experiments on representative transmission systems demonstrate that the proposed approach yields different PSPS strategies from conventional risk-based formulations, while achieving high solution accuracy with significantly improved computational scalability relative to the original MINLP. The results further indicate that network recourse can provide additional operational benefits under wildfire disruptions.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('park_lee_molzahn-ddu_psps_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_lee_molzahn-ddu_psps.pdf">pdf</a> ] [ Ref: <a href="pubs/park_lee_molzahn-ddu_psps.bib">bib</a>   <a href="pubs/park_lee_molzahn-ddu_psps.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>H. Park, <b>D.K. Molzahn</b>, and R.K. Gupta, "Ramping-aware Enhanced Flexibility Aggregation of Distributed Generation with Energy Storage in Power Distribution Networks," submitted. <br />
 				<span id="park_molzahn_gupta-ramping_envelope_type" class="abstract" style="display:none">
 					Power distribution networks are increasingly hosting controllable and flexible distributed energy resources (DERs) that, when aggregated, can provide ancillary support to transmission systems. However, existing aggregation schemes often ignore the ramping constraints of these DERs, which can render them impractical in real deployments. This work proposes a ramping-aware flexibility aggregation scheme, computed at the transmission–distribution boundary, that explicitly accounts for DER ramp limits and yields flexibility envelopes that are provably disaggregable. To further enhance the attainable flexibility region, we introduce a novel “pre-ramping” strategy, which proactively adjusts resource operating points to enlarge the aggregated flexibility envelope while preserving both network feasibility and disaggregation guarantees. The proposed method demonstrates a 5.2% to 19.2% improvement in flexibility relative to the baseline model, depending on system conditions. We validate the scheme on an IEEE-33 bus distribution system and provide formal proofs showing that both aggregation strategies are disaggregable for all feasible trajectories within the aggregate flexibility envelope.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('park_molzahn_gupta-ramping_envelope_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_molzahn_gupta-ramping_envelope.pdf">pdf</a> ] [ Ref: <a href="pubs/park_molzahn_gupta-ramping_envelope.bib">bib</a>   <a href="pubs/park_molzahn_gupta-ramping_envelope.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('park_molzahn_gupta-ramping_envelope_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_molzahn_gupta-ramping_envelope.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2601.14689">link</a> ] [ Ref: <a href="pubs/park_molzahn_gupta-ramping_envelope.bib">bib</a>   <a href="pubs/park_molzahn_gupta-ramping_envelope.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -2134,17 +2166,7 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 					Energy communities (ECs) are emerging as a promising decentralized model for managing cooperative distributed energy resources (DERs). As these communities expand and their operations become increasingly integrated into the grid, ensuring fairness in allocating operating costs among participants becomes a challenge. In distribution networks, DER operations at the community level can influence Distribution Locational Marginal Prices (DLMPs), which in turn affect system's operation cost. This interdependence between local decisions and system-level pricing introduces new challenges for fair and transparent cost allocation. Despite growing interest in fairness-aware methods, most methods do not account for the impact of DLMPs. To fill this gap, we propose a bilevel optimization model in which a Community Energy Aggregator (CEA) schedules DERs across multiple ECs while a Distribution System Operator (DSO) determines DLMPs through network-constrained dispatch. Leveraging the Karush-Kuhn-Tucker (KKT) conditions and strong duality, the bilevel model is reformulated into a tractable single-level problem. We achieve fairness in the cost allocation by applying the Shapley value to quantify each community’s marginal contribution to system-wide cost savings. The effectiveness of the proposed method is validated through simulations on several benchmark distribution systems.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('park_kwag_molzahn_gupta-shapley_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_kwag_molzahn_gupta-shapley.pdf">pdf</a> ] [ Ref: <a href="pubs/park_kwag_molzahn_gupta-shapley.bib">bib</a>   <a href="pubs/park_kwag_molzahn_gupta-shapley.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "Conservative Bias Linear Power Flow Approximations: Application to Unit Commitment," submitted.<br />
-				<span id="buason_misra_molzahn-cbla_ias_type" class="abstract" style="display:none">
-					The power flow equations are central to many problems in power system planning, analysis, and control. However, their inherent non-linearity and non-convexity present substantial challenges during problem-solving processes, especially for optimization problems. Accordingly, linear approximations are commonly employed to streamline computations, although this can often entail compromises in accuracy and feasibility. This paper proposes an approach termed <i>Conservative Bias Linear Approximations (CBLA)</i> for addressing these limitations. By minimizing approximation errors across a specified operating range while incorporating conservativeness (over- or under-estimating quantities of interest), CBLA strikes a balance between accuracy and tractability by maintaining linear constraints. By allowing users to design loss functions tailored to the specific approximated function, the bias approximation approach significantly enhances approximation accuracy. We illustrate the effectiveness of our proposed approach through several test cases, including its application to a unit commitment problem, where CBLA consistently achieves lower operating costs and improved feasibility compared to traditional linearization methods.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('buason_misra_molzahn-cbla_ias_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cbla_ias.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2404.09876">link</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cbla_ias.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cbla_ias.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('park_kwag_molzahn_gupta-shapley_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/park_kwag_molzahn_gupta-shapley.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2510.22321">link</a> ] [ Ref: <a href="pubs/park_kwag_molzahn_gupta-shapley.bib">bib</a>   <a href="pubs/park_kwag_molzahn_gupta-shapley.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2162,22 +2184,22 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>P. Buason, S. Misra, and <b>D.K. Molzahn</b>, "Conservative Bias Linear Power Flow Approximations: Application to Unit Commitment," to appear in <i>IEEE Transactions on Industry Applications</i>.<br />
+				<span id="buason_misra_molzahn-cbla_ias_type" class="abstract" style="display:none">
+					The power flow equations are central to many problems in power system planning, analysis, and control. However, their inherent non-linearity and non-convexity present substantial challenges during problem-solving processes, especially for optimization problems. Accordingly, linear approximations are commonly employed to streamline computations, although this can often entail compromises in accuracy and feasibility. This paper proposes an approach termed <i>Conservative Bias Linear Approximations (CBLA)</i> for addressing these limitations. By minimizing approximation errors across a specified operating range while incorporating conservativeness (over- or under-estimating quantities of interest), CBLA strikes a balance between accuracy and tractability by maintaining linear constraints. By allowing users to design loss functions tailored to the specific approximated function, the bias approximation approach significantly enhances approximation accuracy. We illustrate the effectiveness of our proposed approach through several test cases, including its application to a unit commitment problem, where CBLA consistently achieves lower operating costs and improved feasibility compared to traditional linearization methods.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('buason_misra_molzahn-cbla_ias_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cbla_ias.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2404.09876">link</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cbla_ias.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cbla_ias.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>J. Cohn, <b>D.K. Molzahn</b>, and S. Dhople, "Calculating the Grid: A Late 20th Century Story of Innovation, Transition, and Reciprocity in Electrification and Computing," to appear in <i>IEEE Annals of the History of Computing</i>.<br />
 				<span id="cohn_molzahn_dhople-grid_computation_type" class="abstract" style="display:none">
 					The National Academy of Engineering classified widespread electrification as the greatest engineering accomplishment of the 20th century. Innovation in computing technologies proved essential to this achievement. Additionally, as engineers adapted computer hardware and software for grid control, they contributed to advances in computation. The traditional story of electrification follows steady expansion from small central station power systems to continental-scale interconnected grids. Yet, transitions triggered by blackouts, evolving energy resource mixes and patterns of use, regulatory restructuring, and technological innovation punctuated this history. System operators faced a consistent challenge&mdash;keeping the lights on&mdash;as transitions threatened to undermine grid stability and efficiency. Today we are in the midst of another, perhaps more profound, and certainly more rapid transition. Additionally, computation itself poses both challenges and solutions for grid stability. This paper analyzes how 20th-century engineers and system operators developed the algorithms that provide optimization and control of the electric power grid.
 				</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('cohn_molzahn_dhople-grid_computation_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/cohn_molzahn_dhople-grid_computation.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11475571">link</a> ] [ Ref: <a href="pubs/cohn_molzahn_dhople-grid_computation.bib">bib</a>   <a href="pubs/cohn_molzahn_dhople-grid_computation.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>S. Talkington, A. Rangarajan, P.A. de Alc&acirc;ntara, L.A. Roald, <b>D.K. Molzahn</b>, and D.R. Fuhrmann, "Error Bounds for Radial Network Topology Learning from Quantized Measurements," to appear in <i>IEEE Transactions on Power Systems (Letters)</i>.<br />
-				<span id="talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology_type" class="abstract" style="display:none">
-					We probabilistically bound the error of a solution to a radial network topology learning problem where both connectivity and line parameters are estimated. In our model, data errors are introduced by the precision of the sensors, i.e., quantization. This produces a nonlinear measurement model that embeds the <i>operation of the sensor communication network</i> into the learning problem, expanding beyond the additive noise models typically seen in power system estimation algorithms. We show that the error of a learned radial network topology is proportional to the quantization bin width and grows sublinearly in the number of nodes, provided that the number of samples per node is logarithmic in the number of nodes.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11403974">link</a> ] [ Ref: <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.bib">bib</a>   <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -2233,7 +2255,17 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Improving the Accuracy of DC Optimal Power Flow Formulations via Parameter Optimization," to appear in <i>IEEE Transactions on Power Systems</i>.<br />
+			<li><p>S. Talkington, A. Rangarajan, P.A. de Alc&acirc;ntara, L.A. Roald, <b>D.K. Molzahn</b>, and D.R. Fuhrmann, "Error Bounds for Radial Network Topology Learning from Quantized Measurements," <i>IEEE Transactions on Power Systems (Letters)</i>, vol. 41, no. 3, pp. 2402-2405, May 2026.<br />
+				<span id="talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology_type" class="abstract" style="display:none">
+					We probabilistically bound the error of a solution to a radial network topology learning problem where both connectivity and line parameters are estimated. In our model, data errors are introduced by the precision of the sensors, i.e., quantization. This produces a nonlinear measurement model that embeds the <i>operation of the sensor communication network</i> into the learning problem, expanding beyond the additive noise models typically seen in power system estimation algorithms. We show that the error of a learned radial network topology is proportional to the quantization bin width and grows sublinearly in the number of nodes, provided that the number of samples per node is logarithmic in the number of nodes.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11403974">link</a> ] [ Ref: <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.bib">bib</a>   <a href="pubs/talkington_rangarajan_dealcantara_roald_molzahn_fuhrmann-quantized_topology.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Taheri and <b>D.K. Molzahn</b>, "Improving the Accuracy of DC Optimal Power Flow Formulations via Parameter Optimization," <i>IEEE Transactions on Power Systems</i>, vol. 41, no. 3, pp. 2373-2385, May 2026.<br />
 				<span id="taheri_molzahn-optimal_dcopf_type" class="abstract" style="display:none">
 					DC Optimal Power Flow (DC-OPF) problems optimize the generators' active power setpoints while satisfying constraints based on the DC power flow linearization. The computational tractability advantages of DC-OPF problems come at the expense of inaccuracies relative to AC Optimal Power Flow (AC-OPF) problems which accurately model the nonlinear steady-state behavior of power grids. This paper proposes an algorithm that significantly improves the accuracy of the generators' active power setpoints from DC-OPF problems with respect to the corresponding AC-OPF problems over a specified range of operating conditions. Using sensitivity information in a machine learning-inspired methodology, this algorithm tunes coefficient and bias parameters in the DC power flow approximation to improve the accuracy of the resulting DC-OPF solutions. Employing the Truncated Newton Conjugate-Gradient (TNC) method&mdash;a Quasi-Newton optimization technique&mdash;this parameter tuning occurs during an offline training phase, with the resulting parameters then used in online computations. Numerical results underscore the algorithm's efficacy with accuracy improvements in squared two-norm and &infin;-norm losses of up to 90&percnt; and 79&percnt;, respectively, relative to traditional DC-OPF formulations.
 				</span>
@@ -2243,7 +2275,7 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
 			<span>
-				<li><p>B. Taheri, R. Gupta and <b>D.K. Molzahn</b>, "Optimizing Parameters of the LinDistFlow Power Flow Approximation for Distribution Systems," to appear in <i>IEEE Transactions on Smart Grid</i>.<br />
+				<li><p>B. Taheri, R. Gupta and <b>D.K. Molzahn</b>, "Optimizing Parameters of the LinDistFlow Power Flow Approximation for Distribution Systems," <i>IEEE Transactions on Smart Grid</i>, vol. 17, no. 2, pp. 1029-1042, March 2026.<br />
 					<span id="taheri_gupta_molzahn-opt_lindistflow_type" class="abstract" style="display:none">
 						The DistFlow model accurately represents power flows in distribution systems, but the model's nonlinearities result in computational challenges for many applications. Accordingly, a linear approximation known as LinDistFlow (and its three-phase extension LinDist3Flow) is commonly employed. This paper introduces a parameter optimization algorithm for enhancing the accuracy of this approximation for both balanced single-phase equivalent and unbalanced three-phase distribution network models, with the goal of aligning the outputs more closely with those from the nonlinear DistFlow model. Using sensitivity information, our algorithm optimizes the LinDistFlow approximation's coefficient and bias parameters to minimize discrepancies in predictions of voltage magnitudes relative to the nonlinear DistFlow model. The parameter optimization algorithm employs the Truncated Newton Conjugate-Gradient (TNC) method to fine-tune coefficients and bias parameters during an offline training phase to improve the LinDistFlow approximation's accuracy. Numerical results underscore the algorithm's efficacy, showcasing accuracy improvements in L1-norm and L	&infin;-norm losses of up to 92% and 88%, respectively, relative to the traditional LinDistFlow model. We also assess how the optimized parameters perform under changes in the network topology and demonstrate the optimized LinDistFlow approximation's efficacy in a hosting capacity optimization problem.
 					</span>
@@ -2994,40 +3026,24 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
-	<!--
 <div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>A. Raymaker, S. Talkington, Z. Ryu, R. Asiamah, E. Abukhousa, B. Ashebo, A. Chhotaray, <b>D.K. Molzahn</b>, F. Li, S. Zonouz, and R. Beyah, "Grid Trouble in Paradise: Uncovering Vulnerable Distributed Energy Resources and Their Grid-Level Risks," submitted.<br />
-				<span id="raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der_type" class="abstract" style="display:none">
-					Grid-connected solar distributed energy resources (DERs), such as solar inverters and monitoring platforms, have been deployed at unprecedented scale over the past few years, with global solar capacity more than doubling since 2022. To support monitoring and control, many of these systems are Internet-connected and configured by installers or end users, yet the real-world scale of their Internet exposure and the implications for power grid operation remain poorly understood.<br /><br />
-
-					In this paper, we present an Internet-scale evaluation of exposed and vulnerable solar DER infrastructure, and assess the risk that compromised DERs can pose to energy grids. We develop a method for accurately identifying solar DERs from Internet scanning data, and discover a diverse population of over 44,000 Internet-exposed solar DERs. We detect that at least 9,000 of these DERs have known CVEs, such as unauthenticated monitoring and control endpoints. To assess the risk that these vulnerable DERs pose to a power grid, we use an electric grid network for Oahu, Hawaii, established and used by the power system research community, and conduct a power-system analysis. Our evaluation shows that by compromising exposed DERs, attackers can cause voltage and line flow violations across multiple locations in the Oahu network, resulting in a range of consequences from degraded power quality to damaged power-electric components to power outages. Ultimately, our work brings to light the emerging threat of grid-connected DERs, and provides directions for improving energy security.
+			<li><p>B. Ashebo, A. Raymaker, S. Talkington, R. Asiamah, A. Chhotaray, S. Zonouz, and <b>D.K. Molzahn</b>, "Analyzing Cyber Resilience of Distribution Systems with Vulnerable Inverter-Based Resources," submitted.<br />
+				<span id="ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_type" class="abstract" style="display:none">
+					The proliferation of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, introduces new operational and security challenges for distribution networks. This paper presents a cyber-physical attack framework in which an adversary manipulates selected inverters to disrupt grid operations. To identify worst-case attacks, we formulate optimization problems that maximize steady-state voltage violations. The set of compromised inverters in these problems is constrained by an attack budget that is informed by vulnerabilities identified via our associated screening of Internet-connected inverters. The worst-case attack problems are formulated as Mixed-Integer Linear Programs (MILPs) that use the linearized DistFlow equations to model the impact of the attack on unbalanced three-phase distribution systems. The attack solutions obtained from the LinDist3Flow formulation are validated using AC power flow (ACPF) simulations with fixed attacked inverter setpoints. Numerical experiments on modified IEEE 13-bus, 34-bus, and 123-bus distribution test cases demonstrate that compromising between 10% and 25% of strategically selected inverters can induce voltage violations across multiple buses. 
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der.pdf">pdf</a> ] [ Ref: <a href="pubs/raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der.bib">bib</a>   <a href="pubs/raymaker_talkington_ryu_asiamah_abukhousa_ashebo_chhotaray_molzahn_li_zonouz_beyah-vulnerable_der.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.bib">bib</a>   <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	-->
-	<!--
 <div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>M. Boateng, R. Bent, S. Misra, P. Pareek, P. Van Hentenryck, and <b>D.K. Molzahn</b>, "Restoring AC Feasibility of DCOPF Solutions via Parameter-Optimized Power Flow," submitted.<br />
-				<span id="boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore_type" class="abstract" style="display:none">
-					The DC optimal power flow (DCOPF) is a standard tool for power system operations due to its computational efficiency and scalability. However, DCOPF dispatches are not guaranteed to satisfy the nonlinear AC power flow (ACPF) equations or operational limits. This paper develops a parameterized, differentiable ACPF restoration layer that seeks to restore AC feasibility of DCOPF dispatches. The restoration layer incorporates distributed slack for active power balancing and PV/PQ switching for reactive power regulation, both implemented through smooth differentiable surrogates with tunable parameters including participation factors, voltage setpoints, and regulation steepness. Parameter optimization is performed offline using our proposed fully smooth DCAC<sup>SS</sup> formulation, enabling gradient-based training via the implicit function theorem. The learned parameters are then deployed online in both a smooth pipeline (DCAC<sup>SS</sup><sub>opt</sub>) and a discrete pipeline (DCAC<sup>DD</sup><sub>opt</sub>). The approach is evaluated across IEEE and PEGASE test systems using two DCOPF variants &mdash; including a lossy DCOPF. Experimental results demonstrate that both DCAC<sup>SS</sup><sub>opt</sub> and DCAC<sub>opt</sub> consistently remove inequality-constraint violations and significantly improve iteration counts and solving times compared to their unoptimized DCAC<sub>init</sub> counterparts across test cases.
+			<li><p>N. Dimate, S.A. Dorado-Rojas, and <b>D.K. Molzahn</b>, "Julia-based Software-in-the-Loop Offline Co-Simulation for Embedded Control Validation in Power Converters," submitted.<br />
+				<span id="diamate_dorado_rojas_molzahn-SIL_type" class="abstract" style="display:none">
+					This article presents a software-in-the-loop co-simulation architecture, implemented within a networked control framework, for validating control software in power converter applications. The proposed architecture combines Julia's symbolic modeling capabilities and high-performance numerical computing with a Python-based controller connected via TCP/IP. This combination provides a modular and flexible environment for software-in-the-loop validation of closed-loop control algorithms. The co-simulation setup is evaluated using a boost converter model regulated by a lead-lag controller. The results show that the developed co-simulation architecture functions correctly and that the proposed validation environment captures implementation-related delays, thereby supporting a more realistic software-based validation of control design before deployment on a real electronic control unit. Furthermore, the potential extension of the proposed architecture to more complex networked control topologies is discussed.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore.pdf">pdf</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_vanhentenryck_molzahn-pf_restore.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	-->
-<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>S. Talkington, C. Khanpour, R.K. Gupta, S.A. Dorado-Rojas, H. Park, D. Turizo, D.M. Ostrovskii, and <b>D.K. Molzahn</b>, "Admittance Matrix Concentration Inequalities for Understanding Uncertain Power Networks," submitted.<br />
-				<span id="talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance_type" class="abstract" style="display:none">
-					This paper presents conservative probabilistic bounds for the spectrum of the admittance matrix and classical linear power flow models under uncertain network parameters; for example, probabilistic line contingencies. Our proposed approach imports tools from probability theory, such as concentration inequalities for random matrices. This provides a theoretical framework for understanding error bounds of common approximations of the AC power flow equations under parameter uncertainty, including the DC and LinDistFlow approximations. Additionally, the resulting upper bounds scale as <em>O</em>(&#8730;(&Delta;<sub>c</sub> log <em>n</em>)), where &Delta;<sub>c</sub> is the maximum nodal criticality&mdash;a network-theoretic quantity capturing how uncertainty concentrates at critical nodes for use in contingency analysis. We validate these bounds on IEEE test networks, demonstrating that they correctly capture the scaling behavior of spectral perturbations up to conservative constants.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2510.17798">link</a> ] [ Ref: <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.bib">bib</a>   <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('diamate_dorado_rojas_molzahn-SIL_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/diamate_dorado_rojas_molzahn-SIL.pdf">pdf</a> ] [ Ref: <a href="pubs/diamate_dorado_rojas_molzahn-SIL.bib">bib</a>   <a href="pubs/diamate_dorado_rojas_molzahn-SIL.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -3051,22 +3067,29 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 			&emsp;[ <span onclick="showDiv('talkington_ostrovskii_molzahn-randomized_switching_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_ostrovskii_molzahn-randomized_switching.pdf">pdf</a> ] [ Ref: <a href="pubs/talkington_ostrovskii_molzahn-randomized_switching.bib">bib</a>   <a href="pubs/talkington_ostrovskii_molzahn-randomized_switching.txt">txt</a> ] </p></li>
 		</span>
 	</div>
-	<!--
-	<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>R. Santa Gonz&aacute;lez, R. Piansky, S.M. Bell, J. Biddle, and <b>D.K. Molzahn</b>, "Beyond Algorithmic Fairness: A Guide to Develop and Deploy Ethical AI-Enabled Decision-Support Tools," submitted.<br />
-				<span id="beyond_alg_fairness_type" class="abstract" style="display:none">
-					The integration of artificial intelligence (AI) and optimization hold substantial promise for improving the efficiency, reliability, and resilience of engineered systems. Due to the networked nature of many engineered systems, ethically deploying methodologies at this intersection poses challenges that are distinct from other AI settings, thus motivating the development of ethical guidelines tailored to AI-enabled optimization. This paper highlights the need to go beyond fairness-driven algorithms to systematically address ethical decisions spanning the stages of modeling, data curation, results analysis, and implementation of optimization-based decision support tools. Accordingly, this paper identifies ethical considerations required when deploying algorithms at the intersection of AI and optimization via case studies in power systems as well as supply chain and logistics. Rather than providing a prescriptive set of rules, this paper aims to foster reflection and awareness among researchers and encourage consideration of ethical implications at every step of the decision-making process. 
-				</span>
-		</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('beyond_alg_fairness_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2409.11489">link</a> ] [ Ref: <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.bib">bib</a>   <a href="pubs/santa_gonzalez_piansky_bell_biddle_molzahn-beyond_alg_fairness.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-	-->
 <div class="tile scale-anm Type" style="display:none">
 <h2>2026</h2>
 </div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>D.K.K. Koomson, R. Asiamah, K.K. Ji, J.-P. Watson, and <b>D.K. Molzahn</b>, "Assessing the Realism of Synthetic Power Grid Models Using Real-World Case Studies in Ghana," to appear in <i>IEEE PES &amp; IAS PowerAfrica Conference</i>, September 21-25, 2026.<br />
+				<span id="koomson_asiamah_ji_watson_molzahn-ghana_reliability_type" class="abstract" style="display:none">
+					Developing realistic synthetic electric grid models for specific geographic regions is an important topic of power systems research. Synthetic grids provide researchers with testbeds for studying region-specific problems and informing associated policies. This paper presents two validation studies for one such synthetic grid model developed for Ghana, a West African country. First, we conduct a reliability study of the country's electric grid to identify the most critical lines. Next, we solve a Transmission Network Expansion Planning (TNEP) problem to identify the minimum-cost set of transmission lines to be constructed to satisfy a forecasted loading scenario. The results of these two studies contribute to validating the realism of the synthetic grid model. The most critical lines identified in our reliability analysis align with those for which faults have previously caused major blackout incidents. Furthermore, the lines identified by the TNEP solution are spatially aligned with a subset of actual transmission expansion projects proposed by the Ghana Grid Company. Ultimately, the similarity between the validation test results and real-world observations helps to validate the realism of the synthetic grid and demonstrates its usefulness in advancing power system research in Ghana.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('koomson_asiamah_ji_watson_molzahn-ghana_reliability_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/koomson_asiamah_ji_watson_molzahn-ghana_reliability.pdf">pdf</a> ] [ Ref: <a href="pubs/koomson_asiamah_ji_watson_molzahn-ghana_reliability.bib">bib</a>   <a href="pubs/koomson_asiamah_ji_watson_molzahn-ghana_reliability.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+				<li><p>S. Talkington, C. Khanpour, R.K. Gupta, S.A. Dorado-Rojas, H. Park, D. Turizo, D.M. Ostrovskii, and <b>D.K. Molzahn</b>, "Admittance Matrix Concentration Inequalities for Understanding Uncertain Power Networks," to appear in <i>1st PowerUp Conference</i>, September 9-11, 2026.<br />
+				<span id="talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance_type" class="abstract" style="display:none">
+					This paper presents conservative probabilistic bounds for the spectrum of the admittance matrix and classical linear power flow models under uncertain network parameters; for example, probabilistic line contingencies. Our proposed approach imports tools from probability theory, such as concentration inequalities for random matrices. This provides a theoretical framework for understanding error bounds of common approximations of the AC power flow equations under parameter uncertainty, including the DC and LinDistFlow approximations. Additionally, the resulting upper bounds scale as <em>O</em>(&#8730;(&Delta;<sub>c</sub> log <em>n</em>)), where &Delta;<sub>c</sub> is the maximum nodal criticality&mdash;a network-theoretic quantity capturing how uncertainty concentrates at critical nodes for use in contingency analysis. We validate these bounds on IEEE test networks, demonstrating that they correctly capture the scaling behavior of spectral perturbations up to conservative constants.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2510.17798">link</a> ] [ Ref: <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.bib">bib</a>   <a href="pubs/talkington_khanpour_gupta_dorado_rojas_park_turizo_ostrovskii_molzahn-random_admittance.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>M.R. Narimani, J.A. Madrigal, K.R. Davis, and <b>D.K. Molzahn</b>, "Exploring OPF Feasible Spaces using Nonlinear Programming and Continuation Methods," <i>10th Texas Power and Energy Conference (TPEC)</i>, February 8-10, 2026.<br />
@@ -3075,7 +3098,7 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('narimani_madrigal_davis_molzahn-nlp_cpf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.pdf">pdf</a> ] [ Ref: <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf">bib</a>   <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('narimani_madrigal_davis_molzahn-nlp_cpf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11513090/">link</a> ] [ Ref: <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf">bib</a>   <a href="pubs/narimani_madrigal_davis_molzahn-nlp_cpf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3086,7 +3109,7 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11513197">link</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3194,7 +3217,7 @@ http://arxiv.org/abs/2512.22419">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigl
 					Various types of reactive power control laws are heterogeneously used for inverter-based resources (IBRs) in distribution grids. As a result, grid operators may not be aware of <i>which type</i> of control law is used by a particular IBR. Different control laws imply different voltage support behaviors, which need to be known for the development of accurate computational models for power system analysis. To help mitigate this challenge, this paper develops simple <i>classification</i> algorithms to <i>identify</i> which type of control law governs the reactive power output of a behind-the-meter solar photovoltaic inverter when the specific control law selected by the IBR owner is unknown. Notably, the two algorithms introduced only require <i>aggregated</i> smart meter measurements to assign candidate reactive power control laws (e.g., constant power factor, volt-var control) to distribution network inverters. We present a case study to assess their accuracy in performing the classification task.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('kpec2025_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] <!-- [ <a href="">link</a> ] --> [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('kpec2025_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11045009">link</a> ] [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">

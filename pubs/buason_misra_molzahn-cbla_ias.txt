@@ -1,1 +1,1 @@
-P. Buason, S. Misra, and D.K. Molzahn, "Conservative Bias Linear Power Flow Approximations: Application to Unit Commitment," submitted.
+P. Buason, S. Misra, and D.K. Molzahn, "Conservative Bias Linear Power Flow Approximations: Application to Unit Commitment," to appear in IEEE Transactions on Industry Applications.

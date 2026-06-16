@@ -1,0 +1,1 @@
+D. Turizo, L.K.L. Ng, Y. Xie, V. Kolesnikov, S. Zonouz, and D.K. Molzahn, "NumSecC: Numerical Secure Computations via Parallelism and Look-up Tables," submitted.

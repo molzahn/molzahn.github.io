@@ -1,1 +1,1 @@
-B. Taheri, R. Gupta, and D.K. Molzahn, "Optimizing Parameters of the LinDistFlow Power Flow Approximation for Distribution Systems," to appear in IEEE Transactions on Smart Grid, 2026.
+B. Taheri, R. Gupta, and D.K. Molzahn, "Optimizing Parameters of the LinDistFlow Power Flow Approximation for Distribution Systems," IEEE Transactions on Smart Grid, vol. 17, no. 2, pp. 1029-1042, March 2026.

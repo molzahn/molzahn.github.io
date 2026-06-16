@@ -1,1 +1,1 @@
-S. Talkington, C. Khanpour, R.K. Gupta, S.A. Dorado-Rojas, H. Park, D. Turizo, D.M. Ostrovskii, and D.K. Molzahn, "Admittance Matrix Concentration Inequalities for Understanding Uncertain Power Networks," submitted, 2025.
+S. Talkington, C. Khanpour, R.K. Gupta, S.A. Dorado-Rojas, H. Park, D. Turizo, D.M. Ostrovskii, and D.K. Molzahn, "Admittance Matrix Concentration Inequalities for Understanding Uncertain Power Networks," to appear in 1st PowerUp Conference, September 9-11, 2026.

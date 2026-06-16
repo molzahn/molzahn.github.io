@@ -1,1 +1,1 @@
-B. Taheri and D.K. Molzahn, "Improving the Accuracy of DC Optimal Power Flow Formulations via Parameter Optimization," to appear in IEEE Transactions on Power Systems.
+B. Taheri and D.K. Molzahn, "Improving the Accuracy of DC Optimal Power Flow Formulations via Parameter Optimization," IEEE Transactions on Power Systems, vol. 41, no. 3, pp. 2373-2385, May 2026.

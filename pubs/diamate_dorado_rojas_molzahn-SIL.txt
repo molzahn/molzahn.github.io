@@ -1,0 +1,1 @@
+N. Dimate, S.A. Dorado-Rojas, and D.K. Molzahn, "Julia-based Software-in-the-Loop Offline Co-Simulation for Embedded Control Validation in Power Converters," submitted
