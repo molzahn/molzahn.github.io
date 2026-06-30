@@ -1,0 +1,1 @@
+M.A. Boateng, R. Bent, S. Misra, P. Pareek, P. Van Hentenryck, and D.K. Molzahn, "PACR: Parameter-Optimized AC Power Flow Restoration for AC Feasible DCOPF Dispatch," submitted.
