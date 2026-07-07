@@ -1,1 +1,1 @@
-M. Alkhraijah, D. Sigler, and D.K. Molzahn, "A Decomposition Method for Solving Sensitivity-Based Distributed Optimal Power Flow," to appear in Electric Power Systems Research for presentation at the 24th Power Systems Computation Conference (PSCC), June 8-12, 2026.
+M. Alkhraijah, D. Sigler, and D.K. Molzahn, "A Decomposition Method for Solving Sensitivity-Based Distributed Optimal Power Flow," Electric Power Systems Research, vol. 263, no. 113608, February 2027. Presented at the 24th Power Systems Computation Conference (PSCC), June 8-12, 2026.
