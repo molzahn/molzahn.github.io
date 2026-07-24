@@ -155,26 +155,6 @@
 	</div>
 <div class="tile scale-anm Year">
 		<span>
-			<li><p>R. Perz-Edwards, N.A. Grange, R. Asiamah, J.-P. Watson, and <b>D.K. Molzahn</b>, "A Repository for Global Daily Load and Solar Profiles," submitted.<br />
-				<span id="perz_edwards_grange_asiamah_watson_molzahn-repository_year" class="abstract" style="display:none">
-					Existing synthetic grid repositories typically provide only nominal load values without time-series behavior, and when temporal data are available, they are largely limited to Western regions such as the United States and Europe. This paper addresses this gap by creating an accessible repository of daily load and solar generation profiles for underrepresented regions, with a focus on scalable, data-efficient modeling approaches. To create a repository of load profiles, we first conduct an extensive search for all sources with existing load profiles, then approximate load profiles for countries lacking data. We utilized inputs such as population, gross domestic product, climate, industrial infrastructure, and solar contribution to train a neural network that generates daily load profiles for all countries with missing load profile data. We also store solar generation profiles that are generated using the PVWatts&reg; Calculator simulation model. Ultimately, this paper describes the steps involved in creating a repository of load and solar profiles for all non-Western countries to enable multi-period simulations and applications, thus advancing synthetic grid research in these regions.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('perz_edwards_grange_asiamah_watson_molzahn-repository_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.pdf">pdf</a> ] [ Ref: <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.bib">bib</a>   <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Year">
-		<span>
-			<li><p>W.R. Wade, R. Asiamah, J.-P. Watson, and <b>D.K. Molzahn</b>, "Machine Learning for Global Residential-Commercial-Industrial Load Decomposition," submitted.<br />
-				<span id="wade_asiamah_watson_molzahn-rci_year" class="abstract" style="display:none">
-					Synthetic power grids are impactful public tools for advancing research, informing policy, and facilitating education. A critical aspect of creating realistic synthetic grid models is modeling electricity demand across various regions. Electricity demand and its characteristics can vary greatly depending on which economic sector is dominant in the area: residential, commercial, or industrial (RCI). This type of data, however, is generally not publicly available: it is either not published by electric utilities around the world or not recorded in many regions. This paper presents a method for estimating RCI load-share percentages using a deep neural network model trained on several available datasets. Our results indicate that the model is, on average, accurate to within $6.51\%$ mean absolute error for counties in the United States, with some significant outliers in the industrial share predictions. We discuss improvements in future work to enhance the model's ability to accurately predict RCI composition in electric demand.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wade_asiamah_watson_molzahn-rci_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/wade_asiamah_watson_molzahn-rci.pdf">pdf</a> ] [ Ref: <a href="pubs/wade_asiamah_watson_molzahn-rci.bib">bib</a>   <a href="pubs/wade_asiamah_watson_molzahn-rci.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Year">
-		<span>
 			<li><p>B. Ashebo, A. Raymaker, S. Talkington, R. Asiamah, A. Chhotaray, S. Zonouz, and <b>D.K. Molzahn</b>, "Analyzing Cyber Resilience of Distribution Systems with Vulnerable Inverter-Based Resources," submitted.<br />
 				<span id="ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_year" class="abstract" style="display:none">
 					The proliferation of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, introduces new operational and security challenges for distribution networks. This paper presents a cyber-physical attack framework in which an adversary manipulates selected inverters to disrupt grid operations. To identify worst-case attacks, we formulate optimization problems that maximize steady-state voltage violations. The set of compromised inverters in these problems is constrained by an attack budget that is informed by vulnerabilities identified via our associated screening of Internet-connected inverters. The worst-case attack problems are formulated as Mixed-Integer Linear Programs (MILPs) that use the linearized DistFlow equations to model the impact of the attack on unbalanced three-phase distribution systems. The attack solutions obtained from the LinDist3Flow formulation are validated using AC power flow (ACPF) simulations with fixed attacked inverter setpoints. Numerical experiments on modified IEEE 13-bus, 34-bus, and 123-bus distribution test cases demonstrate that compromising between 10% and 25% of strategically selected inverters can induce voltage violations across multiple buses. 
@@ -221,6 +201,16 @@
 		</div>
 	<div class="tile scale-anm Year">
 		<h2>Journal Papers</h2>
+	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>M. Alkhraijah, R. Harris, S. Litchfield, D. Huggins, and <b>D.K. Molzahn</b>, "On the Detection of Shared Data Manipulation in Distributed Optimization," <i>Electric Power Systems Research</i>, vol. 264, no. 113790, March 2027. Presented at the <i>24th Power Systems Computation Conference (PSCC)</i>, June 8-12, 2026.<br />
+				<span id="admmvulnerability_year" class="abstract" style="display:none">
+					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive a sufficient condition for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the performance of the detection condition on three data manipulation strategies with various complexity and stealth. The simplest attack sends the target values and each iteration, the second attack uses a feedback loop to find the next target values, and the last attack uses a bilevel optimization to find the target values. We then extend the three data manipulation strategies to avoid detection by the detection conditions and a neural network (NN) detection model. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection condition successfully detect most of the data manipulation attacks. However, the bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack. 
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('admmvulnerability_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626010813?dgcid=coauthor">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 <div class="tile scale-anm Year">
 		<span>
@@ -282,16 +272,6 @@
 	</div>
 <div class="tile scale-anm Year">
 		<span>
-			<li><p>M. Alkhraijah, R. Harris, S. Litchfield, D. Huggins, and <b>D.K. Molzahn</b>, "On the Detection of Shared Data Manipulation in Distributed Optimization," to appear in <i>Electric Power Systems Research</i> for presentation at the <i>24th Power Systems Computation Conference (PSCC)</i>, June 8-12, 2026.<br />
-				<span id="admmvulnerability_year" class="abstract" style="display:none">
-					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive a sufficient condition for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the performance of the detection condition on three data manipulation strategies with various complexity and stealth. The simplest attack sends the target values and each iteration, the second attack uses a feedback loop to find the next target values, and the last attack uses a bilevel optimization to find the target values. We then extend the three data manipulation strategies to avoid detection by the detection conditions and a neural network (NN) detection model. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection condition successfully detect most of the data manipulation attacks. However, the bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack. 
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('admmvulnerability_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2310.13252">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Year">
-		<span>
 			<li><p>H. Moring, <b>D.K. Molzahn</b>, and J.L. Mathieu, "Exploring the Inexactness of Second-order Cone Relaxations for Calculating Operating Envelopes," <i>IEEE Transactions on Power Systems</i>, vol. 41. no. 4, pp. 3108-3120, July 2026.<br />
 				<span id="moring_molzahn_mathieu-socp_inexactness_year" class="abstract" style="display:none">
 					Rapidly growing deployments of distributed energy resources like rooftop solar and electric vehicles have disrupted the status quo of distribution network operations. Power ex- port/import limits that change as network conditions change, also known as operating envelopes, have been proposed as a means of safely operating distribution networks containing distributed energy resources. This paper analyzes the impacts of using convex relaxations, specifically the second-order cone relaxation, for determining the limits required for safe operation. Building on prior work, we illustrate the inadequacy of operating envelopes calculated using a second-order cone formulation for ensuring network safety. Then we discuss the complexity in the relationship between the relaxation, the nonlinear formulation, and the network parameters. For the case of purely resistive, radial networks and the case of purely reactive, radial networks, we prove that the second-order cone relaxation is inexact and exact, respectively, for the operating envelope problem. This work illustrates that while using a second-order cone relaxation to determine operating envelopes will not always result in overly large bounds, it often will and with potentially damaging consequences.
@@ -344,6 +324,26 @@
   </div>
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
+			<li><p>R. Perz-Edwards, N.A. Grange, R. Asiamah, J.-P. Watson, and <b>D.K. Molzahn</b>, "A Repository for Global Daily Load and Solar Profiles," to appear in <i>58th North American Power Symposium (NAPS)</i>, October 11-13, 2026.<br />
+				<span id="perz_edwards_grange_asiamah_watson_molzahn-repository_year" class="abstract" style="display:none">
+					Existing synthetic grid repositories typically provide only nominal load values without time-series behavior, and when temporal data are available, they are largely limited to Western regions such as the United States and Europe. This paper addresses this gap by creating an accessible repository of daily load and solar generation profiles for underrepresented regions, with a focus on scalable, data-efficient modeling approaches. To create a repository of load profiles, we first conduct an extensive search for all sources with existing load profiles, then approximate load profiles for countries lacking data. We utilized inputs such as population, gross domestic product, climate, industrial infrastructure, and solar contribution to train a neural network that generates daily load profiles for all countries with missing load profile data. We also store solar generation profiles that are generated using the PVWatts&reg; Calculator simulation model. Ultimately, this paper describes the steps involved in creating a repository of load and solar profiles for all non-Western countries to enable multi-period simulations and applications, thus advancing synthetic grid research in these regions.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('perz_edwards_grange_asiamah_watson_molzahn-repository_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.pdf">pdf</a> ] [ Ref: <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.bib">bib</a>   <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>W.R. Wade, R. Asiamah, J.-P. Watson, and <b>D.K. Molzahn</b>, "Machine Learning for Global Residential-Commercial-Industrial Load Decomposition," to appear in <i>58th North American Power Symposium (NAPS)</i>, October 11-13, 2026.<br />
+				<span id="wade_asiamah_watson_molzahn-rci_year" class="abstract" style="display:none">
+					Synthetic power grids are impactful public tools for advancing research, informing policy, and facilitating education. A critical aspect of creating realistic synthetic grid models is modeling electricity demand across various regions. Electricity demand and its characteristics can vary greatly depending on which economic sector is dominant in the area: residential, commercial, or industrial (RCI). This type of data, however, is generally not publicly available: it is either not published by electric utilities around the world or not recorded in many regions. This paper presents a method for estimating RCI load-share percentages using a deep neural network model trained on several available datasets. Our results indicate that the model is, on average, accurate to within $6.51\%$ mean absolute error for counties in the United States, with some significant outliers in the industrial share predictions. We discuss improvements in future work to enhance the model's ability to accurately predict RCI composition in electric demand.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('wade_asiamah_watson_molzahn-rci_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/wade_asiamah_watson_molzahn-rci.pdf">pdf</a> ] [ Ref: <a href="pubs/wade_asiamah_watson_molzahn-rci.bib">bib</a>   <a href="pubs/wade_asiamah_watson_molzahn-rci.txt">txt</a> ] </p></li>
+		</span>
 	</div>
 <div class="tile scale-anm Year">
 		<span>
@@ -2230,6 +2230,16 @@
 	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>
+			<li><p>M. Alkhraijah, R. Harris, S. Litchfield, D. Huggins, and <b>D.K. Molzahn</b>, "On the Detection of Shared Data Manipulation in Distributed Optimization," <i>Electric Power Systems Research</i>, vol. 264, no. 113790, March 2027. Presented at the <i>24th Power Systems Computation Conference (PSCC)</i>, June 8-12, 2026.<br />
+				<span id="admmvulnerability_type" class="abstract" style="display:none">
+					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive a sufficient condition for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the performance of the detection condition on three data manipulation strategies with various complexity and stealth. The simplest attack sends the target values and each iteration, the second attack uses a feedback loop to find the next target values, and the last attack uses a bilevel optimization to find the target values. We then extend the three data manipulation strategies to avoid detection by the detection conditions and a neural network (NN) detection model. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection condition successfully detect most of the data manipulation attacks. However, the bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack. 
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('admmvulnerability_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626010813?dgcid=coauthor">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
 			<li><p>M. Alkhraijah, D. Sigler, and <b>D.K. Molzahn</b>, "A Decomposition Method for Solving Sensitivity-Based Distributed Optimal Power Flow," <i>Electric Power Systems Research</i>, vol. 263, no. 113608, February 2027. Presented at the <i>24th Power Systems Computation Conference (PSCC)</i>, June 8-12, 2026.<br />
 				<span id="alkhraijah_sigler_molzahn-distributed_ptdf_type" class="abstract" style="display:none">
 					Efficiently solving large-scale optimal power flow (OPF) problems is challenging due to the high dimensionality and interconnectivity of modern power systems. Decomposition methods offer a promising solution via partitioning large problems into smaller subproblems that can be solved in parallel, often with local information. These approaches reduce computational burden and improve flexibility by allowing agents to manage their local models. This article introduces a decomposition method that enables a distributed solution to OPF problems. The proposed method solves OPF problems with a sensitivity-based formulation using the alternating direction method of multipliers (ADMM) algorithm. We also propose a distributed method to compute system-wide sensitivities without sharing local parameters. This approach facilitates scalable optimization while satisfying global constraints and limiting data sharing. We demonstrate the effectiveness of the proposed approach using a large set of test systems and compare its performance against existing decomposition methods. The results show that the proposed method significantly outperforms the typical phase-angle formulation with a 14-times faster computation speed on average.
@@ -2279,16 +2289,6 @@
 				</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('cohn_molzahn_dhople-grid_computation_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/cohn_molzahn_dhople-grid_computation.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11475571">link</a> ] [ Ref: <a href="pubs/cohn_molzahn_dhople-grid_computation.bib">bib</a>   <a href="pubs/cohn_molzahn_dhople-grid_computation.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>M. Alkhraijah, R. Harris, S. Litchfield, D. Huggins, and <b>D.K. Molzahn</b>, "On the Detection of Shared Data Manipulation in Distributed Optimization," to appear in <i>Electric Power Systems Research</i> for presentation at the <i>24th Power Systems Computation Conference (PSCC)</i>, June 8-12, 2026.<br />
-				<span id="admmvulnerability_type" class="abstract" style="display:none">
-					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive a sufficient condition for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the performance of the detection condition on three data manipulation strategies with various complexity and stealth. The simplest attack sends the target values and each iteration, the second attack uses a feedback loop to find the next target values, and the last attack uses a bilevel optimization to find the target values. We then extend the three data manipulation strategies to avoid detection by the detection conditions and a neural network (NN) detection model. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection condition successfully detect most of the data manipulation attacks. However, the bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack. 
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('admmvulnerability_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ <a href="http://arxiv.org/abs/2310.13252">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -3076,26 +3076,6 @@
 	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>R. Perz-Edwards, N.A. Grange, R. Asiamah, J.-P. Watson, and <b>D.K. Molzahn</b>, "A Repository for Global Daily Load and Solar Profiles," submitted.<br />
-				<span id="perz_edwards_grange_asiamah_watson_molzahn-repository_type" class="abstract" style="display:none">
-					Existing synthetic grid repositories typically provide only nominal load values without time-series behavior, and when temporal data are available, they are largely limited to Western regions such as the United States and Europe. This paper addresses this gap by creating an accessible repository of daily load and solar generation profiles for underrepresented regions, with a focus on scalable, data-efficient modeling approaches. To create a repository of load profiles, we first conduct an extensive search for all sources with existing load profiles, then approximate load profiles for countries lacking data. We utilized inputs such as population, gross domestic product, climate, industrial infrastructure, and solar contribution to train a neural network that generates daily load profiles for all countries with missing load profile data. We also store solar generation profiles that are generated using the PVWatts&reg; Calculator simulation model. Ultimately, this paper describes the steps involved in creating a repository of load and solar profiles for all non-Western countries to enable multi-period simulations and applications, thus advancing synthetic grid research in these regions.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('perz_edwards_grange_asiamah_watson_molzahn-repository_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.pdf">pdf</a> ] [ Ref: <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.bib">bib</a>   <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Type" style="display:none">
-		<span>
-			<li><p>W.R. Wade, R. Asiamah, J.-P. Watson, and <b>D.K. Molzahn</b>, "Machine Learning for Global Residential-Commercial-Industrial Load Decomposition," submitted.<br />
-				<span id="wade_asiamah_watson_molzahn-rci_type" class="abstract" style="display:none">
-					Synthetic power grids are impactful public tools for advancing research, informing policy, and facilitating education. A critical aspect of creating realistic synthetic grid models is modeling electricity demand across various regions. Electricity demand and its characteristics can vary greatly depending on which economic sector is dominant in the area: residential, commercial, or industrial (RCI). This type of data, however, is generally not publicly available: it is either not published by electric utilities around the world or not recorded in many regions. This paper presents a method for estimating RCI load-share percentages using a deep neural network model trained on several available datasets. Our results indicate that the model is, on average, accurate to within $6.51\%$ mean absolute error for counties in the United States, with some significant outliers in the industrial share predictions. We discuss improvements in future work to enhance the model's ability to accurately predict RCI composition in electric demand.
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wade_asiamah_watson_molzahn-rci_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/wade_asiamah_watson_molzahn-rci.pdf">pdf</a> ] [ Ref: <a href="pubs/wade_asiamah_watson_molzahn-rci.bib">bib</a>   <a href="pubs/wade_asiamah_watson_molzahn-rci.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>B. Ashebo, A. Raymaker, S. Talkington, R. Asiamah, A. Chhotaray, S. Zonouz, and <b>D.K. Molzahn</b>, "Analyzing Cyber Resilience of Distribution Systems with Vulnerable Inverter-Based Resources," submitted.<br />
 				<span id="ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_type" class="abstract" style="display:none">
 					The proliferation of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, introduces new operational and security challenges for distribution networks. This paper presents a cyber-physical attack framework in which an adversary manipulates selected inverters to disrupt grid operations. To identify worst-case attacks, we formulate optimization problems that maximize steady-state voltage violations. The set of compromised inverters in these problems is constrained by an attack budget that is informed by vulnerabilities identified via our associated screening of Internet-connected inverters. The worst-case attack problems are formulated as Mixed-Integer Linear Programs (MILPs) that use the linearized DistFlow equations to model the impact of the attack on unbalanced three-phase distribution systems. The attack solutions obtained from the LinDist3Flow formulation are validated using AC power flow (ACPF) simulations with fixed attacked inverter setpoints. Numerical experiments on modified IEEE 13-bus, 34-bus, and 123-bus distribution test cases demonstrate that compromising between 10% and 25% of strategically selected inverters can induce voltage violations across multiple buses. 
@@ -3138,6 +3118,26 @@
 <div class="tile scale-anm Type" style="display:none">
 <h2>2026</h2>
 </div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>R. Perz-Edwards, N.A. Grange, R. Asiamah, J.-P. Watson, and <b>D.K. Molzahn</b>, "A Repository for Global Daily Load and Solar Profiles," to appear in <i>58th North American Power Symposium (NAPS)</i>, October 11-13, 2026.<br />
+				<span id="perz_edwards_grange_asiamah_watson_molzahn-repository_type" class="abstract" style="display:none">
+					Existing synthetic grid repositories typically provide only nominal load values without time-series behavior, and when temporal data are available, they are largely limited to Western regions such as the United States and Europe. This paper addresses this gap by creating an accessible repository of daily load and solar generation profiles for underrepresented regions, with a focus on scalable, data-efficient modeling approaches. To create a repository of load profiles, we first conduct an extensive search for all sources with existing load profiles, then approximate load profiles for countries lacking data. We utilized inputs such as population, gross domestic product, climate, industrial infrastructure, and solar contribution to train a neural network that generates daily load profiles for all countries with missing load profile data. We also store solar generation profiles that are generated using the PVWatts&reg; Calculator simulation model. Ultimately, this paper describes the steps involved in creating a repository of load and solar profiles for all non-Western countries to enable multi-period simulations and applications, thus advancing synthetic grid research in these regions.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('perz_edwards_grange_asiamah_watson_molzahn-repository_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.pdf">pdf</a> ] [ Ref: <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.bib">bib</a>   <a href="pubs/perz_edwards_grange_asiamah_watson_molzahn-repository.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>W.R. Wade, R. Asiamah, J.-P. Watson, and <b>D.K. Molzahn</b>, "Machine Learning for Global Residential-Commercial-Industrial Load Decomposition," to appear in <i>58th North American Power Symposium (NAPS)</i>, October 11-13, 2026.<br />
+				<span id="wade_asiamah_watson_molzahn-rci_type" class="abstract" style="display:none">
+					Synthetic power grids are impactful public tools for advancing research, informing policy, and facilitating education. A critical aspect of creating realistic synthetic grid models is modeling electricity demand across various regions. Electricity demand and its characteristics can vary greatly depending on which economic sector is dominant in the area: residential, commercial, or industrial (RCI). This type of data, however, is generally not publicly available: it is either not published by electric utilities around the world or not recorded in many regions. This paper presents a method for estimating RCI load-share percentages using a deep neural network model trained on several available datasets. Our results indicate that the model is, on average, accurate to within $6.51\%$ mean absolute error for counties in the United States, with some significant outliers in the industrial share predictions. We discuss improvements in future work to enhance the model's ability to accurately predict RCI composition in electric demand.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('wade_asiamah_watson_molzahn-rci_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/wade_asiamah_watson_molzahn-rci.pdf">pdf</a> ] [ Ref: <a href="pubs/wade_asiamah_watson_molzahn-rci.bib">bib</a>   <a href="pubs/wade_asiamah_watson_molzahn-rci.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>D.K.K. Koomson, R. Asiamah, K.K. Ji, J.-P. Watson, and <b>D.K. Molzahn</b>, "Assessing the Realism of Synthetic Power Grid Models Using Real-World Case Studies in Ghana," to appear in <i>IEEE PES &amp; IAS PowerAfrica Conference</i>, September 21-25, 2026.<br />

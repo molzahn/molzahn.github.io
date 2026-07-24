@@ -1,1 +1,1 @@
-W.R. Wade, R. Asiamah, J.-P. Watson, and D.K. Molzahn, "Machine Learning for Global Residential-Commercial-Industrial Load Decomposition," submitted.
+W.R. Wade, R. Asiamah, J.-P. Watson, and D.K. Molzahn, "Machine Learning for Global Residential-Commercial-Industrial Load Decomposition," to appear in 58th North American Power Symposium (NAPS), October 11-13, 2026.
