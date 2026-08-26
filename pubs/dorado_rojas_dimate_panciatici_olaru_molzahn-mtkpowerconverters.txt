@@ -1,0 +1,1 @@
+S. Dorado-Rojas, N. Dimate, P. Panciatici, S. Olaru, and D.K. Molzahn, "MTKPowerConverters.jl: Converter Modeling and Simulation in the Julia SciML Ecosystem," IEEE/CCAE Symposium on Advanced Electrification Systems (SAES), September 25, 2026.

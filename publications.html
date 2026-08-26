@@ -83,6 +83,16 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<span>
+			<li><p>C. Khanpour, S. Talkington, M. Dahan, and <b>D.K. Molzahn</b>, "Zero-Sum Power Factor Games," submitted.<br />
+				<span id="khanpour_talkington_dahan_molzahn-pf_games_year" class="abstract" style="display:none">
+					Variable active power injections arising from device behavior or compromised dispatch complicate voltage regulation in electric power networks with distributed energy resources (DERs). An operator can limit the resulting voltage deviations by remotely selecting DER reactive power parameters before observing the active power injections. IEEE Standard 1547-2018 specifies constant power factor as one such control mode, coupling each device's reactive power to its realized active power. Using a linear voltage model, we formulate the operator's decision as a robust minimax problem in which the operator minimizes the largest feasible aggregate voltage deviation. We solve this problem by expressing the power factor decisions through continuous reactive to active power ratios and exactly decomposing the payoff according to the signs of the voltage deviations. When every feasible voltage residual remains on its initial side of nominal, the resulting ratios cancel each injection's contribution and yield a closed form minimax strategy. We identify realistic DER ratings for which this strategy applies and quantify the regulation capacity lost under restricted power factor ranges. Numerical tests check the cancellation computation, solve the complete minimax problem directly at a representative DER rating, and compare the linear voltage predictions with nonlinear AC power flow.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('khanpour_talkington_dahan_molzahn-pf_games_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_talkington_dahan_molzahn-pf_games.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2608.20298">link</a> ] [ Ref: <a href="pubs/khanpour_talkington_dahan_molzahn-pf_games.bib">bib</a>   <a href="pubs/khanpour_talkington_dahan_molzahn-pf_games.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<span>
 			<li><p>M.A. Boateng, R. Bent, S. Misra, P. Pareek, P. Van Hentenryck, and <b>D.K. Molzahn</b>, "PACR: Parameter-Optimized AC Power Flow Restoration for AC Feasible DCOPF Dispatch," submitted. <br />
 				<span id="boateng_bent_misra_pareek_van_hentenryck_molzahn-pacr_year" class="abstract" style="display:none">
 					The DC optimal power flow is widely used in power system operations because of its computational efficiency and scalability. However, DC dispatches are not guaranteed to satisfy the nonlinear AC power-flow equations or associated operational limits. This paper develops a parameterized, differentiable AC power-flow restoration method for mapping DC dispatches to AC-consistent operating points. The method incorporates distributed slack for active-power balancing and PV/PQ switching for reactive-power regulation, both implemented using smooth differentiable surrogates with tunable parameters, including slack participation factors, voltage setpoints, and regulation steepness. These parameters are trained offline by differentiating through the AC restoration equations using the implicit function theorem. Once trained, the optimized parameters are fixed and used directly during AC power-flow recovery from DC dispatches. The approach is evaluated on IEEE, ACTIVSg, and PEGASE test systems using setpoints computed by standard DC optimal power flow. Results show that the optimized restoration method improves AC feasibility recovery across various systems relative to conventional single-slack AC power-flow recovery. On the 9,241-bus case, the optimized method improves cost difference by 80% relative to the conventional recovery baseline and improves solving time relative to ACOPF by 75%.
@@ -153,16 +163,6 @@
 	</div>
 	<div class="tile scale-anm Year">
 		<h2>Conference Proceedings</h2>
-	</div>
-<div class="tile scale-anm Year">
-		<span>
-			<li><p>B. Ashebo, A. Raymaker, S. Talkington, R. Asiamah, A. Chhotaray, S. Zonouz, and <b>D.K. Molzahn</b>, "Analyzing Cyber Resilience of Distribution Systems with Vulnerable Inverter-Based Resources," submitted.<br />
-				<span id="ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_year" class="abstract" style="display:none">
-					The proliferation of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, introduces new operational and security challenges for distribution networks. This paper presents a cyber-physical attack framework in which an adversary manipulates selected inverters to disrupt grid operations. To identify worst-case attacks, we formulate optimization problems that maximize steady-state voltage violations. The set of compromised inverters in these problems is constrained by an attack budget that is informed by vulnerabilities identified via our associated screening of Internet-connected inverters. The worst-case attack problems are formulated as Mixed-Integer Linear Programs (MILPs) that use the linearized DistFlow equations to model the impact of the attack on unbalanced three-phase distribution systems. The attack solutions obtained from the LinDist3Flow formulation are validated using AC power flow (ACPF) simulations with fixed attacked inverter setpoints. Numerical experiments on modified IEEE 13-bus, 34-bus, and 123-bus distribution test cases demonstrate that compromising between 10% and 25% of strategically selected inverters can induce voltage violations across multiple buses. 
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.bib">bib</a>   <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.txt">txt</a> ] </p></li>
-		</span>
 	</div>
 <div class="tile scale-anm Year">
 		<span>
@@ -241,6 +241,19 @@
 				</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626009454">link</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+	<div class="tile scale-anm Year">
+		<h2>Conference Proceedings</h2>
+	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>B. Ashebo, A. Raymaker, S. Talkington, R. Asiamah, A. Chhotaray, S. Zonouz, and <b>D.K. Molzahn</b>, "Analyzing Cyber Resilience of Distribution Systems with Vulnerable Inverter-Based Resources," to appear in <i>60th Hawaii International Conference on System Sciences (HICSS)</i>, January 5-8, 2027.<br />
+				<span id="ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_year" class="abstract" style="display:none">
+					The proliferation of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, introduces new operational and security challenges for distribution networks. This paper presents a cyber-physical attack framework in which an adversary manipulates selected inverters to disrupt grid operations. To identify worst-case attacks, we formulate optimization problems that maximize steady-state voltage violations. The set of compromised inverters in these problems is constrained by an attack budget that is informed by vulnerabilities identified via our associated screening of Internet-connected inverters. The worst-case attack problems are formulated as Mixed-Integer Linear Programs (MILPs) that use the linearized DistFlow equations to model the impact of the attack on unbalanced three-phase distribution systems. The attack solutions obtained from the LinDist3Flow formulation are validated using AC power flow (ACPF) simulations with fixed attacked inverter setpoints. Numerical experiments on modified IEEE 13-bus, 34-bus, and 123-bus distribution test cases demonstrate that compromising between 10% and 25% of strategically selected inverters can induce voltage violations across multiple buses. 
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.bib">bib</a>   <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 		</ul>
@@ -344,6 +357,16 @@
 				</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('wade_asiamah_watson_molzahn-rci_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/wade_asiamah_watson_molzahn-rci.pdf">pdf</a> ] [ Ref: <a href="pubs/wade_asiamah_watson_molzahn-rci.bib">bib</a>   <a href="pubs/wade_asiamah_watson_molzahn-rci.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Year">
+		<span>
+			<li><p>S. Dorado-Rojas, N. Dimate, P. Panciatici, S. Olaru, and <b>D.K. Molzahn</b>, "MTKPowerConverters.jl: Converter Modeling and Simulation in the Julia SciML Ecosystem," to appear in <i>IEEE/CCAE Symposium on Advanced Electrification Systems (SAES)</i>, September 25, 2026.<br />
+				<span id="dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters_year" class="abstract" style="display:none">
+					MTKPowerConverters.jl is a proof-of-concept open-source Julia library for the simulation of power electronic converters. The library adopts the design philosophy of the Modelica language: acausal, equation-based components compose without rewriting, and physical model specification stays cleanly separated from the numerical solver. Built on ModelingToolkit.jl and relying on the solver catalog of DifferentialEquations.jl, the models are natively embedded in the Julia SciML ecosystem, potentially enabling automatic differentiation and physics-informed analysis workflows unavailable in closed tools. Three experiments validate the concept. Smooth surrogates of the PWM carrier waveforms are compared against their ideal discontinuous counterpart to quantify the accuracy versus solve-time trade-off. An open-loop buck converter switching at 100 kHz is cross-validated against MATLAB/Simscape, with close steady-state agreement and a smaller end-to-end solve time. Finally, an open-loop single-phase inverter is benchmarked against the same reference under numerically demanding conditions, confirming that the approach is robust and comparable in accuracy to commercial tools.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters.pdf">pdf</a> ] [ Ref: <a href="pubs/dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters.bib">bib</a>   <a href="pubs/dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Year">
@@ -2156,6 +2179,16 @@
 	<div class="tile scale-anm Type" style="display:none">
 		<h2>Preprints</h2>
 	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>C. Khanpour, S. Talkington, M. Dahan, and <b>D.K. Molzahn</b>, "Zero-Sum Power Factor Games," submitted.<br />
+				<span id="khanpour_talkington_dahan_molzahn-pf_games_type" class="abstract" style="display:none">
+					Variable active power injections arising from device behavior or compromised dispatch complicate voltage regulation in electric power networks with distributed energy resources (DERs). An operator can limit the resulting voltage deviations by remotely selecting DER reactive power parameters before observing the active power injections. IEEE Standard 1547-2018 specifies constant power factor as one such control mode, coupling each device's reactive power to its realized active power. Using a linear voltage model, we formulate the operator's decision as a robust minimax problem in which the operator minimizes the largest feasible aggregate voltage deviation. We solve this problem by expressing the power factor decisions through continuous reactive to active power ratios and exactly decomposing the payoff according to the signs of the voltage deviations. When every feasible voltage residual remains on its initial side of nominal, the resulting ratios cancel each injection's contribution and yield a closed form minimax strategy. We identify realistic DER ratings for which this strategy applies and quantify the regulation capacity lost under restricted power factor ranges. Numerical tests check the cancellation computation, solve the complete minimax problem directly at a representative DER rating, and compare the linear voltage predictions with nonlinear AC power flow.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('khanpour_talkington_dahan_molzahn-pf_games_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_talkington_dahan_molzahn-pf_games.pdf">pdf</a> ] [ <a href="https://arxiv.org/abs/2608.20298">link</a> ] [ Ref: <a href="pubs/khanpour_talkington_dahan_molzahn-pf_games.bib">bib</a>   <a href="pubs/khanpour_talkington_dahan_molzahn-pf_games.txt">txt</a> ] </p></li>
+		</span>
+	</div>
 	<div class="tile scale-anm Type" style="display:none">
 		<span>
 			<li><p>M.A. Boateng, R. Bent, S. Misra, P. Pareek, P. Van Hentenryck, and <b>D.K. Molzahn</b>, "PACR: Parameter-Optimized AC Power Flow Restoration for AC Feasible DCOPF Dispatch," submitted. <br />
@@ -3077,16 +3110,6 @@
 	</div>
 <div class="tile scale-anm Type" style="display:none">
 		<span>
-			<li><p>B. Ashebo, A. Raymaker, S. Talkington, R. Asiamah, A. Chhotaray, S. Zonouz, and <b>D.K. Molzahn</b>, "Analyzing Cyber Resilience of Distribution Systems with Vulnerable Inverter-Based Resources," submitted.<br />
-				<span id="ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_type" class="abstract" style="display:none">
-					The proliferation of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, introduces new operational and security challenges for distribution networks. This paper presents a cyber-physical attack framework in which an adversary manipulates selected inverters to disrupt grid operations. To identify worst-case attacks, we formulate optimization problems that maximize steady-state voltage violations. The set of compromised inverters in these problems is constrained by an attack budget that is informed by vulnerabilities identified via our associated screening of Internet-connected inverters. The worst-case attack problems are formulated as Mixed-Integer Linear Programs (MILPs) that use the linearized DistFlow equations to model the impact of the attack on unbalanced three-phase distribution systems. The attack solutions obtained from the LinDist3Flow formulation are validated using AC power flow (ACPF) simulations with fixed attacked inverter setpoints. Numerical experiments on modified IEEE 13-bus, 34-bus, and 123-bus distribution test cases demonstrate that compromising between 10% and 25% of strategically selected inverters can induce voltage violations across multiple buses. 
-				</span>
-		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.bib">bib</a>   <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.txt">txt</a> ] </p></li>
-		</span>
-	</div>
-<div class="tile scale-anm Type" style="display:none">
-		<span>
 			<li><p>N. Dimate, S.A. Dorado-Rojas, and <b>D.K. Molzahn</b>, "Julia-based Software-in-the-Loop Offline Co-Simulation for Embedded Control Validation in Power Converters," submitted.<br />
 				<span id="diamate_dorado_rojas_molzahn-SIL_type" class="abstract" style="display:none">
 					This article presents a software-in-the-loop co-simulation architecture, implemented within a networked control framework, for validating control software in power converter applications. The proposed architecture combines Julia's symbolic modeling capabilities and high-performance numerical computing with a Python-based controller connected via TCP/IP. This combination provides a modular and flexible environment for software-in-the-loop validation of closed-loop control algorithms. The co-simulation setup is evaluated using a boost converter model regulated by a lead-lag controller. The results show that the developed co-simulation architecture functions correctly and that the proposed validation environment captures implementation-related delays, thereby supporting a more realistic software-based validation of control design before deployment on a real electronic control unit. Furthermore, the potential extension of the proposed architecture to more complex networked control topologies is discussed.
@@ -3117,6 +3140,19 @@
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
+<h2>2027</h2>
+</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>B. Ashebo, A. Raymaker, S. Talkington, R. Asiamah, A. Chhotaray, S. Zonouz, and <b>D.K. Molzahn</b>, "Analyzing Cyber Resilience of Distribution Systems with Vulnerable Inverter-Based Resources," to appear in <i>60th Hawaii International Conference on System Sciences (HICSS)</i>, January 5-8, 2027.<br />
+				<span id="ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_type" class="abstract" style="display:none">
+					The proliferation of distributed energy resources (DERs), particularly solar photovoltaic (PV) systems, introduces new operational and security challenges for distribution networks. This paper presents a cyber-physical attack framework in which an adversary manipulates selected inverters to disrupt grid operations. To identify worst-case attacks, we formulate optimization problems that maximize steady-state voltage violations. The set of compromised inverters in these problems is constrained by an attack budget that is informed by vulnerabilities identified via our associated screening of Internet-connected inverters. The worst-case attack problems are formulated as Mixed-Integer Linear Programs (MILPs) that use the linearized DistFlow equations to model the impact of the attack on unbalanced three-phase distribution systems. The attack solutions obtained from the LinDist3Flow formulation are validated using AC power flow (ACPF) simulations with fixed attacked inverter setpoints. Numerical experiments on modified IEEE 13-bus, 34-bus, and 123-bus distribution test cases demonstrate that compromising between 10% and 25% of strategically selected inverters can induce voltage violations across multiple buses. 
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.pdf">pdf</a> ] [ Ref: <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.bib">bib</a>   <a href="pubs/ashebo_raymaker_talkington_asiamah_chhotaray_zonouz_molzahn-der_attacks.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
 <h2>2026</h2>
 </div>
 <div class="tile scale-anm Type" style="display:none">
@@ -3137,6 +3173,16 @@
 				</span>
 		<span style="cursor:auto;">
 			&emsp;[ <span onclick="showDiv('wade_asiamah_watson_molzahn-rci_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/wade_asiamah_watson_molzahn-rci.pdf">pdf</a> ] [ Ref: <a href="pubs/wade_asiamah_watson_molzahn-rci.bib">bib</a>   <a href="pubs/wade_asiamah_watson_molzahn-rci.txt">txt</a> ] </p></li>
+		</span>
+	</div>
+<div class="tile scale-anm Type" style="display:none">
+		<span>
+			<li><p>S. Dorado-Rojas, N. Dimate, P. Panciatici, S. Olaru, and <b>D.K. Molzahn</b>, "MTKPowerConverters.jl: Converter Modeling and Simulation in the Julia SciML Ecosystem," to appear in <i>IEEE/CCAE Symposium on Advanced Electrification Systems (SAES)</i>, September 25, 2026.<br />
+				<span id="dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters_type" class="abstract" style="display:none">
+					MTKPowerConverters.jl is a proof-of-concept open-source Julia library for the simulation of power electronic converters. The library adopts the design philosophy of the Modelica language: acausal, equation-based components compose without rewriting, and physical model specification stays cleanly separated from the numerical solver. Built on ModelingToolkit.jl and relying on the solver catalog of DifferentialEquations.jl, the models are natively embedded in the Julia SciML ecosystem, potentially enabling automatic differentiation and physics-informed analysis workflows unavailable in closed tools. Three experiments validate the concept. Smooth surrogates of the PWM carrier waveforms are compared against their ideal discontinuous counterpart to quantify the accuracy versus solve-time trade-off. An open-loop buck converter switching at 100 kHz is cross-validated against MATLAB/Simscape, with close steady-state agreement and a smaller end-to-end solve time. Finally, an open-loop single-phase inverter is benchmarked against the same reference under numerically demanding conditions, confirming that the approach is robust and comparable in accuracy to commercial tools.
+				</span>
+		<span style="cursor:auto;">
+			&emsp;[ <span onclick="showDiv('dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters.pdf">pdf</a> ] [ Ref: <a href="pubs/dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters.bib">bib</a>   <a href="pubs/dorado_rojas_dimate_panciatici_olaru_molzahn-mtkpowerconverters.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
