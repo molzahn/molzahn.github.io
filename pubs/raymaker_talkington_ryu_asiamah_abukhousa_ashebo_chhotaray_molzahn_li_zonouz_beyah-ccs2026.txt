@@ -1,0 +1,1 @@
+A. Raymaker, S. Talkington, Z. Ryu, R. Asiamah, E. Abukhousa, B. Ashebo, A. Chhotaray, D.K. Molzahn, F. Li, S. Zonouz, and R. Beyah, “Grid Trouble in Paradise: Uncovering Vulnerable Distributed Energy Resources and Their Grid-Level Risks,” to appear in ACM Conference on Computer and Communications Security (CCS), November 15-19, 2026.
