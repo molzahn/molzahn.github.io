@@ -230,7 +230,7 @@
 					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive a sufficient condition for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the performance of the detection condition on three data manipulation strategies with various complexity and stealth. The simplest attack sends the target values and each iteration, the second attack uses a feedback loop to find the next target values, and the last attack uses a bilevel optimization to find the target values. We then extend the three data manipulation strategies to avoid detection by the detection conditions and a neural network (NN) detection model. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection condition successfully detect most of the data manipulation attacks. However, the bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack. 
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('admmvulnerability_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626010813?dgcid=coauthor">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('admmvulnerability_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability-slides.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626010813?dgcid=coauthor">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Year">
@@ -240,7 +240,7 @@
 					Efficiently solving large-scale optimal power flow (OPF) problems is challenging due to the high dimensionality and interconnectivity of modern power systems. Decomposition methods offer a promising solution via partitioning large problems into smaller subproblems that can be solved in parallel, often with local information. These approaches reduce computational burden and improve flexibility by allowing agents to manage their local models. This article introduces a decomposition method that enables a distributed solution to OPF problems. The proposed method solves OPF problems with a sensitivity-based formulation using the alternating direction method of multipliers (ADMM) algorithm. We also propose a distributed method to compute system-wide sensitivities without sharing local parameters. This approach facilitates scalable optimization while satisfying global constraints and limiting data sharing. We demonstrate the effectiveness of the proposed approach using a large set of test systems and compare its performance against existing decomposition methods. The results show that the proposed method significantly outperforms the typical phase-angle formulation with a 14-times faster computation speed on average.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('alkhraijah_sigler_molzahn-distributed_ptdf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626009016">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.bib">bib</a>   <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('alkhraijah_sigler_molzahn-distributed_ptdf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_sigler_molzahn-distributed_ptdf-slides.pptx">pptx</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626009016">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.bib">bib</a>   <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Year">
@@ -260,7 +260,7 @@
 					DC Optimal Power Flow (DCOPF) is widely utilized in power system operations due to its simplicity and computational efficiency. However, its lossless, reactive power–agnostic model often yields dispatches that are infeasible under practical operating scenarios such as the nonlinear AC power flow (ACPF) equations. While theoretical analysis demonstrates that DCOPF solutions are inherently AC-infeasible, their widespread industry adoption suggests substantial practical utility. This paper develops a unified DCOPF&rarr;ACPF pipeline to recover AC feasible solutions from DCOPF-based dispatches. The pipeline uses four DCOPF variants and applies AC feasibility recovery using both distributed slack allocation and PV/PQ switching. The main objective is to identify the most effective pipeline for restoring AC feasibility. Evaluation across over 10,000 dispatch scenarios on various test cases demonstrates that the structured ACPF model yields solutions that satisfy both the ACPF equations, and all engineering inequality constraints. In a 13,659-bus case, the mean absolute error and cost differences between DCOPF and ACOPF are reduced by 75% and 93%, respectively, compared to conventional single slack bus methods. Under extreme loading conditions, the pipeline reduces inequality constraint violations by a factor of 3 to 5.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626009454">link</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf-slides.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626009454">link</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -440,7 +440,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11513197">link</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/khanpour_skolfield_molzahn-ac_v_dc_tep-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/11513197">link</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -451,7 +451,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('hicss2026_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.pdf">pdf</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/3712fd50-c31b-4760-8f92-832324c80adb">link</a> ] [ Ref: <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.bib">bib</a>   <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('hicss2026_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/asiamah_ji_watson_molzahn-hicss2026-slides.pptx">pptx</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/3712fd50-c31b-4760-8f92-832324c80adb">link</a> ] [ Ref: <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.bib">bib</a>   <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -561,7 +561,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('secondordersens_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10755158">link </a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('secondordersens_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/buason_misra_watson_molzahn-secondordersens-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/10755158">link </a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -638,7 +638,7 @@
 					With increasingly severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. We investigate a coordinated transmission-distribution optimization problem that balances wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which may support loads when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators'’' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem over both space and time and apply a distributed optimization algorithm. Using a large-scale synthetic California test case with realistic distribution models and real wildfire risk data, we show that distributed optimization can solve large-scale multi-period switching problems that are otherwise intractable for centralized solvers. We also discuss challenges and future directions for improving the distributed algorithm's convergence performance as the number of time periods increases.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfireTD_conf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11180363">link</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('wildfireTD_conf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/harris_chang_molzahn-wildfireTD_conf-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/harris_chang_molzahn-wildfireTD_conf-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11180363">link</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
 		</span>
 	</div> 
 	<div class="tile scale-anm Year">
@@ -678,7 +678,7 @@
 					Various types of reactive power control laws are heterogeneously used for inverter-based resources (IBRs) in distribution grids. As a result, grid operators may not be aware of <i>which type</i> of control law is used by a particular IBR. Different control laws imply different voltage support behaviors, which need to be known for the development of accurate computational models for power system analysis. To help mitigate this challenge, this paper develops simple <i>classification</i> algorithms to <i>identify</i> which type of control law governs the reactive power output of a behind-the-meter solar photovoltaic inverter when the specific control law selected by the IBR owner is unknown. Notably, the two algorithms introduced only require <i>aggregated</i> smart meter measurements to assign candidate reactive power control laws (e.g., constant power factor, volt-var control) to distribution network inverters. We present a case study to assess their accuracy in performing the classification task.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('kpec2025_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11045009">link</a> ] [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('kpec2025_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11045009">link</a> ] [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -712,7 +712,7 @@
 					To model reactive power limited generators within power flow problems, PV-PQ switching fixes generator voltages when reactive power outputs are within limits but allows the voltages to vary with a constant reactive power injection when limits are reached. Power flow algorithms often use heuristics that iteratively modify the generators' PV versus PQ representation as the algorithm executes. The convergence behavior and speed of power flow algorithms with these heuristics significantly depend on their initialization. To improve computational performance, we propose an approach for using neural networks to initialize PV-PQ switching heuristics. After offline training where the neural networks learn the power flow solution's PV vs. PQ generator statuses across varying load demands, the neural networks are deployed to initialize power flow algorithms in online applications. Numerical results demonstrate the effectiveness of this approach with speedup factors of 1.55&times; to 4.32&times; over the nominal generator PV-PQ status initialization.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('xiang_peci2025_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/xiang_molzahn-peci2025.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11063342">link</a> ] [ Ref: <a href="pubs/xiang_molzahn-peci2025.bib">bib</a>   <a href="pubs/xiang_molzahn-peci2025.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('xiang_peci2025_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/xiang_molzahn-peci2025.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/xiang_molzahn-peci2025-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/11063342">link</a> ] [ Ref: <a href="pubs/xiang_molzahn-peci2025.bib">bib</a>   <a href="pubs/xiang_molzahn-peci2025.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -723,7 +723,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfire_metrics_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/a194fefd-6e53-4fa1-9b42-58390ba8f34d">link</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('wildfire_metrics_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics-slides.pptx">pptx</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/a194fefd-6e53-4fa1-9b42-58390ba8f34d">link</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 		<div class="tile scale-anm Year">
@@ -740,7 +740,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('dcparam_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779624006059">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('dcparam_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-dcparam-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-dcparam-slides.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779624006059">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -751,7 +751,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ac_restoration_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779624005285">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('ac_restoration_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-ac_restoration-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-ac_restoration-slides.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779624005285">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Year">
@@ -862,7 +862,7 @@
 					This paper proposes a framework for fairly curtailing photovoltaic (PV) plants in response to the over-voltage problem in PV-rich distribution networks. The framework imposes PV generation limits to avoid overvoltages. These limits are computed a day ahead of real-time operations by solving an offline stochastic optimization problem using forecasted scenarios for PV generation and load demand. The framework minimizes the overall curtailment while considering fairness by reducing disparities in curtailments among different PV owners. We model the distribution grid constraints using a conservative linear approximation (CLA) of the AC power flow equations which is computed using a set of sampled power injections from the day-ahead predicted scenarios. The proposed framework is numerically validated on a CIGRE benchmark network interfaced with a large number of PV plants. We compare the performance of the proposed framework versus an alternative formulation that does not incorporate fairness considerations. To this end, we assess tradeoffs between fairness, as quantified with the Jain Fairness Index (JFI), and the total curtailed energy. 
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('fairness_pv_limit_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10472277">link</a> ] [ Ref: <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.bib">bib</a>   <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('fairness_pv_limit_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/gupta_buason_molzahn-fairness_pv_limit-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/10472277">link</a> ] [ Ref: <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.bib">bib</a>   <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -882,7 +882,7 @@
 					This paper presents an algorithm to optimize the parameters of power systems equivalents to enhance the accuracy of the DC power flow approximation in reduced networks. Based on a zonal division of the network, the algorithm produces a reduced power system equivalent that captures inter-zonal flows with aggregated buses and equivalent transmission lines. The algorithm refines coefficient and bias parameters for the DC power flow model of the reduced network, aiming to minimize discrepancies between inter-zonal flows in DC and AC power flow results. Using optimization methods like BFGS, L-BFGS, and TNC in an offline training phase, these parameters boost the accuracy of online DC power flow computations. In contrast to existing network equivalencing methods, the proposed algorithm optimizes accuracy over a specified range of operation as opposed to only considering a single nominal point. Numerical tests demonstrate substantial accuracy improvements over traditional equivalencing and approximation methods.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('DCequivalents_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10472173">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('DCequivalents_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-DCequivalents-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10472173">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	  <div class="tile scale-anm Year">
@@ -1009,7 +1009,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('ml_for_n-k_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.pdf">pdf</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/1f14ff57-e004-487b-bec8-48e3ef923a58">link</a> ] [ Ref: <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.bib">bib</a>   <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.txt">txt</a> ] </p></li>
+				&emsp;[ <span onclick="showDiv('ml_for_n-k_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/owen_aquino_harris_kody_molzahn-ml_for_n-k-slides.pptx">pptx</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/1f14ff57-e004-487b-bec8-48e3ef923a58">link</a> ] [ Ref: <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.bib">bib</a>   <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.txt">txt</a> ] </p></li>
 			</span>
 	  </div>
 		<div class="tile scale-anm Year">
@@ -1048,7 +1048,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('cla_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cla.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779622006526">link</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cla.txt">txt</a> ] </p></li>
+				&emsp;[ <span onclick="showDiv('cla_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cla.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/buason_misra_molzahn-cla-slides.pptx">pptx</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779622006526">link</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cla.txt">txt</a> ] </p></li>
 			</span>
 	  </div>
 		<div class="tile scale-anm Year">
@@ -1059,7 +1059,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('nonideal_dist_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378779622004801">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
+				&emsp;[ <span onclick="showDiv('nonideal_dist_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_menendez_molzahn-distributed_optimization_nonideal-slides.pptx">pptx</a> ] [ <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378779622004801">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
 			</span>
 	  </div>
 		<div class="tile scale-anm Year">
@@ -1128,7 +1128,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('consistency_constraints_distributed_opf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9750783/">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.bib">bib</a>   <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.txt">txt</a> ] </p></li>
+				&emsp;[ <span onclick="showDiv('consistency_constraints_distributed_opf_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/9750783/">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.bib">bib</a>   <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.txt">txt</a> ] </p></li>
 			</span>
 		</div>
 		<div class="tile scale-anm Year">
@@ -1208,7 +1208,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('balancibility_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/li_cui_qiu_molzahn-balancibility.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779620303461">link</a> ] [ Ref: <a href="pubs/li_cui_qiu_molzahn-balancibility.bib">bib</a>   <a href="pubs/li_cui_qiu_molzahn-balancibility.txt">txt</a> ] [ <a href="https://youtu.be/yqN1dpUj1cI">presentation</a> ]</p></li>
+				&emsp;[ <span onclick="showDiv('balancibility_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/li_cui_qiu_molzahn-balancibility.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/li_cui_qiu_molzahn-balancibility-slides.pptx">pptx</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779620303461">link</a> ] [ Ref: <a href="pubs/li_cui_qiu_molzahn-balancibility.bib">bib</a>   <a href="pubs/li_cui_qiu_molzahn-balancibility.txt">txt</a> ] [ <a href="https://youtu.be/yqN1dpUj1cI">presentation</a> ]</p></li>
 			</span>
 		</div>
 		<div class="tile scale-anm Year">
@@ -1255,7 +1255,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('assessing_bal_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9435259">link</a> ] [ Ref: <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.bib">bib</a>   <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.txt">txt</a> ] </p></li>
+				&emsp;[ <span onclick="showDiv('assessing_bal_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/9435259">link</a> ] [ Ref: <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.bib">bib</a>   <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.txt">txt</a> ] </p></li>
 			</span>
 		</div>
 		<div class="tile scale-anm Year">
@@ -1266,7 +1266,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('reactive_planning_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/9435243">link</a> ] [ Ref: <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.bib">bib</a>   <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.txt">txt</a> ] </p></li>
+				&emsp;[ <span onclick="showDiv('reactive_planning_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_alowaifeer_till_molzahn-peci2021-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/9435243">link</a> ] [ Ref: <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.bib">bib</a>   <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.txt">txt</a> ] </p></li>
 			</span>
 		</div>
 		<div class="tile scale-anm Year">
@@ -1277,7 +1277,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('dynamic_rating_wildfire_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/tandon_grijalva_molzahn-peci2021.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/9435252">link</a> ] [ Ref: <a href="pubs/tandon_grijalva_molzahn-peci2021.bib">bib</a>   <a href="pubs/tandon_grijalva_molzahn-peci2021.txt">txt</a> ] </p></li>
+				&emsp;[ <span onclick="showDiv('dynamic_rating_wildfire_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/tandon_grijalva_molzahn-peci2021.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/tandon_grijalva_molzahn-peci2021-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/9435252">link</a> ] [ Ref: <a href="pubs/tandon_grijalva_molzahn-peci2021.bib">bib</a>   <a href="pubs/tandon_grijalva_molzahn-peci2021.txt">txt</a> ] </p></li>
 			</span>
 		</div>
 		<div class="tile scale-anm Year">
@@ -1330,7 +1330,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('6320_active_constraints_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9249749">link</a> ] [ Ref: <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.bib">bib</a>   <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.txt">txt</a> ] </p></li>
+				&emsp;[ <span onclick="showDiv('6320_active_constraints_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/zhang_mana_yan_sun_molzahn-active_flow_constraints-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/9249749">link</a> ] [ Ref: <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.bib">bib</a>   <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.txt">txt</a> ] </p></li>
 			</span>
 		</div>
 	<div class="tile scale-anm Year">
@@ -1472,7 +1472,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nonconvexity_search2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn-nonconvexity_search.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/8332512/">link</a> ] [ Ref: <a href="pubs/molzahn-nonconvexity_search.bib">bib</a>   <a href="pubs/molzahn-nonconvexity_search.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('nonconvexity_search2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn-nonconvexity_search.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn-nonconvexity_search-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn-nonconvexity_search-slides.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/8332512/">link</a> ] [ Ref: <a href="pubs/molzahn-nonconvexity_search.bib">bib</a>   <a href="pubs/molzahn-nonconvexity_search.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Year">
@@ -1534,7 +1534,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('globalsip2018_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8646323">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.bib">bib</a>   <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('globalsip2018_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/narimani_molzahn_nagarajan_crow-globalsip2018-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/narimani_molzahn_nagarajan_crow-globalsip2018-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8646323">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.bib">bib</a>   <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Year">
@@ -1556,7 +1556,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('acopf_robust2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_roald-acopf_robust2018.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442889">link</a> ] [ Ref: <a href="pubs/molzahn_roald-acopf_robust2018.bib">bib</a>   <a href="pubs/molzahn_roald-acopf_robust2018.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('acopf_robust2017_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_roald-acopf_robust2018.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_roald-acopf_robust2018-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_roald-acopf_robust2018-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442889">link</a> ] [ Ref: <a href="pubs/molzahn_roald-acopf_robust2018.bib">bib</a>   <a href="pubs/molzahn_roald-acopf_robust2018.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -1567,7 +1567,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('adaptive_linearizations2018_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442547">link</a> ] [ Ref: <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.bib">bib</a>   <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('adaptive_linearizations2018_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/misra_molzahn_dvijotham-adaptive_linearizations2018-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/misra_molzahn_dvijotham-adaptive_linearizations2018-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442547">link</a> ] [ Ref: <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.bib">bib</a>   <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -1578,7 +1578,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('qc_voltage_difference2018_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-qc_improvements2018.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442667">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-qc_improvements2018.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-qc_improvements2018.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('qc_voltage_difference2018_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-qc_improvements2018.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/narimani_molzahn_crow-qc_improvements2018-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/narimani_molzahn_crow-qc_improvements2018-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442667">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-qc_improvements2018.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-qc_improvements2018.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -1729,7 +1729,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('cdc2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/dvijotham_molzahn-cdc2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7798623/">link</a> ] [ Ref: <a href="pubs/dvijotham_molzahn-cdc2016.bib">bib</a>   <a href="pubs/dvijotham_molzahn-cdc2016.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('cdc2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/dvijotham_molzahn-cdc2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/dvijotham_molzahn-cdc2016-slides.ppt">ppt</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/dvijotham_molzahn-cdc2016-slides.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7798623/">link</a> ] [ Ref: <a href="pubs/dvijotham_molzahn-cdc2016.bib">bib</a>   <a href="pubs/dvijotham_molzahn-cdc2016.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Year">
@@ -1740,7 +1740,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('globalsip2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens-globalsip2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7905964/">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens-globalsip2016.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens-globalsip2016.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('globalsip2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens-globalsip2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_josz_hiskens-globalsip2016-slides.ppt">ppt</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_josz_hiskens-globalsip2016-slides.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7905964/">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens-globalsip2016.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens-globalsip2016.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -1751,7 +1751,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('acc2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_mehta_niemerg-acc2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7526599/">link</a> ] [ Ref: <a href="pubs/molzahn_mehta_niemerg-acc2016.bib">bib</a>   <a href="pubs/molzahn_mehta_niemerg-acc2016.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('acc2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_mehta_niemerg-acc2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_mehta_niemerg-acc2016-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/document/7526599/">link</a> ] [ Ref: <a href="pubs/molzahn_mehta_niemerg-acc2016.bib">bib</a>   <a href="pubs/molzahn_mehta_niemerg-acc2016.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -1773,7 +1773,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('pscc2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7540831/">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('pscc2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_josz_hiskens_pantiatici-pscc2016-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/document/7540831/">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.txt">txt</a> ]</p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -1784,7 +1784,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('hicss2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7427472">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.bib">bib</a>   <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('hicss2016_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_hiskens_lesieutre-hicss2016-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7427472">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.bib">bib</a>   <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.txt">txt</a> ]</p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Year">
@@ -1844,7 +1844,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('cdc2015_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7402083">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('cdc2015_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_josz_hiskens_panciatici-cdc2015-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7402083">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.txt">txt</a> ]</p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Year">
@@ -1866,7 +1866,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('powertech2015_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-powertech2015.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7232429">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-powertech2015.bib">bib</a>   <a href="pubs/molzahn_hiskens-powertech2015.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('powertech2015_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-powertech2015.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_hiskens-powertech2015-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7232429">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-powertech2015.bib">bib</a>   <a href="pubs/molzahn_hiskens-powertech2015.txt">txt</a> ]</p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Year">
@@ -1877,7 +1877,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('iscas2015_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169026">link</a> ] [ <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015_errata.pdf">errata</a> ] [ Ref: <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.bib">bib</a>   <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('iscas2015_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_baghsorkhi_hiskens-iscas2015-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169026">link</a> ] [ <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015_errata.pdf">errata</a> ] [ Ref: <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.bib">bib</a>   <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.txt">txt</a> ]</p></li>
 		</span>
   </div>
 	</ul>
@@ -1932,7 +1932,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('pscc2014_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-Moment_OPF.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7038397">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-Moment_OPF.bib">bib</a>   <a href="pubs/molzahn_hiskens-Moment_OPF.txt">txt</a> ]</p></li>
+				&emsp;[ <span onclick="showDiv('pscc2014_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-Moment_OPF.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_hiskens-Moment_OPF-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7038397">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-Moment_OPF.bib">bib</a>   <a href="pubs/molzahn_hiskens-Moment_OPF.txt">txt</a> ]</p></li>
 			</span>
 		</div>
 		<div class="tile scale-anm Year">
@@ -1943,7 +1943,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('hicss2014_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_lesieutre_demarco-hicss2014.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6758891">link</a> ] [ <a href="pubs/molzahn_lesieutre_demarco-hicss2014_errata.pdf">errata</a> ] [ Ref: <a href="pubs/molzahn_lesieutre_demarco-hicss2014.bib">bib</a>   <a href="pubs/molzahn_lesieutre_demarco-hicss2014.txt">txt</a> ]</p></li>
+				&emsp;[ <span onclick="showDiv('hicss2014_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_lesieutre_demarco-hicss2014.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_lesieutre_demarco-hicss2014-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6758891">link</a> ] [ <a href="pubs/molzahn_lesieutre_demarco-hicss2014_errata.pdf">errata</a> ] [ Ref: <a href="pubs/molzahn_lesieutre_demarco-hicss2014.bib">bib</a>   <a href="pubs/molzahn_lesieutre_demarco-hicss2014.txt">txt</a> ]</p></li>
 			</span>
 		</div>
 		<div class="tile scale-anm Year">
@@ -2034,7 +2034,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('irep2013_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6629370">link</a> ] [ Ref: <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.bib">bib</a>   <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.txt">txt</a> ]</p></li>
+				&emsp;[ <span onclick="showDiv('irep2013_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_dawar_lesieutre_demarco-irep2013-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6629370">link</a> ] [ Ref: <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.bib">bib</a>   <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.txt">txt</a> ]</p></li>
 			</span>
 		</div>
 		<div class="tile scale-anm Year">
@@ -2157,7 +2157,7 @@
 					</span>
 			</span>
 			<span style="cursor:auto;">
-				&emsp;[ <span onclick="showDiv('iscas2010_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_lesieutre-iscas2010.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5537071">link</a> ] [ Ref: <a href="pubs/molzahn_lesieutre-iscas2010.bib">bib</a>   <a href="pubs/molzahn_lesieutre-iscas2010.txt">txt</a> ]</p></li>
+				&emsp;[ <span onclick="showDiv('iscas2010_year');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_lesieutre-iscas2010.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_lesieutre-iscas2010-slides.ppt">ppt</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_lesieutre-iscas2010-slides.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5537071">link</a> ] [ Ref: <a href="pubs/molzahn_lesieutre-iscas2010.bib">bib</a>   <a href="pubs/molzahn_lesieutre-iscas2010.txt">txt</a> ]</p></li>
 			</span>
 	  </div>
 		<div class="tile scale-anm Year">
@@ -2322,7 +2322,7 @@
 					This paper investigates the vulnerability of the Alternating Direction Method of Multipliers (ADMM) algorithm to shared data manipulation, with a focus on solving optimal power flow (OPF) problems. Deliberate data manipulation may cause the ADMM algorithm to converge to suboptimal solutions. We derive a sufficient condition for detecting data manipulation based on the theoretical convergence trajectory of the ADMM algorithm. We evaluate the performance of the detection condition on three data manipulation strategies with various complexity and stealth. The simplest attack sends the target values and each iteration, the second attack uses a feedback loop to find the next target values, and the last attack uses a bilevel optimization to find the target values. We then extend the three data manipulation strategies to avoid detection by the detection conditions and a neural network (NN) detection model. We also propose an adversarial NN training framework to detect shared data manipulation. We illustrate the performance of our data manipulation strategy and detection framework on OPF problems. The results show that the proposed detection condition successfully detect most of the data manipulation attacks. However, the bilevel optimization attack strategy that incorporates the detection methods may avoid being detected. Countering this, our proposed adversarial training framework detects all the instances of the bilevel optimization attack. 
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('admmvulnerability_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626010813?dgcid=coauthor">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('admmvulnerability_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability-slides.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626010813?dgcid=coauthor">link</a> ] [ Ref: <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.bib">bib</a>   <a href="pubs/alkhraijah_harris_litchfield_huggins_molzahn-admmvulnerability.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -2332,7 +2332,7 @@
 					Efficiently solving large-scale optimal power flow (OPF) problems is challenging due to the high dimensionality and interconnectivity of modern power systems. Decomposition methods offer a promising solution via partitioning large problems into smaller subproblems that can be solved in parallel, often with local information. These approaches reduce computational burden and improve flexibility by allowing agents to manage their local models. This article introduces a decomposition method that enables a distributed solution to OPF problems. The proposed method solves OPF problems with a sensitivity-based formulation using the alternating direction method of multipliers (ADMM) algorithm. We also propose a distributed method to compute system-wide sensitivities without sharing local parameters. This approach facilitates scalable optimization while satisfying global constraints and limiting data sharing. We demonstrate the effectiveness of the proposed approach using a large set of test systems and compare its performance against existing decomposition methods. The results show that the proposed method significantly outperforms the typical phase-angle formulation with a 14-times faster computation speed on average.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('alkhraijah_sigler_molzahn-distributed_ptdf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626009016">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.bib">bib</a>   <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('alkhraijah_sigler_molzahn-distributed_ptdf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_sigler_molzahn-distributed_ptdf-slides.pptx">pptx</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626009016">link</a> ] [ Ref: <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.bib">bib</a>   <a href="pubs/alkhraijah_sigler_molzahn-distributed_ptdf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -2352,7 +2352,7 @@
 					DC Optimal Power Flow (DCOPF) is widely utilized in power system operations due to its simplicity and computational efficiency. However, its lossless, reactive power–agnostic model often yields dispatches that are infeasible under practical operating scenarios such as the nonlinear AC power flow (ACPF) equations. While theoretical analysis demonstrates that DCOPF solutions are inherently AC-infeasible, their widespread industry adoption suggests substantial practical utility. This paper develops a unified DCOPF&rarr;ACPF pipeline to recover AC feasible solutions from DCOPF-based dispatches. The pipeline uses four DCOPF variants and applies AC feasibility recovery using both distributed slack allocation and PV/PQ switching. The main objective is to identify the most effective pipeline for restoring AC feasibility. Evaluation across over 10,000 dispatch scenarios on various test cases demonstrates that the structured ACPF model yields solutions that satisfy both the ACPF equations, and all engineering inequality constraints. In a 13,659-bus case, the mean absolute error and cost differences between DCOPF and ACOPF are reduced by 75% and 93%, respectively, compared to conventional single slack bus methods. Under extreme loading conditions, the pipeline reduces inequality constraint violations by a factor of 3 to 5.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626009454">link</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf-slides.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779626009454">link</a> ] [ Ref: <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.bib">bib</a>   <a href="pubs/boateng_bent_misra_pareek_van_hentenryck_molzahn-dcopf_acpf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2523,7 +2523,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('secondordersens_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10755158">link </a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('secondordersens_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_watson_molzahn-secondordersens.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/buason_misra_watson_molzahn-secondordersens-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/10755158">link </a> ] [ Ref: <a href="pubs/buason_misra_watson_molzahn-secondordersens.bib">bib</a>   <a href="pubs/buason_misra_watson_molzahn-secondordersens.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2558,7 +2558,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('dcparam_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779624006059">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('dcparam_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-dcparam.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-dcparam-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-dcparam-slides.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779624006059">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-dcparam.bib">bib</a>   <a href="pubs/taheri_molzahn-dcparam.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2569,7 +2569,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('ac_restoration_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779624005285">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('ac_restoration_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-ac_restoration.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-ac_restoration-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-ac_restoration-slides.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779624005285">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-ac_restoration.bib">bib</a>   <a href="pubs/taheri_molzahn-ac_restoration.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2737,7 +2737,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('cla_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cla.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779622006526">link</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cla.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('cla_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/buason_misra_molzahn-cla.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/buason_misra_molzahn-cla-slides.pptx">pptx</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779622006526">link</a> ] [ Ref: <a href="pubs/buason_misra_molzahn-cla.bib">bib</a>   <a href="pubs/buason_misra_molzahn-cla.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2748,7 +2748,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nonideal_dist_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378779622004801">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('nonideal_dist_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_menendez_molzahn-distributed_optimization_nonideal-slides.pptx">pptx</a> ] [ <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378779622004801">link</a> ] [ Ref: <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.bib">bib</a>   <a href="pubs/alkhraijah_menendez_molzahn-distributed_optimization_nonideal.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2847,7 +2847,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('balancibility_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/li_cui_qiu_molzahn-balancibility.pdf">pdf</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779620303461">link</a> ] [ Ref: <a href="pubs/li_cui_qiu_molzahn-balancibility.bib">bib</a>   <a href="pubs/li_cui_qiu_molzahn-balancibility.txt">txt</a> ] [ <a href="https://youtu.be/yqN1dpUj1cI">presentation</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('balancibility_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/li_cui_qiu_molzahn-balancibility.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/li_cui_qiu_molzahn-balancibility-slides.pptx">pptx</a> ] [ <a href="https://www.sciencedirect.com/science/article/pii/S0378779620303461">link</a> ] [ Ref: <a href="pubs/li_cui_qiu_molzahn-balancibility.bib">bib</a>   <a href="pubs/li_cui_qiu_molzahn-balancibility.txt">txt</a> ] [ <a href="https://youtu.be/yqN1dpUj1cI">presentation</a> ]</p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -2922,7 +2922,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('nonconvexity_search2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn-nonconvexity_search.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/8332512/">link</a> ] [ Ref: <a href="pubs/molzahn-nonconvexity_search.bib">bib</a>   <a href="pubs/molzahn-nonconvexity_search.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('nonconvexity_search2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn-nonconvexity_search.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn-nonconvexity_search-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn-nonconvexity_search-slides.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/8332512/">link</a> ] [ Ref: <a href="pubs/molzahn-nonconvexity_search.bib">bib</a>   <a href="pubs/molzahn-nonconvexity_search.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3299,7 +3299,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11513197">link</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('khanpour_skolfield_molzahn-ac_v_dc_tep_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/khanpour_skolfield_molzahn-ac_v_dc_tep-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/11513197">link</a> ] [ Ref: <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.bib">bib</a>   <a href="pubs/khanpour_skolfield_molzahn-ac_v_dc_tep.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3310,7 +3310,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('hicss2026_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.pdf">pdf</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/3712fd50-c31b-4760-8f92-832324c80adb">link</a> ] [ Ref: <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.bib">bib</a>   <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('hicss2026_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/asiamah_ji_watson_molzahn-hicss2026-slides.pptx">pptx</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/3712fd50-c31b-4760-8f92-832324c80adb">link</a> ] [ Ref: <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.bib">bib</a>   <a href="pubs/asiamah_ji_watson_molzahn-hicss2026.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -3366,7 +3366,7 @@
 					With increasingly severe wildfire conditions driven by climate change, utilities must manage the risk of wildfire ignitions from electric power lines. During "public safety power shutoff" events, utilities de-energize power lines to reduce wildfire ignition risk, which may result in load shedding. Distributed energy resources provide flexibility that can help support the system to reduce load shedding when lines are de-energized. We investigate a coordinated transmission-distribution optimization problem that balances wildfire risk mitigation and load shedding. We model distribution systems that include battery energy storage systems which may support loads when transmission lines are de-energized. This multi-period integrated transmission-distribution optimal switching problem jointly optimizes line switching decisions, the generators'’' setpoints, load shedding, and the batteries' states of charge, resulting in significant computational challenges. To improve scalability, we decompose the problem over both space and time and apply a distributed optimization algorithm. Using a large-scale synthetic California test case with realistic distribution models and real wildfire risk data, we show that distributed optimization can solve large-scale multi-period switching problems that are otherwise intractable for centralized solvers. We also discuss challenges and future directions for improving the distributed algorithm's convergence performance as the number of time periods increases.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfireTD_conf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11180363">link</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('wildfireTD_conf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_chang_molzahn-wildfireTD_conf.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/harris_chang_molzahn-wildfireTD_conf-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/harris_chang_molzahn-wildfireTD_conf-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11180363">link</a> ] [ Ref: <a href="pubs/harris_chang_molzahn-wildfireTD_conf.bib">bib</a>   <a href="pubs/harris_chang_molzahn-wildfireTD_conf.txt">txt</a> ] </p></li>
 		</span>
 	</div> 
 	<div class="tile scale-anm Type" style="display:none">
@@ -3407,7 +3407,7 @@
 					Various types of reactive power control laws are heterogeneously used for inverter-based resources (IBRs) in distribution grids. As a result, grid operators may not be aware of <i>which type</i> of control law is used by a particular IBR. Different control laws imply different voltage support behaviors, which need to be known for the development of accurate computational models for power system analysis. To help mitigate this challenge, this paper develops simple <i>classification</i> algorithms to <i>identify</i> which type of control law governs the reactive power output of a behind-the-meter solar photovoltaic inverter when the specific control law selected by the IBR owner is unknown. Notably, the two algorithms introduced only require <i>aggregated</i> smart meter measurements to assign candidate reactive power control laws (e.g., constant power factor, volt-var control) to distribution network inverters. We present a case study to assess their accuracy in performing the classification task.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('kpec2025_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11045009">link</a> ] [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('kpec2025_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/11045009">link</a> ] [ Ref: <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.bib">bib</a>   <a href="pubs/asiamah_talkington_boateng_vanin_geth_molzahn-kpec2025.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3441,7 +3441,7 @@
 					To model reactive power limited generators within power flow problems, PV-PQ switching fixes generator voltages when reactive power outputs are within limits but allows the voltages to vary with a constant reactive power injection when limits are reached. Power flow algorithms often use heuristics that iteratively modify the generators' PV versus PQ representation as the algorithm executes. The convergence behavior and speed of power flow algorithms with these heuristics significantly depend on their initialization. To improve computational performance, we propose an approach for using neural networks to initialize PV-PQ switching heuristics. After offline training where the neural networks learn the power flow solution's PV vs. PQ generator statuses across varying load demands, the neural networks are deployed to initialize power flow algorithms in online applications. Numerical results demonstrate the effectiveness of this approach with speedup factors of 1.55&times; to 4.32&times; over the nominal generator PV-PQ status initialization.
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('xiang_peci2025_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/xiang_molzahn-peci2025.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/11063342">link</a> ] [ Ref: <a href="pubs/xiang_molzahn-peci2025.bib">bib</a>   <a href="pubs/xiang_molzahn-peci2025.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('xiang_peci2025_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/xiang_molzahn-peci2025.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/xiang_molzahn-peci2025-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/11063342">link</a> ] [ Ref: <a href="pubs/xiang_molzahn-peci2025.bib">bib</a>   <a href="pubs/xiang_molzahn-peci2025.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -3452,7 +3452,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('wildfire_metrics_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/a194fefd-6e53-4fa1-9b42-58390ba8f34d">link</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('wildfire_metrics_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics-slides.pptx">pptx</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/a194fefd-6e53-4fa1-9b42-58390ba8f34d">link</a> ] [ Ref: <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.bib">bib</a>   <a href="pubs/piansky_taylor_rhodes_molzahn_roald_watson-wildfire_metrics.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 <div class="tile scale-anm Type" style="display:none">
@@ -3508,7 +3508,7 @@
 					This paper proposes a framework for fairly curtailing photovoltaic (PV) plants in response to the over-voltage problem in PV-rich distribution networks. The framework imposes PV generation limits to avoid overvoltages. These limits are computed a day ahead of real-time operations by solving an offline stochastic optimization problem using forecasted scenarios for PV generation and load demand. The framework minimizes the overall curtailment while considering fairness by reducing disparities in curtailments among different PV owners. We model the distribution grid constraints using a conservative linear approximation (CLA) of the AC power flow equations which is computed using a set of sampled power injections from the day-ahead predicted scenarios. The proposed framework is numerically validated on a CIGRE benchmark network interfaced with a large number of PV plants. We compare the performance of the proposed framework versus an alternative formulation that does not incorporate fairness considerations. To this end, we assess tradeoffs between fairness, as quantified with the Jain Fairness Index (JFI), and the total curtailed energy. 
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('fairness_pv_limit_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/10472277">link</a> ] [ Ref: <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.bib">bib</a>   <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('fairness_pv_limit_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/gupta_buason_molzahn-fairness_pv_limit-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/10472277">link</a> ] [ Ref: <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.bib">bib</a>   <a href="pubs/gupta_buason_molzahn-fairness_pv_limit.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3528,7 +3528,7 @@
 					This paper presents an algorithm to optimize the parameters of power systems equivalents to enhance the accuracy of the DC power flow approximation in reduced networks. Based on a zonal division of the network, the algorithm produces a reduced power system equivalent that captures inter-zonal flows with aggregated buses and equivalent transmission lines. The algorithm refines coefficient and bias parameters for the DC power flow model of the reduced network, aiming to minimize discrepancies between inter-zonal flows in DC and AC power flow results. Using optimization methods like BFGS, L-BFGS, and TNC in an offline training phase, these parameters boost the accuracy of online DC power flow computations. In contrast to existing network equivalencing methods, the proposed algorithm optimizes accuracy over a specified range of operation as opposed to only considering a single nominal point. Numerical tests demonstrate substantial accuracy improvements over traditional equivalencing and approximation methods.
 				</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('DCequivalents_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10472173">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('DCequivalents_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/taheri_molzahn-DCequivalents.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/taheri_molzahn-DCequivalents-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/10472173">link</a> ] [ Ref: <a href="pubs/taheri_molzahn-DCequivalents.bib">bib</a>   <a href="pubs/taheri_molzahn-DCequivalents.txt">txt</a> ] </p></li>
 		</span>
 	</div>
   <div class="tile scale-anm Type" style="display:none">
@@ -3575,7 +3575,7 @@
 			</span>
 	</span>
 	<span style="cursor:auto;">
-		&emsp;[ <span onclick="showDiv('ml_for_n-k_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.pdf">pdf</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/1f14ff57-e004-487b-bec8-48e3ef923a58">link</a> ] [ Ref: <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.bib">bib</a>   <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.txt">txt</a> ] </p></li>
+		&emsp;[ <span onclick="showDiv('ml_for_n-k_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/owen_aquino_harris_kody_molzahn-ml_for_n-k-slides.pptx">pptx</a> ] [ <a href="https://scholarspace.manoa.hawaii.edu/items/1f14ff57-e004-487b-bec8-48e3ef923a58">link</a> ] [ Ref: <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.bib">bib</a>   <a href="pubs/owen_aquino_harris_kody_molzahn-ml_for_n-k.txt">txt</a> ] </p></li>
 	</span>
 </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3622,7 +3622,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('consistency_constraints_distributed_opf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9750783/">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.bib">bib</a>   <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('consistency_constraints_distributed_opf_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/9750783/">link</a> ] [ Ref: <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.bib">bib</a>   <a href="pubs/harris_alkhraijah_huggins_molzahn-consistency_constraints_distributed_opf.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3669,7 +3669,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('assessing_bal_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9435259">link</a> ] [ Ref: <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.bib">bib</a>   <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('assessing_bal_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/9435259">link</a> ] [ Ref: <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.bib">bib</a>   <a href="pubs/ivemeyer_bossart_kenyon_sajadi_hodge_molzahn-peci2021.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3680,7 +3680,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('reactive_planning_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/9435243">link</a> ] [ Ref: <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.bib">bib</a>   <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('reactive_planning_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/alkhraijah_alowaifeer_till_molzahn-peci2021-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/9435243">link</a> ] [ Ref: <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.bib">bib</a>   <a href="pubs/alkhraijah_alowaifeer_till_molzahn-peci2021.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3691,7 +3691,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('dynamic_rating_wildfire_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/tandon_grijalva_molzahn-peci2021.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/9435252">link</a> ] [ Ref: <a href="pubs/tandon_grijalva_molzahn-peci2021.bib">bib</a>   <a href="pubs/tandon_grijalva_molzahn-peci2021.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('dynamic_rating_wildfire_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/tandon_grijalva_molzahn-peci2021.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/tandon_grijalva_molzahn-peci2021-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/abstract/document/9435252">link</a> ] [ Ref: <a href="pubs/tandon_grijalva_molzahn-peci2021.bib">bib</a>   <a href="pubs/tandon_grijalva_molzahn-peci2021.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3716,7 +3716,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('6320_active_constraints_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/9249749">link</a> ] [ Ref: <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.bib">bib</a>   <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('6320_active_constraints_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/zhang_mana_yan_sun_molzahn-active_flow_constraints-slides.pptx">pptx</a> ] [ <a href="https://ieeexplore.ieee.org/document/9249749">link</a> ] [ Ref: <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.bib">bib</a>   <a href="pubs/zhang_mana_yan_sun_molzahn-active_flow_constraints.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3788,7 +3788,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('globalsip2018_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8646323">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.bib">bib</a>   <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('globalsip2018_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/narimani_molzahn_nagarajan_crow-globalsip2018-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/narimani_molzahn_nagarajan_crow-globalsip2018-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8646323">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.bib">bib</a>   <a href="pubs/narimani_molzahn_nagarajan_crow-globalsip2018.txt">txt</a> ] </p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3810,7 +3810,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('acopf_robust2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_roald-acopf_robust2018.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442889">link</a> ] [ Ref: <a href="pubs/molzahn_roald-acopf_robust2018.bib">bib</a>   <a href="pubs/molzahn_roald-acopf_robust2018.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('acopf_robust2017_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_roald-acopf_robust2018.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_roald-acopf_robust2018-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_roald-acopf_robust2018-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442889">link</a> ] [ Ref: <a href="pubs/molzahn_roald-acopf_robust2018.bib">bib</a>   <a href="pubs/molzahn_roald-acopf_robust2018.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3821,7 +3821,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('adaptive_linearizations2018_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442547">link</a> ] [ Ref: <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.bib">bib</a>   <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('adaptive_linearizations2018_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/misra_molzahn_dvijotham-adaptive_linearizations2018-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/misra_molzahn_dvijotham-adaptive_linearizations2018-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442547">link</a> ] [ Ref: <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.bib">bib</a>   <a href="pubs/misra_molzahn_dvijotham-adaptive_linearizations2018.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3832,7 +3832,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('qc_voltage_difference2018_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-qc_improvements2018.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442667">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-qc_improvements2018.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-qc_improvements2018.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('qc_voltage_difference2018_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/narimani_molzahn_crow-qc_improvements2018.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/narimani_molzahn_crow-qc_improvements2018-slides.pptx">pptx</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/narimani_molzahn_crow-qc_improvements2018-slides.pdf">pdf</a> ] [ <a href="https://ieeexplore.ieee.org/document/8442667">link</a> ] [ Ref: <a href="pubs/narimani_molzahn_crow-qc_improvements2018.bib">bib</a>   <a href="pubs/narimani_molzahn_crow-qc_improvements2018.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3893,7 +3893,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('cdc2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/dvijotham_molzahn-cdc2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7798623/">link</a> ] [ Ref: <a href="pubs/dvijotham_molzahn-cdc2016.bib">bib</a>   <a href="pubs/dvijotham_molzahn-cdc2016.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('cdc2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/dvijotham_molzahn-cdc2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/dvijotham_molzahn-cdc2016-slides.ppt">ppt</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/dvijotham_molzahn-cdc2016-slides.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7798623/">link</a> ] [ Ref: <a href="pubs/dvijotham_molzahn-cdc2016.bib">bib</a>   <a href="pubs/dvijotham_molzahn-cdc2016.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3904,7 +3904,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('globalsip2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens-globalsip2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7905964/">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens-globalsip2016.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens-globalsip2016.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('globalsip2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens-globalsip2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_josz_hiskens-globalsip2016-slides.ppt">ppt</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_josz_hiskens-globalsip2016-slides.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7905964/">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens-globalsip2016.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens-globalsip2016.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3915,7 +3915,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('acc2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_mehta_niemerg-acc2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7526599/">link</a> ] [ Ref: <a href="pubs/molzahn_mehta_niemerg-acc2016.bib">bib</a>   <a href="pubs/molzahn_mehta_niemerg-acc2016.txt">txt</a> ] </p></li>
+			&emsp;[ <span onclick="showDiv('acc2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_mehta_niemerg-acc2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_mehta_niemerg-acc2016-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/document/7526599/">link</a> ] [ Ref: <a href="pubs/molzahn_mehta_niemerg-acc2016.bib">bib</a>   <a href="pubs/molzahn_mehta_niemerg-acc2016.txt">txt</a> ] </p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3937,7 +3937,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('pscc2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/document/7540831/">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('pscc2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_josz_hiskens_pantiatici-pscc2016-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/document/7540831/">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens_pantiatici-pscc2016.txt">txt</a> ]</p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3948,7 +3948,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('hicss2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7427472">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.bib">bib</a>   <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('hicss2016_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_hiskens_lesieutre-hicss2016-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7427472">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.bib">bib</a>   <a href="pubs/molzahn_hiskens_lesieutre-hicss2016.txt">txt</a> ]</p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3962,7 +3962,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('cdc2015_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7402083">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('cdc2015_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_josz_hiskens_panciatici-cdc2015-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7402083">link</a> ] [ Ref: <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.bib">bib</a>   <a href="pubs/molzahn_josz_hiskens_panciatici-cdc2015.txt">txt</a> ]</p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3984,7 +3984,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('powertech2015_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-powertech2015.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7232429">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-powertech2015.bib">bib</a>   <a href="pubs/molzahn_hiskens-powertech2015.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('powertech2015_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-powertech2015.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_hiskens-powertech2015-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7232429">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-powertech2015.bib">bib</a>   <a href="pubs/molzahn_hiskens-powertech2015.txt">txt</a> ]</p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -3995,7 +3995,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('iscas2015_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169026">link</a> ] [ <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015_errata.pdf">errata</a> ] [ Ref: <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.bib">bib</a>   <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('iscas2015_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_baghsorkhi_hiskens-iscas2015-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169026">link</a> ] [ <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015_errata.pdf">errata</a> ] [ Ref: <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.bib">bib</a>   <a href="pubs/molzahn_baghsorkhi_hiskens-iscas2015.txt">txt</a> ]</p></li>
 		</span>
   </div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -4020,7 +4020,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('pscc2014_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-Moment_OPF.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7038397">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-Moment_OPF.bib">bib</a>   <a href="pubs/molzahn_hiskens-Moment_OPF.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('pscc2014_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_hiskens-Moment_OPF.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_hiskens-Moment_OPF-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7038397">link</a> ] [ Ref: <a href="pubs/molzahn_hiskens-Moment_OPF.bib">bib</a>   <a href="pubs/molzahn_hiskens-Moment_OPF.txt">txt</a> ]</p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -4031,7 +4031,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('hicss2014_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_lesieutre_demarco-hicss2014.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6758891">link</a> ] [ <a href="pubs/molzahn_lesieutre_demarco-hicss2014_errata.pdf">errata</a> ] [ Ref: <a href="pubs/molzahn_lesieutre_demarco-hicss2014.bib">bib</a>   <a href="pubs/molzahn_lesieutre_demarco-hicss2014.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('hicss2014_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_lesieutre_demarco-hicss2014.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_lesieutre_demarco-hicss2014-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6758891">link</a> ] [ <a href="pubs/molzahn_lesieutre_demarco-hicss2014_errata.pdf">errata</a> ] [ Ref: <a href="pubs/molzahn_lesieutre_demarco-hicss2014.bib">bib</a>   <a href="pubs/molzahn_lesieutre_demarco-hicss2014.txt">txt</a> ]</p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -4056,7 +4056,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('irep2013_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6629370">link</a> ] [ Ref: <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.bib">bib</a>   <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('irep2013_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_dawar_lesieutre_demarco-irep2013-slides.ppt">ppt</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6629370">link</a> ] [ Ref: <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.bib">bib</a>   <a href="pubs/molzahn_dawar_lesieutre_demarco-irep2013.txt">txt</a> ]</p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
@@ -4109,7 +4109,7 @@
 				</span>
 		</span>
 		<span style="cursor:auto;">
-			&emsp;[ <span onclick="showDiv('iscas2010_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_lesieutre-iscas2010.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5537071">link</a> ] [ Ref: <a href="pubs/molzahn_lesieutre-iscas2010.bib">bib</a>   <a href="pubs/molzahn_lesieutre-iscas2010.txt">txt</a> ]</p></li>
+			&emsp;[ <span onclick="showDiv('iscas2010_type');" class="abstractLink">abstract</span> ] [ <a href="pubs/molzahn_lesieutre-iscas2010.pdf">pdf</a> ] [ slides: <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_lesieutre-iscas2010-slides.ppt">ppt</a> | <a href="https://github.com/molzahn/presentations/releases/download/slides/molzahn_lesieutre-iscas2010-slides.pdf">pdf</a> ] [ <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5537071">link</a> ] [ Ref: <a href="pubs/molzahn_lesieutre-iscas2010.bib">bib</a>   <a href="pubs/molzahn_lesieutre-iscas2010.txt">txt</a> ]</p></li>
 		</span>
 	</div>
 	<div class="tile scale-anm Type" style="display:none">
