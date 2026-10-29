@@ -1,0 +1,1 @@
+E. Abukhousa, A. Raymaker, A. Chhotaray, D.K. Molzahn, S. Zonouz, and S. Meliopoulos, "From Caveman to COBA: Coordinated Optimization-Based Attacks on Grid-Edge Smart Inverters in DER-Rich Power Systems," to appear in IEEE PES Grid Edge Technologies, April 19-22, 2027.
